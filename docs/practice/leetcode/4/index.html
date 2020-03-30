@@ -4,15 +4,17 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="1. 两数之和"><meta property="og:title" content="1. 两数之和" />
-<meta property="og:description" content="两数之和 题目 English  Given an array of integers, return indices of the two numbers such that they add up to a specific target.
-You may assume that each input would have exactly one solution, and you may not use the same element twice.
-Example:
-Given nums = [2, 7, 11, 15], target = 9, Because nums[0] &#43; nums[1] = 2 &#43; 7 = 9, return [0, 1].  中文  给定一个整数数组 nums 和一个目标值 target，请你在该数组中找出和为目标值的那 两个 整数，并返回他们的数组下标。" />
+<meta name="description" content="4. 寻找两个有序数组的中位数"><meta property="og:title" content="4. 寻找两个有序数组的中位数" />
+<meta property="og:description" content="寻找两个有序数组的中位数 题目 English  There are two sorted arrays nums1 and nums2 of size m and n respectively.
+Find the median of the two sorted arrays. The overall run time complexity should be O(log (m&#43;n)).
+You may assume nums1 and nums2 cannot be both empty.
+Example 1:
+nums1 = [1, 3] nums2 = [2] The median is 2.0 Example 2:
+nums1 = [1, 2] nums2 = [3, 4] The median is (2 &#43; 3)/2 = 2." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://ikingye.github.io/study-algs/docs/practice/leetcode/1/" />
+<meta property="og:url" content="https://ikingye.github.io/study-algs/docs/practice/leetcode/4/" />
 <meta property="article:modified_time" content="2020-03-31T00:55:44+08:00" />
-<title>1. 两数之和 | 算法学习笔记</title>
+<title>4. 寻找两个有序数组的中位数 | 算法学习笔记</title>
 <link rel="icon" href="/study-algs/favicon.png" type="image/x-icon">
 
 
@@ -169,7 +171,7 @@ https://github.com/alex-shpak/hugo-book
       
         <li>
 
-  <a href="/study-algs/docs/practice/leetcode/1/"  class="active">
+  <a href="/study-algs/docs/practice/leetcode/1/" >
       1. 两数之和
   </a>
 
@@ -199,7 +201,7 @@ https://github.com/alex-shpak/hugo-book
       
         <li>
 
-  <a href="/study-algs/docs/practice/leetcode/4/" >
+  <a href="/study-algs/docs/practice/leetcode/4/"  class="active">
       4. 寻找两个有序数组的中位数
   </a>
 
@@ -339,7 +341,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/study-algs/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>1. 两数之和</strong>
+  <strong>4. 寻找两个有序数组的中位数</strong>
 
   <label for="toc-control">
     <img src="/study-algs/svg/toc.svg" class="book-icon" alt="Table of Contents" />
@@ -348,31 +350,13 @@ https://github.com/alex-shpak/hugo-book
 
 
   
-    <input type="checkbox" class="hidden" id="toc-control" />
-    <aside class="hidden clearfix">
-      
-  <nav id="TableOfContents">
-  <ul>
-    <li><a href="#heading">两数之和</a>
-      <ul>
-        <li><a href="#httpsleetcode-cncomproblemstwo-sum">题目</a></li>
-        <li><a href="#heading-1">分析</a></li>
-        <li><a href="#heading-2">题解</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-
-
-    </aside>
-  
  
       </header>
 
       
       
-<article class="markdown"><h1 id="heading">两数之和</h1>
-<h2 id="httpsleetcode-cncomproblemstwo-sum"><a href="https://leetcode-cn.com/problems/two-sum">题目</a></h2>
+<article class="markdown"><h1 id="heading">寻找两个有序数组的中位数</h1>
+<h2 id="httpsleetcode-cncomproblemsmedian-of-two-sorted-arrays"><a href="https://leetcode-cn.com/problems/median-of-two-sorted-arrays/">题目</a></h2>
 
 
 
@@ -382,26 +366,38 @@ https://github.com/alex-shpak/hugo-book
     English
   </label>
   <div class="book-tabs-content markdown-inner">
-    <p>Given an array of integers, return indices of the two numbers such that they add up to a specific target.</p>
-<p>You may assume that each input would have exactly one solution, and you may not use the same element twice.</p>
-<p>Example:</p>
-<pre><code>Given nums = [2, 7, 11, 15], target = 9,
+    <p>There are two sorted arrays nums1 and nums2 of size m and n respectively.</p>
+<p>Find the median of the two sorted arrays. The overall run time complexity should be O(log (m+n)).</p>
+<p>You may assume nums1 and nums2 cannot be both empty.</p>
+<p>Example 1:</p>
+<pre><code>nums1 = [1, 3]
+nums2 = [2]
 
-Because nums[0] + nums[1] = 2 + 7 = 9,
-return [0, 1].
+The median is 2.0
+</code></pre><p>Example 2:</p>
+<pre><code>nums1 = [1, 2]
+nums2 = [3, 4]
+
+The median is (2 + 3)/2 = 2.5
 </code></pre>
   </div><input type="radio" class="hidden" name="tabs-leetcode-problem-1" id="tabs-leetcode-problem-1-1"  />
   <label for="tabs-leetcode-problem-1-1">
     中文
   </label>
   <div class="book-tabs-content markdown-inner">
-    <p>给定一个整数数组 nums  和一个目标值 target，请你在该数组中找出和为目标值的那   两个   整数，并返回他们的数组下标。</p>
-<p>你可以假设每种输入只会对应一个答案。但是，你不能重复利用这个数组中同样的元素。</p>
-<p>示例:</p>
-<pre><code>给定 nums = [2, 7, 11, 15], target = 9
+    <p>给定两个大小为 m 和 n 的有序数组 nums1 和 nums2。</p>
+<p>请你找出这两个有序数组的中位数，并且要求算法的时间复杂度为 O (log (m + n))。</p>
+<p>你可以假设 nums1 和 nums2 不会同时为空。</p>
+<p>示例 1:</p>
+<pre><code>nums1 = [1, 3]
+nums2 = [2]
 
-因为 nums[0] + nums[1] = 2 + 7 = 9
-所以返回 [0, 1]
+则中位数是 2.0
+</code></pre><p>示例 2:</p>
+<pre><code>nums1 = [1, 2]
+nums2 = [3, 4]
+
+则中位数是 (2 + 3)/2 = 2.5
 </code></pre>
   </div></div>
 
@@ -422,7 +418,13 @@ return [0, 1].
     进阶
   </label>
   <div class="book-tabs-content markdown-inner">
-    使用 hash 表，记录过程数据，空间换时间
+    
+  </div><input type="radio" class="hidden" name="tabs-leetcode-analysis-1" id="tabs-leetcode-analysis-1-2"  />
+  <label for="tabs-leetcode-analysis-1-2">
+    高阶
+  </label>
+  <div class="book-tabs-content markdown-inner">
+    
   </div></div>
 
 <hr>
@@ -460,21 +462,7 @@ return [0, 1].
     Java
   </label>
   <div class="book-tabs-content markdown-inner">
-    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span> <span style="color:#f92672">{</span>
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span><span style="color:#f92672">[</span><span style="color:#f92672">]</span> <span style="color:#a6e22e">twoSum</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span><span style="color:#f92672">[</span><span style="color:#f92672">]</span> nums<span style="color:#f92672">,</span> <span style="color:#66d9ef">int</span> target<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-        HashMap <span style="color:#f92672">&lt;</span>Integer<span style="color:#f92672">,</span> Integer<span style="color:#f92672">&gt;</span> tmp <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HashMap<span style="color:#f92672">&lt;</span>Integer<span style="color:#f92672">,</span> Integer<span style="color:#f92672">&gt;</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-        <span style="color:#66d9ef">for</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span> i <span style="color:#f92672">&lt;</span> nums<span style="color:#f92672">.</span><span style="color:#a6e22e">length</span><span style="color:#f92672">;</span> i<span style="color:#f92672">+</span><span style="color:#f92672">+</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-            <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>tmp<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>nums<span style="color:#f92672">[</span>i<span style="color:#f92672">]</span><span style="color:#f92672">)</span> <span style="color:#f92672">!</span><span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-                <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> <span style="color:#66d9ef">int</span><span style="color:#f92672">[</span><span style="color:#f92672">]</span> <span style="color:#f92672">{</span>tmp<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>nums<span style="color:#f92672">[</span>i<span style="color:#f92672">]</span><span style="color:#f92672">)</span><span style="color:#f92672">,</span> i<span style="color:#f92672">}</span><span style="color:#f92672">;</span>
-            <span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span>
-                tmp<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span>target <span style="color:#f92672">-</span> nums<span style="color:#f92672">[</span>i<span style="color:#f92672">]</span><span style="color:#f92672">,</span> i<span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-            <span style="color:#f92672">}</span>
-        <span style="color:#f92672">}</span>
-
-        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> <span style="color:#66d9ef">int</span><span style="color:#f92672">[</span><span style="color:#f92672">]</span> <span style="color:#f92672">{</span><span style="color:#f92672">}</span><span style="color:#f92672">;</span>
-    <span style="color:#f92672">}</span>
-<span style="color:#f92672">}</span>
-</code></pre></div>
+    
   </div><input type="radio" class="hidden" name="tabs-leetcode-solution-1" id="tabs-leetcode-solution-1-5"  />
   <label for="tabs-leetcode-solution-1-5">
     JavaScript
@@ -504,20 +492,7 @@ return [0, 1].
     Python3
   </label>
   <div class="book-tabs-content markdown-inner">
-    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>(object):
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">twoSum</span>(self, nums, target):
-        <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;&#34;&#34;</span><span style="color:#e6db74">
-</span><span style="color:#e6db74"></span><span style="color:#e6db74">        :type nums: List[int]</span><span style="color:#e6db74">
-</span><span style="color:#e6db74"></span><span style="color:#e6db74">        :type target: int</span><span style="color:#e6db74">
-</span><span style="color:#e6db74"></span><span style="color:#e6db74">        :rtype: List[int]</span><span style="color:#e6db74">
-</span><span style="color:#e6db74"></span><span style="color:#e6db74">        </span><span style="color:#e6db74">&#34;&#34;&#34;</span>
-        r <span style="color:#f92672">=</span> {}
-        <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(nums)):
-            <span style="color:#66d9ef">if</span> nums[i] <span style="color:#f92672">in</span> r:
-                <span style="color:#66d9ef">return</span> i, r[nums[i]]
-            <span style="color:#66d9ef">else</span>:
-                r[target <span style="color:#f92672">-</span> nums[i]] <span style="color:#f92672">=</span> i
-</code></pre></div>
+    
   </div><input type="radio" class="hidden" name="tabs-leetcode-solution-1" id="tabs-leetcode-solution-1-10"  />
   <label for="tabs-leetcode-solution-1-10">
     Ruby
@@ -587,23 +562,6 @@ return [0, 1].
       <label for="menu-control" class="hidden book-menu-overlay"></label>
     </div>
 
-    
-    <aside class="book-toc">
-      
-  <nav id="TableOfContents">
-  <ul>
-    <li><a href="#heading">两数之和</a>
-      <ul>
-        <li><a href="#httpsleetcode-cncomproblemstwo-sum">题目</a></li>
-        <li><a href="#heading-1">分析</a></li>
-        <li><a href="#heading-2">题解</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-
- 
-    </aside>
     
   </main>
 
