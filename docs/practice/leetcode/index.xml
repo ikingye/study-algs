@@ -1,13 +1,34 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>4.1 Leetcode on 算法学习笔记</title>
+    <title>Leetcode on 算法学习笔记</title>
     <link>https://ikingye.github.io/study-algs/docs/practice/leetcode/</link>
-    <description>Recent content in 4.1 Leetcode on 算法学习笔记</description>
+    <description>Recent content in Leetcode on 算法学习笔记</description>
     <generator>Hugo -- gohugo.io</generator>
     
 	<atom:link href="https://ikingye.github.io/study-algs/docs/practice/leetcode/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>1. 两数之和</title>
+      <link>https://ikingye.github.io/study-algs/docs/practice/leetcode/1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/study-algs/docs/practice/leetcode/1/</guid>
+      <description>两数之和 题目 English  Given an array of integers, return indices of the two numbers such that they add up to a specific target.
+You may assume that each input would have exactly one solution, and you may not use the same element twice.
+Example:
+Given nums = [2, 7, 11, 15], target = 9, Because nums[0] + nums[1] = 2 + 7 = 9, return [0, 1].  中文  给定一个整数数组 nums 和一个目标值 target，请你在该数组中找出和为目标值的那 两个 整数，并返回他们的数组下标。</description>
+    </item>
+    
+    <item>
+      <title>2. 两数相加</title>
+      <link>https://ikingye.github.io/study-algs/docs/practice/leetcode/2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/study-algs/docs/practice/leetcode/2/</guid>
+      <description>两数相加 题目 English  中文    分析 基础  进阶  高阶    题解 C  C&amp;#43;&amp;#43;  C#  Go  Java  JavaScript  Kotlin  PHP  Python2  Python3  class Solution(object): def addTwoNumbers(self, l1, l2): &amp;#34;&amp;#34;&amp;#34;:type l1: ListNode:type l2: ListNode:rtype: ListNode&amp;#34;&amp;#34;&amp;#34; carry = 0 root = node = ListNode(0) while l1 or l2 or carry: v1 = v2 = 0 if l1: v1 = l1.</description>
+    </item>
     
   </channel>
 </rss>

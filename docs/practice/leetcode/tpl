@@ -1,0 +1,130 @@
+---
+weight: 1000
+title: 1000. 模板
+BookToC: false
+bookCollapseSection: false
+---
+
+# 模板
+
+## [题目](https://leetcode-cn.com/problems/two-sum)
+
+{{< tabs "leetcode-problem-1" >}}
+{{< tab "English" >}}
+
+{{< /tab >}}
+
+{{< tab "中文" >}}
+
+{{< /tab >}}
+{{< /tabs >}}
+
+---
+
+## 分析
+
+{{< tabs "leetcode-analysis-1" >}}
+{{< tab "基础" >}}
+
+{{< /tab >}}
+{{< tab "进阶" >}}
+
+{{< /tab >}}
+{{< tab "高阶" >}}
+
+{{< /tab >}}
+{{< /tabs >}}
+
+---
+
+## 题解
+
+{{< tabs "leetcode-solution-1" >}}
+
+---
+
+{{< tab "C" >}}
+
+{{< /tab >}}
+
+---
+
+{{< tab "C++" >}}
+
+{{< /tab >}}
+
+---
+
+{{< tab "C#" >}}
+
+{{< /tab >}}
+
+---
+
+{{< tab "Go" >}}
+
+{{< /tab >}}
+
+---
+
+{{< tab "Java" >}}
+
+{{< /tab >}}
+
+---
+
+{{< tab "JavaScript" >}}
+
+{{< /tab >}}
+
+---
+
+{{< tab "Kotlin" >}}
+
+{{< /tab >}}
+
+---
+
+{{< tab "PHP" >}}
+
+{{< /tab >}}
+
+---
+
+{{< tab "Python2" >}}
+
+{{< /tab >}}
+
+---
+
+{{< tab "Python3" >}}
+
+{{< /tab >}}
+
+---
+
+{{< tab "Ruby" >}}
+
+{{< /tab >}}
+
+---
+
+{{< tab "Rust" >}}
+
+{{< /tab >}}
+
+---
+
+{{< tab "Scala" >}}
+
+{{< /tab >}}
+
+---
+
+{{< tab "Swift" >}}
+
+{{< /tab >}}
+
+---
+
+{{< /tabs >}}
