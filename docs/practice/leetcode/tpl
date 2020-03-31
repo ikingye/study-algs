@@ -9,12 +9,12 @@ bookCollapseSection: false
 
 ## [题目](https://leetcode-cn.com/problems/two-sum)
 
-{{< tabs "leetcode-problem-1" >}}
-{{< tab "English" >}}
+{{< tabs "leetcode-problem" >}}
+{{< tab "中文" >}}
 
 {{< /tab >}}
 
-{{< tab "中文" >}}
+{{< tab "English" >}}
 
 {{< /tab >}}
 {{< /tabs >}}
@@ -23,7 +23,7 @@ bookCollapseSection: false
 
 ## 分析
 
-{{< tabs "leetcode-analysis-1" >}}
+{{< tabs "leetcode-analysis" >}}
 {{< tab "基础" >}}
 
 {{< /tab >}}
@@ -39,7 +39,7 @@ bookCollapseSection: false
 
 ## 题解
 
-{{< tabs "leetcode-solution-1" >}}
+{{< tabs "leetcode-solution" >}}
 
 ---
 

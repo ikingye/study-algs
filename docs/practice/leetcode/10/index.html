@@ -4,18 +4,17 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="3. 无重复字符的最长子串"><meta property="og:title" content="3. 无重复字符的最长子串" />
-<meta property="og:description" content="无重复字符的最长子串 题目 中文  给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度。
-示例 1:
-输入: &quot;abcabcbb&quot; 输出: 3 解释: 因为无重复字符的最长子串是 &quot;abc&quot;，所以其长度为 3。 示例 2:
-输入: &quot;bbbbb&quot; 输出: 1 解释: 因为无重复字符的最长子串是 &quot;b&quot;，所以其长度为 1。 示例 3:
-输入: &quot;pwwkew&quot; 输出: 3 解释: 因为无重复字符的最长子串是 &quot;wke&quot;，所以其长度为 3。 请注意，你的答案必须是 子串 的长度，&quot;pwke&quot; 是一个子序列，不是子串。  English  Given a string, find the length of the longest substring without repeating characters.
-Example 1:
-Input: &quot;abcabcbb&quot; Output: 3 Explanation: The answer is &quot;abc&quot;, with the length of 3." />
+<meta name="description" content="10. 正则表达式匹配"><meta property="og:title" content="10. 正则表达式匹配" />
+<meta property="og:description" content="正则表达式匹配 题目 中文  给你一个字符串 s 和一个字符规律 p，请你来实现一个支持 &lsquo;.&rsquo; 和 &lsquo;*&rsquo; 的正则表达式匹配。
+&lsquo;.&rsquo; 匹配任意单个字符 &lsquo;*&rsquo; 匹配零个或多个前面的那一个元素 所谓匹配，是要涵盖 整个 字符串 s 的，而不是部分字符串。
+说明:
+s 可能为空，且只包含从 a-z 的小写字母。 p 可能为空，且只包含从 a-z 的小写字母，以及字符 . 和 *。 示例 1:
+输入: s = &quot;aa&quot; p = &quot;a&quot; 输出: false 解释: &quot;a&quot; 无法匹配 &quot;aa&quot; 整个字符串。 示例 2:
+输入: s = &quot;aa&quot; p = &quot;a*&quot; 输出: true 解释: 因为 &#39;*&#39; 代表可以匹配零个或多个前面的那一个元素, 在这里前面的元素就是 &#39;a&#39;。因此，字符串 &quot;aa&quot; 可被视为 &#39;a&#39; 重复了一次。 示例 3:" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://ikingye.github.io/study-algs/docs/practice/leetcode/3/" />
+<meta property="og:url" content="https://ikingye.github.io/study-algs/docs/practice/leetcode/10/" />
 <meta property="article:modified_time" content="2020-03-31T14:58:39+08:00" />
-<title>3. 无重复字符的最长子串 | 算法学习笔记</title>
+<title>10. 正则表达式匹配 | 算法学习笔记</title>
 <link rel="icon" href="/study-algs/favicon.png" type="image/x-icon">
 
 
@@ -192,7 +191,7 @@ https://github.com/alex-shpak/hugo-book
       
         <li>
 
-  <a href="/study-algs/docs/practice/leetcode/3/"  class="active">
+  <a href="/study-algs/docs/practice/leetcode/3/" >
       3. 无重复字符的最长子串
   </a>
 
@@ -232,7 +231,7 @@ https://github.com/alex-shpak/hugo-book
       
         <li>
 
-  <a href="/study-algs/docs/practice/leetcode/10/" >
+  <a href="/study-algs/docs/practice/leetcode/10/"  class="active">
       10. 正则表达式匹配
   </a>
 
@@ -358,7 +357,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/study-algs/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>3. 无重复字符的最长子串</strong>
+  <strong>10. 正则表达式匹配</strong>
 
   <label for="toc-control">
     <img src="/study-algs/svg/toc.svg" class="book-icon" alt="Table of Contents" />
@@ -372,8 +371,8 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-<article class="markdown"><h1 id="heading">无重复字符的最长子串</h1>
-<h2 id="httpsleetcode-cncomproblemslongest-substring-without-repeating-characters"><a href="https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/">题目</a></h2>
+<article class="markdown"><h1 id="heading">正则表达式匹配</h1>
+<h2 id="httpsleetcode-cncomproblemstwo-sum"><a href="https://leetcode-cn.com/problems/two-sum">题目</a></h2>
 
 
 
@@ -383,40 +382,84 @@ https://github.com/alex-shpak/hugo-book
     中文
   </label>
   <div class="book-tabs-content markdown-inner">
-    <p>给定一个字符串，请你找出其中不含有重复字符的   最长子串   的长度。</p>
-<p>示例  1:</p>
-<pre><code>输入: &quot;abcabcbb&quot;
-输出: 3
-解释: 因为无重复字符的最长子串是 &quot;abc&quot;，所以其长度为 3。
+    <p>给你一个字符串  s  和一个字符规律  p，请你来实现一个支持 &lsquo;.&rsquo;  和  &lsquo;*&rsquo;  的正则表达式匹配。</p>
+<p>&lsquo;.&rsquo; 匹配任意单个字符
+&lsquo;*&rsquo; 匹配零个或多个前面的那一个元素
+所谓匹配，是要涵盖   整个   字符串  s 的，而不是部分字符串。</p>
+<p>说明:</p>
+<p>s  可能为空，且只包含从  a-z  的小写字母。
+p  可能为空，且只包含从  a-z  的小写字母，以及字符  .  和  *。
+示例 1:</p>
+<pre><code>输入:
+s = &quot;aa&quot;
+p = &quot;a&quot;
+输出: false
+解释: &quot;a&quot; 无法匹配 &quot;aa&quot; 整个字符串。
 </code></pre><p>示例 2:</p>
-<pre><code>输入: &quot;bbbbb&quot;
-输出: 1
-解释: 因为无重复字符的最长子串是 &quot;b&quot;，所以其长度为 1。
-</code></pre><p>示例 3:</p>
-<pre><code>输入: &quot;pwwkew&quot;
-输出: 3
-解释: 因为无重复字符的最长子串是 &quot;wke&quot;，所以其长度为 3。
-     请注意，你的答案必须是 子串 的长度，&quot;pwke&quot; 是一个子序列，不是子串。
+<pre><code>输入:
+s = &quot;aa&quot;
+p = &quot;a*&quot;
+输出: true
+解释: 因为 '*' 代表可以匹配零个或多个前面的那一个元素, 在这里前面的元素就是 'a'。因此，字符串 &quot;aa&quot; 可被视为 'a' 重复了一次。
+</code></pre><p>示例  3:</p>
+<pre><code>输入:
+s = &quot;ab&quot;
+p = &quot;.*&quot;
+输出: true
+解释: &quot;.*&quot; 表示可匹配零个或多个（'*'）任意字符（'.'）。
+</code></pre><p>示例 4:</p>
+<pre><code>输入:
+s = &quot;aab&quot;
+p = &quot;c*a*b&quot;
+输出: true
+解释: 因为 '*' 表示零个或多个，这里 'c' 为 0 个, 'a' 被重复一次。因此可以匹配字符串 &quot;aab&quot;。
+</code></pre><p>示例 5:</p>
+<pre><code>输入:
+s = &quot;mississippi&quot;
+p = &quot;mis*is*p*.&quot;
+输出: false
 </code></pre>
   </div><input type="radio" class="hidden" name="tabs-leetcode-problem" id="tabs-leetcode-problem-1"  />
   <label for="tabs-leetcode-problem-1">
     English
   </label>
   <div class="book-tabs-content markdown-inner">
-    <p>Given a string, find the length of the longest substring without repeating characters.</p>
-<p>Example 1:</p>
-<pre><code>Input: &quot;abcabcbb&quot;
-Output: 3
-Explanation: The answer is &quot;abc&quot;, with the length of 3.
+    <p>Given an input string (s) and a pattern (p), implement regular expression matching with support for &lsquo;.&rsquo; and &lsquo;*'.</p>
+<p>&lsquo;.&rsquo; Matches any single character.
+&lsquo;*&rsquo; Matches zero or more of the preceding element.
+The matching should cover the entire input string (not partial).</p>
+<p>Note:</p>
+<p>s could be empty and contains only lowercase letters a-z.
+p could be empty and contains only lowercase letters a-z, and characters like . or *.
+Example 1:</p>
+<pre><code>Input:
+s = &quot;aa&quot;
+p = &quot;a&quot;
+Output: false
+Explanation: &quot;a&quot; does not match the entire string &quot;aa&quot;.
 </code></pre><p>Example 2:</p>
-<pre><code>Input: &quot;bbbbb&quot;
-Output: 1
-Explanation: The answer is &quot;b&quot;, with the length of 1.
+<pre><code>Input:
+s = &quot;aa&quot;
+p = &quot;a*&quot;
+Output: true
+Explanation: '*' means zero or more of the preceding element, 'a'. Therefore, by repeating 'a' once, it becomes &quot;aa&quot;.
 </code></pre><p>Example 3:</p>
-<pre><code>Input: &quot;pwwkew&quot;
-Output: 3
-Explanation: The answer is &quot;wke&quot;, with the length of 3.
-             Note that the answer must be a substring, &quot;pwke&quot; is a subsequence and not a substring.
+<pre><code>Input:
+s = &quot;ab&quot;
+p = &quot;.*&quot;
+Output: true
+Explanation: &quot;.*&quot; means &quot;zero or more (*) of any character (.)&quot;.
+</code></pre><p>Example 4:</p>
+<pre><code>Input:
+s = &quot;aab&quot;
+p = &quot;c*a*b&quot;
+Output: true
+Explanation: c can be repeated 0 times, a can be repeated 1 time. Therefore, it matches &quot;aab&quot;.
+</code></pre><p>Example 5:</p>
+<pre><code>Input:
+s = &quot;mississippi&quot;
+p = &quot;mis*is*p*.&quot;
+Output: false
 </code></pre>
   </div></div>
 
@@ -505,49 +548,13 @@ Explanation: The answer is &quot;wke&quot;, with the length of 3.
     Python2
   </label>
   <div class="book-tabs-content markdown-inner">
-    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>(object):
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">addTwoNumbers</span>(self, l1, l2):
-        <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;&#34;&#34;</span><span style="color:#e6db74">
-</span><span style="color:#e6db74"></span><span style="color:#e6db74">        :type l1: ListNode</span><span style="color:#e6db74">
-</span><span style="color:#e6db74"></span><span style="color:#e6db74">        :type l2: ListNode</span><span style="color:#e6db74">
-</span><span style="color:#e6db74"></span><span style="color:#e6db74">        :rtype: ListNode</span><span style="color:#e6db74">
-</span><span style="color:#e6db74"></span><span style="color:#e6db74">        </span><span style="color:#e6db74">&#34;&#34;&#34;</span>
-        carry <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-        root <span style="color:#f92672">=</span> node <span style="color:#f92672">=</span> ListNode(<span style="color:#ae81ff">0</span>)
-        <span style="color:#66d9ef">while</span> l1 <span style="color:#f92672">or</span> l2 <span style="color:#f92672">or</span> carry:
-            v1 <span style="color:#f92672">=</span> v2 <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-            <span style="color:#66d9ef">if</span> l1:
-                v1 <span style="color:#f92672">=</span> l1<span style="color:#f92672">.</span>val
-                l1 <span style="color:#f92672">=</span> l1<span style="color:#f92672">.</span>next
-            <span style="color:#66d9ef">if</span> l2:
-                v2 <span style="color:#f92672">=</span> l2<span style="color:#f92672">.</span>val
-                l2 <span style="color:#f92672">=</span> l2<span style="color:#f92672">.</span>next
-
-            carry, val <span style="color:#f92672">=</span> divmod(v1 <span style="color:#f92672">+</span> v2 <span style="color:#f92672">+</span> carry, <span style="color:#ae81ff">10</span>)
-            node<span style="color:#f92672">.</span>next <span style="color:#f92672">=</span> ListNode(val)
-            node <span style="color:#f92672">=</span> node<span style="color:#f92672">.</span>next
-
-        <span style="color:#66d9ef">return</span> root<span style="color:#f92672">.</span>next
-</code></pre></div>
+    
   </div><input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-9"  />
   <label for="tabs-leetcode-solution-9">
     Python3
   </label>
   <div class="book-tabs-content markdown-inner">
-    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">lengthOfLongestSubstring</span>(self, s: str) <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> int:
-        char_last_pos <span style="color:#f92672">=</span> {}
-        start, ans <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>
-        <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(s)):
-            <span style="color:#66d9ef">if</span> s[i] <span style="color:#f92672">in</span> char_last_pos:
-                start <span style="color:#f92672">=</span> max(start, char_last_pos[s[i]])
-            <span style="color:#75715e"># 如果都没有重复字母，这里必须要 +1</span>
-            ans <span style="color:#f92672">=</span> max(ans, i <span style="color:#f92672">-</span> start <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>)
-            <span style="color:#75715e"># 为了对应上面 +1，这里也 +1</span>
-            char_last_pos[s[i]] <span style="color:#f92672">=</span> i <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
-
-        <span style="color:#66d9ef">return</span> ans
-</code></pre></div>
+    
   </div><input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-10"  />
   <label for="tabs-leetcode-solution-10">
     Ruby

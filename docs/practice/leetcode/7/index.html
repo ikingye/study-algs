@@ -5,15 +5,21 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="7. 整数反转"><meta property="og:title" content="7. 整数反转" />
-<meta property="og:description" content="整数反转 题目 English  Given a 32-bit signed integer, reverse digits of an integer.
+<meta property="og:description" content="整数反转 题目 中文  给出一个 32 位的有符号整数，你需要将这个整数中每位上的数字进行反转。
+示例 1:
+输入: 123 输出: 321 示例 2:
+输入: -123 输出: -321 示例 3:
+输入: 120 输出: 21 注意:
+假设我们的环境只能存储得下 32 位的有符号整数，则其数值范围为
+  \( [-2^31, 2^31-1]。 \)  请根据这个假设，如果反转后整数溢出那么就返回 0。
+English  Given a 32-bit signed integer, reverse digits of an integer.
 Example 1:
 Input: 123 Output: 321 Example 2:
 Input: -123 Output: -321 Example 3:
-Input: 120 Output: 21 Note: Assume we are dealing with an environment which could only store integers within the 32-bit signed integer range:
-  \( [-2^31, 2^31-1]. \)  For the purpose of this problem, assume that your function returns 0 when the reversed integer overflows." />
+Input: 120 Output: 21 Note: Assume we are dealing with an environment which could only store integers within the 32-bit signed integer range:" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ikingye.github.io/study-algs/docs/practice/leetcode/7/" />
-<meta property="article:modified_time" content="2020-03-31T00:55:44+08:00" />
+<meta property="article:modified_time" content="2020-03-31T14:58:39+08:00" />
 <title>7. 整数反转 | 算法学习笔记</title>
 <link rel="icon" href="/study-algs/favicon.png" type="image/x-icon">
 
@@ -21,7 +27,7 @@ Input: 120 Output: 21 Note: Assume we are dealing with an environment which coul
 <link rel="stylesheet" href="/study-algs/book.min.33dd7934182d4abfe269db67d0d9821bdd866c149d8327944bc47573db5a4d82.css" integrity="sha256-M915NBgtSr/iadtn0NmCG92GbBSdgyeUS8R1c9taTYI=">
 
 
-<script defer src="/study-algs/en.search.min.bb7410abdc2832d8fcf1d92c36b45872540b062965d996b32685404ace814b6e.js" integrity="sha256-u3QQq9woMtj88dksNrRYclQLBill2ZazJoVASs6BS24="></script>
+<script defer src="/study-algs/en.search.min.ed16ec8ec56cd35cc31305672a10e45782a4cea01d757e02bcdc98a04be8ef25.js" integrity="sha256-7RbsjsVs01zDEwVnKhDkV4KkzqAddX4CvNyYoEvo7yU="></script>
 
 <!--
 Made with Book Theme
@@ -228,6 +234,16 @@ https://github.com/alex-shpak/hugo-book
 </li>
       
     
+      
+        <li>
+
+  <a href="/study-algs/docs/practice/leetcode/10/" >
+      10. 正则表达式匹配
+  </a>
+
+</li>
+      
+    
   </ul>
   
 
@@ -243,7 +259,13 @@ https://github.com/alex-shpak/hugo-book
 
   <li >
     
-      <span>猿辅导</span>
+      
+
+  <a href="/study-algs/docs/practice/yuanfudao/" >
+      猿辅导
+  </a>
+
+
     
 
     
@@ -363,34 +385,6 @@ https://github.com/alex-shpak/hugo-book
 
 <div class="book-tabs"><input type="radio" class="hidden" name="tabs-leetcode-problem-1" id="tabs-leetcode-problem-1-0" checked="checked" />
   <label for="tabs-leetcode-problem-1-0">
-    English
-  </label>
-  <div class="book-tabs-content markdown-inner">
-    <p>Given a 32-bit signed integer, reverse digits of an integer.</p>
-<p>Example 1:</p>
-<pre><code>Input: 123
-Output: 321
-</code></pre><p>Example 2:</p>
-<pre><code>Input: -123
-Output: -321
-</code></pre><p>Example 3:</p>
-<pre><code>Input: 120
-Output: 21
-</code></pre><p>Note:
-Assume we are dealing with an environment which could only store integers within the 32-bit signed integer range:</p>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
-        onload="renderMathInElement(document.body);"></script>
-<span class="katex">
-  \(
-[-2^31, 2^31-1].
-\)
-</span>
-<p>For the purpose of this problem, assume that your function returns 0 when the reversed integer overflows.</p>
-
-  </div><input type="radio" class="hidden" name="tabs-leetcode-problem-1" id="tabs-leetcode-problem-1-1"  />
-  <label for="tabs-leetcode-problem-1-1">
     中文
   </label>
   <div class="book-tabs-content markdown-inner">
@@ -406,12 +400,40 @@ Assume we are dealing with an environment which could only store integers within
 输出: 21
 </code></pre><p>注意:</p>
 <p>假设我们的环境只能存储得下 32 位的有符号整数，则其数值范围为</p>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
 <span class="katex">
   \(
 [-2^31, 2^31-1]。
 \)
 </span>
 <p>请根据这个假设，如果反转后整数溢出那么就返回 0。</p>
+
+  </div><input type="radio" class="hidden" name="tabs-leetcode-problem-1" id="tabs-leetcode-problem-1-1"  />
+  <label for="tabs-leetcode-problem-1-1">
+    English
+  </label>
+  <div class="book-tabs-content markdown-inner">
+    <p>Given a 32-bit signed integer, reverse digits of an integer.</p>
+<p>Example 1:</p>
+<pre><code>Input: 123
+Output: 321
+</code></pre><p>Example 2:</p>
+<pre><code>Input: -123
+Output: -321
+</code></pre><p>Example 3:</p>
+<pre><code>Input: 120
+Output: 21
+</code></pre><p>Note:
+Assume we are dealing with an environment which could only store integers within the 32-bit signed integer range:</p>
+<span class="katex">
+  \(
+[-2^31, 2^31-1].
+\)
+</span>
+<p>For the purpose of this problem, assume that your function returns 0 when the reversed integer overflows.</p>
 
   </div></div>
 
@@ -562,7 +584,7 @@ Assume we are dealing with an environment which could only store integers within
 
   <div>
     
-    <a class="flex align-center" href="https://github.com/ikingye/study-algs/commit/748040394819ebbb9c72f72dd32191d86d9350ec" title='Last modified by yewang | 2020-03-31' target="_blank" rel="noopener">
+    <a class="flex align-center" href="https://github.com/ikingye/study-algs/commit/c669f9a59de64569662731ca07f63b1781ad29ec" title='Last modified by yewang | 2020-03-31' target="_blank" rel="noopener">
       <img src="/study-algs/svg/calendar.svg" class="book-icon" alt="Calendar" />
       <span>2020-03-31</span>
     </a>
