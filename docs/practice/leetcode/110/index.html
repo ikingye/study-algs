@@ -4,18 +4,20 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="3. 无重复字符的最长子串"><meta property="og:title" content="3. 无重复字符的最长子串" />
-<meta property="og:description" content="无重复字符的最长子串 题目 中文  给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度。
+<meta name="description" content="110. 平衡二叉树"><meta property="og:title" content="110. 平衡二叉树" />
+<meta property="og:description" content="模板 题目 中文  给定一个二叉树，判断它是否是高度平衡的二叉树。
+本题中，一棵高度平衡二叉树定义为：
+一个二叉树每个节点 的左右两个子树的高度差的绝对值不超过 1。
 示例 1:
-输入: &quot;abcabcbb&quot; 输出: 3 解释: 因为无重复字符的最长子串是 &quot;abc&quot;，所以其长度为 3。 示例 2:
-输入: &quot;bbbbb&quot; 输出: 1 解释: 因为无重复字符的最长子串是 &quot;b&quot;，所以其长度为 1。 示例 3:
-输入: &quot;pwwkew&quot; 输出: 3 解释: 因为无重复字符的最长子串是 &quot;wke&quot;，所以其长度为 3。 请注意，你的答案必须是 子串 的长度，&quot;pwke&quot; 是一个子序列，不是子串。  English  Given a string, find the length of the longest substring without repeating characters.
-Example 1:
-Input: &quot;abcabcbb&quot; Output: 3 Explanation: The answer is &quot;abc&quot;, with the length of 3." />
+给定二叉树 [3,9,20,null,null,15,7] 3 / \ 9 20 / \ 15 7 返回 true 。
+示例 2:
+给定二叉树 [1,2,2,3,3,null,null,4,4] 1 / \ 2 2 / \ 3 3 / \ 4 4 返回 false 。  English  Given a binary tree, determine if it is height-balanced.
+For this problem, a height-balanced binary tree is defined as:
+a binary tree in which the left and right subtrees of every node differ in height by no more than 1." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://ikingye.github.io/study-algs/docs/practice/leetcode/3/" />
-<meta property="article:modified_time" content="2020-03-31T14:58:39+08:00" />
-<title>3. 无重复字符的最长子串 | 算法学习笔记</title>
+<meta property="og:url" content="https://ikingye.github.io/study-algs/docs/practice/leetcode/110/" />
+<meta property="article:modified_time" content="2020-04-09T21:34:28+08:00" />
+<title>110. 平衡二叉树 | 算法学习笔记</title>
 <link rel="icon" href="/study-algs/favicon.png" type="image/x-icon">
 
 
@@ -212,7 +214,7 @@ https://github.com/alex-shpak/hugo-book
       
         <li>
 
-  <a href="/study-algs/docs/practice/leetcode/3/"  class="active">
+  <a href="/study-algs/docs/practice/leetcode/3/" >
       3. 无重复字符的最长子串
   </a>
 
@@ -262,7 +264,7 @@ https://github.com/alex-shpak/hugo-book
       
         <li>
 
-  <a href="/study-algs/docs/practice/leetcode/110/" >
+  <a href="/study-algs/docs/practice/leetcode/110/"  class="active">
       110. 平衡二叉树
   </a>
 
@@ -388,7 +390,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/study-algs/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>3. 无重复字符的最长子串</strong>
+  <strong>110. 平衡二叉树</strong>
 
   <label for="toc-control">
     <img src="/study-algs/svg/toc.svg" class="book-icon" alt="Table of Contents" />
@@ -402,8 +404,8 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-<article class="markdown"><h1 id="heading">无重复字符的最长子串</h1>
-<h2 id="httpsleetcode-cncomproblemslongest-substring-without-repeating-characters"><a href="https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/">题目</a></h2>
+<article class="markdown"><h1 id="heading">模板</h1>
+<h2 id="httpsleetcode-cncomproblemsbalanced-binary-tree"><a href="https://leetcode-cn.com/problems/balanced-binary-tree/">题目</a></h2>
 
 
 
@@ -413,41 +415,59 @@ https://github.com/alex-shpak/hugo-book
     中文
   </label>
   <div class="book-tabs-content markdown-inner">
-    <p>给定一个字符串，请你找出其中不含有重复字符的   最长子串   的长度。</p>
-<p>示例  1:</p>
-<pre><code>输入: &quot;abcabcbb&quot;
-输出: 3
-解释: 因为无重复字符的最长子串是 &quot;abc&quot;，所以其长度为 3。
-</code></pre><p>示例 2:</p>
-<pre><code>输入: &quot;bbbbb&quot;
-输出: 1
-解释: 因为无重复字符的最长子串是 &quot;b&quot;，所以其长度为 1。
-</code></pre><p>示例 3:</p>
-<pre><code>输入: &quot;pwwkew&quot;
-输出: 3
-解释: 因为无重复字符的最长子串是 &quot;wke&quot;，所以其长度为 3。
-     请注意，你的答案必须是 子串 的长度，&quot;pwke&quot; 是一个子序列，不是子串。
+    <p>给定一个二叉树，判断它是否是高度平衡的二叉树。</p>
+<p>本题中，一棵高度平衡二叉树定义为：</p>
+<p>一个二叉树每个节点   的左右两个子树的高度差的绝对值不超过 1。</p>
+<p>示例 1:</p>
+<pre><code>给定二叉树 [3,9,20,null,null,15,7]
+
+    3
+   / \
+  9  20
+    /  \
+   15   7
+</code></pre><p>返回 true 。</p>
+<p>示例 2:</p>
+<pre><code>给定二叉树 [1,2,2,3,3,null,null,4,4]
+
+       1
+      / \
+     2   2
+    / \
+   3   3
+  / \
+ 4   4
+返回 false 。
 </code></pre>
   </div><input type="radio" class="hidden" name="tabs-leetcode-problem" id="tabs-leetcode-problem-1"  />
   <label for="tabs-leetcode-problem-1">
     English
   </label>
   <div class="book-tabs-content markdown-inner">
-    <p>Given a string, find the length of the longest substring without repeating characters.</p>
+    <p>Given a binary tree, determine if it is height-balanced.</p>
+<p>For this problem, a height-balanced binary tree is defined as:</p>
+<p>a binary tree in which the left and right subtrees of every node differ in height by no more than 1.</p>
 <p>Example 1:</p>
-<pre><code>Input: &quot;abcabcbb&quot;
-Output: 3
-Explanation: The answer is &quot;abc&quot;, with the length of 3.
-</code></pre><p>Example 2:</p>
-<pre><code>Input: &quot;bbbbb&quot;
-Output: 1
-Explanation: The answer is &quot;b&quot;, with the length of 1.
-</code></pre><p>Example 3:</p>
-<pre><code>Input: &quot;pwwkew&quot;
-Output: 3
-Explanation: The answer is &quot;wke&quot;, with the length of 3.
-             Note that the answer must be a substring, &quot;pwke&quot; is a subsequence and not a substring.
-</code></pre>
+<pre><code>Given the following tree [3,9,20,null,null,15,7]:
+
+    3
+   / \
+  9  20
+    /  \
+   15   7
+</code></pre><p>Return true.</p>
+<p>Example 2:</p>
+<pre><code>Given the following tree [1,2,2,3,3,null,null,4,4]:
+
+       1
+      / \
+     2   2
+    / \
+   3   3
+  / \
+ 4   4
+</code></pre><p>Return false.</p>
+
   </div></div>
 
 <hr>
@@ -487,77 +507,63 @@ Explanation: The answer is &quot;wke&quot;, with the length of 3.
     C
   </label>
   <div class="book-tabs-content markdown-inner">
-    
+    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c">
+</code></pre></div>
   </div><input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-1"  />
   <label for="tabs-leetcode-solution-1">
     C&#43;&#43;
   </label>
   <div class="book-tabs-content markdown-inner">
-    
+    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++">
+</code></pre></div>
   </div><input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-2"  />
   <label for="tabs-leetcode-solution-2">
     C#
   </label>
   <div class="book-tabs-content markdown-inner">
-    
+    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c#" data-lang="c#">
+</code></pre></div>
   </div><input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-3"  />
   <label for="tabs-leetcode-solution-3">
     Go
   </label>
   <div class="book-tabs-content markdown-inner">
-    
+    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go">
+</code></pre></div>
   </div><input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-4"  />
   <label for="tabs-leetcode-solution-4">
     Java
   </label>
   <div class="book-tabs-content markdown-inner">
-    
+    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">
+</code></pre></div>
   </div><input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-5"  />
   <label for="tabs-leetcode-solution-5">
     JavaScript
   </label>
   <div class="book-tabs-content markdown-inner">
-    
+    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">
+</code></pre></div>
   </div><input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-6"  />
   <label for="tabs-leetcode-solution-6">
     Kotlin
   </label>
   <div class="book-tabs-content markdown-inner">
-    
+    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin">
+</code></pre></div>
   </div><input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-7"  />
   <label for="tabs-leetcode-solution-7">
     PHP
   </label>
   <div class="book-tabs-content markdown-inner">
-    
+    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">
+</code></pre></div>
   </div><input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-8"  />
   <label for="tabs-leetcode-solution-8">
     Python2
   </label>
   <div class="book-tabs-content markdown-inner">
-    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>(object):
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">addTwoNumbers</span>(self, l1, l2):
-        <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;&#34;&#34;</span><span style="color:#e6db74">
-</span><span style="color:#e6db74"></span><span style="color:#e6db74">        :type l1: ListNode</span><span style="color:#e6db74">
-</span><span style="color:#e6db74"></span><span style="color:#e6db74">        :type l2: ListNode</span><span style="color:#e6db74">
-</span><span style="color:#e6db74"></span><span style="color:#e6db74">        :rtype: ListNode</span><span style="color:#e6db74">
-</span><span style="color:#e6db74"></span><span style="color:#e6db74">        </span><span style="color:#e6db74">&#34;&#34;&#34;</span>
-        carry <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-        root <span style="color:#f92672">=</span> node <span style="color:#f92672">=</span> ListNode(<span style="color:#ae81ff">0</span>)
-        <span style="color:#66d9ef">while</span> l1 <span style="color:#f92672">or</span> l2 <span style="color:#f92672">or</span> carry:
-            v1 <span style="color:#f92672">=</span> v2 <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-            <span style="color:#66d9ef">if</span> l1:
-                v1 <span style="color:#f92672">=</span> l1<span style="color:#f92672">.</span>val
-                l1 <span style="color:#f92672">=</span> l1<span style="color:#f92672">.</span>next
-            <span style="color:#66d9ef">if</span> l2:
-                v2 <span style="color:#f92672">=</span> l2<span style="color:#f92672">.</span>val
-                l2 <span style="color:#f92672">=</span> l2<span style="color:#f92672">.</span>next
-
-            carry, val <span style="color:#f92672">=</span> divmod(v1 <span style="color:#f92672">+</span> v2 <span style="color:#f92672">+</span> carry, <span style="color:#ae81ff">10</span>)
-            node<span style="color:#f92672">.</span>next <span style="color:#f92672">=</span> ListNode(val)
-            node <span style="color:#f92672">=</span> node<span style="color:#f92672">.</span>next
-
-        <span style="color:#66d9ef">return</span> root<span style="color:#f92672">.</span>next
+    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
 </code></pre></div>
   </div><input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-9"  />
   <label for="tabs-leetcode-solution-9">
@@ -565,43 +571,47 @@ Explanation: The answer is &quot;wke&quot;, with the length of 3.
   </label>
   <div class="book-tabs-content markdown-inner">
     <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">lengthOfLongestSubstring</span>(self, s: str) <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> int:
-        char_last_pos <span style="color:#f92672">=</span> {}
-        start, ans <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>
-        <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(s)):
-            <span style="color:#66d9ef">if</span> s[i] <span style="color:#f92672">in</span> char_last_pos:
-                start <span style="color:#f92672">=</span> max(start, char_last_pos[s[i]])
-            <span style="color:#75715e"># 如果都没有重复字母，这里必须要 +1</span>
-            ans <span style="color:#f92672">=</span> max(ans, i <span style="color:#f92672">-</span> start <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>)
-            <span style="color:#75715e"># 为了对应上面 +1，这里也 +1</span>
-            char_last_pos[s[i]] <span style="color:#f92672">=</span> i <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">isBalanced</span>(self, root: TreeNode) <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> bool:
+        <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>height(root) <span style="color:#f92672">&gt;</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
 
-        <span style="color:#66d9ef">return</span> ans
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">height</span>(self, root: TreeNode) <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> int:
+        <span style="color:#66d9ef">if</span> root <span style="color:#f92672">is</span> None:
+            <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>
+        lh <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>height(root<span style="color:#f92672">.</span>left)
+        rh <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>height(root<span style="color:#f92672">.</span>right)
+        <span style="color:#66d9ef">if</span> lh <span style="color:#f92672">&gt;</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">and</span> rh <span style="color:#f92672">&gt;</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span> <span style="color:#f92672">and</span> abs(lh <span style="color:#f92672">-</span> rh) <span style="color:#f92672">&lt;</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>:
+            <span style="color:#66d9ef">return</span> max(lh, rh) <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
+
+        <span style="color:#66d9ef">return</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>
 </code></pre></div>
   </div><input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-10"  />
   <label for="tabs-leetcode-solution-10">
     Ruby
   </label>
   <div class="book-tabs-content markdown-inner">
-    
+    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">
+</code></pre></div>
   </div><input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-11"  />
   <label for="tabs-leetcode-solution-11">
     Rust
   </label>
   <div class="book-tabs-content markdown-inner">
-    
+    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust">
+</code></pre></div>
   </div><input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-12"  />
   <label for="tabs-leetcode-solution-12">
     Scala
   </label>
   <div class="book-tabs-content markdown-inner">
-    
+    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala">
+</code></pre></div>
   </div><input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-13"  />
   <label for="tabs-leetcode-solution-13">
     Swift
   </label>
   <div class="book-tabs-content markdown-inner">
-    
+    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">
+</code></pre></div>
   </div></div>
 
 </article>
@@ -616,9 +626,9 @@ Explanation: The answer is &quot;wke&quot;, with the length of 3.
 
   <div>
     
-    <a class="flex align-center" href="https://github.com/ikingye/study-algs/commit/c669f9a59de64569662731ca07f63b1781ad29ec" title='Last modified by yewang | 2020-03-31' target="_blank" rel="noopener">
+    <a class="flex align-center" href="https://github.com/ikingye/study-algs/commit/4ded01c9d185a19dbd9ba69500b37b73f900b872" title='Last modified by yewang | 2020-04-09' target="_blank" rel="noopener">
       <img src="/study-algs/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>2020-03-31</span>
+      <span>2020-04-09</span>
     </a>
   </div>
 

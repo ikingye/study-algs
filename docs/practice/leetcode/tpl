@@ -45,11 +45,19 @@ bookCollapseSection: false
 
 {{< tab "C" >}}
 
+```c
+
+```
+
 {{< /tab >}}
 
 ---
 
 {{< tab "C++" >}}
+
+```c++
+
+```
 
 {{< /tab >}}
 
@@ -57,11 +65,19 @@ bookCollapseSection: false
 
 {{< tab "C#" >}}
 
+```c#
+
+```
+
 {{< /tab >}}
 
 ---
 
 {{< tab "Go" >}}
+
+```go
+
+```
 
 {{< /tab >}}
 
@@ -69,11 +85,18 @@ bookCollapseSection: false
 
 {{< tab "Java" >}}
 
+```java
+
+```
+
 {{< /tab >}}
 
 ---
 
 {{< tab "JavaScript" >}}
+
+```javascript
+```
 
 {{< /tab >}}
 
@@ -81,11 +104,19 @@ bookCollapseSection: false
 
 {{< tab "Kotlin" >}}
 
+```kotlin
+
+```
+
 {{< /tab >}}
 
 ---
 
 {{< tab "PHP" >}}
+
+```php
+
+```
 
 {{< /tab >}}
 
@@ -93,11 +124,19 @@ bookCollapseSection: false
 
 {{< tab "Python2" >}}
 
+```python
+
+```
+
 {{< /tab >}}
 
 ---
 
 {{< tab "Python3" >}}
+
+```python
+
+```
 
 {{< /tab >}}
 
@@ -105,11 +144,19 @@ bookCollapseSection: false
 
 {{< tab "Ruby" >}}
 
+```ruby
+
+```
+
 {{< /tab >}}
 
 ---
 
 {{< tab "Rust" >}}
+
+```rust
+
+```
 
 {{< /tab >}}
 
@@ -117,11 +164,19 @@ bookCollapseSection: false
 
 {{< tab "Scala" >}}
 
+```scala
+
+```
+
 {{< /tab >}}
 
 ---
 
 {{< tab "Swift" >}}
+
+```swift
+
+```
 
 {{< /tab >}}
 

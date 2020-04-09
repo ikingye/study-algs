@@ -23,6 +23,15 @@ You may assume that each input would have exactly one solution, and you may not 
     </item>
     
     <item>
+      <title>数据结构</title>
+      <link>https://ikingye.github.io/study-algs/docs/basic/datastruct/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/study-algs/docs/basic/datastruct/</guid>
+      <description>数据结构 树 C   C&amp;#43;&amp;#43;   C#   Go   Java   JavaScript   Kotlin   PHP   Python2   Python3  # Definition for a binary tree node class TreeNode { def __init__(self, val): self.val = val self.left = None self.right = None }  Ruby   Rust   Scala   Swift    </description>
+    </item>
+    
+    <item>
       <title>2. 两数相加</title>
       <link>https://ikingye.github.io/study-algs/docs/practice/leetcode/2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -115,6 +124,32 @@ Input: -121 Output: false Explanation: From left to right, it reads -121.</descr
 s 可能为空，且只包含从 a-z 的小写字母。 p 可能为空，且只包含从 a-z 的小写字母，以及字符 . 和 *。 示例 1:
 输入: s = &amp;quot;aa&amp;quot; p = &amp;quot;a&amp;quot; 输出: false 解释: &amp;quot;a&amp;quot; 无法匹配 &amp;quot;aa&amp;quot; 整个字符串。 示例 2:
 输入: s = &amp;quot;aa&amp;quot; p = &amp;quot;a*&amp;quot; 输出: true 解释: 因为 &#39;*&#39; 代表可以匹配零个或多个前面的那一个元素, 在这里前面的元素就是 &#39;a&#39;。因此，字符串 &amp;quot;aa&amp;quot; 可被视为 &#39;a&#39; 重复了一次。 示例 3:</description>
+    </item>
+    
+    <item>
+      <title>递归</title>
+      <link>https://ikingye.github.io/study-algs/docs/basic/recursive/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/study-algs/docs/basic/recursive/</guid>
+      <description>递归 参考  三道题套路解决递归问题  </description>
+    </item>
+    
+    <item>
+      <title>110. 平衡二叉树</title>
+      <link>https://ikingye.github.io/study-algs/docs/practice/leetcode/110/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/study-algs/docs/practice/leetcode/110/</guid>
+      <description>模板 题目 中文  给定一个二叉树，判断它是否是高度平衡的二叉树。
+本题中，一棵高度平衡二叉树定义为：
+一个二叉树每个节点 的左右两个子树的高度差的绝对值不超过 1。
+示例 1:
+给定二叉树 [3,9,20,null,null,15,7] 3 / \ 9 20 / \ 15 7 返回 true 。
+示例 2:
+给定二叉树 [1,2,2,3,3,null,null,4,4] 1 / \ 2 2 / \ 3 3 / \ 4 4 返回 false 。  English  Given a binary tree, determine if it is height-balanced.
+For this problem, a height-balanced binary tree is defined as:
+a binary tree in which the left and right subtrees of every node differ in height by no more than 1.</description>
     </item>
     
   </channel>
