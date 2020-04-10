@@ -12,7 +12,7 @@
 输入：(2 -&gt; 4 -&gt; 3) &#43; (5 -&gt; 6 -&gt; 4) 输出：7 -&gt; 0 -&gt; 8 原因：342 &#43; 465 = 807  English  You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ikingye.github.io/study-algs/docs/practice/leetcode/2/" />
-<meta property="article:modified_time" content="2020-03-31T14:58:39+08:00" />
+<meta property="article:modified_time" content="2020-04-10T14:44:09+08:00" />
 <title>2. 两数相加 | 算法学习笔记</title>
 <link rel="icon" href="/study-algs/favicon.png" type="image/x-icon">
 
@@ -20,7 +20,7 @@
 <link rel="stylesheet" href="/study-algs/book.min.33dd7934182d4abfe269db67d0d9821bdd866c149d8327944bc47573db5a4d82.css" integrity="sha256-M915NBgtSr/iadtn0NmCG92GbBSdgyeUS8R1c9taTYI=">
 
 
-<script defer src="/study-algs/en.search.min.492f49bfcdbfe22fd11553842ef23cf54190acc66b4f1956b1754b002260ff8d.js" integrity="sha256-SS9Jv82/4i/RFVOELvI89UGQrMZrTxlWsXVLACJg/40="></script>
+<script defer src="/study-algs/en.search.min.d45a55a7942bb6167a371ae1f4328c00f20c884c75ba9358166f621a0e74594a.js" integrity="sha256-1FpVp5QrthZ6Nxrh9DKMAPIMiEx1upNYFm9iGg50WUo="></script>
 
 <!--
 Made with Book Theme
@@ -518,12 +518,6 @@ Explanation: 342 + 465 = 807.
     Python2
   </label>
   <div class="book-tabs-content markdown-inner">
-    
-  </div><input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-9"  />
-  <label for="tabs-leetcode-solution-9">
-    Python3
-  </label>
-  <div class="book-tabs-content markdown-inner">
     <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>(object):
     <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">addTwoNumbers</span>(self, l1, l2):
         <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;&#34;&#34;</span><span style="color:#e6db74">
@@ -547,6 +541,14 @@ Explanation: 342 + 465 = 807.
             node <span style="color:#f92672">=</span> node<span style="color:#f92672">.</span>next
 
         <span style="color:#66d9ef">return</span> root<span style="color:#f92672">.</span>next
+</code></pre></div>
+  </div><input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-9"  />
+  <label for="tabs-leetcode-solution-9">
+    Python3
+  </label>
+  <div class="book-tabs-content markdown-inner">
+    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">addTwoNumbers</span>(self, l1: ListNode, l2: ListNode) <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> ListNode:
 </code></pre></div>
   </div><input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-10"  />
   <label for="tabs-leetcode-solution-10">
@@ -586,9 +588,9 @@ Explanation: 342 + 465 = 807.
 
   <div>
     
-    <a class="flex align-center" href="https://github.com/ikingye/study-algs/commit/c669f9a59de64569662731ca07f63b1781ad29ec" title='Last modified by yewang | 2020-03-31' target="_blank" rel="noopener">
+    <a class="flex align-center" href="https://github.com/ikingye/study-algs/commit/9772037188b3aca0988b239f024140752072ea31" title='Last modified by yewang | 2020-04-10' target="_blank" rel="noopener">
       <img src="/study-algs/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>2020-03-31</span>
+      <span>2020-04-10</span>
     </a>
   </div>
 

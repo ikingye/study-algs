@@ -19,7 +19,7 @@ Input: -123 Output: -321 Example 3:
 Input: 120 Output: 21 Note: Assume we are dealing with an environment which could only store integers within the 32-bit signed integer range:" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ikingye.github.io/study-algs/docs/practice/leetcode/7/" />
-<meta property="article:modified_time" content="2020-03-31T14:58:39+08:00" />
+<meta property="article:modified_time" content="2020-04-10T14:44:09+08:00" />
 <title>7. 整数反转 | 算法学习笔记</title>
 <link rel="icon" href="/study-algs/favicon.png" type="image/x-icon">
 
@@ -27,7 +27,7 @@ Input: 120 Output: 21 Note: Assume we are dealing with an environment which coul
 <link rel="stylesheet" href="/study-algs/book.min.33dd7934182d4abfe269db67d0d9821bdd866c149d8327944bc47573db5a4d82.css" integrity="sha256-M915NBgtSr/iadtn0NmCG92GbBSdgyeUS8R1c9taTYI=">
 
 
-<script defer src="/study-algs/en.search.min.492f49bfcdbfe22fd11553842ef23cf54190acc66b4f1956b1754b002260ff8d.js" integrity="sha256-SS9Jv82/4i/RFVOELvI89UGQrMZrTxlWsXVLACJg/40="></script>
+<script defer src="/study-algs/en.search.min.d45a55a7942bb6167a371ae1f4328c00f20c884c75ba9358166f621a0e74594a.js" integrity="sha256-1FpVp5QrthZ6Nxrh9DKMAPIMiEx1upNYFm9iGg50WUo="></script>
 
 <!--
 Made with Book Theme
@@ -552,16 +552,31 @@ Assume we are dealing with an environment which could only store integers within
     Python2
   </label>
   <div class="book-tabs-content markdown-inner">
-    
+    <h2 id="heading">高阶</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>(object):
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">reverse</span>(self, x):
+        <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;&#34;&#34;</span><span style="color:#e6db74">
+</span><span style="color:#e6db74"></span><span style="color:#e6db74">        :type x: int</span><span style="color:#e6db74">
+</span><span style="color:#e6db74"></span><span style="color:#e6db74">        :rtype: int</span><span style="color:#e6db74">
+</span><span style="color:#e6db74"></span><span style="color:#e6db74">        </span><span style="color:#e6db74">&#34;&#34;&#34;</span>
+        s <span style="color:#f92672">=</span> cmp(x, <span style="color:#ae81ff">0</span>)
+        r <span style="color:#f92672">=</span> int(str(s <span style="color:#f92672">*</span> x)[::<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>])
+        <span style="color:#66d9ef">return</span> s <span style="color:#f92672">*</span> r <span style="color:#f92672">*</span> (r <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">2</span><span style="color:#f92672">*</span><span style="color:#f92672">*</span><span style="color:#ae81ff">31</span>)
+</code></pre></div>
   </div><input type="radio" class="hidden" name="tabs-leetcode-solution-1" id="tabs-leetcode-solution-1-9"  />
   <label for="tabs-leetcode-solution-1-9">
     Python3
   </label>
   <div class="book-tabs-content markdown-inner">
-    <p><code>python3</code> 没有 <code>cmp</code> 函数，
-使用 <code>(a&gt; b) - (a &lt; b)</code> 替代 （<a href="https://stackoverflow.com/questions/22490366/how-to-use-cmp-in-python-3">stackoverflow</a>）</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>(object):
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">reverse</span>(self, x):
+    <h2 id="heading">高阶</h2>
+<p><code>python3</code> 没有 <code>cmp</code> 函数，
+使用 <code>(a &gt; b) - (a &lt; b)</code> 替代</p>
+<p>参考：</p>
+<ul>
+<li><a href="https://stackoverflow.com/questions/22490366/how-to-use-cmp-in-python-3">stackoverflow</a></li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">reverse</span>(self, x: int) <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> int:
         <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;&#34;&#34;</span><span style="color:#e6db74">
 </span><span style="color:#e6db74"></span><span style="color:#e6db74">        :type x: int</span><span style="color:#e6db74">
 </span><span style="color:#e6db74"></span><span style="color:#e6db74">        :rtype: int</span><span style="color:#e6db74">
@@ -614,9 +629,9 @@ Assume we are dealing with an environment which could only store integers within
 
   <div>
     
-    <a class="flex align-center" href="https://github.com/ikingye/study-algs/commit/c669f9a59de64569662731ca07f63b1781ad29ec" title='Last modified by yewang | 2020-03-31' target="_blank" rel="noopener">
+    <a class="flex align-center" href="https://github.com/ikingye/study-algs/commit/9772037188b3aca0988b239f024140752072ea31" title='Last modified by yewang | 2020-04-10' target="_blank" rel="noopener">
       <img src="/study-algs/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>2020-03-31</span>
+      <span>2020-04-10</span>
     </a>
   </div>
 
