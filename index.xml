@@ -126,6 +126,15 @@ s 可能为空，且只包含从 a-z 的小写字母。 p 可能为空，且�
     </item>
     
     <item>
+      <title>类型</title>
+      <link>https://ikingye.github.io/study-algs/docs/basic/type/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/study-algs/docs/basic/type/</guid>
+      <description>类型 递归  迭代  动态规划  回溯法  分支限界法  贪心  背包 </description>
+    </item>
+    
+    <item>
       <title>递归</title>
       <link>https://ikingye.github.io/study-algs/docs/basic/recursive/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
