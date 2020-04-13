@@ -15,7 +15,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/study-algs/docs/basic/datastruct/</guid>
-      <description>数据结构 常用的数据结构  数组（Array） 堆栈（Stack） 队列（Queue） 链表（Linked List） 树（Tree） 图（Graph） 堆积（Heap） 散列表（Hash table）   数据结构定义（源码） 链表 (Linked List) 单向链表 节点 C   C&amp;#43;&amp;#43;   C#   Go   Java   JavaScript   Kotlin   PHP   Python2  # Definition for singly-linked list. class ListNode(object): def __init__(self, val): self.val = val self.next = None  Python3  # Definition for singly-linked list.</description>
+      <description>数据结构 常用的数据结构  数组（Array） 堆栈（Stack） 队列（Queue） 链表（Linked List） 树（Tree） 图（Graph） 堆积（Heap） 散列表（Hash table）   数据结构定义（源码） 链表 (Linked List) 单向链表 节点 C    C&amp;#43;&amp;#43;    C#    Go    Java    JavaScript    Kotlin    PHP    Python2  # Definition for singly-linked list. class ListNode(object): def __init__(self, val): self.val = val self.next = None   Python3  # Definition for singly-linked list.</description>
     </item>
     
     <item>

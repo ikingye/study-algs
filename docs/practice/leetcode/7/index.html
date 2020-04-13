@@ -12,7 +12,7 @@
 输入: 120 输出: 21 注意:
 假设我们的环境只能存储得下 32 位的有符号整数，则其数值范围为
   \( [-2^31, 2^31-1]。 \)  请根据这个假设，如果反转后整数溢出那么就返回 0。
-English  Given a 32-bit signed integer, reverse digits of an integer.
+ English  Given a 32-bit signed integer, reverse digits of an integer.
 Example 1:
 Input: 123 Output: 321 Example 2:
 Input: -123 Output: -321 Example 3:
@@ -24,10 +24,10 @@ Input: 120 Output: 21 Note: Assume we are dealing with an environment which coul
 <link rel="icon" href="/study-algs/favicon.png" type="image/x-icon">
 
 
-<link rel="stylesheet" href="/study-algs/book.min.33dd7934182d4abfe269db67d0d9821bdd866c149d8327944bc47573db5a4d82.css" integrity="sha256-M915NBgtSr/iadtn0NmCG92GbBSdgyeUS8R1c9taTYI=">
+<link rel="stylesheet" href="/study-algs/book.min.66d2f6926159dd697150bdcd901eead56a7adc9408513ccb9ab553939262dd4c.css" integrity="sha256-ZtL2kmFZ3WlxUL3NkB7q1Wp63JQIUTzLmrVTk5Ji3Uw=">
 
 
-<script defer src="/study-algs/en.search.min.22a67eda6a84678baf1c287cfe862905502ce917807085c508fe1f249eeef6a3.js" integrity="sha256-IqZ&#43;2mqEZ4uvHCh8/oYpBVAs6ReAcIXFCP4fJJ7u9qM="></script>
+<script defer src="/study-algs/en.search.min.0e90b9784e1a4229f6f3f4c43507ef460be937b83f9c6816b2ac2dbd2107e217.js" integrity="sha256-DpC5eE4aQin28/TENQfvRgvpN7g/nGgWsqwtvSEH4hc="></script>
 
 <!--
 Made with Book Theme
@@ -54,12 +54,6 @@ https://github.com/alex-shpak/hugo-book
   <div class="book-search-spinner spinner hidden"></div>
   <ul id="book-search-results"></ul>
 </div>
-
-
-
-
-
-
 
 
 
@@ -369,11 +363,6 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-
-
-
-
-
 </nav>
 
 
@@ -406,14 +395,15 @@ https://github.com/alex-shpak/hugo-book
       </header>
 
       
-      
 <article class="markdown"><h1 id="heading">整数反转</h1>
 <h2 id="httpsleetcode-cncomproblemsreverse-integer"><a href="https://leetcode-cn.com/problems/reverse-integer/">题目</a></h2>
 
 
 
 
-<div class="book-tabs"><input type="radio" class="hidden" name="tabs-leetcode-problem-1" id="tabs-leetcode-problem-1-0" checked="checked" />
+<div class="book-tabs">
+
+  <input type="radio" class="hidden" name="tabs-leetcode-problem-1" id="tabs-leetcode-problem-1-0" checked="checked" />
   <label for="tabs-leetcode-problem-1-0">
     中文
   </label>
@@ -441,7 +431,9 @@ https://github.com/alex-shpak/hugo-book
 </span>
 <p>请根据这个假设，如果反转后整数溢出那么就返回 0。</p>
 
-  </div><input type="radio" class="hidden" name="tabs-leetcode-problem-1" id="tabs-leetcode-problem-1-1"  />
+  </div>
+
+  <input type="radio" class="hidden" name="tabs-leetcode-problem-1" id="tabs-leetcode-problem-1-1"  />
   <label for="tabs-leetcode-problem-1-1">
     English
   </label>
@@ -465,7 +457,9 @@ Assume we are dealing with an environment which could only store integers within
 </span>
 <p>For the purpose of this problem, assume that your function returns 0 when the reversed integer overflows.</p>
 
-  </div></div>
+  </div>
+
+</div>
 
 <hr>
 <h2 id="heading-1">分析</h2>
@@ -473,25 +467,33 @@ Assume we are dealing with an environment which could only store integers within
 
 
 
-<div class="book-tabs"><input type="radio" class="hidden" name="tabs-leetcode-analysis-1" id="tabs-leetcode-analysis-1-0" checked="checked" />
+<div class="book-tabs">
+
+  <input type="radio" class="hidden" name="tabs-leetcode-analysis-1" id="tabs-leetcode-analysis-1-0" checked="checked" />
   <label for="tabs-leetcode-analysis-1-0">
     基础
   </label>
   <div class="book-tabs-content markdown-inner">
     
-  </div><input type="radio" class="hidden" name="tabs-leetcode-analysis-1" id="tabs-leetcode-analysis-1-1"  />
+  </div>
+
+  <input type="radio" class="hidden" name="tabs-leetcode-analysis-1" id="tabs-leetcode-analysis-1-1"  />
   <label for="tabs-leetcode-analysis-1-1">
     进阶
   </label>
   <div class="book-tabs-content markdown-inner">
     
-  </div><input type="radio" class="hidden" name="tabs-leetcode-analysis-1" id="tabs-leetcode-analysis-1-2"  />
+  </div>
+
+  <input type="radio" class="hidden" name="tabs-leetcode-analysis-1" id="tabs-leetcode-analysis-1-2"  />
   <label for="tabs-leetcode-analysis-1-2">
     高阶
   </label>
   <div class="book-tabs-content markdown-inner">
     
-  </div></div>
+  </div>
+
+</div>
 
 <hr>
 <h2 id="heading-2">题解</h2>
@@ -499,55 +501,73 @@ Assume we are dealing with an environment which could only store integers within
 
 
 
-<div class="book-tabs"><input type="radio" class="hidden" name="tabs-leetcode-solution-1" id="tabs-leetcode-solution-1-0" checked="checked" />
+<div class="book-tabs">
+
+  <input type="radio" class="hidden" name="tabs-leetcode-solution-1" id="tabs-leetcode-solution-1-0" checked="checked" />
   <label for="tabs-leetcode-solution-1-0">
     C
   </label>
   <div class="book-tabs-content markdown-inner">
     
-  </div><input type="radio" class="hidden" name="tabs-leetcode-solution-1" id="tabs-leetcode-solution-1-1"  />
+  </div>
+
+  <input type="radio" class="hidden" name="tabs-leetcode-solution-1" id="tabs-leetcode-solution-1-1"  />
   <label for="tabs-leetcode-solution-1-1">
     C&#43;&#43;
   </label>
   <div class="book-tabs-content markdown-inner">
     
-  </div><input type="radio" class="hidden" name="tabs-leetcode-solution-1" id="tabs-leetcode-solution-1-2"  />
+  </div>
+
+  <input type="radio" class="hidden" name="tabs-leetcode-solution-1" id="tabs-leetcode-solution-1-2"  />
   <label for="tabs-leetcode-solution-1-2">
     C#
   </label>
   <div class="book-tabs-content markdown-inner">
     
-  </div><input type="radio" class="hidden" name="tabs-leetcode-solution-1" id="tabs-leetcode-solution-1-3"  />
+  </div>
+
+  <input type="radio" class="hidden" name="tabs-leetcode-solution-1" id="tabs-leetcode-solution-1-3"  />
   <label for="tabs-leetcode-solution-1-3">
     Go
   </label>
   <div class="book-tabs-content markdown-inner">
     
-  </div><input type="radio" class="hidden" name="tabs-leetcode-solution-1" id="tabs-leetcode-solution-1-4"  />
+  </div>
+
+  <input type="radio" class="hidden" name="tabs-leetcode-solution-1" id="tabs-leetcode-solution-1-4"  />
   <label for="tabs-leetcode-solution-1-4">
     Java
   </label>
   <div class="book-tabs-content markdown-inner">
     
-  </div><input type="radio" class="hidden" name="tabs-leetcode-solution-1" id="tabs-leetcode-solution-1-5"  />
+  </div>
+
+  <input type="radio" class="hidden" name="tabs-leetcode-solution-1" id="tabs-leetcode-solution-1-5"  />
   <label for="tabs-leetcode-solution-1-5">
     JavaScript
   </label>
   <div class="book-tabs-content markdown-inner">
     
-  </div><input type="radio" class="hidden" name="tabs-leetcode-solution-1" id="tabs-leetcode-solution-1-6"  />
+  </div>
+
+  <input type="radio" class="hidden" name="tabs-leetcode-solution-1" id="tabs-leetcode-solution-1-6"  />
   <label for="tabs-leetcode-solution-1-6">
     Kotlin
   </label>
   <div class="book-tabs-content markdown-inner">
     
-  </div><input type="radio" class="hidden" name="tabs-leetcode-solution-1" id="tabs-leetcode-solution-1-7"  />
+  </div>
+
+  <input type="radio" class="hidden" name="tabs-leetcode-solution-1" id="tabs-leetcode-solution-1-7"  />
   <label for="tabs-leetcode-solution-1-7">
     PHP
   </label>
   <div class="book-tabs-content markdown-inner">
     
-  </div><input type="radio" class="hidden" name="tabs-leetcode-solution-1" id="tabs-leetcode-solution-1-8"  />
+  </div>
+
+  <input type="radio" class="hidden" name="tabs-leetcode-solution-1" id="tabs-leetcode-solution-1-8"  />
   <label for="tabs-leetcode-solution-1-8">
     Python2
   </label>
@@ -564,7 +584,9 @@ Assume we are dealing with an environment which could only store integers within
         r <span style="color:#f92672">=</span> int(str(s <span style="color:#f92672">*</span> x)[::<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>])
         <span style="color:#66d9ef">return</span> s <span style="color:#f92672">*</span> r <span style="color:#f92672">*</span> (r <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">2</span><span style="color:#f92672">*</span><span style="color:#f92672">*</span><span style="color:#ae81ff">31</span>)
 </code></pre></div>
-  </div><input type="radio" class="hidden" name="tabs-leetcode-solution-1" id="tabs-leetcode-solution-1-9"  />
+  </div>
+
+  <input type="radio" class="hidden" name="tabs-leetcode-solution-1" id="tabs-leetcode-solution-1-9"  />
   <label for="tabs-leetcode-solution-1-9">
     Python3
   </label>
@@ -582,31 +604,41 @@ Assume we are dealing with an environment which could only store integers within
         r <span style="color:#f92672">=</span> int(str(s <span style="color:#f92672">*</span> x)[::<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>])
         <span style="color:#66d9ef">return</span> s <span style="color:#f92672">*</span> r <span style="color:#f92672">*</span> (r <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">2</span><span style="color:#f92672">*</span><span style="color:#f92672">*</span><span style="color:#ae81ff">31</span>)
 </code></pre></div>
-  </div><input type="radio" class="hidden" name="tabs-leetcode-solution-1" id="tabs-leetcode-solution-1-10"  />
+  </div>
+
+  <input type="radio" class="hidden" name="tabs-leetcode-solution-1" id="tabs-leetcode-solution-1-10"  />
   <label for="tabs-leetcode-solution-1-10">
     Ruby
   </label>
   <div class="book-tabs-content markdown-inner">
     
-  </div><input type="radio" class="hidden" name="tabs-leetcode-solution-1" id="tabs-leetcode-solution-1-11"  />
+  </div>
+
+  <input type="radio" class="hidden" name="tabs-leetcode-solution-1" id="tabs-leetcode-solution-1-11"  />
   <label for="tabs-leetcode-solution-1-11">
     Rust
   </label>
   <div class="book-tabs-content markdown-inner">
     
-  </div><input type="radio" class="hidden" name="tabs-leetcode-solution-1" id="tabs-leetcode-solution-1-12"  />
+  </div>
+
+  <input type="radio" class="hidden" name="tabs-leetcode-solution-1" id="tabs-leetcode-solution-1-12"  />
   <label for="tabs-leetcode-solution-1-12">
     Scala
   </label>
   <div class="book-tabs-content markdown-inner">
     
-  </div><input type="radio" class="hidden" name="tabs-leetcode-solution-1" id="tabs-leetcode-solution-1-13"  />
+  </div>
+
+  <input type="radio" class="hidden" name="tabs-leetcode-solution-1" id="tabs-leetcode-solution-1-13"  />
   <label for="tabs-leetcode-solution-1-13">
     Swift
   </label>
   <div class="book-tabs-content markdown-inner">
     
-  </div></div>
+  </div>
+
+</div>
 
 <hr>
 <h2 id="heading-3">参考</h2>
@@ -616,7 +648,6 @@ Assume we are dealing with an environment which could only store integers within
 </ul>
 </article>
  
-      
 
       <footer class="book-footer">
         
@@ -653,8 +684,6 @@ Assume we are dealing with an environment which could only store integers within
  
       </footer>
       
-
-      <label for="menu-control" class="hidden book-menu-overlay"></label>
     </div>
 
     

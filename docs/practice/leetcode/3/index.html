@@ -9,7 +9,7 @@
 示例 1:
 输入: &quot;abcabcbb&quot; 输出: 3 解释: 因为无重复字符的最长子串是 &quot;abc&quot;，所以其长度为 3。 示例 2:
 输入: &quot;bbbbb&quot; 输出: 1 解释: 因为无重复字符的最长子串是 &quot;b&quot;，所以其长度为 1。 示例 3:
-输入: &quot;pwwkew&quot; 输出: 3 解释: 因为无重复字符的最长子串是 &quot;wke&quot;，所以其长度为 3。 请注意，你的答案必须是 子串 的长度，&quot;pwke&quot; 是一个子序列，不是子串。  English  Given a string, find the length of the longest substring without repeating characters.
+输入: &quot;pwwkew&quot; 输出: 3 解释: 因为无重复字符的最长子串是 &quot;wke&quot;，所以其长度为 3。 请注意，你的答案必须是 子串 的长度，&quot;pwke&quot; 是一个子序列，不是子串。   English  Given a string, find the length of the longest substring without repeating characters.
 Example 1:
 Input: &quot;abcabcbb&quot; Output: 3 Explanation: The answer is &quot;abc&quot;, with the length of 3." />
 <meta property="og:type" content="article" />
@@ -19,10 +19,10 @@ Input: &quot;abcabcbb&quot; Output: 3 Explanation: The answer is &quot;abc&quot;
 <link rel="icon" href="/study-algs/favicon.png" type="image/x-icon">
 
 
-<link rel="stylesheet" href="/study-algs/book.min.33dd7934182d4abfe269db67d0d9821bdd866c149d8327944bc47573db5a4d82.css" integrity="sha256-M915NBgtSr/iadtn0NmCG92GbBSdgyeUS8R1c9taTYI=">
+<link rel="stylesheet" href="/study-algs/book.min.66d2f6926159dd697150bdcd901eead56a7adc9408513ccb9ab553939262dd4c.css" integrity="sha256-ZtL2kmFZ3WlxUL3NkB7q1Wp63JQIUTzLmrVTk5Ji3Uw=">
 
 
-<script defer src="/study-algs/en.search.min.22a67eda6a84678baf1c287cfe862905502ce917807085c508fe1f249eeef6a3.js" integrity="sha256-IqZ&#43;2mqEZ4uvHCh8/oYpBVAs6ReAcIXFCP4fJJ7u9qM="></script>
+<script defer src="/study-algs/en.search.min.0e90b9784e1a4229f6f3f4c43507ef460be937b83f9c6816b2ac2dbd2107e217.js" integrity="sha256-DpC5eE4aQin28/TENQfvRgvpN7g/nGgWsqwtvSEH4hc="></script>
 
 <!--
 Made with Book Theme
@@ -49,12 +49,6 @@ https://github.com/alex-shpak/hugo-book
   <div class="book-search-spinner spinner hidden"></div>
   <ul id="book-search-results"></ul>
 </div>
-
-
-
-
-
-
 
 
 
@@ -364,11 +358,6 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-
-
-
-
-
 </nav>
 
 
@@ -401,14 +390,15 @@ https://github.com/alex-shpak/hugo-book
       </header>
 
       
-      
 <article class="markdown"><h1 id="heading">无重复字符的最长子串</h1>
 <h2 id="httpsleetcode-cncomproblemslongest-substring-without-repeating-characters"><a href="https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/">题目</a></h2>
 
 
 
 
-<div class="book-tabs"><input type="radio" class="hidden" name="tabs-leetcode-problem" id="tabs-leetcode-problem-0" checked="checked" />
+<div class="book-tabs">
+
+  <input type="radio" class="hidden" name="tabs-leetcode-problem" id="tabs-leetcode-problem-0" checked="checked" />
   <label for="tabs-leetcode-problem-0">
     中文
   </label>
@@ -428,7 +418,9 @@ https://github.com/alex-shpak/hugo-book
 解释: 因为无重复字符的最长子串是 &quot;wke&quot;，所以其长度为 3。
      请注意，你的答案必须是 子串 的长度，&quot;pwke&quot; 是一个子序列，不是子串。
 </code></pre>
-  </div><input type="radio" class="hidden" name="tabs-leetcode-problem" id="tabs-leetcode-problem-1"  />
+  </div>
+
+  <input type="radio" class="hidden" name="tabs-leetcode-problem" id="tabs-leetcode-problem-1"  />
   <label for="tabs-leetcode-problem-1">
     English
   </label>
@@ -448,7 +440,9 @@ Output: 3
 Explanation: The answer is &quot;wke&quot;, with the length of 3.
              Note that the answer must be a substring, &quot;pwke&quot; is a subsequence and not a substring.
 </code></pre>
-  </div></div>
+  </div>
+
+</div>
 
 <hr>
 <h2 id="heading-1">分析</h2>
@@ -456,25 +450,33 @@ Explanation: The answer is &quot;wke&quot;, with the length of 3.
 
 
 
-<div class="book-tabs"><input type="radio" class="hidden" name="tabs-leetcode-analysis" id="tabs-leetcode-analysis-0" checked="checked" />
+<div class="book-tabs">
+
+  <input type="radio" class="hidden" name="tabs-leetcode-analysis" id="tabs-leetcode-analysis-0" checked="checked" />
   <label for="tabs-leetcode-analysis-0">
     基础
   </label>
   <div class="book-tabs-content markdown-inner">
     
-  </div><input type="radio" class="hidden" name="tabs-leetcode-analysis" id="tabs-leetcode-analysis-1"  />
+  </div>
+
+  <input type="radio" class="hidden" name="tabs-leetcode-analysis" id="tabs-leetcode-analysis-1"  />
   <label for="tabs-leetcode-analysis-1">
     进阶
   </label>
   <div class="book-tabs-content markdown-inner">
     
-  </div><input type="radio" class="hidden" name="tabs-leetcode-analysis" id="tabs-leetcode-analysis-2"  />
+  </div>
+
+  <input type="radio" class="hidden" name="tabs-leetcode-analysis" id="tabs-leetcode-analysis-2"  />
   <label for="tabs-leetcode-analysis-2">
     高阶
   </label>
   <div class="book-tabs-content markdown-inner">
     
-  </div></div>
+  </div>
+
+</div>
 
 <hr>
 <h2 id="heading-2">题解</h2>
@@ -482,55 +484,73 @@ Explanation: The answer is &quot;wke&quot;, with the length of 3.
 
 
 
-<div class="book-tabs"><input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-0" checked="checked" />
+<div class="book-tabs">
+
+  <input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-0" checked="checked" />
   <label for="tabs-leetcode-solution-0">
     C
   </label>
   <div class="book-tabs-content markdown-inner">
     
-  </div><input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-1"  />
+  </div>
+
+  <input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-1"  />
   <label for="tabs-leetcode-solution-1">
     C&#43;&#43;
   </label>
   <div class="book-tabs-content markdown-inner">
     
-  </div><input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-2"  />
+  </div>
+
+  <input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-2"  />
   <label for="tabs-leetcode-solution-2">
     C#
   </label>
   <div class="book-tabs-content markdown-inner">
     
-  </div><input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-3"  />
+  </div>
+
+  <input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-3"  />
   <label for="tabs-leetcode-solution-3">
     Go
   </label>
   <div class="book-tabs-content markdown-inner">
     
-  </div><input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-4"  />
+  </div>
+
+  <input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-4"  />
   <label for="tabs-leetcode-solution-4">
     Java
   </label>
   <div class="book-tabs-content markdown-inner">
     
-  </div><input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-5"  />
+  </div>
+
+  <input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-5"  />
   <label for="tabs-leetcode-solution-5">
     JavaScript
   </label>
   <div class="book-tabs-content markdown-inner">
     
-  </div><input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-6"  />
+  </div>
+
+  <input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-6"  />
   <label for="tabs-leetcode-solution-6">
     Kotlin
   </label>
   <div class="book-tabs-content markdown-inner">
     
-  </div><input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-7"  />
+  </div>
+
+  <input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-7"  />
   <label for="tabs-leetcode-solution-7">
     PHP
   </label>
   <div class="book-tabs-content markdown-inner">
     
-  </div><input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-8"  />
+  </div>
+
+  <input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-8"  />
   <label for="tabs-leetcode-solution-8">
     Python2
   </label>
@@ -559,7 +579,9 @@ Explanation: The answer is &quot;wke&quot;, with the length of 3.
 
         <span style="color:#66d9ef">return</span> root<span style="color:#f92672">.</span>next
 </code></pre></div>
-  </div><input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-9"  />
+  </div>
+
+  <input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-9"  />
   <label for="tabs-leetcode-solution-9">
     Python3
   </label>
@@ -578,35 +600,44 @@ Explanation: The answer is &quot;wke&quot;, with the length of 3.
 
         <span style="color:#66d9ef">return</span> ans
 </code></pre></div>
-  </div><input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-10"  />
+  </div>
+
+  <input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-10"  />
   <label for="tabs-leetcode-solution-10">
     Ruby
   </label>
   <div class="book-tabs-content markdown-inner">
     
-  </div><input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-11"  />
+  </div>
+
+  <input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-11"  />
   <label for="tabs-leetcode-solution-11">
     Rust
   </label>
   <div class="book-tabs-content markdown-inner">
     
-  </div><input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-12"  />
+  </div>
+
+  <input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-12"  />
   <label for="tabs-leetcode-solution-12">
     Scala
   </label>
   <div class="book-tabs-content markdown-inner">
     
-  </div><input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-13"  />
+  </div>
+
+  <input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-13"  />
   <label for="tabs-leetcode-solution-13">
     Swift
   </label>
   <div class="book-tabs-content markdown-inner">
     
-  </div></div>
+  </div>
+
+</div>
 
 </article>
  
-      
 
       <footer class="book-footer">
         
@@ -643,8 +674,6 @@ Explanation: The answer is &quot;wke&quot;, with the length of 3.
  
       </footer>
       
-
-      <label for="menu-control" class="hidden book-menu-overlay"></label>
     </div>
 
     
