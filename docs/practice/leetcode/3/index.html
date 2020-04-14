@@ -22,7 +22,7 @@ Input: &quot;abcabcbb&quot; Output: 3 Explanation: The answer is &quot;abc&quot;
 <link rel="stylesheet" href="/study-algs/book.min.66d2f6926159dd697150bdcd901eead56a7adc9408513ccb9ab553939262dd4c.css" integrity="sha256-ZtL2kmFZ3WlxUL3NkB7q1Wp63JQIUTzLmrVTk5Ji3Uw=">
 
 
-<script defer src="/study-algs/en.search.min.46db1d6535ba39eb013677ab40fed374064acf8963d6c20045fdf3c7fe59ea29.js" integrity="sha256-RtsdZTW6OesBNnerQP7TdAZKz4lj1sIARf3zx/5Z6ik="></script>
+<script defer src="/study-algs/en.search.min.577496eef580c7d740e643518944ae9adf6536080d5984c370f484e5324400b8.js" integrity="sha256-V3SW7vWAx9dA5kNRiUSumt9lNggNWYTDcPSE5TJEALg="></script>
 
 <!--
 Made with Book Theme
@@ -400,8 +400,8 @@ https://github.com/alex-shpak/hugo-book
       </header>
 
       
-<article class="markdown"><h1 id="heading">无重复字符的最长子串</h1>
-<h2 id="httpsleetcode-cncomproblemslongest-substring-without-repeating-characters"><a href="https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/">题目</a></h2>
+<article class="markdown"><h1 id="无重复字符的最长子串">无重复字符的最长子串</h1>
+<h2 id="题目httpsleetcode-cncomproblemslongest-substring-without-repeating-characters"><a href="https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/">题目</a></h2>
 
 
 
@@ -455,7 +455,7 @@ Explanation: The answer is &quot;wke&quot;, with the length of 3.
 </div>
 
 <hr>
-<h2 id="heading-1">分析</h2>
+<h2 id="分析">分析</h2>
 
 
 
@@ -489,7 +489,7 @@ Explanation: The answer is &quot;wke&quot;, with the length of 3.
 </div>
 
 <hr>
-<h2 id="heading-2">题解</h2>
+<h2 id="题解">题解</h2>
 
 
 
@@ -567,11 +567,11 @@ Explanation: The answer is &quot;wke&quot;, with the length of 3.
   <div class="book-tabs-content markdown-inner">
     <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>(object):
     <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">addTwoNumbers</span>(self, l1, l2):
-        <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;&#34;&#34;</span><span style="color:#e6db74">
-</span><span style="color:#e6db74"></span><span style="color:#e6db74">        :type l1: ListNode</span><span style="color:#e6db74">
-</span><span style="color:#e6db74"></span><span style="color:#e6db74">        :type l2: ListNode</span><span style="color:#e6db74">
-</span><span style="color:#e6db74"></span><span style="color:#e6db74">        :rtype: ListNode</span><span style="color:#e6db74">
-</span><span style="color:#e6db74"></span><span style="color:#e6db74">        </span><span style="color:#e6db74">&#34;&#34;&#34;</span>
+        <span style="color:#e6db74">&#34;&#34;&#34;
+</span><span style="color:#e6db74">        :type l1: ListNode
+</span><span style="color:#e6db74">        :type l2: ListNode
+</span><span style="color:#e6db74">        :rtype: ListNode
+</span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
         carry <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
         root <span style="color:#f92672">=</span> node <span style="color:#f92672">=</span> ListNode(<span style="color:#ae81ff">0</span>)
         <span style="color:#66d9ef">while</span> l1 <span style="color:#f92672">or</span> l2 <span style="color:#f92672">or</span> carry:
@@ -597,7 +597,7 @@ Explanation: The answer is &quot;wke&quot;, with the length of 3.
   </label>
   <div class="book-tabs-content markdown-inner">
     <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">lengthOfLongestSubstring</span>(self, s: str) <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> int:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">lengthOfLongestSubstring</span>(self, s: str) <span style="color:#f92672">-&gt;</span> int:
         char_last_pos <span style="color:#f92672">=</span> {}
         start, ans <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>
         <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(s)):
