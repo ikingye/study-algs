@@ -20,7 +20,7 @@
 <link rel="stylesheet" href="/study-algs/book.min.66d2f6926159dd697150bdcd901eead56a7adc9408513ccb9ab553939262dd4c.css" integrity="sha256-ZtL2kmFZ3WlxUL3NkB7q1Wp63JQIUTzLmrVTk5Ji3Uw=">
 
 
-<script defer src="/study-algs/en.search.min.29a74f620d84e2cca5dcb25fdd373c5dd159b99146914e0b19334a23e8c5d6d8.js" integrity="sha256-KadPYg2E4syl3LJf3Tc8XdFZuZFGkU4LGTNKI&#43;jF1tg="></script>
+<script defer src="/study-algs/en.search.min.b905b0fa72c4c2042127afb7ebc65386a841bee4015aec924d927aafb4a57fed.js" integrity="sha256-uQWw&#43;nLEwgQhJ6&#43;368ZThqhBvuQBWuySTZJ6r7Slf&#43;0="></script>
 
 <!--
 Made with Book Theme
@@ -589,8 +589,31 @@ Explanation: 342 + 465 = 807.
     Python3
   </label>
   <div class="book-tabs-content markdown-inner">
-    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Definition for singly-linked list.</span>
+<span style="color:#75715e"># class ListNode:</span>
+<span style="color:#75715e">#     def __init__(self, x):</span>
+<span style="color:#75715e">#         self.val = x</span>
+<span style="color:#75715e">#         self.next = None</span>
+
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
     <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">addTwoNumbers</span>(self, l1: ListNode, l2: ListNode) <span style="color:#f92672">-&gt;</span> ListNode:
+        carry <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+        head <span style="color:#f92672">=</span> cur <span style="color:#f92672">=</span> ListNode(<span style="color:#ae81ff">0</span>)
+        <span style="color:#66d9ef">while</span> l1 <span style="color:#f92672">or</span> l2:
+            val1 <span style="color:#f92672">=</span> val2 <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+            <span style="color:#66d9ef">if</span> l1:
+                val1 <span style="color:#f92672">=</span> l1<span style="color:#f92672">.</span>val
+                l1 <span style="color:#f92672">=</span> l1<span style="color:#f92672">.</span>next
+            <span style="color:#66d9ef">if</span> l2:
+                val2 <span style="color:#f92672">=</span> l2<span style="color:#f92672">.</span>val
+                l2 <span style="color:#f92672">=</span> l2<span style="color:#f92672">.</span>next
+            tmp <span style="color:#f92672">=</span> val1 <span style="color:#f92672">+</span> val2 <span style="color:#f92672">+</span> carry
+            carry <span style="color:#f92672">=</span> tmp <span style="color:#f92672">//</span> <span style="color:#ae81ff">10</span>
+            cur<span style="color:#f92672">.</span>next <span style="color:#f92672">=</span> ListNode(tmp <span style="color:#f92672">%</span> <span style="color:#ae81ff">10</span>)
+            cur <span style="color:#f92672">=</span> cur<span style="color:#f92672">.</span>next
+        <span style="color:#66d9ef">if</span> carry:
+            cur<span style="color:#f92672">.</span>next <span style="color:#f92672">=</span> ListNode(carry)
+        <span style="color:#66d9ef">return</span> head<span style="color:#f92672">.</span>next
 </code></pre></div>
   </div>
 
