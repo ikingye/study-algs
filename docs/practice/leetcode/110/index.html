@@ -4,14 +4,22 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="110. 平衡二叉树"><meta property="og:title" content="110. 平衡二叉树" />
-<meta property="og:description" content="模板 题目 中文  给定一个二叉树，判断它是否是高度平衡的二叉树。
+<meta name="description" content="模板 题目 中文 给定一个二叉树，判断它是否是高度平衡的二叉树。
 本题中，一棵高度平衡二叉树定义为：
 一个二叉树每个节点 的左右两个子树的高度差的绝对值不超过 1。
 示例 1:
 给定二叉树 [3,9,20,null,null,15,7] 3 / \ 9 20 / \ 15 7 返回 true 。
 示例 2:
-给定二叉树 [1,2,2,3,3,null,null,4,4] 1 / \ 2 2 / \ 3 3 / \ 4 4 返回 false 。   English  Given a binary tree, determine if it is height-balanced.
+给定二叉树 [1,2,2,3,3,null,null,4,4] 1 / \ 2 2 / \ 3 3 / \ 4 4 返回 false 。 English Given a binary tree, determine if it is height-balanced.
+For this problem, a height-balanced binary tree is defined as:
+a binary tree in which the left and right subtrees of every node differ in height by no more than 1."><meta property="og:title" content="110. 平衡二叉树" />
+<meta property="og:description" content="模板 题目 中文 给定一个二叉树，判断它是否是高度平衡的二叉树。
+本题中，一棵高度平衡二叉树定义为：
+一个二叉树每个节点 的左右两个子树的高度差的绝对值不超过 1。
+示例 1:
+给定二叉树 [3,9,20,null,null,15,7] 3 / \ 9 20 / \ 15 7 返回 true 。
+示例 2:
+给定二叉树 [1,2,2,3,3,null,null,4,4] 1 / \ 2 2 / \ 3 3 / \ 4 4 返回 false 。 English Given a binary tree, determine if it is height-balanced.
 For this problem, a height-balanced binary tree is defined as:
 a binary tree in which the left and right subtrees of every node differ in height by no more than 1." />
 <meta property="og:type" content="article" />
@@ -21,10 +29,10 @@ a binary tree in which the left and right subtrees of every node differ in heigh
 <link rel="icon" href="/study-algs/favicon.png" type="image/x-icon">
 
 
-<link rel="stylesheet" href="/study-algs/book.scss" integrity="">
+<link rel="stylesheet" href="/study-algs/book.min.2b565af4d61986071164f1ead48c719f32bb138a148802dc3943b967fc4f20c6.css" integrity="sha256-K1Za9NYZhgcRZPHq1IxxnzK7E4oUiALcOUO5Z/xPIMY=">
 
 
-<script defer src="/study-algs/en.search.min.b905b0fa72c4c2042127afb7ebc65386a841bee4015aec924d927aafb4a57fed.js" integrity="sha256-uQWw&#43;nLEwgQhJ6&#43;368ZThqhBvuQBWuySTZJ6r7Slf&#43;0="></script>
+<script defer src="/study-algs/en.search.min.4c9e906ba0665e126fa4781ac45983710328b123b31aad43d696063b73342b0a.js" integrity="sha256-TJ6Qa6BmXhJvpHgaxFmDcQMosSOzGq1D1pYGO3M0Kwo="></script>
 
 <!--
 Made with Book Theme
@@ -56,6 +64,12 @@ https://github.com/alex-shpak/hugo-book
 
 
 
+
+
+
+
+
+
   
 
   
@@ -78,10 +92,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      <span>第一部分 基础</span>
-    
+
+  
+  <span>第一部分 基础</span>
+  
+
 
     
 
@@ -94,9 +111,9 @@ https://github.com/alex-shpak/hugo-book
       
         <li>
 
-  <a href="/study-algs/docs/basic/datastruct/" >
-      数据结构
-  </a>
+  
+  <a href="/study-algs/docs/basic/datastruct/" class="">数据结构</a>
+  
 
 </li>
       
@@ -104,9 +121,9 @@ https://github.com/alex-shpak/hugo-book
       
         <li>
 
-  <a href="/study-algs/docs/basic/type/" >
-      类型
-  </a>
+  
+  <a href="/study-algs/docs/basic/type/" class="">类型</a>
+  
 
 </li>
       
@@ -114,9 +131,9 @@ https://github.com/alex-shpak/hugo-book
       
         <li>
 
-  <a href="/study-algs/docs/basic/recursive/" >
-      递归
-  </a>
+  
+  <a href="/study-algs/docs/basic/recursive/" class="">递归</a>
+  
 
 </li>
       
@@ -134,216 +151,13 @@ https://github.com/alex-shpak/hugo-book
       
         
 
-  <li >
+  <li>
     
-      <span>第二部分 进阶</span>
-    
-
-    
-
-
-
 
   
-  <ul>
-    
-  </ul>
+  <span>第二部分 进阶</span>
   
 
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li >
-    
-      <span>第三部分 练习</span>
-    
-
-    
-
-
-
-
-  
-  <ul>
-    
-      
-        
-
-  <li >
-    
-      
-
-  <a href="/study-algs/docs/practice/leetcode/" >
-      Leetcode
-  </a>
-
-
-    
-
-    
-
-
-
-
-  
-  <ul>
-    
-      
-        <li>
-
-  <a href="/study-algs/docs/practice/leetcode/1/" >
-      1. 两数之和
-  </a>
-
-</li>
-      
-    
-      
-        <li>
-
-  <a href="/study-algs/docs/practice/leetcode/2/" >
-      2. 两数相加
-  </a>
-
-</li>
-      
-    
-      
-        <li>
-
-  <a href="/study-algs/docs/practice/leetcode/3/" >
-      3. 无重复字符的最长子串
-  </a>
-
-</li>
-      
-    
-      
-        <li>
-
-  <a href="/study-algs/docs/practice/leetcode/4/" >
-      4. 寻找两个有序数组的中位数
-  </a>
-
-</li>
-      
-    
-      
-        <li>
-
-  <a href="/study-algs/docs/practice/leetcode/7/" >
-      7. 整数反转
-  </a>
-
-</li>
-      
-    
-      
-        <li>
-
-  <a href="/study-algs/docs/practice/leetcode/9/" >
-      9. 回文数
-  </a>
-
-</li>
-      
-    
-      
-        <li>
-
-  <a href="/study-algs/docs/practice/leetcode/10/" >
-      10. 正则表达式匹配
-  </a>
-
-</li>
-      
-    
-      
-        <li>
-
-  <a href="/study-algs/docs/practice/leetcode/54/" >
-      54. 模板
-  </a>
-
-</li>
-      
-    
-      
-        <li>
-
-  <a href="/study-algs/docs/practice/leetcode/110/"  class="active">
-      110. 平衡二叉树
-  </a>
-
-</li>
-      
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li >
-    
-      
-
-  <a href="/study-algs/docs/practice/nowcoder/" >
-      牛客网
-  </a>
-
-
-    
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-  </ul>
-  
-
-
-
-  </li>
-
-
-      
-    
-      
-        
-
-  <li >
-    
-      
-
-  <a href="/study-algs/docs/tutorial/" >
-      教程
-  </a>
-
-
-    
 
     
 
@@ -363,12 +177,217 @@ https://github.com/alex-shpak/hugo-book
 
       
     
+      
+        
+
+  <li>
+    
+
+  
+  <span>第三部分 练习</span>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/study-algs/docs/practice/leetcode/" class="collapsed ">Leetcode</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+
+  
+  <a href="/study-algs/docs/practice/leetcode/1/" class="">1. 两数之和</a>
+  
+
+</li>
+      
+    
+      
+        <li>
+
+  
+  <a href="/study-algs/docs/practice/leetcode/2/" class="">2. 两数相加</a>
+  
+
+</li>
+      
+    
+      
+        <li>
+
+  
+  <a href="/study-algs/docs/practice/leetcode/3/" class="">3. 无重复字符的最长子串</a>
+  
+
+</li>
+      
+    
+      
+        <li>
+
+  
+  <a href="/study-algs/docs/practice/leetcode/4/" class="">4. 寻找两个有序数组的中位数</a>
+  
+
+</li>
+      
+    
+      
+        <li>
+
+  
+  <a href="/study-algs/docs/practice/leetcode/7/" class="">7. 整数反转</a>
+  
+
+</li>
+      
+    
+      
+        <li>
+
+  
+  <a href="/study-algs/docs/practice/leetcode/9/" class="">9. 回文数</a>
+  
+
+</li>
+      
+    
+      
+        <li>
+
+  
+  <a href="/study-algs/docs/practice/leetcode/10/" class="">10. 正则表达式匹配</a>
+  
+
+</li>
+      
+    
+      
+        <li>
+
+  
+  <a href="/study-algs/docs/practice/leetcode/54/" class="">54. 模板</a>
+  
+
+</li>
+      
+    
+      
+        <li>
+
+  
+  <a href="/study-algs/docs/practice/leetcode/110/" class="active">110. 平衡二叉树</a>
+  
+
+</li>
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/study-algs/docs/practice/nowcoder/" class="collapsed ">牛客网</a>
+  
+
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li>
+    
+
+  
+  <a href="/study-algs/docs/tutorial/" class="">教程</a>
+  
+
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
   </ul>
   
 
 
 
   
+
+
+
+
+
 
 
 
@@ -412,20 +431,16 @@ https://github.com/alex-shpak/hugo-book
       </header>
 
       
-<article class="markdown"><h1 id="模板">模板</h1>
+      
+  <article class="markdown"><h1 id="模板">模板</h1>
 <h2 id="题目httpsleetcode-cncomproblemsbalanced-binary-tree"><a href="https://leetcode-cn.com/problems/balanced-binary-tree/">题目</a></h2>
 
 
 
 
-<div class="book-tabs">
-
-  <input type="radio" class="hidden" name="tabs-leetcode-problem" id="tabs-leetcode-problem-0" checked="checked" />
-  <label for="tabs-leetcode-problem-0">
-    中文
-  </label>
-  <div class="book-tabs-content markdown-inner">
-    <p>给定一个二叉树，判断它是否是高度平衡的二叉树。</p>
+<div class="book-tabs"><input type="radio" class="hidden" name="tabs-leetcode-problem" id="tabs-leetcode-problem-0" checked="checked" />
+  <label for="tabs-leetcode-problem-0">中文</label>
+  <div class="book-tabs-content markdown-inner"><p>给定一个二叉树，判断它是否是高度平衡的二叉树。</p>
 <p>本题中，一棵高度平衡二叉树定义为：</p>
 <p>一个二叉树每个节点   的左右两个子树的高度差的绝对值不超过 1。</p>
 <p>示例 1:</p>
@@ -448,15 +463,9 @@ https://github.com/alex-shpak/hugo-book
   / \
  4   4
 返回 false 。
-</code></pre>
-  </div>
-
-  <input type="radio" class="hidden" name="tabs-leetcode-problem" id="tabs-leetcode-problem-1"  />
-  <label for="tabs-leetcode-problem-1">
-    English
-  </label>
-  <div class="book-tabs-content markdown-inner">
-    <p>Given a binary tree, determine if it is height-balanced.</p>
+</code></pre></div><input type="radio" class="hidden" name="tabs-leetcode-problem" id="tabs-leetcode-problem-1"  />
+  <label for="tabs-leetcode-problem-1">English</label>
+  <div class="book-tabs-content markdown-inner"><p>Given a binary tree, determine if it is height-balanced.</p>
 <p>For this problem, a height-balanced binary tree is defined as:</p>
 <p>a binary tree in which the left and right subtrees of every node differ in height by no more than 1.</p>
 <p>Example 1:</p>
@@ -479,10 +488,7 @@ https://github.com/alex-shpak/hugo-book
   / \
  4   4
 </code></pre><p>Return false.</p>
-
-  </div>
-
-</div>
+</div></div>
 
 <hr>
 <h2 id="分析">分析</h2>
@@ -490,33 +496,13 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-<div class="book-tabs">
-
-  <input type="radio" class="hidden" name="tabs-leetcode-analysis" id="tabs-leetcode-analysis-0" checked="checked" />
-  <label for="tabs-leetcode-analysis-0">
-    基础
-  </label>
-  <div class="book-tabs-content markdown-inner">
-    
-  </div>
-
-  <input type="radio" class="hidden" name="tabs-leetcode-analysis" id="tabs-leetcode-analysis-1"  />
-  <label for="tabs-leetcode-analysis-1">
-    进阶
-  </label>
-  <div class="book-tabs-content markdown-inner">
-    
-  </div>
-
-  <input type="radio" class="hidden" name="tabs-leetcode-analysis" id="tabs-leetcode-analysis-2"  />
-  <label for="tabs-leetcode-analysis-2">
-    高阶
-  </label>
-  <div class="book-tabs-content markdown-inner">
-    
-  </div>
-
-</div>
+<div class="book-tabs"><input type="radio" class="hidden" name="tabs-leetcode-analysis" id="tabs-leetcode-analysis-0" checked="checked" />
+  <label for="tabs-leetcode-analysis-0">基础</label>
+  <div class="book-tabs-content markdown-inner"></div><input type="radio" class="hidden" name="tabs-leetcode-analysis" id="tabs-leetcode-analysis-1"  />
+  <label for="tabs-leetcode-analysis-1">进阶</label>
+  <div class="book-tabs-content markdown-inner"></div><input type="radio" class="hidden" name="tabs-leetcode-analysis" id="tabs-leetcode-analysis-2"  />
+  <label for="tabs-leetcode-analysis-2">高阶</label>
+  <div class="book-tabs-content markdown-inner"></div></div>
 
 <hr>
 <h2 id="题解">题解</h2>
@@ -524,95 +510,36 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-<div class="book-tabs">
-
-  <input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-0" checked="checked" />
-  <label for="tabs-leetcode-solution-0">
-    C
-  </label>
-  <div class="book-tabs-content markdown-inner">
-    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c">
-</code></pre></div>
-  </div>
-
-  <input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-1"  />
-  <label for="tabs-leetcode-solution-1">
-    C&#43;&#43;
-  </label>
-  <div class="book-tabs-content markdown-inner">
-    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++">
-</code></pre></div>
-  </div>
-
-  <input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-2"  />
-  <label for="tabs-leetcode-solution-2">
-    C#
-  </label>
-  <div class="book-tabs-content markdown-inner">
-    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c#" data-lang="c#">
-</code></pre></div>
-  </div>
-
-  <input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-3"  />
-  <label for="tabs-leetcode-solution-3">
-    Go
-  </label>
-  <div class="book-tabs-content markdown-inner">
-    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go">
-</code></pre></div>
-  </div>
-
-  <input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-4"  />
-  <label for="tabs-leetcode-solution-4">
-    Java
-  </label>
-  <div class="book-tabs-content markdown-inner">
-    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">
-</code></pre></div>
-  </div>
-
-  <input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-5"  />
-  <label for="tabs-leetcode-solution-5">
-    JavaScript
-  </label>
-  <div class="book-tabs-content markdown-inner">
-    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">
-</code></pre></div>
-  </div>
-
-  <input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-6"  />
-  <label for="tabs-leetcode-solution-6">
-    Kotlin
-  </label>
-  <div class="book-tabs-content markdown-inner">
-    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin">
-</code></pre></div>
-  </div>
-
-  <input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-7"  />
-  <label for="tabs-leetcode-solution-7">
-    PHP
-  </label>
-  <div class="book-tabs-content markdown-inner">
-    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">
-</code></pre></div>
-  </div>
-
-  <input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-8"  />
-  <label for="tabs-leetcode-solution-8">
-    Python2
-  </label>
-  <div class="book-tabs-content markdown-inner">
-    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
-</code></pre></div>
-  </div>
-
-  <input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-9"  />
-  <label for="tabs-leetcode-solution-9">
-    Python3
-  </label>
-  <div class="book-tabs-content markdown-inner">
-    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+<div class="book-tabs"><input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-0" checked="checked" />
+  <label for="tabs-leetcode-solution-0">C</label>
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c">
+</code></pre></div></div><input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-1"  />
+  <label for="tabs-leetcode-solution-1">C&#43;&#43;</label>
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++">
+</code></pre></div></div><input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-2"  />
+  <label for="tabs-leetcode-solution-2">C#</label>
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c#" data-lang="c#">
+</code></pre></div></div><input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-3"  />
+  <label for="tabs-leetcode-solution-3">Go</label>
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go">
+</code></pre></div></div><input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-4"  />
+  <label for="tabs-leetcode-solution-4">Java</label>
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">
+</code></pre></div></div><input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-5"  />
+  <label for="tabs-leetcode-solution-5">JavaScript</label>
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">
+</code></pre></div></div><input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-6"  />
+  <label for="tabs-leetcode-solution-6">Kotlin</label>
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin">
+</code></pre></div></div><input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-7"  />
+  <label for="tabs-leetcode-solution-7">PHP</label>
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">
+</code></pre></div></div><input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-8"  />
+  <label for="tabs-leetcode-solution-8">Python2</label>
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+</code></pre></div></div><input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-9"  />
+  <label for="tabs-leetcode-solution-9">Python3</label>
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
     <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">isBalanced</span>(self, root: TreeNode) <span style="color:#f92672">-&gt;</span> bool:
         <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>height(root) <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">0</span>
 
@@ -625,49 +552,23 @@ https://github.com/alex-shpak/hugo-book
             <span style="color:#66d9ef">return</span> max(lh, rh) <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
 
         <span style="color:#66d9ef">return</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>
-</code></pre></div>
-  </div>
-
-  <input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-10"  />
-  <label for="tabs-leetcode-solution-10">
-    Ruby
-  </label>
-  <div class="book-tabs-content markdown-inner">
-    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">
-</code></pre></div>
-  </div>
-
-  <input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-11"  />
-  <label for="tabs-leetcode-solution-11">
-    Rust
-  </label>
-  <div class="book-tabs-content markdown-inner">
-    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust">
-</code></pre></div>
-  </div>
-
-  <input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-12"  />
-  <label for="tabs-leetcode-solution-12">
-    Scala
-  </label>
-  <div class="book-tabs-content markdown-inner">
-    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala">
-</code></pre></div>
-  </div>
-
-  <input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-13"  />
-  <label for="tabs-leetcode-solution-13">
-    Swift
-  </label>
-  <div class="book-tabs-content markdown-inner">
-    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">
-</code></pre></div>
-  </div>
-
-</div>
+</code></pre></div></div><input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-10"  />
+  <label for="tabs-leetcode-solution-10">Ruby</label>
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">
+</code></pre></div></div><input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-11"  />
+  <label for="tabs-leetcode-solution-11">Rust</label>
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust">
+</code></pre></div></div><input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-12"  />
+  <label for="tabs-leetcode-solution-12">Scala</label>
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala">
+</code></pre></div></div><input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-13"  />
+  <label for="tabs-leetcode-solution-13">Swift</label>
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">
+</code></pre></div></div></div>
 
 </article>
  
+      
 
       <footer class="book-footer">
         
@@ -689,6 +590,9 @@ https://github.com/alex-shpak/hugo-book
 
  
         
+      </footer>
+
+      
   
   <div class="book-comments">
 <script src="https://utteranc.es/client.js"
@@ -702,8 +606,8 @@ https://github.com/alex-shpak/hugo-book
 </div>
   
  
-      </footer>
-      
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
     </div>
 
     

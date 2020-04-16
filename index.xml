@@ -15,10 +15,10 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/study-algs/docs/practice/leetcode/1/</guid>
-      <description>两数之和 题目 中文  给定一个整数数组 nums 和一个目标值 target，请你在该数组中找出和为目标值的那两个整数，并返回他们的数组下标。
+      <description>两数之和 题目 中文 给定一个整数数组 nums 和一个目标值 target，请你在该数组中找出和为目标值的那两个整数，并返回他们的数组下标。
 你可以假设每种输入只会对应一个答案。但是，你不能重复利用这个数组中同样的元素。
 示例:
-给定 nums = [2, 7, 11, 15], target = 9 因为 nums[0] + nums[1] = 2 + 7 = 9 所以返回 [0, 1]   English  Given an array of integers, return indices of the two numbers such that they add up to a specific target.
+给定 nums = [2, 7, 11, 15], target = 9 因为 nums[0] + nums[1] = 2 + 7 = 9 所以返回 [0, 1] English Given an array of integers, return indices of the two numbers such that they add up to a specific target.
 You may assume that each input would have exactly one solution, and you may not use the same element twice.</description>
     </item>
     
@@ -28,7 +28,7 @@ You may assume that each input would have exactly one solution, and you may not 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/study-algs/docs/basic/datastruct/</guid>
-      <description>数据结构 常用的数据结构  数组（Array） 堆栈（Stack） 队列（Queue） 链表（Linked List） 树（Tree） 图（Graph） 堆积（Heap） 散列表（Hash table）   数据结构定义（源码） 链表 (Linked List) 单向链表 节点 C    C&amp;#43;&amp;#43;    C#    Go    Java    JavaScript    Kotlin    PHP    Python2  # Definition for singly-linked list. class ListNode(object): def __init__(self, val): self.val = val self.next = None   Python3  # Definition for singly-linked list.</description>
+      <description>数据结构 常用的数据结构  数组（Array） 堆栈（Stack） 队列（Queue） 链表（Linked List） 树（Tree） 图（Graph） 堆积（Heap） 散列表（Hash table）   数据结构定义（源码） 链表 (Linked List) 单向链表 节点 C C&amp;#43;&amp;#43; C# Go Java JavaScript Kotlin PHP Python2 # Definition for singly-linked list. class ListNode(object): def __init__(self, val): self.val = val self.next = None Python3 # Definition for singly-linked list. class ListNode: def __init__(self, val): self.val = val self.next = None Ruby Rust Scala Swift   双向链表 节点 C C&amp;#43;&amp;#43; C# Go Java JavaScript Kotlin PHP Python2 # Definition for doubly-linked list.</description>
     </item>
     
     <item>
@@ -37,11 +37,11 @@ You may assume that each input would have exactly one solution, and you may not 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/study-algs/docs/practice/leetcode/2/</guid>
-      <description>两数相加 题目 中文  给出两个 非空 的链表用来表示两个非负的整数。其中，它们各自的位数是按照 逆序 的方式存储的，并且它们的每个节点只能存储 一位 数字。
+      <description>两数相加 题目 中文 给出两个 非空 的链表用来表示两个非负的整数。其中，它们各自的位数是按照 逆序 的方式存储的，并且它们的每个节点只能存储 一位 数字。
 如果，我们将这两个数相加起来，则会返回一个新的链表来表示它们的和。
 您可以假设除了数字 0 之外，这两个数都不会以 0 开头。
 示例：
-输入：(2 -&amp;gt; 4 -&amp;gt; 3) + (5 -&amp;gt; 6 -&amp;gt; 4) 输出：7 -&amp;gt; 0 -&amp;gt; 8 原因：342 + 465 = 807   English  You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.</description>
+输入：(2 -&amp;gt; 4 -&amp;gt; 3) + (5 -&amp;gt; 6 -&amp;gt; 4) 输出：7 -&amp;gt; 0 -&amp;gt; 8 原因：342 + 465 = 807 English You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.</description>
     </item>
     
     <item>
@@ -50,13 +50,13 @@ You may assume that each input would have exactly one solution, and you may not 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/study-algs/docs/practice/leetcode/3/</guid>
-      <description>无重复字符的最长子串 题目 中文  给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度。
+      <description>无重复字符的最长子串 题目 中文 给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度。
 示例 1:
 输入: &amp;quot;abcabcbb&amp;quot; 输出: 3 解释: 因为无重复字符的最长子串是 &amp;quot;abc&amp;quot;，所以其长度为 3。 示例 2:
 输入: &amp;quot;bbbbb&amp;quot; 输出: 1 解释: 因为无重复字符的最长子串是 &amp;quot;b&amp;quot;，所以其长度为 1。 示例 3:
-输入: &amp;quot;pwwkew&amp;quot; 输出: 3 解释: 因为无重复字符的最长子串是 &amp;quot;wke&amp;quot;，所以其长度为 3。 请注意，你的答案必须是 子串 的长度，&amp;quot;pwke&amp;quot; 是一个子序列，不是子串。   English  Given a string, find the length of the longest substring without repeating characters.
+输入: &amp;quot;pwwkew&amp;quot; 输出: 3 解释: 因为无重复字符的最长子串是 &amp;quot;wke&amp;quot;，所以其长度为 3。 请注意，你的答案必须是 子串 的长度，&amp;quot;pwke&amp;quot; 是一个子序列，不是子串。 English Given a string, find the length of the longest substring without repeating characters.
 Example 1:
-Input: &amp;quot;abcabcbb&amp;quot; Output: 3 Explanation: The answer is &amp;quot;abc&amp;quot;, with the length of 3.</description>
+Input: &amp;quot;abcabcbb&amp;quot; Output: 3 Explanation: The answer is &amp;quot;abc&amp;quot;, with the length of 3. Example 2:</description>
     </item>
     
     <item>
@@ -65,12 +65,12 @@ Input: &amp;quot;abcabcbb&amp;quot; Output: 3 Explanation: The answer is &amp;qu
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/study-algs/docs/practice/leetcode/4/</guid>
-      <description>寻找两个有序数组的中位数 题目 中文  给定两个大小为 m 和 n 的有序数组 nums1 和 nums2。
+      <description>寻找两个有序数组的中位数 题目 中文 给定两个大小为 m 和 n 的有序数组 nums1 和 nums2。
 请你找出这两个有序数组的中位数，并且要求算法的时间复杂度为 O (log (m + n))。
 你可以假设 nums1 和 nums2 不会同时为空。
 示例 1:
 nums1 = [1, 3] nums2 = [2] 则中位数是 2.0 示例 2:
-nums1 = [1, 2] nums2 = [3, 4] 则中位数是 (2 + 3)/2 = 2.5   English  There are two sorted arrays nums1 and nums2 of size m and n respectively.
+nums1 = [1, 2] nums2 = [3, 4] 则中位数是 (2 + 3)/2 = 2.5 English There are two sorted arrays nums1 and nums2 of size m and n respectively.
 Find the median of the two sorted arrays.</description>
     </item>
     
@@ -80,14 +80,14 @@ Find the median of the two sorted arrays.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/study-algs/docs/practice/leetcode/7/</guid>
-      <description>整数反转 题目 中文  给出一个 32 位的有符号整数，你需要将这个整数中每位上的数字进行反转。
+      <description>整数反转 题目 中文 给出一个 32 位的有符号整数，你需要将这个整数中每位上的数字进行反转。
 示例 1:
 输入: 123 输出: 321 示例 2:
 输入: -123 输出: -321 示例 3:
 输入: 120 输出: 21 注意:
 假设我们的环境只能存储得下 32 位的有符号整数，则其数值范围为
   \( [-2^31, 2^31-1]。 \)  请根据这个假设，如果反转后整数溢出那么就返回 0。
- English  Given a 32-bit signed integer, reverse digits of an integer.
+English Given a 32-bit signed integer, reverse digits of an integer.
 Example 1:
 Input: 123 Output: 321 Example 2:
 Input: -123 Output: -321 Example 3:
@@ -100,15 +100,16 @@ Input: 120 Output: 21 Note: Assume we are dealing with an environment which coul
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/study-algs/docs/practice/leetcode/9/</guid>
-      <description>回文数 题目 中文  判断一个整数是否是回文数。回文数是指正序（从左向右）和倒序（从右向左）读都是一样的整数。
+      <description>回文数 题目 中文 判断一个整数是否是回文数。回文数是指正序（从左向右）和倒序（从右向左）读都是一样的整数。
 示例 1:
 输入: 121 输出: true 示例 2:
 输入: -121 输出: false 解释: 从左向右读, 为 -121 。 从右向左读, 为 121- 。因此它不是一个回文数。 示例 3:
 输入: 10 输出: false 解释: 从右向左读, 为 01 。因此它不是一个回文数。 进阶:
 你能不将整数转为字符串来解决这个问题吗？
- English  Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward.
+English Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward.
 Example 1:
-Input: 121 Output: true Example 2:</description>
+Input: 121 Output: true Example 2:
+Input: -121 Output: false Explanation: From left to right, it reads -121.</description>
     </item>
     
     <item>
@@ -117,7 +118,7 @@ Input: 121 Output: true Example 2:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/study-algs/docs/practice/leetcode/10/</guid>
-      <description>正则表达式匹配 题目 中文  给你一个字符串 s 和一个字符规律 p，请你来实现一个支持 &amp;lsquo;.&amp;rsquo; 和 &amp;lsquo;*&amp;rsquo; 的正则表达式匹配。
+      <description>正则表达式匹配 题目 中文 给你一个字符串 s 和一个字符规律 p，请你来实现一个支持 &amp;lsquo;.&amp;rsquo; 和 &amp;lsquo;*&amp;rsquo; 的正则表达式匹配。
 &amp;lsquo;.&amp;rsquo; 匹配任意单个字符 &amp;lsquo;*&amp;rsquo; 匹配零个或多个前面的那一个元素 所谓匹配，是要涵盖 整个 字符串 s 的，而不是部分字符串。
 说明:
 s 可能为空，且只包含从 a-z 的小写字母。 p 可能为空，且只包含从 a-z 的小写字母，以及字符 . 和 *。 示例 1:
@@ -149,10 +150,10 @@ s 可能为空，且只包含从 a-z 的小写字母。 p 可能为空，且�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/study-algs/docs/practice/leetcode/54/</guid>
-      <description>模板 题目 中文  给定一个包含 m x n 个元素的矩阵（m 行，n 列），请按照顺时针螺旋顺序，返回矩阵中的所有元素。
+      <description>模板 题目 中文 给定一个包含 m x n 个元素的矩阵（m 行，n 列），请按照顺时针螺旋顺序，返回矩阵中的所有元素。
 示例 1:
 输入: [ [ 1, 2, 3 ], [ 4, 5, 6 ], [ 7, 8, 9 ] ] 输出: [1,2,3,6,9,8,7,4,5] 示例 2:
-输入: [ [1, 2, 3, 4], [5, 6, 7, 8], [9,10,11,12] ] 输出: [1,2,3,4,8,12,11,10,9,5,6,7]   English  Given a matrix of m x n elements (m rows, n columns), return all elements of the matrix in spiral order.</description>
+输入: [ [1, 2, 3, 4], [5, 6, 7, 8], [9,10,11,12] ] 输出: [1,2,3,4,8,12,11,10,9,5,6,7] English Given a matrix of m x n elements (m rows, n columns), return all elements of the matrix in spiral order.</description>
     </item>
     
     <item>
@@ -161,13 +162,13 @@ s 可能为空，且只包含从 a-z 的小写字母。 p 可能为空，且�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/study-algs/docs/practice/leetcode/110/</guid>
-      <description>模板 题目 中文  给定一个二叉树，判断它是否是高度平衡的二叉树。
+      <description>模板 题目 中文 给定一个二叉树，判断它是否是高度平衡的二叉树。
 本题中，一棵高度平衡二叉树定义为：
 一个二叉树每个节点 的左右两个子树的高度差的绝对值不超过 1。
 示例 1:
 给定二叉树 [3,9,20,null,null,15,7] 3 / \ 9 20 / \ 15 7 返回 true 。
 示例 2:
-给定二叉树 [1,2,2,3,3,null,null,4,4] 1 / \ 2 2 / \ 3 3 / \ 4 4 返回 false 。   English  Given a binary tree, determine if it is height-balanced.
+给定二叉树 [1,2,2,3,3,null,null,4,4] 1 / \ 2 2 / \ 3 3 / \ 4 4 返回 false 。 English Given a binary tree, determine if it is height-balanced.
 For this problem, a height-balanced binary tree is defined as:
 a binary tree in which the left and right subtrees of every node differ in height by no more than 1.</description>
     </item>
