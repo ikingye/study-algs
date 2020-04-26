@@ -9,5 +9,25 @@
 	<atom:link href="https://ikingye.github.io/study-algs/docs/advanced/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>KMP</title>
+      <link>https://ikingye.github.io/study-algs/docs/advanced/kmp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/study-algs/docs/advanced/kmp/</guid>
+      <description>KMP KMP 是用来找字符串匹配的
+KMP 的时间复杂度是 O (m + n)
+参考  如何更好地理解和掌握 KMP 算法？ KMP 算法详解 Knuth-Morris-Pratt algorithm  KMP：花 48 小时看懂了 KMP，想让你在 48 分钟内看懂    </description>
+    </item>
+    
+    <item>
+      <title>raft</title>
+      <link>https://ikingye.github.io/study-algs/docs/advanced/raft/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/study-algs/docs/advanced/raft/</guid>
+      <description>raft 关注 baidu/braft </description>
+    </item>
+    
   </channel>
 </rss>

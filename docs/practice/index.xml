@@ -9,5 +9,17 @@
 	<atom:link href="https://ikingye.github.io/study-algs/docs/practice/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>常见算法题</title>
+      <link>https://ikingye.github.io/study-algs/docs/practice/common/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/study-algs/docs/practice/common/</guid>
+      <description>常见算法题 树 判断一棵树是否包含另一棵树的结构 使用树结构序列化的方法，将两棵树进行相同方式的序列化，然后利用 kmp 判断子串，则可以得到
+结果，时间复杂度为 O（m+n）
+这道题的可行性是：树结构的序列化和反序列化是一一对应的
+ </description>
+    </item>
+    
   </channel>
 </rss>

@@ -127,12 +127,66 @@ s 可能为空，且只包含从 a-z 的小写字母。 p 可能为空，且�
     </item>
     
     <item>
+      <title>常见算法题</title>
+      <link>https://ikingye.github.io/study-algs/docs/practice/common/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/study-algs/docs/practice/common/</guid>
+      <description>常见算法题 树 判断一棵树是否包含另一棵树的结构 使用树结构序列化的方法，将两棵树进行相同方式的序列化，然后利用 kmp 判断子串，则可以得到
+结果，时间复杂度为 O（m+n）
+这道题的可行性是：树结构的序列化和反序列化是一一对应的
+ </description>
+    </item>
+    
+    <item>
       <title>类型</title>
       <link>https://ikingye.github.io/study-algs/docs/basic/type/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/study-algs/docs/basic/type/</guid>
-      <description>类型 递归  迭代  动态规划  回溯法  分支限界法  贪心  背包 </description>
+      <description>算法类型 基本算法 递归  迭代  贪心 / 贪婪  动态规划  分治 分治算法是递归的典型应用
+ 回溯法 backtracking 回溯算法实际上一个类似枚举的搜索尝试过程，主要是在搜索尝试过程中寻找问题的解，当发现已不满足求解条件时，就 “回溯” 返回，尝试别的路径。
+回溯法简单来说就是按照深度优先的顺序，穷举所有可能性的算法， 但是回溯算法比暴力穷举法更高明的地方就是回溯算法可以随时判断当前状态是否符合问题的条件。 一旦不符合条件，那么就退回到上一个状态，省去了继续往下探索的时间。
+ 分支限界法 分支限界法是广度优先的一个经典例子
+ 其他 背包 </description>
+    </item>
+    
+    <item>
+      <title>KMP</title>
+      <link>https://ikingye.github.io/study-algs/docs/advanced/kmp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/study-algs/docs/advanced/kmp/</guid>
+      <description>KMP KMP 是用来找字符串匹配的
+KMP 的时间复杂度是 O (m + n)
+参考  如何更好地理解和掌握 KMP 算法？ KMP 算法详解 Knuth-Morris-Pratt algorithm  KMP：花 48 小时看懂了 KMP，想让你在 48 分钟内看懂    </description>
+    </item>
+    
+    <item>
+      <title>raft</title>
+      <link>https://ikingye.github.io/study-algs/docs/advanced/raft/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/study-algs/docs/advanced/raft/</guid>
+      <description>raft 关注 baidu/braft </description>
+    </item>
+    
+    <item>
+      <title>排序算法</title>
+      <link>https://ikingye.github.io/study-algs/docs/basic/sort/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/study-algs/docs/basic/sort/</guid>
+      <description>排序算法 </description>
+    </item>
+    
+    <item>
+      <title>概论</title>
+      <link>https://ikingye.github.io/study-algs/docs/basic/introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/study-algs/docs/basic/introduction/</guid>
+      <description>算法概论 </description>
     </item>
     
     <item>

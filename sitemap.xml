@@ -58,8 +58,7 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/study-algs/docs/practice/leetcode/</loc>
-    <lastmod>2020-04-16T22:36:08+08:00</lastmod>
+    <loc>https://ikingye.github.io/study-algs/docs/practice/common/</loc>
   </url>
   
   <url>
@@ -73,13 +72,34 @@
   </url>
   
   <url>
-    <loc>https://ikingye.github.io/study-algs/docs/practice/nowcoder/</loc>
+    <loc>https://ikingye.github.io/study-algs/docs/advanced/kmp/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/study-algs/docs/practice/leetcode/</loc>
     <lastmod>2020-04-16T22:36:08+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/study-algs/docs/advanced/raft/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/study-algs/docs/basic/sort/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/study-algs/docs/basic/introduction/</loc>
   </url>
   
   <url>
     <loc>https://ikingye.github.io/study-algs/docs/basic/recursive/</loc>
     <lastmod>2020-04-09T21:34:28+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ikingye.github.io/study-algs/docs/practice/nowcoder/</loc>
+    <lastmod>2020-04-16T22:36:08+08:00</lastmod>
   </url>
   
   <url>

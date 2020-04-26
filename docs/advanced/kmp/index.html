@@ -4,14 +4,16 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="教程 基础 labuladong/fucking-algorithm  手把手撕 LeetCode 题目，扒各种算法套路的裤子， not only how，but also why. English version supported! https://labuladong.gitbook.io/algo/
-donnemartin/interactive-coding-challenges  120&#43; interactive Python coding interview challenges (algorithms and data structures). Includes Anki flashcards.
- 进阶 "><meta property="og:title" content="教程" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://ikingye.github.io/study-algs/docs/tutorial/" />
+<meta name="description" content="KMP KMP 是用来找字符串匹配的
+KMP 的时间复杂度是 O (m &#43; n)
+参考  如何更好地理解和掌握 KMP 算法？ KMP 算法详解 Knuth-Morris-Pratt algorithm  KMP：花 48 小时看懂了 KMP，想让你在 48 分钟内看懂    "><meta property="og:title" content="KMP" />
+<meta property="og:description" content="KMP KMP 是用来找字符串匹配的
+KMP 的时间复杂度是 O (m &#43; n)
+参考  如何更好地理解和掌握 KMP 算法？ KMP 算法详解 Knuth-Morris-Pratt algorithm  KMP：花 48 小时看懂了 KMP，想让你在 48 分钟内看懂    " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ikingye.github.io/study-algs/docs/advanced/kmp/" />
 
-<title>教程 | 算法学习笔记</title>
+<title>KMP | 算法学习笔记</title>
 <link rel="icon" href="/study-algs/favicon.png" type="image/x-icon">
 
 
@@ -20,7 +22,6 @@ donnemartin/interactive-coding-challenges  120&#43; interactive Python coding in
 
 <script defer src="/study-algs/en.search.min.06845d0b36af63256ea299c3fdcccb56a192442ab534fa0fcdc4876a371fb0a9.js" integrity="sha256-BoRdCzavYyVuopnD/czLVqGSRCq1NPoPzcSHajcfsKk="></script>
 
-<link rel="alternate" type="application/rss+xml" href="https://ikingye.github.io/study-algs/docs/tutorial/index.xml" title="算法学习笔记" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -178,7 +179,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
 
   
-  <a href="/study-algs/docs/advanced/kmp/" class="">KMP</a>
+  <a href="/study-algs/docs/advanced/kmp/" class="active">KMP</a>
   
 
 </li>
@@ -296,7 +297,7 @@ https://github.com/alex-shpak/hugo-book
     
 
   
-  <a href="/study-algs/docs/tutorial/" class="active">教程</a>
+  <a href="/study-algs/docs/tutorial/" class="">教程</a>
   
 
 
@@ -359,7 +360,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/study-algs/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>教程</strong>
+  <strong>KMP</strong>
 
   <label for="toc-control">
     <img src="/study-algs/svg/toc.svg" class="book-icon" alt="Table of Contents" />
@@ -373,15 +374,9 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#教程">教程</a>
+    <li><a href="#kmp">KMP</a>
       <ul>
-        <li><a href="#基础">基础</a>
-          <ul>
-            <li><a href="#labuladongfucking-algorithmhttpsgithubcomlabuladongfucking-algorithm-httpsimgshieldsiogithubstarslabuladongfucking-algorithmsvg"><a href="https://github.com/labuladong/fucking-algorithm">labuladong/fucking-algorithm</a> <img src="https://img.shields.io/github/stars/labuladong/fucking-algorithm.svg" alt=""></a></li>
-            <li><a href="#donnemartininteractive-coding-challengeshttpsgithubcomdonnemartininteractive-coding-challenges-httpsimgshieldsiogithubstarslabuladongfucking-algorithmsvg"><a href="https://github.com/donnemartin/interactive-coding-challenges">donnemartin/interactive-coding-challenges</a> <img src="https://img.shields.io/github/stars/labuladong/fucking-algorithm.svg" alt=""></a></li>
-          </ul>
-        </li>
-        <li><a href="#进阶">进阶</a></li>
+        <li><a href="#参考">参考</a></li>
       </ul>
     </li>
   </ul>
@@ -395,16 +390,19 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="教程">教程</h1>
-<h2 id="基础">基础</h2>
-<h3 id="labuladongfucking-algorithmhttpsgithubcomlabuladongfucking-algorithm-httpsimgshieldsiogithubstarslabuladongfucking-algorithmsvg"><a href="https://github.com/labuladong/fucking-algorithm">labuladong/fucking-algorithm</a> <img src="https://img.shields.io/github/stars/labuladong/fucking-algorithm.svg" alt="" /></h3>
-<p>手把手撕 LeetCode 题目，扒各种算法套路的裤子，
-not only how，but also why. English version supported!
-<a href="https://labuladong.gitbook.io/algo/">https://labuladong.gitbook.io/algo/</a></p>
-<h3 id="donnemartininteractive-coding-challengeshttpsgithubcomdonnemartininteractive-coding-challenges-httpsimgshieldsiogithubstarslabuladongfucking-algorithmsvg"><a href="https://github.com/donnemartin/interactive-coding-challenges">donnemartin/interactive-coding-challenges</a> <img src="https://img.shields.io/github/stars/labuladong/fucking-algorithm.svg" alt="" /></h3>
-<p>120+ interactive Python coding interview challenges (algorithms and data structures). Includes Anki flashcards.</p>
-<hr>
-<h2 id="进阶">进阶</h2>
+  <article class="markdown"><h1 id="kmp">KMP</h1>
+<p>KMP 是用来找字符串匹配的</p>
+<p>KMP 的时间复杂度是 O (m + n)</p>
+<h2 id="参考">参考</h2>
+<ul>
+<li><a href="https://www.zhihu.com/question/21923021">如何更好地理解和掌握 KMP 算法？</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/83334559">KMP 算法详解</a></li>
+<li><a href="https://www.inf.hs-flensburg.de/lang/algorithmen/pattern/kmpen.htm">Knuth-Morris-Pratt algorithm</a>
+<ul>
+<li><a href="https://zhuanlan.zhihu.com/p/112861530">KMP：花 48 小时看懂了 KMP，想让你在 48 分钟内看懂</a></li>
+</ul>
+</li>
+</ul>
 </article>
  
       
@@ -414,14 +412,6 @@ not only how，but also why. English version supported!
   <div class="flex justify-between">
 
 
-
-  <div>
-    
-    <a class="flex align-center" href="https://github.com/ikingye/study-algs/commit/05936e78ca4bf7e19010bb137db57a93eba4f57d" title='Last modified by yewang | 2020-04-17' target="_blank" rel="noopener">
-      <img src="/study-algs/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>2020-04-17</span>
-    </a>
-  </div>
 
 
 
@@ -454,15 +444,9 @@ not only how，but also why. English version supported!
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#教程">教程</a>
+    <li><a href="#kmp">KMP</a>
       <ul>
-        <li><a href="#基础">基础</a>
-          <ul>
-            <li><a href="#labuladongfucking-algorithmhttpsgithubcomlabuladongfucking-algorithm-httpsimgshieldsiogithubstarslabuladongfucking-algorithmsvg"><a href="https://github.com/labuladong/fucking-algorithm">labuladong/fucking-algorithm</a> <img src="https://img.shields.io/github/stars/labuladong/fucking-algorithm.svg" alt=""></a></li>
-            <li><a href="#donnemartininteractive-coding-challengeshttpsgithubcomdonnemartininteractive-coding-challenges-httpsimgshieldsiogithubstarslabuladongfucking-algorithmsvg"><a href="https://github.com/donnemartin/interactive-coding-challenges">donnemartin/interactive-coding-challenges</a> <img src="https://img.shields.io/github/stars/labuladong/fucking-algorithm.svg" alt=""></a></li>
-          </ul>
-        </li>
-        <li><a href="#进阶">进阶</a></li>
+        <li><a href="#参考">参考</a></li>
       </ul>
     </li>
   </ul>
