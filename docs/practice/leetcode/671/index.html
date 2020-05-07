@@ -4,27 +4,19 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="模板 题目 中文 给定一个二叉树，判断它是否是高度平衡的二叉树。
-本题中，一棵高度平衡二叉树定义为：
-一个二叉树每个节点 的左右两个子树的高度差的绝对值不超过 1。
+<meta name="description" content="模板 题目 中文 给定一个非空特殊的二叉树，每个节点都是正数，并且每个节点的子节点数量只能为 2 或 0。如果一个节点有两个子节点的话，那么这个节点的值不大于它的子节点的值。
+给出这样的一个二叉树，你需要输出所有节点中的第二小的值。如果第二小的值不存在的话，输出 -1 。
 示例 1:
-给定二叉树 [3,9,20,null,null,15,7] 3 / \ 9 20 / \ 15 7 返回 true 。
-示例 2:
-给定二叉树 [1,2,2,3,3,null,null,4,4] 1 / \ 2 2 / \ 3 3 / \ 4 4 返回 false 。 English Given a binary tree, determine if it is height-balanced.
-For this problem, a height-balanced binary tree is defined as:
-a binary tree in which the left and right subtrees of every node differ in height by no more than 1."><meta property="og:title" content="110. 平衡二叉树" />
-<meta property="og:description" content="模板 题目 中文 给定一个二叉树，判断它是否是高度平衡的二叉树。
-本题中，一棵高度平衡二叉树定义为：
-一个二叉树每个节点 的左右两个子树的高度差的绝对值不超过 1。
+输入: 2 / \ 2 5 / \ 5 7 输出: 5 说明: 最小的值是 2 ，第二小的值是 5 。 示例 2:
+输入: 2 / \ 2 2 输出: -1 说明: 最小的值是 2, 但是不存在第二小的值。 English Given a non-empty special binary tree consisting of nodes with the non-negative value, where each node in this tree has exactly two or zero sub-node. If the node has two sub-nodes, then this node&rsquo;s value is the smaller value among its two sub-nodes."><meta property="og:title" content="110. 平衡二叉树" />
+<meta property="og:description" content="模板 题目 中文 给定一个非空特殊的二叉树，每个节点都是正数，并且每个节点的子节点数量只能为 2 或 0。如果一个节点有两个子节点的话，那么这个节点的值不大于它的子节点的值。
+给出这样的一个二叉树，你需要输出所有节点中的第二小的值。如果第二小的值不存在的话，输出 -1 。
 示例 1:
-给定二叉树 [3,9,20,null,null,15,7] 3 / \ 9 20 / \ 15 7 返回 true 。
-示例 2:
-给定二叉树 [1,2,2,3,3,null,null,4,4] 1 / \ 2 2 / \ 3 3 / \ 4 4 返回 false 。 English Given a binary tree, determine if it is height-balanced.
-For this problem, a height-balanced binary tree is defined as:
-a binary tree in which the left and right subtrees of every node differ in height by no more than 1." />
+输入: 2 / \ 2 5 / \ 5 7 输出: 5 说明: 最小的值是 2 ，第二小的值是 5 。 示例 2:
+输入: 2 / \ 2 2 输出: -1 说明: 最小的值是 2, 但是不存在第二小的值。 English Given a non-empty special binary tree consisting of nodes with the non-negative value, where each node in this tree has exactly two or zero sub-node. If the node has two sub-nodes, then this node&rsquo;s value is the smaller value among its two sub-nodes." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://ikingye.github.io/study-algs/docs/practice/leetcode/110/" />
-<meta property="article:modified_time" content="2020-04-09T21:34:28+08:00" />
+<meta property="og:url" content="https://ikingye.github.io/study-algs/docs/practice/leetcode/671/" />
+
 <title>110. 平衡二叉树 | 算法学习笔记</title>
 <link rel="icon" href="/study-algs/favicon.png" type="image/x-icon">
 
@@ -349,7 +341,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
 
   
-  <a href="/study-algs/docs/practice/leetcode/110/" class="active">110. 平衡二叉树</a>
+  <a href="/study-algs/docs/practice/leetcode/110/" class="">110. 平衡二叉树</a>
   
 
 </li>
@@ -359,7 +351,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
 
   
-  <a href="/study-algs/docs/practice/leetcode/671/" class="">110. 平衡二叉树</a>
+  <a href="/study-algs/docs/practice/leetcode/671/" class="active">110. 平衡二叉树</a>
   
 
 </li>
@@ -493,62 +485,56 @@ https://github.com/alex-shpak/hugo-book
       
       
   <article class="markdown"><h1 id="模板">模板</h1>
-<h2 id="题目httpsleetcode-cncomproblemsbalanced-binary-tree"><a href="https://leetcode-cn.com/problems/balanced-binary-tree/">题目</a></h2>
+<h2 id="题目httpsleetcode-cncomproblemssecond-minimum-node-in-a-binary-tree"><a href="https://leetcode-cn.com/problems/second-minimum-node-in-a-binary-tree/">题目</a></h2>
 
 
 
 
 <div class="book-tabs"><input type="radio" class="hidden" name="tabs-leetcode-problem" id="tabs-leetcode-problem-0" checked="checked" />
   <label for="tabs-leetcode-problem-0">中文</label>
-  <div class="book-tabs-content markdown-inner"><p>给定一个二叉树，判断它是否是高度平衡的二叉树。</p>
-<p>本题中，一棵高度平衡二叉树定义为：</p>
-<p>一个二叉树每个节点   的左右两个子树的高度差的绝对值不超过 1。</p>
+  <div class="book-tabs-content markdown-inner"><p>给定一个非空特殊的二叉树，每个节点都是正数，并且每个节点的子节点数量只能为  2  或  0。如果一个节点有两个子节点的话，那么这个节点的值不大于它的子节点的值。</p>
+<p>给出这样的一个二叉树，你需要输出所有节点中的第二小的值。如果第二小的值不存在的话，输出 -1 。</p>
 <p>示例 1:</p>
-<pre><code>给定二叉树 [3,9,20,null,null,15,7]
-
-    3
+<pre><code>输入:
+    2
    / \
-  9  20
-    /  \
-   15   7
-</code></pre><p>返回 true 。</p>
-<p>示例 2:</p>
-<pre><code>给定二叉树 [1,2,2,3,3,null,null,4,4]
+  2   5
+     / \
+    5   7
 
-       1
-      / \
-     2   2
-    / \
-   3   3
-  / \
- 4   4
-返回 false 。
+输出: 5
+说明: 最小的值是 2 ，第二小的值是 5 。
+</code></pre><p>示例 2:</p>
+<pre><code>输入:
+    2
+   / \
+  2   2
+
+输出: -1
+说明: 最小的值是 2, 但是不存在第二小的值。
 </code></pre></div><input type="radio" class="hidden" name="tabs-leetcode-problem" id="tabs-leetcode-problem-1"  />
   <label for="tabs-leetcode-problem-1">English</label>
-  <div class="book-tabs-content markdown-inner"><p>Given a binary tree, determine if it is height-balanced.</p>
-<p>For this problem, a height-balanced binary tree is defined as:</p>
-<p>a binary tree in which the left and right subtrees of every node differ in height by no more than 1.</p>
+  <div class="book-tabs-content markdown-inner"><p>Given a non-empty special binary tree consisting of nodes with the non-negative value, where each node in this tree has exactly two or zero sub-node. If the node has two sub-nodes, then this node&rsquo;s value is the smaller value among its two sub-nodes. More formally, the property root.val = min(root.left.val, root.right.val) always holds.</p>
+<p>Given such a binary tree, you need to output the second minimum value in the set made of all the nodes&rsquo; value in the whole tree.</p>
+<p>If no such second minimum value exists, output -1 instead.</p>
 <p>Example 1:</p>
-<pre><code>Given the following tree [3,9,20,null,null,15,7]:
-
-    3
+<pre><code>Input:
+    2
    / \
-  9  20
-    /  \
-   15   7
-</code></pre><p>Return true.</p>
-<p>Example 2:</p>
-<pre><code>Given the following tree [1,2,2,3,3,null,null,4,4]:
+  2   5
+     / \
+    5   7
 
-       1
-      / \
-     2   2
-    / \
-   3   3
-  / \
- 4   4
+Output: 5
+Explanation: The smallest value is 2, the second smallest value is 5.
+</code></pre><p>Example 2:</p>
+<pre><code>Input:
+    2
+   / \
+  2   2
 
-Return false.
+Output: -1
+Explanation: The smallest value is 2, but there isn't any second smallest value.
 </code></pre></div></div>
 
 <hr>
@@ -559,7 +545,8 @@ Return false.
 
 <div class="book-tabs"><input type="radio" class="hidden" name="tabs-leetcode-analysis" id="tabs-leetcode-analysis-0" checked="checked" />
   <label for="tabs-leetcode-analysis-0">基础</label>
-  <div class="book-tabs-content markdown-inner"></div><input type="radio" class="hidden" name="tabs-leetcode-analysis" id="tabs-leetcode-analysis-1"  />
+  <div class="book-tabs-content markdown-inner">root 肯定是最小的。
+那就维护一个大于 root 的最小值，遍历整棵树，如果这个值不存在，就返回 -1</div><input type="radio" class="hidden" name="tabs-leetcode-analysis" id="tabs-leetcode-analysis-1"  />
   <label for="tabs-leetcode-analysis-1">进阶</label>
   <div class="book-tabs-content markdown-inner"></div><input type="radio" class="hidden" name="tabs-leetcode-analysis" id="tabs-leetcode-analysis-2"  />
   <label for="tabs-leetcode-analysis-2">高阶</label>
@@ -600,19 +587,32 @@ Return false.
   <div class="book-tabs-content markdown-inner"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
 </code></pre></div></div><input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-9"  />
   <label for="tabs-leetcode-solution-9">Python3</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">isBalanced</span>(self, root: TreeNode) <span style="color:#f92672">-&gt;</span> bool:
-        <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>height(root) <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">0</span>
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Definition for a binary tree node.</span>
+<span style="color:#75715e"># class TreeNode:</span>
+<span style="color:#75715e">#     def __init__(self, x):</span>
+<span style="color:#75715e">#         self.val = x</span>
+<span style="color:#75715e">#         self.left = None</span>
+<span style="color:#75715e">#         self.right = None</span>
 
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">height</span>(self, root: TreeNode) <span style="color:#f92672">-&gt;</span> int:
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">findSecondMinimumValue</span>(self, root: TreeNode) <span style="color:#f92672">-&gt;</span> int:
         <span style="color:#66d9ef">if</span> root <span style="color:#f92672">is</span> None:
-            <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>
-        lh <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>height(root<span style="color:#f92672">.</span>left)
-        rh <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>height(root<span style="color:#f92672">.</span>right)
-        <span style="color:#66d9ef">if</span> lh <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">and</span> rh <span style="color:#f92672">&gt;=</span><span style="color:#ae81ff">0</span> <span style="color:#f92672">and</span> abs(lh <span style="color:#f92672">-</span> rh) <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">1</span>:
-            <span style="color:#66d9ef">return</span> max(lh, rh) <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>
+        secondMin <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>getSecodeMin(root, root<span style="color:#f92672">.</span>val, float(<span style="color:#e6db74">&#39;inf&#39;</span>))
+        <span style="color:#66d9ef">if</span> secondMin <span style="color:#f92672">==</span> float(<span style="color:#e6db74">&#39;inf&#39;</span>):
+            <span style="color:#66d9ef">return</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>
+        <span style="color:#66d9ef">else</span>:
+            <span style="color:#66d9ef">return</span> secondMin
 
-        <span style="color:#66d9ef">return</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">getSecodeMin</span>(self, node: TreeNode, rootVal: int, secondMin: int) <span style="color:#f92672">-&gt;</span> int:
+        <span style="color:#66d9ef">if</span> node <span style="color:#f92672">is</span> None:
+            <span style="color:#66d9ef">return</span> secondMin
+
+        <span style="color:#66d9ef">if</span> node<span style="color:#f92672">.</span>val <span style="color:#f92672">!=</span> rootVal <span style="color:#f92672">and</span> node<span style="color:#f92672">.</span>val <span style="color:#f92672">&lt;</span> secondMin:
+            secondMin <span style="color:#f92672">=</span> node<span style="color:#f92672">.</span>val
+            <span style="color:#66d9ef">print</span>(secondMin)
+
+        <span style="color:#66d9ef">return</span> min(self<span style="color:#f92672">.</span>getSecodeMin(node<span style="color:#f92672">.</span>left, rootVal, secondMin), self<span style="color:#f92672">.</span>getSecodeMin(node<span style="color:#f92672">.</span>right, rootVal, secondMin))
 </code></pre></div></div><input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-10"  />
   <label for="tabs-leetcode-solution-10">Ruby</label>
   <div class="book-tabs-content markdown-inner"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">
@@ -636,14 +636,6 @@ Return false.
   <div class="flex justify-between">
 
 
-
-  <div>
-    
-    <a class="flex align-center" href="https://github.com/ikingye/study-algs/commit/4ded01c9d185a19dbd9ba69500b37b73f900b872" title='Last modified by yewang | 2020-04-09' target="_blank" rel="noopener">
-      <img src="/study-algs/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>2020-04-09</span>
-    </a>
-  </div>
 
 
 
