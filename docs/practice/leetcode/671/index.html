@@ -4,27 +4,27 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="模板 题目 中文 给定一个非空特殊的二叉树，每个节点都是正数，并且每个节点的子节点数量只能为 2 或 0。如果一个节点有两个子节点的话，那么这个节点的值不大于它的子节点的值。
+<meta name="description" content="二叉树中第二小的节点 题目 中文 给定一个非空特殊的二叉树，每个节点都是正数，并且每个节点的子节点数量只能为 2 或 0。如果一个节点有两个子节点的话，那么这个节点的值不大于它的子节点的值。
 给出这样的一个二叉树，你需要输出所有节点中的第二小的值。如果第二小的值不存在的话，输出 -1 。
 示例 1:
 输入: 2 / \ 2 5 / \ 5 7 输出: 5 说明: 最小的值是 2 ，第二小的值是 5 。 示例 2:
-输入: 2 / \ 2 2 输出: -1 说明: 最小的值是 2, 但是不存在第二小的值。 English Given a non-empty special binary tree consisting of nodes with the non-negative value, where each node in this tree has exactly two or zero sub-node. If the node has two sub-nodes, then this node&rsquo;s value is the smaller value among its two sub-nodes."><meta property="og:title" content="671. 平衡二叉树" />
-<meta property="og:description" content="模板 题目 中文 给定一个非空特殊的二叉树，每个节点都是正数，并且每个节点的子节点数量只能为 2 或 0。如果一个节点有两个子节点的话，那么这个节点的值不大于它的子节点的值。
+输入: 2 / \ 2 2 输出: -1 说明: 最小的值是 2, 但是不存在第二小的值。 English Given a non-empty special binary tree consisting of nodes with the non-negative value, where each node in this tree has exactly two or zero sub-node. If the node has two sub-nodes, then this node&rsquo;s value is the smaller value among its two sub-nodes."><meta property="og:title" content="671. 二叉树中第二小的节点" />
+<meta property="og:description" content="二叉树中第二小的节点 题目 中文 给定一个非空特殊的二叉树，每个节点都是正数，并且每个节点的子节点数量只能为 2 或 0。如果一个节点有两个子节点的话，那么这个节点的值不大于它的子节点的值。
 给出这样的一个二叉树，你需要输出所有节点中的第二小的值。如果第二小的值不存在的话，输出 -1 。
 示例 1:
 输入: 2 / \ 2 5 / \ 5 7 输出: 5 说明: 最小的值是 2 ，第二小的值是 5 。 示例 2:
 输入: 2 / \ 2 2 输出: -1 说明: 最小的值是 2, 但是不存在第二小的值。 English Given a non-empty special binary tree consisting of nodes with the non-negative value, where each node in this tree has exactly two or zero sub-node. If the node has two sub-nodes, then this node&rsquo;s value is the smaller value among its two sub-nodes." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ikingye.github.io/study-algs/docs/practice/leetcode/671/" />
-<meta property="article:modified_time" content="2020-05-07T15:47:30+08:00" />
-<title>671. 平衡二叉树 | 算法学习笔记</title>
+<meta property="article:modified_time" content="2020-05-07T15:50:52+08:00" />
+<title>671. 二叉树中第二小的节点 | 算法学习笔记</title>
 <link rel="icon" href="/study-algs/favicon.png" type="image/x-icon">
 
 
 <link rel="stylesheet" href="/study-algs/book.min.2b565af4d61986071164f1ead48c719f32bb138a148802dc3943b967fc4f20c6.css" integrity="sha256-K1Za9NYZhgcRZPHq1IxxnzK7E4oUiALcOUO5Z/xPIMY=">
 
 
-<script defer src="/study-algs/en.search.min.facfad62c666b40ebb35d406f40ef3e034867985b37e6ed34639578f4b67eec2.js" integrity="sha256-&#43;s&#43;tYsZmtA67NdQG9A7z4DSGeYWzfm7TRjlXj0tn7sI="></script>
+<script defer src="/study-algs/en.search.min.6ebc7d7b0ef7e7889a00d905fa0d878922935ea9c82170028233f561580ad595.js" integrity="sha256-brx9ew7354iaANkF&#43;g2HiSKTXqnIIXACgjP1YVgK1ZU="></script>
 
 <!--
 Made with Book Theme
@@ -331,7 +331,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
 
   
-  <a href="/study-algs/docs/practice/leetcode/54/" class="">54. 模板</a>
+  <a href="/study-algs/docs/practice/leetcode/54/" class="">54. 螺旋矩阵</a>
   
 
 </li>
@@ -351,7 +351,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
 
   
-  <a href="/study-algs/docs/practice/leetcode/671/" class="active">671. 平衡二叉树</a>
+  <a href="/study-algs/docs/practice/leetcode/671/" class="active">671. 二叉树中第二小的节点</a>
   
 
 </li>
@@ -470,7 +470,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/study-algs/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>671. 平衡二叉树</strong>
+  <strong>671. 二叉树中第二小的节点</strong>
 
   <label for="toc-control">
     <img src="/study-algs/svg/toc.svg" class="book-icon" alt="Table of Contents" />
@@ -484,7 +484,7 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="模板">模板</h1>
+  <article class="markdown"><h1 id="二叉树中第二小的节点">二叉树中第二小的节点</h1>
 <h2 id="题目httpsleetcode-cncomproblemssecond-minimum-node-in-a-binary-tree"><a href="https://leetcode-cn.com/problems/second-minimum-node-in-a-binary-tree/">题目</a></h2>
 
 
@@ -639,7 +639,7 @@ Explanation: The smallest value is 2, but there isn't any second smallest value.
 
   <div>
     
-    <a class="flex align-center" href="https://github.com/ikingye/study-algs/commit/8bf358e1f28892567c435ef3f75826cbd58650b3" title='Last modified by yewang | 2020-05-07' target="_blank" rel="noopener">
+    <a class="flex align-center" href="https://github.com/ikingye/study-algs/commit/21faffed5730d1e0f7261be50e0f360b4c3f84f3" title='Last modified by yewang | 2020-05-07' target="_blank" rel="noopener">
       <img src="/study-algs/svg/calendar.svg" class="book-icon" alt="Calendar" />
       <span>2020-05-07</span>
     </a>

@@ -199,12 +199,12 @@ KMP 的时间复杂度是 O (m + n)
     </item>
     
     <item>
-      <title>54. 模板</title>
+      <title>54. 螺旋矩阵</title>
       <link>https://ikingye.github.io/study-algs/docs/practice/leetcode/54/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/study-algs/docs/practice/leetcode/54/</guid>
-      <description>模板 题目 中文 给定一个包含 m x n 个元素的矩阵（m 行，n 列），请按照顺时针螺旋顺序，返回矩阵中的所有元素。
+      <description>螺旋矩阵 题目 中文 给定一个包含 m x n 个元素的矩阵（m 行，n 列），请按照顺时针螺旋顺序，返回矩阵中的所有元素。
 示例 1:
 输入: [ [ 1, 2, 3 ], [ 4, 5, 6 ], [ 7, 8, 9 ] ] 输出: [1,2,3,6,9,8,7,4,5] 示例 2:
 输入: [ [1, 2, 3, 4], [5, 6, 7, 8], [9,10,11,12] ] 输出: [1,2,3,4,8,12,11,10,9,5,6,7] English Given a matrix of m x n elements (m rows, n columns), return all elements of the matrix in spiral order.</description>
@@ -216,7 +216,7 @@ KMP 的时间复杂度是 O (m + n)
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/study-algs/docs/practice/leetcode/110/</guid>
-      <description>模板 题目 中文 给定一个二叉树，判断它是否是高度平衡的二叉树。
+      <description>平衡二叉树 题目 中文 给定一个二叉树，判断它是否是高度平衡的二叉树。
 本题中，一棵高度平衡二叉树定义为：
 一个二叉树每个节点 的左右两个子树的高度差的绝对值不超过 1。
 示例 1:
@@ -228,12 +228,12 @@ a binary tree in which the left and right subtrees of every node differ in heigh
     </item>
     
     <item>
-      <title>671. 平衡二叉树</title>
+      <title>671. 二叉树中第二小的节点</title>
       <link>https://ikingye.github.io/study-algs/docs/practice/leetcode/671/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/study-algs/docs/practice/leetcode/671/</guid>
-      <description>模板 题目 中文 给定一个非空特殊的二叉树，每个节点都是正数，并且每个节点的子节点数量只能为 2 或 0。如果一个节点有两个子节点的话，那么这个节点的值不大于它的子节点的值。
+      <description>二叉树中第二小的节点 题目 中文 给定一个非空特殊的二叉树，每个节点都是正数，并且每个节点的子节点数量只能为 2 或 0。如果一个节点有两个子节点的话，那么这个节点的值不大于它的子节点的值。
 给出这样的一个二叉树，你需要输出所有节点中的第二小的值。如果第二小的值不存在的话，输出 -1 。
 示例 1:
 输入: 2 / \ 2 5 / \ 5 7 输出: 5 说明: 最小的值是 2 ，第二小的值是 5 。 示例 2:
