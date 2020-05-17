@@ -127,6 +127,21 @@ s 可能为空，且只包含从 a-z 的小写字母。 p 可能为空，且�
     </item>
     
     <item>
+      <title>LRU Cache</title>
+      <link>https://ikingye.github.io/study-algs/docs/practice/design/lru/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/study-algs/docs/practice/design/lru/</guid>
+      <description>LRU Cache LRU 全称是 Least Recently Used，即最近最久未使用的意思。
+LRU 算法的设计原则是：如果一个数据在最近一段时间没有被访问到，那么在将来它被访问的可能性也很小。 也就是说，当限定的空间已存满数据时，应当把最久没有被访问到的数据淘汰。
+LRU-K LRU-K 中的 K 代表最近使用的次数，因此 LRU 可以认为是 LRU-1。
+LRU-K 的主要目的是为了解决 LRU 算法 “缓存污染” 的问题， 其核心思想是将 “最近使用过 1 次” 的判断标准扩展为 “最近使用过 K 次”。
+Redis 的 LRU 实现 如果按照 HashMap 和双向链表实现，需要额外的存储存放 next 和 prev 指针，牺牲比较大的存储空间，显然是不划算的。所以 Redis 采用了一个近似的做法，就是随机取出若干个 key，然后按照访问时间排序后，淘汰掉最不经常使用的，具体分析如下：
+为了支持 LRU，Redis 2.8.19 中使用了一个全局的 LRU 时钟，server.lruclock，定义如下，
+#define REDIS_LRU_BITS 24 unsigned lruclock:REDIS_LRU_BITS; /* Clock for LRU eviction */ 默认的 LRU 时钟的分辨率是 1 秒，可以通过改变 REDIS_LRU_CLOCK_RESOLUTION 宏的值来改变，Redis 会在 serverCron() 中调用 updateLRUClock 定期的更新 LRU 时钟，更新的频率和 hz 参数有关，默认为 100ms 一次，如下，</description>
+    </item>
+    
+    <item>
       <title>常见算法题</title>
       <link>https://ikingye.github.io/study-algs/docs/practice/common/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -169,6 +184,21 @@ KMP 的时间复杂度是 O (m + n)
       
       <guid>https://ikingye.github.io/study-algs/docs/advanced/raft/</guid>
       <description>raft 关注 baidu/braft  </description>
+    </item>
+    
+    <item>
+      <title>布隆过滤器</title>
+      <link>https://ikingye.github.io/study-algs/docs/advanced/bloom-filter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/study-algs/docs/advanced/bloom-filter/</guid>
+      <description>布隆过滤器 布隆过滤器（Bloom Filter）是 1970 年由布隆提出的。 它实际上是一个很长的二进制向量和一系列随机映射函数。 布隆过滤器可以用于检索一个元素是否在一个集合中。 它的优点是空间效率和查询时间都比一般的算法要好的多， 缺点是有一定的误识别率和删除困难。
+解决： 网页 URL 去重、垃圾邮件识别、大集合中重复元素的判断和缓存穿透等问题
+本质上布隆过滤器是一种数据结构，比较巧妙的概率型数据结构（probabilistic data structure），特点是高效地插入和查询，可以用来告诉你 某样东西一定不存在或者可能存在。
+相比于传统的 List、Set、Map 等数据结构，它更高效、占用空间更少，但是缺点是其返回的结果是概率性的，而不是确切的。
+HashMap 的问题   例如存储容量占比高，考虑到负载因子的存在，通常空间是不能被用满的，而一旦你的值很多例如上亿的时候，那 HashMap 占据的内存大小就变得很可观了。
+  还比如说你的数据集存储在远程服务器上，本地服务接受输入，而数据集非常大不可能一次性读进内存构建 HashMap 的时候，也会存在问题。
+  </description>
     </item>
     
     <item>
@@ -225,6 +255,20 @@ KMP 的时间复杂度是 O (m + n)
 给定二叉树 [1,2,2,3,3,null,null,4,4] 1 / \ 2 2 / \ 3 3 / \ 4 4 返回 false 。 English Given a binary tree, determine if it is height-balanced.
 For this problem, a height-balanced binary tree is defined as:
 a binary tree in which the left and right subtrees of every node differ in height by no more than 1.</description>
+    </item>
+    
+    <item>
+      <title>146. LRU 缓存机制</title>
+      <link>https://ikingye.github.io/study-algs/docs/practice/leetcode/146/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/study-algs/docs/practice/leetcode/146/</guid>
+      <description>LRU 缓存机制 题目 中文 运用你所掌握的数据结构，设计和实现一个 LRU (最近最少使用) 缓存机制。它应该支持以下操作： 获取数据 get 和 写入数据 put 。
+获取数据 get(key) - 如果密钥 (key) 存在于缓存中，则获取密钥的值（总是正数），否则返回 -1。 写入数据 put(key, value) - 如果密钥已经存在，则变更其数据值；如果密钥不存在，则插入该组「密钥 / 数据值」。当缓存容量达到上限时，它应该在写入新数据之前删除最久未使用的数据值，从而为新的数据值留出空间。
+进阶:
+你是否可以在 O(1) 时间复杂度内完成这两种操作？
+示例:
+LRUCache cache = new LRUCache( 2 /* 缓存容量 */ ); cache.put(1, 1); cache.put(2, 2); cache.get(1); // 返回 1 cache.put(3, 3); // 该操作会使得密钥 2 作废 cache.get(2); // 返回 -1 (未找到) cache.put(4, 4); // 该操作会使得密钥 1 作废 cache.get(1); // 返回 -1 (未找到) cache.</description>
     </item>
     
     <item>

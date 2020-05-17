@@ -2,15 +2,26 @@
 <html lang="en">
 
 <head>
-	<meta name="generator" content="Hugo 0.65.3" />
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content=""><meta property="og:title" content="首页" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://ikingye.github.io/study-algs/" />
+<meta name="description" content="布隆过滤器 布隆过滤器（Bloom Filter）是 1970 年由布隆提出的。 它实际上是一个很长的二进制向量和一系列随机映射函数。 布隆过滤器可以用于检索一个元素是否在一个集合中。 它的优点是空间效率和查询时间都比一般的算法要好的多， 缺点是有一定的误识别率和删除困难。
+解决： 网页 URL 去重、垃圾邮件识别、大集合中重复元素的判断和缓存穿透等问题
+本质上布隆过滤器是一种数据结构，比较巧妙的概率型数据结构（probabilistic data structure），特点是高效地插入和查询，可以用来告诉你 某样东西一定不存在或者可能存在。
+相比于传统的 List、Set、Map 等数据结构，它更高效、占用空间更少，但是缺点是其返回的结果是概率性的，而不是确切的。
+HashMap 的问题   例如存储容量占比高，考虑到负载因子的存在，通常空间是不能被用满的，而一旦你的值很多例如上亿的时候，那 HashMap 占据的内存大小就变得很可观了。
+  还比如说你的数据集存储在远程服务器上，本地服务接受输入，而数据集非常大不可能一次性读进内存构建 HashMap 的时候，也会存在问题。
+  "><meta property="og:title" content="布隆过滤器" />
+<meta property="og:description" content="布隆过滤器 布隆过滤器（Bloom Filter）是 1970 年由布隆提出的。 它实际上是一个很长的二进制向量和一系列随机映射函数。 布隆过滤器可以用于检索一个元素是否在一个集合中。 它的优点是空间效率和查询时间都比一般的算法要好的多， 缺点是有一定的误识别率和删除困难。
+解决： 网页 URL 去重、垃圾邮件识别、大集合中重复元素的判断和缓存穿透等问题
+本质上布隆过滤器是一种数据结构，比较巧妙的概率型数据结构（probabilistic data structure），特点是高效地插入和查询，可以用来告诉你 某样东西一定不存在或者可能存在。
+相比于传统的 List、Set、Map 等数据结构，它更高效、占用空间更少，但是缺点是其返回的结果是概率性的，而不是确切的。
+HashMap 的问题   例如存储容量占比高，考虑到负载因子的存在，通常空间是不能被用满的，而一旦你的值很多例如上亿的时候，那 HashMap 占据的内存大小就变得很可观了。
+  还比如说你的数据集存储在远程服务器上，本地服务接受输入，而数据集非常大不可能一次性读进内存构建 HashMap 的时候，也会存在问题。
+  " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ikingye.github.io/study-algs/docs/advanced/bloom-filter/" />
 
-<title>首页 | 算法学习笔记</title>
+<title>布隆过滤器 | 算法学习笔记</title>
 <link rel="icon" href="/study-algs/favicon.png" type="image/x-icon">
 
 
@@ -19,7 +30,6 @@
 
 <script defer src="/study-algs/en.search.min.f28f77e6ab1fdd511db4b362ce8747a87346d26a1092088f3549af14672ed230.js" integrity="sha256-8o935qsf3VEdtLNizodHqHNG0moQkgiPNUmvFGcu0jA="></script>
 
-<link rel="alternate" type="application/rss+xml" href="https://ikingye.github.io/study-algs/index.xml" title="算法学习笔记" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -197,7 +207,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
 
   
-  <a href="/study-algs/docs/advanced/bloom-filter/" class="">布隆过滤器</a>
+  <a href="/study-algs/docs/advanced/bloom-filter/" class="active">布隆过滤器</a>
   
 
 </li>
@@ -391,7 +401,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/study-algs/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>首页</strong>
+  <strong>布隆过滤器</strong>
 
   <label for="toc-control">
     <img src="/study-algs/svg/toc.svg" class="book-icon" alt="Table of Contents" />
@@ -403,7 +413,15 @@ https://github.com/alex-shpak/hugo-book
     <input type="checkbox" class="hidden" id="toc-control" />
     <aside class="hidden clearfix">
       
-  <nav id="TableOfContents"></nav>
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#布隆过滤器httpswwwwikiwandcomzh-cne5b883e99a86e8bf87e6bba4e599a8"><a href="https://www.wikiwand.com/zh-cn/%E5%B8%83%E9%9A%86%E8%BF%87%E6%BB%A4%E5%99%A8">布隆过滤器</a></a>
+      <ul>
+        <li><a href="#hashmap-的问题">HashMap 的问题</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
 
 
     </aside>
@@ -413,7 +431,27 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"></article>
+  <article class="markdown"><h1 id="布隆过滤器httpswwwwikiwandcomzh-cne5b883e99a86e8bf87e6bba4e599a8"><a href="https://www.wikiwand.com/zh-cn/%E5%B8%83%E9%9A%86%E8%BF%87%E6%BB%A4%E5%99%A8">布隆过滤器</a></h1>
+<p>布隆过滤器（Bloom Filter）是 1970 年由布隆提出的。
+它实际上是一个<strong>很长的二进制向量</strong>和<strong>一系列随机映射函数</strong>。
+布隆过滤器可以用于检索一个元素是否在一个集合中。
+它的优点是<strong>空间效率</strong>和<strong>查询时间</strong>都比一般的算法要好的多，
+缺点是有一定的<strong>误识别率</strong>和<strong>删除困难</strong>。</p>
+<p>解决：
+网页 URL 去重、垃圾邮件识别、大集合中重复元素的判断和缓存穿透等问题</p>
+<p>本质上布隆过滤器是一种数据结构，比较巧妙的概率型数据结构（probabilistic data structure），特点是高效地插入和查询，可以用来告诉你
+某样东西<strong>一定不存在</strong>或者<strong>可能存在</strong>。</p>
+<p>相比于传统的 List、Set、Map 等数据结构，它更高效、占用空间更少，但是缺点是其返回的结果是概率性的，而不是确切的。</p>
+<h2 id="hashmap-的问题">HashMap 的问题</h2>
+<ul>
+<li>
+<p>例如存储容量占比高，考虑到负载因子的存在，通常空间是不能被用满的，而一旦你的值很多例如上亿的时候，那 HashMap 占据的内存大小就变得很可观了。</p>
+</li>
+<li>
+<p>还比如说你的数据集存储在远程服务器上，本地服务接受输入，而数据集非常大不可能<strong>一次性读进内存</strong>构建 HashMap 的时候，也会存在问题。</p>
+</li>
+</ul>
+</article>
  
       
 
@@ -422,14 +460,6 @@ https://github.com/alex-shpak/hugo-book
   <div class="flex justify-between">
 
 
-
-  <div>
-    
-    <a class="flex align-center" href="https://github.com/ikingye/study-algs/commit/833f506886e42afda9d38228e3a7be63b6d838fc" title='Last modified by yewang | 2020-02-29' target="_blank" rel="noopener">
-      <img src="/study-algs/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>2020-02-29</span>
-    </a>
-  </div>
 
 
 
@@ -441,6 +471,17 @@ https://github.com/alex-shpak/hugo-book
 
       
   
+  <div class="book-comments">
+<script src="https://utteranc.es/client.js"
+  repo="ikingye/study-algs"
+  issue-term="pathname"
+  theme="github-light"
+  crossorigin="anonymous"
+  async>
+</script>
+
+</div>
+  
  
 
       <label for="menu-control" class="hidden book-menu-overlay"></label>
@@ -449,7 +490,15 @@ https://github.com/alex-shpak/hugo-book
     
     <aside class="book-toc">
       
-  <nav id="TableOfContents"></nav>
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#布隆过滤器httpswwwwikiwandcomzh-cne5b883e99a86e8bf87e6bba4e599a8"><a href="https://www.wikiwand.com/zh-cn/%E5%B8%83%E9%9A%86%E8%BF%87%E6%BB%A4%E5%99%A8">布隆过滤器</a></a>
+      <ul>
+        <li><a href="#hashmap-的问题">HashMap 的问题</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
 
  
     </aside>

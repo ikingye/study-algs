@@ -4,20 +4,22 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="二叉树中第二小的节点 题目 中文 给定一个非空特殊的二叉树，每个节点都是正数，并且每个节点的子节点数量只能为 2 或 0。如果一个节点有两个子节点的话，那么这个节点的值不大于它的子节点的值。
-给出这样的一个二叉树，你需要输出所有节点中的第二小的值。如果第二小的值不存在的话，输出 -1 。
-示例 1:
-输入: 2 / \ 2 5 / \ 5 7 输出: 5 说明: 最小的值是 2 ，第二小的值是 5 。 示例 2:
-输入: 2 / \ 2 2 输出: -1 说明: 最小的值是 2, 但是不存在第二小的值。 English Given a non-empty special binary tree consisting of nodes with the non-negative value, where each node in this tree has exactly two or zero sub-node. If the node has two sub-nodes, then this node&rsquo;s value is the smaller value among its two sub-nodes."><meta property="og:title" content="671. 二叉树中第二小的节点" />
-<meta property="og:description" content="二叉树中第二小的节点 题目 中文 给定一个非空特殊的二叉树，每个节点都是正数，并且每个节点的子节点数量只能为 2 或 0。如果一个节点有两个子节点的话，那么这个节点的值不大于它的子节点的值。
-给出这样的一个二叉树，你需要输出所有节点中的第二小的值。如果第二小的值不存在的话，输出 -1 。
-示例 1:
-输入: 2 / \ 2 5 / \ 5 7 输出: 5 说明: 最小的值是 2 ，第二小的值是 5 。 示例 2:
-输入: 2 / \ 2 2 输出: -1 说明: 最小的值是 2, 但是不存在第二小的值。 English Given a non-empty special binary tree consisting of nodes with the non-negative value, where each node in this tree has exactly two or zero sub-node. If the node has two sub-nodes, then this node&rsquo;s value is the smaller value among its two sub-nodes." />
+<meta name="description" content="LRU 缓存机制 题目 中文 运用你所掌握的数据结构，设计和实现一个 LRU (最近最少使用) 缓存机制。它应该支持以下操作： 获取数据 get 和 写入数据 put 。
+获取数据 get(key) - 如果密钥 (key) 存在于缓存中，则获取密钥的值（总是正数），否则返回 -1。 写入数据 put(key, value) - 如果密钥已经存在，则变更其数据值；如果密钥不存在，则插入该组「密钥 / 数据值」。当缓存容量达到上限时，它应该在写入新数据之前删除最久未使用的数据值，从而为新的数据值留出空间。
+进阶:
+你是否可以在 O(1) 时间复杂度内完成这两种操作？
+示例:
+LRUCache cache = new LRUCache( 2 /* 缓存容量 */ ); cache.put(1, 1); cache.put(2, 2); cache.get(1); // 返回 1 cache.put(3, 3); // 该操作会使得密钥 2 作废 cache.get(2); // 返回 -1 (未找到) cache.put(4, 4); // 该操作会使得密钥 1 作废 cache.get(1); // 返回 -1 (未找到) cache."><meta property="og:title" content="146. LRU 缓存机制" />
+<meta property="og:description" content="LRU 缓存机制 题目 中文 运用你所掌握的数据结构，设计和实现一个 LRU (最近最少使用) 缓存机制。它应该支持以下操作： 获取数据 get 和 写入数据 put 。
+获取数据 get(key) - 如果密钥 (key) 存在于缓存中，则获取密钥的值（总是正数），否则返回 -1。 写入数据 put(key, value) - 如果密钥已经存在，则变更其数据值；如果密钥不存在，则插入该组「密钥 / 数据值」。当缓存容量达到上限时，它应该在写入新数据之前删除最久未使用的数据值，从而为新的数据值留出空间。
+进阶:
+你是否可以在 O(1) 时间复杂度内完成这两种操作？
+示例:
+LRUCache cache = new LRUCache( 2 /* 缓存容量 */ ); cache.put(1, 1); cache.put(2, 2); cache.get(1); // 返回 1 cache.put(3, 3); // 该操作会使得密钥 2 作废 cache.get(2); // 返回 -1 (未找到) cache.put(4, 4); // 该操作会使得密钥 1 作废 cache.get(1); // 返回 -1 (未找到) cache." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://ikingye.github.io/study-algs/docs/practice/leetcode/671/" />
-<meta property="article:modified_time" content="2020-05-11T21:58:17+08:00" />
-<title>671. 二叉树中第二小的节点 | 算法学习笔记</title>
+<meta property="og:url" content="https://ikingye.github.io/study-algs/docs/practice/leetcode/146/" />
+
+<title>146. LRU 缓存机制 | 算法学习笔记</title>
 <link rel="icon" href="/study-algs/favicon.png" type="image/x-icon">
 
 
@@ -384,7 +386,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
 
   
-  <a href="/study-algs/docs/practice/leetcode/146/" class="">146. LRU 缓存机制</a>
+  <a href="/study-algs/docs/practice/leetcode/146/" class="active">146. LRU 缓存机制</a>
   
 
 </li>
@@ -394,7 +396,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
 
   
-  <a href="/study-algs/docs/practice/leetcode/671/" class="active">671. 二叉树中第二小的节点</a>
+  <a href="/study-algs/docs/practice/leetcode/671/" class="">671. 二叉树中第二小的节点</a>
   
 
 </li>
@@ -513,7 +515,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/study-algs/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>671. 二叉树中第二小的节点</strong>
+  <strong>146. LRU 缓存机制</strong>
 
   <label for="toc-control">
     <img src="/study-algs/svg/toc.svg" class="book-icon" alt="Table of Contents" />
@@ -527,57 +529,52 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="二叉树中第二小的节点">二叉树中第二小的节点</h1>
-<h2 id="题目httpsleetcode-cncomproblemssecond-minimum-node-in-a-binary-tree"><a href="https://leetcode-cn.com/problems/second-minimum-node-in-a-binary-tree/">题目</a></h2>
+  <article class="markdown"><h1 id="lru-缓存机制">LRU 缓存机制</h1>
+<h2 id="题目httpsleetcode-cncomproblemslru-cache"><a href="https://leetcode-cn.com/problems/lru-cache">题目</a></h2>
 
 
 
 
 <div class="book-tabs"><input type="radio" class="hidden" name="tabs-leetcode-problem" id="tabs-leetcode-problem-0" checked="checked" />
   <label for="tabs-leetcode-problem-0">中文</label>
-  <div class="book-tabs-content markdown-inner"><p>给定一个非空特殊的二叉树，每个节点都是正数，并且每个节点的子节点数量只能为  2  或  0。如果一个节点有两个子节点的话，那么这个节点的值不大于它的子节点的值。</p>
-<p>给出这样的一个二叉树，你需要输出所有节点中的第二小的值。如果第二小的值不存在的话，输出 -1 。</p>
-<p>示例 1:</p>
-<pre><code>输入:
-    2
-   / \
-  2   5
-     / \
-    5   7
+  <div class="book-tabs-content markdown-inner"><p>运用你所掌握的数据结构，设计和实现一个 <a href="https://baike.baidu.com/item/LRU">LRU (最近最少使用)</a> 缓存机制。它应该支持以下操作： 获取数据 get 和 写入数据 put 。</p>
+<p>获取数据 get(key) - 如果密钥 (key) 存在于缓存中，则获取密钥的值（总是正数），否则返回 -1。
+写入数据 put(key, value) - 如果密钥已经存在，则变更其数据值；如果密钥不存在，则插入该组「密钥 / 数据值」。当缓存容量达到上限时，它应该在写入新数据之前删除最久未使用的数据值，从而为新的数据值留出空间。</p>
+<p>进阶:</p>
+<p>你是否可以在  <code>O(1)</code> 时间复杂度内完成这两种操作？</p>
+<p>示例:</p>
+<pre><code>LRUCache cache = new LRUCache( 2 /* 缓存容量 */ );
 
-输出: 5
-说明: 最小的值是 2 ，第二小的值是 5  。
-</code></pre><p>示例 2:</p>
-<pre><code>输入:
-    2
-   / \
-  2   2
-
-输出: -1
-说明: 最小的值是 2, 但是不存在第二小的值。
+cache.put(1, 1);
+cache.put(2, 2);
+cache.get(1);       // 返回  1
+cache.put(3, 3);    // 该操作会使得密钥 2 作废
+cache.get(2);       // 返回 -1 (未找到)
+cache.put(4, 4);    // 该操作会使得密钥 1 作废
+cache.get(1);       // 返回 -1 (未找到)
+cache.get(3);       // 返回  3
+cache.get(4);       // 返回  4
 </code></pre></div><input type="radio" class="hidden" name="tabs-leetcode-problem" id="tabs-leetcode-problem-1"  />
   <label for="tabs-leetcode-problem-1">English</label>
-  <div class="book-tabs-content markdown-inner"><p>Given a non-empty special binary tree consisting of nodes with the non-negative value, where each node in this tree has exactly two or zero sub-node. If the node has two sub-nodes, then this node&rsquo;s value is the smaller value among its two sub-nodes. More formally, the property root.val = min(root.left.val, root.right.val) always holds.</p>
-<p>Given such a binary tree, you need to output the second minimum value in the set made of all the nodes&rsquo; value in the whole tree.</p>
-<p>If no such second minimum value exists, output -1 instead.</p>
-<p>Example 1:</p>
-<pre><code>Input:
-    2
-   / \
-  2   5
-     / \
-    5   7
+  <div class="book-tabs-content markdown-inner"><p>Design and implement a data structure for <a href="https://en.wikipedia.org/wiki/Cache_replacement_policies#LRU">Least Recently Used (LRU)</a> cache. It should support the following operations: get and put.</p>
+<p>get(key) - Get the value (will always be positive) of the key if the key exists in the cache, otherwise return -1.
+put(key, value) - Set or insert the value if the key is not already present. When the cache reached its capacity, it should invalidate the least recently used item before inserting a new item.</p>
+<p>The cache is initialized with a positive capacity.</p>
+<p>Follow up:
+Could you do both operations in O(1) time complexity?</p>
+<p>Example:</p>
+<pre><code>LRUCache cache = new LRUCache( 2 /* capacity */ );
 
-Output: 5
-Explanation: The smallest value is 2, the second smallest value is 5.
-</code></pre><p>Example 2:</p>
-<pre><code>Input:
-    2
-   / \
-  2   2
+cache.put(1, 1);
+cache.put(2, 2);
+cache.get(1);       // returns 1
+cache.put(3, 3);    // evicts key 2
+cache.get(2);       // returns -1 (not found)
+cache.put(4, 4);    // evicts key 1
+cache.get(1);       // returns -1 (not found)
+cache.get(3);       // returns 3
+cache.get(4);       // returns 4
 
-Output: -1
-Explanation: The smallest value is 2, but there isn't any second smallest value.
 </code></pre></div></div>
 
 <hr>
@@ -588,8 +585,7 @@ Explanation: The smallest value is 2, but there isn't any second smallest value.
 
 <div class="book-tabs"><input type="radio" class="hidden" name="tabs-leetcode-analysis" id="tabs-leetcode-analysis-0" checked="checked" />
   <label for="tabs-leetcode-analysis-0">基础</label>
-  <div class="book-tabs-content markdown-inner">root 肯定是最小的。
-那就维护一个大于 root 的最小值，遍历整棵树，如果这个值不存在，就返回 -1</div><input type="radio" class="hidden" name="tabs-leetcode-analysis" id="tabs-leetcode-analysis-1"  />
+  <div class="book-tabs-content markdown-inner"></div><input type="radio" class="hidden" name="tabs-leetcode-analysis" id="tabs-leetcode-analysis-1"  />
   <label for="tabs-leetcode-analysis-1">进阶</label>
   <div class="book-tabs-content markdown-inner"></div><input type="radio" class="hidden" name="tabs-leetcode-analysis" id="tabs-leetcode-analysis-2"  />
   <label for="tabs-leetcode-analysis-2">高阶</label>
@@ -630,32 +626,72 @@ Explanation: The smallest value is 2, but there isn't any second smallest value.
   <div class="book-tabs-content markdown-inner"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
 </code></pre></div></div><input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-9"  />
   <label for="tabs-leetcode-solution-9">Python3</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Definition for a binary tree node.</span>
-<span style="color:#75715e"># class TreeNode:</span>
-<span style="color:#75715e">#     def __init__(self, x):</span>
-<span style="color:#75715e">#         self.val = x</span>
-<span style="color:#75715e">#         self.left = None</span>
-<span style="color:#75715e">#         self.right = None</span>
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">DLinkedNode</span>:
+    <span style="color:#66d9ef">def</span> __init__(self):
+        self<span style="color:#f92672">.</span>key <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+        self<span style="color:#f92672">.</span>val <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+        self<span style="color:#f92672">.</span>pre <span style="color:#f92672">=</span> None
+        self<span style="color:#f92672">.</span>next <span style="color:#f92672">=</span> None
 
-<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">findSecondMinimumValue</span>(self, root: TreeNode) <span style="color:#f92672">-&gt;</span> int:
-        <span style="color:#66d9ef">if</span> root <span style="color:#f92672">is</span> None:
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">LRUCache</span>:
+
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_add</span>(self, node: DLinkedNode):
+        node<span style="color:#f92672">.</span>next <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>head<span style="color:#f92672">.</span>next
+        node<span style="color:#f92672">.</span>pre <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>head
+        self<span style="color:#f92672">.</span>head<span style="color:#f92672">.</span>next<span style="color:#f92672">.</span>pre <span style="color:#f92672">=</span> node
+        self<span style="color:#f92672">.</span>head<span style="color:#f92672">.</span>next <span style="color:#f92672">=</span> node
+
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_remove</span>(self, node: DLinkedNode):
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> node <span style="color:#f92672">or</span> <span style="color:#f92672">not</span> node<span style="color:#f92672">.</span>pre <span style="color:#f92672">or</span> <span style="color:#f92672">not</span> node<span style="color:#f92672">.</span>next:
+            <span style="color:#66d9ef">return</span>
+        node<span style="color:#f92672">.</span>pre<span style="color:#f92672">.</span>next <span style="color:#f92672">=</span> node<span style="color:#f92672">.</span>next
+        node<span style="color:#f92672">.</span>next<span style="color:#f92672">.</span>pre <span style="color:#f92672">=</span> node<span style="color:#f92672">.</span>pre
+
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_move_to_head</span>(self, node: DLinkedNode):
+        self<span style="color:#f92672">.</span>_remove(node)
+        self<span style="color:#f92672">.</span>_add(node)
+
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_pop_tail</span>(self) <span style="color:#f92672">-&gt;</span> DLinkedNode:
+        <span style="color:#66d9ef">if</span> self<span style="color:#f92672">.</span>size <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+            <span style="color:#66d9ef">return</span> None
+
+        node <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>tail<span style="color:#f92672">.</span>pre
+        self<span style="color:#f92672">.</span>_remove(node)
+        <span style="color:#66d9ef">return</span> node
+
+    <span style="color:#66d9ef">def</span> __init__(self, capacity: int):
+        self<span style="color:#f92672">.</span>capacity <span style="color:#f92672">=</span> capacity
+        self<span style="color:#f92672">.</span>size <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+        self<span style="color:#f92672">.</span>cache <span style="color:#f92672">=</span> {}
+        self<span style="color:#f92672">.</span>head <span style="color:#f92672">=</span> DLinkedNode()
+        self<span style="color:#f92672">.</span>tail <span style="color:#f92672">=</span> DLinkedNode()
+        self<span style="color:#f92672">.</span>head<span style="color:#f92672">.</span>next <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>tail
+        self<span style="color:#f92672">.</span>tail<span style="color:#f92672">.</span>pre <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>head
+
+
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get</span>(self, key: int) <span style="color:#f92672">-&gt;</span> int:
+        node <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>cache<span style="color:#f92672">.</span>get(key, None)
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> node:
             <span style="color:#66d9ef">return</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>
-        secondMin <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>getSecodeMin(root, root<span style="color:#f92672">.</span>val, float(<span style="color:#e6db74">&#39;inf&#39;</span>))
-        <span style="color:#66d9ef">if</span> secondMin <span style="color:#f92672">==</span> float(<span style="color:#e6db74">&#39;inf&#39;</span>):
-            <span style="color:#66d9ef">return</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>
+        self<span style="color:#f92672">.</span>_move_to_head(node)
+        <span style="color:#66d9ef">return</span> node<span style="color:#f92672">.</span>val
+
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">put</span>(self, key: int, value: int) <span style="color:#f92672">-&gt;</span> None:
+        node <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>cache<span style="color:#f92672">.</span>get(key, None)
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> node:
+            node <span style="color:#f92672">=</span> DLinkedNode()
+            node<span style="color:#f92672">.</span>key <span style="color:#f92672">=</span> key
+            node<span style="color:#f92672">.</span>val <span style="color:#f92672">=</span> value
+            self<span style="color:#f92672">.</span>cache[key] <span style="color:#f92672">=</span> node
+            self<span style="color:#f92672">.</span>size <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>size <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
+            self<span style="color:#f92672">.</span>_add(node)
+
+            <span style="color:#66d9ef">if</span> self<span style="color:#f92672">.</span>size <span style="color:#f92672">&gt;</span> self<span style="color:#f92672">.</span>capacity:
+                node <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>_pop_tail()
+                <span style="color:#66d9ef">del</span>(self<span style="color:#f92672">.</span>cache[node<span style="color:#f92672">.</span>key])
         <span style="color:#66d9ef">else</span>:
-            <span style="color:#66d9ef">return</span> secondMin
-
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">getSecodeMin</span>(self, node: TreeNode, rootVal: int, secondMin: int) <span style="color:#f92672">-&gt;</span> int:
-        <span style="color:#66d9ef">if</span> node <span style="color:#f92672">is</span> None:
-            <span style="color:#66d9ef">return</span> secondMin
-
-        <span style="color:#66d9ef">if</span> node<span style="color:#f92672">.</span>val <span style="color:#f92672">!=</span> rootVal <span style="color:#f92672">and</span> node<span style="color:#f92672">.</span>val <span style="color:#f92672">&lt;</span> secondMin:
-            secondMin <span style="color:#f92672">=</span> node<span style="color:#f92672">.</span>val
-            <span style="color:#66d9ef">print</span>(secondMin)
-
-        <span style="color:#66d9ef">return</span> min(self<span style="color:#f92672">.</span>getSecodeMin(node<span style="color:#f92672">.</span>left, rootVal, secondMin), self<span style="color:#f92672">.</span>getSecodeMin(node<span style="color:#f92672">.</span>right, rootVal, secondMin))
+            node<span style="color:#f92672">.</span>val <span style="color:#f92672">=</span> value
+            self<span style="color:#f92672">.</span>_move_to_head(node)
 </code></pre></div></div><input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-10"  />
   <label for="tabs-leetcode-solution-10">Ruby</label>
   <div class="book-tabs-content markdown-inner"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">
@@ -679,14 +715,6 @@ Explanation: The smallest value is 2, but there isn't any second smallest value.
   <div class="flex justify-between">
 
 
-
-  <div>
-    
-    <a class="flex align-center" href="https://github.com/ikingye/study-algs/commit/eace80e0b7b35e9d911de18d597d6cfe254d4a80" title='Last modified by yewang | 2020-05-11' target="_blank" rel="noopener">
-      <img src="/study-algs/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>2020-05-11</span>
-    </a>
-  </div>
 
 
 
