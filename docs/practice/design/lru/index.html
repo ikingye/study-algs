@@ -20,7 +20,7 @@ Redis 的 LRU 实现 如果按照 HashMap 和双向链表实现，需要额外�
 #define REDIS_LRU_BITS 24 unsigned lruclock:REDIS_LRU_BITS; /* Clock for LRU eviction */ 默认的 LRU 时钟的分辨率是 1 秒，可以通过改变 REDIS_LRU_CLOCK_RESOLUTION 宏的值来改变，Redis 会在 serverCron() 中调用 updateLRUClock 定期的更新 LRU 时钟，更新的频率和 hz 参数有关，默认为 100ms 一次，如下，" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ikingye.github.io/study-algs/docs/practice/design/lru/" />
-
+<meta property="article:modified_time" content="2020-05-17T14:33:54+08:00" />
 <title>LRU Cache | 算法学习笔记</title>
 <link rel="icon" href="/study-algs/favicon.png" type="image/x-icon">
 
@@ -532,6 +532,14 @@ unsigned long estimateObjectIdleTime(robj *o) {
   <div class="flex justify-between">
 
 
+
+  <div>
+    
+    <a class="flex align-center" href="https://github.com/ikingye/study-algs/commit/30c1ab8c20f79779df68f3fa9421590a90204666" title='Last modified by yewang | 2020-05-17' target="_blank" rel="noopener">
+      <img src="/study-algs/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>2020-05-17</span>
+    </a>
+  </div>
 
 
 
