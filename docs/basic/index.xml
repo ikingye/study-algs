@@ -15,7 +15,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ikingye.github.io/study-algs/docs/basic/datastruct/</guid>
-      <description>数据结构 常用的数据结构  数组（Array） 堆栈（Stack） 队列（Queue） 链表（Linked List） 树（Tree） 图（Graph） 堆积（Heap） 散列表（Hash table）   数据结构定义（源码） 链表 (Linked List) 单向链表 节点 C C&amp;#43;&amp;#43; C# Go Java JavaScript Kotlin PHP Python2 # Definition for singly-linked list. class ListNode(object): def __init__(self, val): self.val = val self.next = None Python3 # Definition for singly-linked list. class ListNode: def __init__(self, val): self.val = val self.next = None Ruby Rust Scala Swift   双向链表 节点 C C&amp;#43;&amp;#43; C# Go Java JavaScript Kotlin PHP Python2 # Definition for doubly-linked list.</description>
+      <description>数据结构 常用的数据结构  数组（Array） 堆栈（Stack） 队列（Queue） 链表（Linked List） 树（Tree） 图（Graph） 堆积（Heap） 散列表（Hash table）   数据结构定义（源码） 栈 C C&amp;#43;&amp;#43; C# Go stack := make([]int, 0) // push 入栈 stack = append(stack, 3) // pop 出栈 v := stack[len(stack) - 1] stack = stack[: len(stack) - 1] // 判断栈为空 if len(stack) == 0 { } Java JavaScript Kotlin PHP Python2 Python3 Ruby Rust Scala Swift   队列 C C&amp;#43;&amp;#43; C# Go queue := make([]int, 0) // enqueue 入队 queue = append(queue, 5) // dequeue 出队 v := queue[0] queue = queue[1:] // 判断长度为 0 if len(queue) == 0 { } Java JavaScript Kotlin PHP Python2 Python3 Ruby Rust Scala Swift   链表 (Linked List) 单向链表 节点 C C&amp;#43;&amp;#43; C# Go Java JavaScript Kotlin PHP Python2 # Definition for singly-linked list.</description>
     </item>
     
     <item>
