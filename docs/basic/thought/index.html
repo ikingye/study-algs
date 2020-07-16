@@ -4,12 +4,16 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content=""><meta property="og:title" content="Categories" />
+<meta name="description" content="算法思想 基本算法 递归  迭代  贪心 / 贪婪  动态规划  分治 分治算法是递归的典型应用
+ 回溯法 backtracking 回溯算法实际上一个类似枚举的搜索尝试过程，主要是在搜索尝试过程中寻找问题的解，当发现已不满足求解条件时，就 “回溯” 返回，尝试别的路径。
+回溯法简单来说就是按照深度优先的顺序，穷举所有可能性的算法， 但是回溯算法比暴力穷举法更高明的地方就是回溯算法可以随时判断当前状态是否符合问题的条件。 一旦不符合条件，那么就退回到上一个状态，省去了继续往下探索的时间。
+ 分支限界法 分支限界法是广度优先的一个经典例子
+ 其他 背包 "><meta property="og:title" content="1.2 算法思想" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://ikingye.github.io/study-algs/categories/" />
+<meta property="og:url" content="https://ikingye.github.io/study-algs/docs/basic/thought/" />
 
-<title>Categories | 算法学习笔记</title>
+<title>1.2 算法思想 | 算法学习笔记</title>
 <link rel="icon" href="/study-algs/favicon.png" type="image/x-icon">
 
 
@@ -18,7 +22,7 @@
 
 <script defer src="/study-algs/en.search.min.1f1ce92d0aa10e198b0488ae4f61f3f711f916c2285dd53c2cbd57b264d79344.js" integrity="sha256-HxzpLQqhDhmLBIiuT2Hz9xH5FsIoXdU8LL1XsmTXk0Q="></script>
 
-<link rel="alternate" type="application/rss+xml" href="https://ikingye.github.io/study-algs/categories/index.xml" title="算法学习笔记" />
+<link rel="alternate" type="application/rss+xml" href="https://ikingye.github.io/study-algs/docs/basic/thought/index.xml" title="算法学习笔记" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -141,7 +145,7 @@ https://github.com/alex-shpak/hugo-book
     
 
   
-  <a href="/study-algs/docs/basic/thought/" class="collapsed ">1.2 算法思想</a>
+  <a href="/study-algs/docs/basic/thought/" class="collapsed active">1.2 算法思想</a>
   
 
 
@@ -149,6 +153,22 @@ https://github.com/alex-shpak/hugo-book
 
 
 
+
+  
+  <ul>
+    
+      
+        <li>
+
+  
+  <a href="/study-algs/docs/basic/thought/recursive/" class="">递归</a>
+  
+
+</li>
+      
+    
+  </ul>
+  
 
 
 
@@ -400,7 +420,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/study-algs/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Categories</strong>
+  <strong>1.2 算法思想</strong>
 
   <label for="toc-control">
     <img src="/study-algs/svg/toc.svg" class="book-icon" alt="Table of Contents" />
@@ -412,27 +432,24 @@ https://github.com/alex-shpak/hugo-book
     <input type="checkbox" class="hidden" id="toc-control" />
     <aside class="hidden clearfix">
       
-  <nav>
+  <nav id="TableOfContents">
   <ul>
-  
-    
-    <li class="book-section-flat">
-      <strong>Categories</strong>
+    <li><a href="#基本算法">基本算法</a>
       <ul>
-      
+        <li><a href="#递归">递归</a></li>
+        <li><a href="#迭代">迭代</a></li>
+        <li><a href="#贪心--贪婪">贪心 / 贪婪</a></li>
+        <li><a href="#动态规划">动态规划</a></li>
+        <li><a href="#分治">分治</a></li>
+        <li><a href="#回溯法-backtracking">回溯法 backtracking</a></li>
+        <li><a href="#分支限界法">分支限界法</a></li>
       </ul>
     </li>
-    
-  
-    
-    <li class="book-section-flat">
-      <strong>Tags</strong>
+    <li><a href="#其他">其他</a>
       <ul>
-      
+        <li><a href="#背包">背包</a></li>
       </ul>
     </li>
-    
-  
   </ul>
 </nav>
 
@@ -444,10 +461,30 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-<article class="markdown">
-  <h1>Categories</h1>
-  
-  
+  <article class="markdown"><h1 id="算法思想">算法思想</h1>
+<h2 id="基本算法">基本算法</h2>
+<h3 id="递归">递归</h3>
+<hr>
+<h3 id="迭代">迭代</h3>
+<hr>
+<h3 id="贪心--贪婪">贪心 / 贪婪</h3>
+<hr>
+<h3 id="动态规划">动态规划</h3>
+<hr>
+<h3 id="分治">分治</h3>
+<p>分治算法是递归的典型应用</p>
+<hr>
+<h3 id="回溯法-backtracking">回溯法 backtracking</h3>
+<p>回溯算法实际上一个类似枚举的搜索尝试过程，主要是在搜索尝试过程中寻找问题的解，当发现已不满足求解条件时，就 “回溯” 返回，尝试别的路径。</p>
+<p>回溯法简单来说就是按照<strong>深度优先</strong>的顺序，穷举所有可能性的算法，
+但是回溯算法比暴力穷举法更高明的地方就是回溯算法可以随时判断当前状态是否符合问题的条件。
+一旦不符合条件，那么就退回到上一个状态，省去了继续往下探索的时间。</p>
+<hr>
+<h3 id="分支限界法">分支限界法</h3>
+<p>分支限界法是<strong>广度优先</strong>的一个经典例子</p>
+<hr>
+<h2 id="其他">其他</h2>
+<h3 id="背包">背包</h3>
 </article>
  
       
@@ -468,6 +505,17 @@ https://github.com/alex-shpak/hugo-book
 
       
   
+  <div class="book-comments">
+<script src="https://utteranc.es/client.js"
+  repo="ikingye/study-algs"
+  issue-term="pathname"
+  theme="github-light"
+  crossorigin="anonymous"
+  async>
+</script>
+
+</div>
+  
  
 
       <label for="menu-control" class="hidden book-menu-overlay"></label>
@@ -476,27 +524,24 @@ https://github.com/alex-shpak/hugo-book
     
     <aside class="book-toc">
       
-  <nav>
+  <nav id="TableOfContents">
   <ul>
-  
-    
-    <li class="book-section-flat">
-      <strong>Categories</strong>
+    <li><a href="#基本算法">基本算法</a>
       <ul>
-      
+        <li><a href="#递归">递归</a></li>
+        <li><a href="#迭代">迭代</a></li>
+        <li><a href="#贪心--贪婪">贪心 / 贪婪</a></li>
+        <li><a href="#动态规划">动态规划</a></li>
+        <li><a href="#分治">分治</a></li>
+        <li><a href="#回溯法-backtracking">回溯法 backtracking</a></li>
+        <li><a href="#分支限界法">分支限界法</a></li>
       </ul>
     </li>
-    
-  
-    
-    <li class="book-section-flat">
-      <strong>Tags</strong>
+    <li><a href="#其他">其他</a>
       <ul>
-      
+        <li><a href="#背包">背包</a></li>
       </ul>
     </li>
-    
-  
   </ul>
 </nav>
 

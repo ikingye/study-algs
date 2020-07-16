@@ -1,62 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>第一部分 基础 on 算法学习笔记</title>
+    <title>第一部分 基础入门 on 算法学习笔记</title>
     <link>https://ikingye.github.io/study-algs/docs/basic/</link>
-    <description>Recent content in 第一部分 基础 on 算法学习笔记</description>
+    <description>Recent content in 第一部分 基础入门 on 算法学习笔记</description>
     <generator>Hugo -- gohugo.io</generator>
     
 	<atom:link href="https://ikingye.github.io/study-algs/docs/basic/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>数据结构</title>
-      <link>https://ikingye.github.io/study-algs/docs/basic/datastruct/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/study-algs/docs/basic/datastruct/</guid>
-      <description>数据结构 常用的数据结构  数组（Array） 堆栈（Stack） 队列（Queue） 链表（Linked List） 树（Tree） 图（Graph） 堆积（Heap） 散列表（Hash table）   数据结构定义（源码） 栈 C C&amp;#43;&amp;#43; C# Go stack := make([]int, 0) // push 入栈 stack = append(stack, 3) // pop 出栈 v := stack[len(stack) - 1] stack = stack[: len(stack) - 1] // 判断栈为空 if len(stack) == 0 { } Java JavaScript Kotlin PHP Python2 Python3 Ruby Rust Scala Swift   队列 C C&amp;#43;&amp;#43; C# Go queue := make([]int, 0) // enqueue 入队 queue = append(queue, 5) // dequeue 出队 v := queue[0] queue = queue[1:] // 判断长度为 0 if len(queue) == 0 { } Java JavaScript Kotlin PHP Python2 Python3 Ruby Rust Scala Swift   链表 (Linked List) 单向链表 节点 C C&amp;#43;&amp;#43; C# Go Java JavaScript Kotlin PHP Python2 # Definition for singly-linked list.</description>
-    </item>
-    
-    <item>
-      <title>类型</title>
-      <link>https://ikingye.github.io/study-algs/docs/basic/type/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/study-algs/docs/basic/type/</guid>
-      <description>算法类型 基本算法 递归  迭代  贪心 / 贪婪  动态规划  分治 分治算法是递归的典型应用
- 回溯法 backtracking 回溯算法实际上一个类似枚举的搜索尝试过程，主要是在搜索尝试过程中寻找问题的解，当发现已不满足求解条件时，就 “回溯” 返回，尝试别的路径。
-回溯法简单来说就是按照深度优先的顺序，穷举所有可能性的算法， 但是回溯算法比暴力穷举法更高明的地方就是回溯算法可以随时判断当前状态是否符合问题的条件。 一旦不符合条件，那么就退回到上一个状态，省去了继续往下探索的时间。
- 分支限界法 分支限界法是广度优先的一个经典例子
- 其他 背包 </description>
-    </item>
-    
-    <item>
-      <title>排序算法</title>
-      <link>https://ikingye.github.io/study-algs/docs/basic/sort/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/study-algs/docs/basic/sort/</guid>
-      <description>排序算法 </description>
-    </item>
-    
-    <item>
-      <title>概论</title>
-      <link>https://ikingye.github.io/study-algs/docs/basic/introduction/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/study-algs/docs/basic/introduction/</guid>
-      <description>算法概论 </description>
-    </item>
-    
-    <item>
-      <title>递归</title>
-      <link>https://ikingye.github.io/study-algs/docs/basic/recursive/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ikingye.github.io/study-algs/docs/basic/recursive/</guid>
-      <description>递归 参考  三道题套路解决递归问题  </description>
-    </item>
     
   </channel>
 </rss>
