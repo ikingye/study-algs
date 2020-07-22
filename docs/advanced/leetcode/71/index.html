@@ -4,18 +4,30 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="螺旋矩阵 题目 中文 给定一个包含 m x n 个元素的矩阵（m 行，n 列），请按照顺时针螺旋顺序，返回矩阵中的所有元素。
-示例 1:
-输入: [ [ 1, 2, 3 ], [ 4, 5, 6 ], [ 7, 8, 9 ] ] 输出: [1,2,3,6,9,8,7,4,5] 示例 2:
-输入: [ [1, 2, 3, 4], [5, 6, 7, 8], [9,10,11,12] ] 输出: [1,2,3,4,8,12,11,10,9,5,6,7] English Given a matrix of m x n elements (m rows, n columns), return all elements of the matrix in spiral order."><meta property="og:title" content="54. 螺旋矩阵" />
-<meta property="og:description" content="螺旋矩阵 题目 中文 给定一个包含 m x n 个元素的矩阵（m 行，n 列），请按照顺时针螺旋顺序，返回矩阵中的所有元素。
-示例 1:
-输入: [ [ 1, 2, 3 ], [ 4, 5, 6 ], [ 7, 8, 9 ] ] 输出: [1,2,3,6,9,8,7,4,5] 示例 2:
-输入: [ [1, 2, 3, 4], [5, 6, 7, 8], [9,10,11,12] ] 输出: [1,2,3,4,8,12,11,10,9,5,6,7] English Given a matrix of m x n elements (m rows, n columns), return all elements of the matrix in spiral order." />
+<meta name="description" content="模板 题目 中文 以 Unix 风格给出一个文件的绝对路径，你需要简化它。或者换句话说，将其转换为规范路径。
+在 Unix 风格的文件系统中，一个点（.）表示当前目录本身；此外，两个点 （..） 表示将目录切换到上一级（指向父目录）；两者都可以是复杂相对路径的组成部分。更多信息请参阅：Linux / Unix 中的绝对路径 vs 相对路径
+请注意，返回的规范路径必须始终以斜杠 / 开头，并且两个目录名之间必须只有一个斜杠 /。最后一个目录名（如果存在）不能以 / 结尾。此外，规范路径必须是表示绝对路径的最短字符串。
+示例 1：
+输入：&quot;/home/&quot; 输出：&quot;/home&quot; 解释：注意，最后一个目录名后面没有斜杠。 示例 2：
+输入：&quot;/../&quot; 输出：&quot;/&quot; 解释：从根目录向上一级是不可行的，因为根是你可以到达的最高级。 示例 3：
+输入：&quot;/home//foo/&quot; 输出：&quot;/home/foo&quot; 解释：在规范路径中，多个连续斜杠需要用一个斜杠替换。 示例 4：
+输入：&quot;/a/./b/../../c/&quot; 输出：&quot;/c&quot; 示例 5：
+输入：&quot;/a/../../b/../c//.//&quot; 输出：&quot;/c&quot; 示例 6：
+输入：&quot;/a//b////c/d//././/..&quot; 输出：&quot;/a/b/c&quot; English Given an absolute path for a file (Unix-style), simplify it. Or in other words, convert it to the canonical path."><meta property="og:title" content="71. 简化路径" />
+<meta property="og:description" content="模板 题目 中文 以 Unix 风格给出一个文件的绝对路径，你需要简化它。或者换句话说，将其转换为规范路径。
+在 Unix 风格的文件系统中，一个点（.）表示当前目录本身；此外，两个点 （..） 表示将目录切换到上一级（指向父目录）；两者都可以是复杂相对路径的组成部分。更多信息请参阅：Linux / Unix 中的绝对路径 vs 相对路径
+请注意，返回的规范路径必须始终以斜杠 / 开头，并且两个目录名之间必须只有一个斜杠 /。最后一个目录名（如果存在）不能以 / 结尾。此外，规范路径必须是表示绝对路径的最短字符串。
+示例 1：
+输入：&quot;/home/&quot; 输出：&quot;/home&quot; 解释：注意，最后一个目录名后面没有斜杠。 示例 2：
+输入：&quot;/../&quot; 输出：&quot;/&quot; 解释：从根目录向上一级是不可行的，因为根是你可以到达的最高级。 示例 3：
+输入：&quot;/home//foo/&quot; 输出：&quot;/home/foo&quot; 解释：在规范路径中，多个连续斜杠需要用一个斜杠替换。 示例 4：
+输入：&quot;/a/./b/../../c/&quot; 输出：&quot;/c&quot; 示例 5：
+输入：&quot;/a/../../b/../c//.//&quot; 输出：&quot;/c&quot; 示例 6：
+输入：&quot;/a//b////c/d//././/..&quot; 输出：&quot;/a/b/c&quot; English Given an absolute path for a file (Unix-style), simplify it. Or in other words, convert it to the canonical path." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://ikingye.github.io/study-algs/docs/advanced/leetcode/54/" />
-<meta property="article:modified_time" content="2020-07-16T20:46:08+08:00" />
-<title>54. 螺旋矩阵 | 算法学习笔记</title>
+<meta property="og:url" content="https://ikingye.github.io/study-algs/docs/advanced/leetcode/71/" />
+
+<title>71. 简化路径 | 算法学习笔记</title>
 <link rel="icon" href="/study-algs/favicon.png" type="image/x-icon">
 
 
@@ -307,7 +319,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
 
   
-  <a href="/study-algs/docs/advanced/leetcode/54/" class="active">54. 螺旋矩阵</a>
+  <a href="/study-algs/docs/advanced/leetcode/54/" class="">54. 螺旋矩阵</a>
   
 
 </li>
@@ -317,7 +329,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
 
   
-  <a href="/study-algs/docs/advanced/leetcode/71/" class="">71. 简化路径</a>
+  <a href="/study-algs/docs/advanced/leetcode/71/" class="active">71. 简化路径</a>
   
 
 </li>
@@ -531,7 +543,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/study-algs/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>54. 螺旋矩阵</strong>
+  <strong>71. 简化路径</strong>
 
   <label for="toc-control">
     <img src="/study-algs/svg/toc.svg" class="book-icon" alt="Table of Contents" />
@@ -545,50 +557,64 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="螺旋矩阵">螺旋矩阵</h1>
-<h2 id="题目httpsleetcode-cncomproblemsspiral-matrix"><a href="https://leetcode-cn.com/problems/spiral-matrix">题目</a></h2>
+  <article class="markdown"><h1 id="模板">模板</h1>
+<h2 id="题目httpsleetcode-cncomproblemssimplify-path"><a href="https://leetcode-cn.com/problems/simplify-path/">题目</a></h2>
 
 
 
 
 <div class="book-tabs"><input type="radio" class="hidden" name="tabs-leetcode-problem" id="tabs-leetcode-problem-0" checked="checked" />
   <label for="tabs-leetcode-problem-0">中文</label>
-  <div class="book-tabs-content markdown-inner"><p>给定一个包含  m x n  个元素的矩阵（m 行，n 列），请按照顺时针螺旋顺序，返回矩阵中的所有元素。</p>
-<p>示例  1:</p>
-<pre><code>输入:
-[
- [ 1, 2, 3 ],
- [ 4, 5, 6 ],
- [ 7, 8, 9 ]
-]
-输出: [1,2,3,6,9,8,7,4,5]
-</code></pre><p>示例  2:</p>
-<pre><code>输入:
-[
-  [1, 2, 3, 4],
-  [5, 6, 7, 8],
-  [9,10,11,12]
-]
-输出: [1,2,3,4,8,12,11,10,9,5,6,7]
+  <div class="book-tabs-content markdown-inner"><p>以 Unix 风格给出一个文件的绝对路径，你需要简化它。或者换句话说，将其转换为规范路径。</p>
+<p>在 Unix 风格的文件系统中，一个点（.）表示当前目录本身；此外，两个点 （..）  表示将目录切换到上一级（指向父目录）；两者都可以是复杂相对路径的组成部分。更多信息请参阅：Linux / Unix 中的绝对路径 vs 相对路径</p>
+<p>请注意，返回的规范路径必须始终以斜杠 / 开头，并且两个目录名之间必须只有一个斜杠 /。最后一个目录名（如果存在）不能以 / 结尾。此外，规范路径必须是表示绝对路径的最短字符串。</p>
+<p>示例 1：</p>
+<pre><code>输入：&quot;/home/&quot;
+输出：&quot;/home&quot;
+解释：注意，最后一个目录名后面没有斜杠。
+</code></pre><p>示例 2：</p>
+<pre><code>输入：&quot;/../&quot;
+输出：&quot;/&quot;
+解释：从根目录向上一级是不可行的，因为根是你可以到达的最高级。
+</code></pre><p>示例 3：</p>
+<pre><code>输入：&quot;/home//foo/&quot;
+输出：&quot;/home/foo&quot;
+解释：在规范路径中，多个连续斜杠需要用一个斜杠替换。
+</code></pre><p>示例 4：</p>
+<pre><code>输入：&quot;/a/./b/../../c/&quot;
+输出：&quot;/c&quot;
+</code></pre><p>示例 5：</p>
+<pre><code>输入：&quot;/a/../../b/../c//.//&quot;
+输出：&quot;/c&quot;
+</code></pre><p>示例 6：</p>
+<pre><code>输入：&quot;/a//b////c/d//././/..&quot;
+输出：&quot;/a/b/c&quot;
 </code></pre></div><input type="radio" class="hidden" name="tabs-leetcode-problem" id="tabs-leetcode-problem-1"  />
   <label for="tabs-leetcode-problem-1">English</label>
-  <div class="book-tabs-content markdown-inner"><p>Given a matrix of m x n elements (m rows, n columns), return all elements of the matrix in spiral order.</p>
+  <div class="book-tabs-content markdown-inner"><p>Given an absolute path for a file (Unix-style), simplify it. Or in other words, convert it to the canonical path.</p>
+<p>In a UNIX-style file system, a period . refers to the current directory. Furthermore, a double period .. moves the directory up a level.</p>
+<p>Note that the returned canonical path must always begin with a slash /, and there must be only a single slash / between two directory names. The last directory name (if it exists) must not end with a trailing /. Also, the canonical path must be the shortest string representing the absolute path.</p>
 <p>Example 1:</p>
-<pre><code>Input:
-[
- [ 1, 2, 3 ],
- [ 4, 5, 6 ],
- [ 7, 8, 9 ]
-]
-Output: [1,2,3,6,9,8,7,4,5]
+<pre><code>Input: &quot;/home/&quot;
+Output: &quot;/home&quot;
+Explanation: Note that there is no trailing slash after the last directory name.
 </code></pre><p>Example 2:</p>
-<pre><code>Input:
-[
-  [1, 2, 3, 4],
-  [5, 6, 7, 8],
-  [9,10,11,12]
-]
-Output: [1,2,3,4,8,12,11,10,9,5,6,7]
+<pre><code>Input: &quot;/../&quot;
+Output: &quot;/&quot;
+Explanation: Going one level up from the root directory is a no-op, as the root level is the highest level you can go.
+</code></pre><p>Example 3:</p>
+<pre><code>Input: &quot;/home//foo/&quot;
+Output: &quot;/home/foo&quot;
+Explanation: In the canonical path, multiple consecutive slashes are replaced by a single one.
+</code></pre><p>Example 4:</p>
+<pre><code>Input: &quot;/a/./b/../../c/&quot;
+Output: &quot;/c&quot;
+</code></pre><p>Example 5:</p>
+<pre><code>Input: &quot;/a/../../b/../c//.//&quot;
+Output: &quot;/c&quot;
+</code></pre><p>Example 6:</p>
+<pre><code>Input: &quot;/a//b////c/d//././/..&quot;
+Output: &quot;/a/b/c&quot;
 </code></pre></div></div>
 
 <hr>
@@ -599,7 +625,7 @@ Output: [1,2,3,4,8,12,11,10,9,5,6,7]
 
 <div class="book-tabs"><input type="radio" class="hidden" name="tabs-leetcode-analysis" id="tabs-leetcode-analysis-0" checked="checked" />
   <label for="tabs-leetcode-analysis-0">基础</label>
-  <div class="book-tabs-content markdown-inner"></div><input type="radio" class="hidden" name="tabs-leetcode-analysis" id="tabs-leetcode-analysis-1"  />
+  <div class="book-tabs-content markdown-inner">先按 <code>/</code> 进行切割，然后创建一个 <code>stack</code>，判断为 <code>.</code> 就跳过，为 <code>..</code> 就 <code>pop</code>（<code>stack</code> 非空），其他就 <code>append</code></div><input type="radio" class="hidden" name="tabs-leetcode-analysis" id="tabs-leetcode-analysis-1"  />
   <label for="tabs-leetcode-analysis-1">进阶</label>
   <div class="book-tabs-content markdown-inner"></div><input type="radio" class="hidden" name="tabs-leetcode-analysis" id="tabs-leetcode-analysis-2"  />
   <label for="tabs-leetcode-analysis-2">高阶</label>
@@ -641,25 +667,19 @@ Output: [1,2,3,4,8,12,11,10,9,5,6,7]
 </code></pre></div></div><input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-9"  />
   <label for="tabs-leetcode-solution-9">Python3</label>
   <div class="book-tabs-content markdown-inner"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">spiralOrder</span>(self, matrix: List[List[int]]) <span style="color:#f92672">-&gt;</span> List[int]:
-        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> matrix:
-            <span style="color:#66d9ef">return</span> []
-        <span style="color:#75715e"># 第一行，按顺序</span>
-        result <span style="color:#f92672">=</span> matrix<span style="color:#f92672">.</span>pop(<span style="color:#ae81ff">0</span>)
-        <span style="color:#75715e"># 最右侧</span>
-        <span style="color:#66d9ef">for</span> i, l <span style="color:#f92672">in</span> enumerate(matrix[:<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]):
-            <span style="color:#66d9ef">if</span> l:
-                result<span style="color:#f92672">.</span>append(matrix[i]<span style="color:#f92672">.</span>pop())
-        <span style="color:#75715e"># 最后一行</span>
-        <span style="color:#66d9ef">if</span> matrix:
-            result<span style="color:#f92672">.</span>extend(matrix<span style="color:#f92672">.</span>pop()[::<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>])
-        <span style="color:#75715e"># 最左侧</span>
-        <span style="color:#66d9ef">for</span> i, l <span style="color:#f92672">in</span> enumerate(matrix[::<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]):
-            <span style="color:#66d9ef">if</span> l:
-                result<span style="color:#f92672">.</span>append(matrix[::<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>][i]<span style="color:#f92672">.</span>pop(<span style="color:#ae81ff">0</span>))
-        <span style="color:#75715e"># 递归，合并结果</span>
-        result<span style="color:#f92672">.</span>extend(self<span style="color:#f92672">.</span>spiralOrder(matrix))
-        <span style="color:#66d9ef">return</span> result
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">simplifyPath</span>(self, path: str) <span style="color:#f92672">-&gt;</span> str:
+        ps <span style="color:#f92672">=</span> [p <span style="color:#66d9ef">for</span> p <span style="color:#f92672">in</span> path<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#39;/&#39;</span>) <span style="color:#66d9ef">if</span> p]
+        stack <span style="color:#f92672">=</span> list()
+        <span style="color:#66d9ef">for</span> p <span style="color:#f92672">in</span> ps:
+            <span style="color:#66d9ef">if</span> p <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;.&#39;</span>:
+                <span style="color:#66d9ef">continue</span>
+            <span style="color:#66d9ef">elif</span> p <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;..&#39;</span>:
+                <span style="color:#66d9ef">if</span> stack:
+                    stack<span style="color:#f92672">.</span>pop()
+            <span style="color:#66d9ef">else</span>:
+                stack<span style="color:#f92672">.</span>append(p)
+
+        <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;/&#39;</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;/&#39;</span><span style="color:#f92672">.</span>join(stack)
 </code></pre></div></div><input type="radio" class="hidden" name="tabs-leetcode-solution" id="tabs-leetcode-solution-10"  />
   <label for="tabs-leetcode-solution-10">Ruby</label>
   <div class="book-tabs-content markdown-inner"><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">
@@ -683,14 +703,6 @@ Output: [1,2,3,4,8,12,11,10,9,5,6,7]
   <div class="flex justify-between">
 
 
-
-  <div>
-    
-    <a class="flex align-center" href="https://github.com/ikingye/study-algs/commit/5914ddaa9c8fb3ae4cd7a51ea66f5528930eaa89" title='Last modified by yewang | 2020-07-16' target="_blank" rel="noopener">
-      <img src="/study-algs/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>2020-07-16</span>
-    </a>
-  </div>
 
 
 
