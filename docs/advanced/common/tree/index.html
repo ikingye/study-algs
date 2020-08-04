@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir=>
 
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="树 判断一棵树是否包含另一棵树的结构 使用树结构序列化的方法，将两棵树进行相同方式的序列化，然后利用 kmp 判断子串，则可以得到
+<meta name="description" content="树 #  判断一棵树是否包含另一棵树的结构 #  使用树结构序列化的方法，将两棵树进行相同方式的序列化，然后利用 kmp 判断子串，则可以得到
 结果，时间复杂度为 O（m&#43;n）
 这道题的可行性是：树结构的序列化和反序列化是一一对应的
- "><meta property="og:title" content="树" />
-<meta property="og:description" content="树 判断一棵树是否包含另一棵树的结构 使用树结构序列化的方法，将两棵树进行相同方式的序列化，然后利用 kmp 判断子串，则可以得到
+ ">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="树" />
+<meta property="og:description" content="树 #  判断一棵树是否包含另一棵树的结构 #  使用树结构序列化的方法，将两棵树进行相同方式的序列化，然后利用 kmp 判断子串，则可以得到
 结果，时间复杂度为 O（m&#43;n）
 这道题的可行性是：树结构的序列化和反序列化是一一对应的
  " />
@@ -16,14 +17,10 @@
 <meta property="og:url" content="https://ikingye.github.io/study-algs/docs/advanced/common/tree/" />
 <meta property="article:modified_time" content="2020-07-16T20:46:08+08:00" />
 <title>树 | 算法学习笔记</title>
+<link rel="manifest" href="/study-algs/manifest.json">
 <link rel="icon" href="/study-algs/favicon.png" type="image/x-icon">
-
-
-<link rel="stylesheet" href="/study-algs/book.min.169e83d32687959b39a421cc33db54d2a9d6fc29b4c5f314c1e2ec7610f913a5.css" integrity="sha256-Fp6D0yaHlZs5pCHMM9tU0qnW/Cm0xfMUweLsdhD5E6U=">
-
-
-<script defer src="/study-algs/en.search.min.9a3c4780ee0f01591d860fd37e1683eae6f884212123628a4109f825d71ea3c6.js" integrity="sha256-mjxHgO4PAVkdhg/TfhaD6ub4hCEhI2KKQQn4Jdceo8Y="></script>
-
+<link rel="stylesheet" href="/study-algs/book.min.d51ae1346c6c6be6d266ee675dbefadff112d8cb316f6b14f34def47903e2c63.css" integrity="sha256-1RrhNGxsa&#43;bSZu5nXb763/ES2Msxb2sU803vR5A&#43;LGM=">
+<script defer src="/study-algs/en.search.min.183361b244d421d6668dcb556590038fced8b30791696c3eed15c7bdafd750d3.js" integrity="sha256-GDNhskTUIdZmjctVZZADj87YsweRaWw&#43;7RXHva/XUNM="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -32,8 +29,9 @@ https://github.com/alex-shpak/hugo-book
   
 </head>
 
-<body>
-  <input type="checkbox" class="hidden" id="menu-control" />
+<body dir=>
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
   <main class="container flex">
     <aside class="book-menu">
       
@@ -46,7 +44,7 @@ https://github.com/alex-shpak/hugo-book
 
 <div class="book-search">
   <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
-  <div class="book-search-spinner spinner hidden"></div>
+  <div class="book-search-spinner hidden"></div>
   <ul id="book-search-results"></ul>
 </div>
 
@@ -74,57 +72,42 @@ https://github.com/alex-shpak/hugo-book
 
   
 
+
+
   
   
-
-
-
-
-
- 
   
-    
-
-
-
+  
 
   
   <ul>
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <span>第一部分 基础入门</span>
+    <span>第一部分 基础入门</span>
   
 
-
-    
-
-
-
+          
+  
+  
+  
 
   
   <ul>
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/study-algs/docs/basic/datastruct/" class="">1.1 数据结构</a>
+    <a href="/study-algs/docs/basic/datastruct/" class="">1.1 数据结构</a>
   
 
-
-    
-
-
-
+          
+  
+  
+  
 
   
   <ul>
@@ -132,235 +115,189 @@ https://github.com/alex-shpak/hugo-book
   </ul>
   
 
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/study-algs/docs/basic/thought/" class="collapsed ">1.2 算法思想</a>
+    <a href="/study-algs/docs/basic/thought/" class="collapsed ">1.2 算法思想</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
   </ul>
   
 
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <span>第二部分 进阶实战</span>
+    <span>第二部分 进阶实战</span>
   
 
-
-    
-
-
-
-
+          
   
-  <ul>
-    
-      
-        
-
-  <li>
-    
-
   
-  <a href="/study-algs/docs/advanced/common/" class="collapsed ">2.1 常见算法</a>
   
-
-
-    
-
-
-
 
   
   <ul>
     
       
         <li>
+          
+  
+    <a href="/study-algs/docs/advanced/common/" class="collapsed ">2.1 常见算法</a>
+  
+
+          
+  
+  
+  
 
   
-  <a href="/study-algs/docs/advanced/common/sort/" class="">1.3.1 排序算法</a>
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/study-algs/docs/advanced/common/sort/" class="">1.3.1 排序算法</a>
   
 
-</li>
+        </li>
       
     
       
         <li>
-
+          
   
-  <a href="/study-algs/docs/advanced/common/lru/" class="">LRU Cache</a>
+    <a href="/study-algs/docs/advanced/common/lru/" class="">LRU Cache</a>
   
 
-</li>
+        </li>
       
     
       
         <li>
-
+          
   
-  <a href="/study-algs/docs/advanced/common/paxos/" class="">paxos</a>
+    <a href="/study-algs/docs/advanced/common/paxos/" class="">paxos</a>
   
 
-</li>
+        </li>
       
     
       
         <li>
-
+          
   
-  <a href="/study-algs/docs/advanced/common/raft/" class="">raft</a>
+    <a href="/study-algs/docs/advanced/common/raft/" class="">raft</a>
   
 
-</li>
+        </li>
       
     
       
         <li>
-
+          
   
-  <a href="/study-algs/docs/advanced/common/tree/" class="active">树</a>
+    <a href="/study-algs/docs/advanced/common/tree/" class="active">树</a>
   
 
-</li>
+        </li>
       
     
       
         <li>
-
+          
   
-  <a href="/study-algs/docs/advanced/common/kmp/" class="">KMP</a>
+    <a href="/study-algs/docs/advanced/common/kmp/" class="">KMP</a>
   
 
-</li>
+        </li>
       
     
       
         <li>
-
+          
   
-  <a href="/study-algs/docs/advanced/common/bloom/" class="">布隆过滤器</a>
+    <a href="/study-algs/docs/advanced/common/bloom/" class="">布隆过滤器</a>
   
 
-</li>
+        </li>
       
     
   </ul>
   
 
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/study-algs/docs/advanced/leetcode/" class="collapsed ">2.2 LeetCode</a>
+    <a href="/study-algs/docs/advanced/leetcode/" class="collapsed ">2.2 LeetCode</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <a href="/study-algs/docs/advanced/nowcoder/" class="collapsed ">2.3 牛客网</a>
+    <a href="/study-algs/docs/advanced/nowcoder/" class="collapsed ">2.3 牛客网</a>
   
 
+          
+  
+  
+  
 
-    
+  
 
-
-
-
-
-
-  </li>
-
-
+        </li>
       
     
   </ul>
   
 
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <span>第三部分 设计与实现</span>
+    <span>第三部分 设计与实现</span>
   
 
-
-    
-
-
-
+          
+  
+  
+  
 
   
   <ul>
@@ -368,79 +305,62 @@ https://github.com/alex-shpak/hugo-book
   </ul>
   
 
-
-
-  </li>
-
-
+        </li>
       
     
       
-        
-
-  <li>
-    
-
+        <li>
+          
   
-  <span>第四部分 附录</span>
+    <span>第四部分 附录</span>
   
 
-
-    
-
-
-
+          
+  
+  
+  
 
   
   <ul>
     
       
         <li>
-
+          
   
-  <a href="/study-algs/docs/appendix/tutorial/" class="">4.1 教程</a>
+    <a href="/study-algs/docs/appendix/tutorial/" class="">4.1 教程</a>
   
 
-</li>
+        </li>
       
     
       
         <li>
-
+          
   
-  <a href="/study-algs/docs/appendix/interview/" class="">4.2 面试题</a>
+    <a href="/study-algs/docs/appendix/interview/" class="">4.2 面试题</a>
   
 
-</li>
+        </li>
       
     
       
         <li>
-
+          
   
-  <a href="/study-algs/docs/appendix/attention/" class="">4.3 关注项目</a>
+    <a href="/study-algs/docs/appendix/attention/" class="">4.3 关注项目</a>
   
 
-</li>
+        </li>
       
     
   </ul>
   
 
-
-
-  </li>
-
-
+        </li>
       
     
   </ul>
   
-
-
-
-  
-
 
 
 
@@ -484,15 +404,16 @@ https://github.com/alex-shpak/hugo-book
   <strong>树</strong>
 
   <label for="toc-control">
+    
     <img src="/study-algs/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
   </label>
 </div>
 
 
   
-    <input type="checkbox" class="hidden" id="toc-control" />
-    <aside class="hidden clearfix">
-      
+  <aside class="hidden clearfix">
+    
   <nav id="TableOfContents">
   <ul>
     <li><a href="#判断一棵树是否包含另一棵树的结构">判断一棵树是否包含另一棵树的结构</a></li>
@@ -500,15 +421,21 @@ https://github.com/alex-shpak/hugo-book
 </nav>
 
 
-    </aside>
+  </aside>
   
  
       </header>
 
       
       
-  <article class="markdown"><h1 id="树">树</h1>
-<h2 id="判断一棵树是否包含另一棵树的结构">判断一棵树是否包含另一棵树的结构</h2>
+  <article class="markdown"><h1 id="树">
+  树
+  <a class="anchor" href="#%e6%a0%91">#</a>
+</h1>
+<h2 id="判断一棵树是否包含另一棵树的结构">
+  判断一棵树是否包含另一棵树的结构
+  <a class="anchor" href="#%e5%88%a4%e6%96%ad%e4%b8%80%e6%a3%b5%e6%a0%91%e6%98%af%e5%90%a6%e5%8c%85%e5%90%ab%e5%8f%a6%e4%b8%80%e6%a3%b5%e6%a0%91%e7%9a%84%e7%bb%93%e6%9e%84">#</a>
+</h2>
 <p>使用树结构序列化的方法，将两棵树进行相同方式的序列化，然后利用 <strong>kmp</strong> 判断子串，则可以得到</p>
 <p>结果，时间复杂度为 O（m+n）</p>
 <p>这道题的可行性是：<strong>树结构的序列化和反序列化是一一对应的</strong></p>
@@ -519,13 +446,11 @@ https://github.com/alex-shpak/hugo-book
 
       <footer class="book-footer">
         
-  <div class="flex justify-between">
+  <div class="flex flex-wrap justify-between">
 
 
 
-  <div>
-    
-    <a class="flex align-center" href="https://github.com/ikingye/study-algs/commit/5914ddaa9c8fb3ae4cd7a51ea66f5528930eaa89" title='Last modified by yewang | 2020-07-16' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/ikingye/study-algs/commit/5914ddaa9c8fb3ae4cd7a51ea66f5528930eaa89" title='Last modified by yewang | 2020-07-16' target="_blank" rel="noopener">
       <img src="/study-algs/svg/calendar.svg" class="book-icon" alt="Calendar" />
       <span>2020-07-16</span>
     </a>
