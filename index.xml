@@ -133,6 +133,7 @@ s 可能为空，且只包含从 a-z 的小写字母。 p 可能为空，且�
       <guid>https://ikingye.github.io/study-algs/docs/appendix/tutorial/</guid>
       <description>算法教程 #  基础 #  labuladong/fucking-algorithm #  手把手撕 LeetCode 题目，扒各种算法套路的裤子， not only how，but also why. English version supported! https://labuladong.gitbook.io/algo/
 donnemartin/interactive-coding-challenges #  120+ interactive Python coding interview challenges (algorithms and data structures). Includes Anki flashcards.
+(book)kevin-wayne/algs4 #  Algorithms, 4th edition textbook code and libraries
  进阶 #  </description>
     </item>
     
