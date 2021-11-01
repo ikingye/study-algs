@@ -2,23 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://ikingye.github.io/study-algs/docs/advanced/leetcode/0/1/</loc>
+  </url><url>
     <loc>https://ikingye.github.io/study-algs/docs/basic/</loc>
     <lastmod>2020-07-16T20:46:08+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/study-algs/docs/advanced/leetcode/0/2/</loc>
   </url><url>
     <loc>https://ikingye.github.io/study-algs/docs/advanced/</loc>
     <lastmod>2020-07-16T20:46:08+08:00</lastmod>
   </url><url>
+    <loc>https://ikingye.github.io/study-algs/docs/advanced/leetcode/0/3/</loc>
+  </url><url>
     <loc>https://ikingye.github.io/study-algs/docs/code/</loc>
     <lastmod>2020-07-16T20:46:08+08:00</lastmod>
   </url><url>
+    <loc>https://ikingye.github.io/study-algs/docs/advanced/leetcode/0/4/</loc>
+  </url><url>
     <loc>https://ikingye.github.io/study-algs/docs/appendix/</loc>
     <lastmod>2020-07-16T20:46:08+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/study-algs/docs/advanced/leetcode/0/</loc>
+  </url><url>
+    <loc>https://ikingye.github.io/study-algs/docs/advanced/leetcode/0/7/</loc>
+  </url><url>
+    <loc>https://ikingye.github.io/study-algs/docs/advanced/leetcode/0/9/</loc>
   </url><url>
     <loc>https://ikingye.github.io/study-algs/docs/basic/datastruct/</loc>
     <lastmod>2020-07-16T20:46:08+08:00</lastmod>
   </url><url>
     <loc>https://ikingye.github.io/study-algs/docs/advanced/common/sort/</loc>
     <lastmod>2020-07-16T20:46:08+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/study-algs/docs/advanced/leetcode/0/10/</loc>
+  </url><url>
+    <loc>https://ikingye.github.io/study-algs/docs/advanced/leetcode/1/</loc>
   </url><url>
     <loc>https://ikingye.github.io/study-algs/docs/advanced/common/</loc>
     <lastmod>2020-07-16T20:46:08+08:00</lastmod>
@@ -44,6 +62,8 @@
     <loc>https://ikingye.github.io/study-algs/docs/advanced/leetcode/</loc>
     <lastmod>2021-07-26T17:19:00+08:00</lastmod>
   </url><url>
+    <loc>https://ikingye.github.io/study-algs/docs/advanced/leetcode/2/</loc>
+  </url><url>
     <loc>https://ikingye.github.io/study-algs/docs/appendix/interview/</loc>
     <lastmod>2020-07-16T20:46:08+08:00</lastmod>
   </url><url>
@@ -59,8 +79,44 @@
     <loc>https://ikingye.github.io/study-algs/docs/advanced/nowcoder/</loc>
     <lastmod>2020-07-16T20:46:08+08:00</lastmod>
   </url><url>
+    <loc>https://ikingye.github.io/study-algs/docs/advanced/leetcode/3/</loc>
+  </url><url>
     <loc>https://ikingye.github.io/study-algs/docs/appendix/attention/</loc>
     <lastmod>2020-07-16T20:46:08+08:00</lastmod>
+  </url><url>
+    <loc>https://ikingye.github.io/study-algs/docs/advanced/leetcode/4/</loc>
+  </url><url>
+    <loc>https://ikingye.github.io/study-algs/docs/advanced/leetcode/5/</loc>
+  </url><url>
+    <loc>https://ikingye.github.io/study-algs/docs/advanced/leetcode/0/54/</loc>
+  </url><url>
+    <loc>https://ikingye.github.io/study-algs/docs/advanced/leetcode/6/</loc>
+  </url><url>
+    <loc>https://ikingye.github.io/study-algs/docs/advanced/leetcode/7/</loc>
+  </url><url>
+    <loc>https://ikingye.github.io/study-algs/docs/advanced/leetcode/0/71/</loc>
+  </url><url>
+    <loc>https://ikingye.github.io/study-algs/docs/advanced/leetcode/8/</loc>
+  </url><url>
+    <loc>https://ikingye.github.io/study-algs/docs/advanced/leetcode/9/</loc>
+  </url><url>
+    <loc>https://ikingye.github.io/study-algs/docs/advanced/leetcode/10/</loc>
+  </url><url>
+    <loc>https://ikingye.github.io/study-algs/docs/advanced/leetcode/1/110/</loc>
+  </url><url>
+    <loc>https://ikingye.github.io/study-algs/docs/advanced/leetcode/11/</loc>
+  </url><url>
+    <loc>https://ikingye.github.io/study-algs/docs/advanced/leetcode/12/</loc>
+  </url><url>
+    <loc>https://ikingye.github.io/study-algs/docs/advanced/leetcode/13/</loc>
+  </url><url>
+    <loc>https://ikingye.github.io/study-algs/docs/advanced/leetcode/14/</loc>
+  </url><url>
+    <loc>https://ikingye.github.io/study-algs/docs/advanced/leetcode/1/146/</loc>
+  </url><url>
+    <loc>https://ikingye.github.io/study-algs/docs/advanced/leetcode/2/206/</loc>
+  </url><url>
+    <loc>https://ikingye.github.io/study-algs/docs/advanced/leetcode/6/671/</loc>
   </url><url>
     <loc>https://ikingye.github.io/study-algs/categories/</loc>
   </url><url>
