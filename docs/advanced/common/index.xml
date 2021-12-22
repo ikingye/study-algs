@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>2.1 常见算法 on 算法学习笔记</title>
-    <link>https://ikingye.github.io/study-algs/docs/advanced/common/</link>
+    <link>https://kingye.me/study-algs/docs/advanced/common/</link>
     <description>Recent content in 2.1 常见算法 on 算法学习笔记</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://ikingye.github.io/study-algs/docs/advanced/common/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://kingye.me/study-algs/docs/advanced/common/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>1.3.1 排序算法</title>
-      <link>https://ikingye.github.io/study-algs/docs/advanced/common/sort/</link>
+      <link>https://kingye.me/study-algs/docs/advanced/common/sort/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/study-algs/docs/advanced/common/sort/</guid>
+      <guid>https://kingye.me/study-algs/docs/advanced/common/sort/</guid>
       <description>排序算法 #  </description>
     </item>
     
     <item>
       <title>LRU Cache</title>
-      <link>https://ikingye.github.io/study-algs/docs/advanced/common/lru/</link>
+      <link>https://kingye.me/study-algs/docs/advanced/common/lru/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/study-algs/docs/advanced/common/lru/</guid>
+      <guid>https://kingye.me/study-algs/docs/advanced/common/lru/</guid>
       <description>LRU Cache #  LRU 全称是 Least Recently Used，即最近最久未使用的意思。
 LRU 算法的设计原则是：如果一个数据在最近一段时间没有被访问到，那么在将来它被访问的可能性也很小。 也就是说，当限定的空间已存满数据时，应当把最久没有被访问到的数据淘汰。
 LRU-K #  LRU-K 中的 K 代表最近使用的次数，因此 LRU 可以认为是 LRU-1。
@@ -31,28 +31,28 @@ Redis 的 LRU 实现 #  如果按照 HashMap 和双向链表实现，需要额�
     
     <item>
       <title>paxos</title>
-      <link>https://ikingye.github.io/study-algs/docs/advanced/common/paxos/</link>
+      <link>https://kingye.me/study-algs/docs/advanced/common/paxos/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/study-algs/docs/advanced/common/paxos/</guid>
+      <guid>https://kingye.me/study-algs/docs/advanced/common/paxos/</guid>
       <description>paxos #  </description>
     </item>
     
     <item>
       <title>raft</title>
-      <link>https://ikingye.github.io/study-algs/docs/advanced/common/raft/</link>
+      <link>https://kingye.me/study-algs/docs/advanced/common/raft/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/study-algs/docs/advanced/common/raft/</guid>
+      <guid>https://kingye.me/study-algs/docs/advanced/common/raft/</guid>
       <description>raft #  </description>
     </item>
     
     <item>
       <title>树</title>
-      <link>https://ikingye.github.io/study-algs/docs/advanced/common/tree/</link>
+      <link>https://kingye.me/study-algs/docs/advanced/common/tree/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/study-algs/docs/advanced/common/tree/</guid>
+      <guid>https://kingye.me/study-algs/docs/advanced/common/tree/</guid>
       <description>树 #  判断一棵树是否包含另一棵树的结构 #  使用树结构序列化的方法，将两棵树进行相同方式的序列化，然后利用 kmp 判断子串，则可以得到
 结果，时间复杂度为 O（m+n）
 这道题的可行性是：树结构的序列化和反序列化是一一对应的
@@ -61,10 +61,10 @@ Redis 的 LRU 实现 #  如果按照 HashMap 和双向链表实现，需要额�
     
     <item>
       <title>KMP</title>
-      <link>https://ikingye.github.io/study-algs/docs/advanced/common/kmp/</link>
+      <link>https://kingye.me/study-algs/docs/advanced/common/kmp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/study-algs/docs/advanced/common/kmp/</guid>
+      <guid>https://kingye.me/study-algs/docs/advanced/common/kmp/</guid>
       <description>KMP #  KMP 是用来找字符串匹配的
 KMP 的时间复杂度是 O (m + n)
 参考 #   如何更好地理解和掌握 KMP 算法？ KMP 算法详解 Knuth-Morris-Pratt algorithm  KMP：花 48 小时看懂了 KMP，想让你在 48 分钟内看懂    </description>
@@ -72,10 +72,10 @@ KMP 的时间复杂度是 O (m + n)
     
     <item>
       <title>布隆过滤器</title>
-      <link>https://ikingye.github.io/study-algs/docs/advanced/common/bloom/</link>
+      <link>https://kingye.me/study-algs/docs/advanced/common/bloom/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ikingye.github.io/study-algs/docs/advanced/common/bloom/</guid>
+      <guid>https://kingye.me/study-algs/docs/advanced/common/bloom/</guid>
       <description>布隆过滤器 #  布隆过滤器（Bloom Filter）是 1970 年由布隆提出的。 它实际上是一个很长的二进制向量和一系列随机映射函数。 布隆过滤器可以用于检索一个元素是否在一个集合中。 它的优点是空间效率和查询时间都比一般的算法要好的多， 缺点是有一定的误识别率和删除困难。
 解决： 网页 URL 去重、垃圾邮件识别、大集合中重复元素的判断和缓存穿透等问题
 本质上布隆过滤器是一种数据结构，比较巧妙的概率型数据结构（probabilistic data structure），特点是高效地插入和查询，可以用来告诉你 某样东西一定不存在或者可能存在。
