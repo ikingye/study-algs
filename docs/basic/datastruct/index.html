@@ -2,10 +2,10 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta name="generator" content="Hugo 0.87.0" />
+  <meta name="generator" content="Hugo 0.98.0" />
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="数据结构 #  常用的数据结构 #   数组（Array） 堆栈（Stack） 队列（Queue） 链表（Linked List） 树（Tree） 图（Graph） 堆积（Heap） 散列表（Hash table）   数据结构定义（源码） #  栈 #  C C&#43;&#43; C# Go stack := make([]int, 0) // push 入栈 stack = append(stack, 3) // pop 出栈 v := stack[len(stack) - 1] stack = stack[: len(stack) - 1] // 判断栈为空 if len(stack) == 0 { } Java JavaScript Kotlin PHP Python2 Python3 Ruby Rust Scala Swift   队列 #  C C&#43;&#43; C# Go queue := make([]int, 0) // enqueue 入队 queue = append(queue, 5) // dequeue 出队 v := queue[0] queue = queue[1:] // 判断长度为 0 if len(queue) == 0 { } Java JavaScript Kotlin PHP Python2 Python3 Ruby Rust Scala Swift   链表 (Linked List) #  单向链表 节点 #  C C&#43;&#43; C# Go Java JavaScript Kotlin PHP Python2 # Definition for singly-linked list.">
+<meta name="description" content="数据结构 #  常用的数据结构 #   数组（Array） 堆栈（Stack） 队列（Queue） 链表（Linked List） 树（Tree） 图（Graph） 堆积（Heap） 散列表（Hash table）   数据结构定义（源码） #  栈 #  C C&#43;&#43; C# Go stack := make([]int, 0)  // push 入栈 stack = append(stack, 3)  // pop 出栈 v := stack[len(stack) - 1] stack = stack[: len(stack) - 1]  // 判断栈为空 if len(stack) == 0 {  } Java JavaScript Kotlin PHP Python2 Python3 Ruby Rust Scala Swift   队列 #  C C&#43;&#43; C# Go queue := make([]int, 0)  // enqueue 入队 queue = append(queue, 5)  // dequeue 出队 v := queue[0] queue = queue[1:]  // 判断长度为 0 if len(queue) == 0 {  } Java JavaScript Kotlin PHP Python2 Python3 Ruby Rust Scala Swift   链表 (Linked List) #  单向链表 节点 #  C C&#43;&#43; C# Go Java JavaScript Kotlin PHP Python2 # Definition for singly-linked list.">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="1.1 数据结构" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
@@ -15,7 +15,7 @@
 <link rel="manifest" href="/study-algs/manifest.json">
 <link rel="icon" href="/study-algs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/study-algs/book.min.e3d401e975fe9e04a41f82b0c90be4c8773f2541f197dba3ff2ae80293cb78c2.css" integrity="sha256-49QB6XX&#43;ngSkH4KwyQvkyHc/JUHxl9uj/yroApPLeMI=">
-<script defer src="/study-algs/en.search.min.e50c3ba976a07a73e26918571dfb54d81b32c02520b388448e3743363f66cdbb.js" integrity="sha256-5Qw7qXagenPiaRhXHftU2BsywCUgs4hEjjdDNj9mzbs="></script>
+<script defer src="/study-algs/en.search.min.8ace1568d160bec50f0c04a2345b298d3d5611801eea3dd399a4cab6b488ad34.js" integrity="sha256-is4VaNFgvsUPDASiNFspjT1WEYAe6j3TmaTKtrSIrTQ="></script>
 <link rel="alternate" type="application/rss+xml" href="https://kingye.me/study-algs/docs/basic/datastruct/index.xml" title="算法学习笔记" />
 <!--
 Made with Book Theme
@@ -922,7 +922,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-  <script>(function(){var a=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+  <script>(function(){var e=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
 
 
  
@@ -1022,56 +1022,46 @@ https://github.com/alex-shpak/hugo-book
 
 <div class="book-tabs"><input type="radio" class="toggle" name="tabs-stack" id="tabs-stack-0" checked="checked" />
   <label for="tabs-stack-0">C</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c">
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-stack" id="tabs-stack-1"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"></code></pre></div></div><input type="radio" class="toggle" name="tabs-stack" id="tabs-stack-1"  />
   <label for="tabs-stack-1">C&#43;&#43;</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++">
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-stack" id="tabs-stack-2"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"></code></pre></div></div><input type="radio" class="toggle" name="tabs-stack" id="tabs-stack-2"  />
   <label for="tabs-stack-2">C#</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c#" data-lang="c#">
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-stack" id="tabs-stack-3"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c#" data-lang="c#"></code></pre></div></div><input type="radio" class="toggle" name="tabs-stack" id="tabs-stack-3"  />
   <label for="tabs-stack-3">Go</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#a6e22e">stack</span> <span style="color:#f92672">:=</span> make([]<span style="color:#66d9ef">int</span>, <span style="color:#ae81ff">0</span>)
-
-<span style="color:#75715e">// push 入栈
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">stack</span> = append(<span style="color:#a6e22e">stack</span>, <span style="color:#ae81ff">3</span>)
-
-<span style="color:#75715e">// pop 出栈
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">v</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">stack</span>[len(<span style="color:#a6e22e">stack</span>) <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>]
-<span style="color:#a6e22e">stack</span> = <span style="color:#a6e22e">stack</span>[: len(<span style="color:#a6e22e">stack</span>) <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>]
-
-<span style="color:#75715e">// 判断栈为空
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">if</span> len(<span style="color:#a6e22e">stack</span>) <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span> {
-
-}
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-stack" id="tabs-stack-4"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#a6e22e">stack</span> <span style="color:#f92672">:=</span> make([]<span style="color:#66d9ef">int</span>, <span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// push 入栈
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">stack</span> = append(<span style="color:#a6e22e">stack</span>, <span style="color:#ae81ff">3</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// pop 出栈
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">v</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">stack</span>[len(<span style="color:#a6e22e">stack</span>) <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">stack</span> = <span style="color:#a6e22e">stack</span>[: len(<span style="color:#a6e22e">stack</span>) <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 判断栈为空
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">if</span> len(<span style="color:#a6e22e">stack</span>) <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div></div><input type="radio" class="toggle" name="tabs-stack" id="tabs-stack-4"  />
   <label for="tabs-stack-4">Java</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-stack" id="tabs-stack-5"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"></code></pre></div></div><input type="radio" class="toggle" name="tabs-stack" id="tabs-stack-5"  />
   <label for="tabs-stack-5">JavaScript</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"></code></pre></div></div><input type="radio" class="toggle" name="tabs-stack" id="tabs-stack-6"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"></code></pre></div></div><input type="radio" class="toggle" name="tabs-stack" id="tabs-stack-6"  />
   <label for="tabs-stack-6">Kotlin</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin">
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-stack" id="tabs-stack-7"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"></code></pre></div></div><input type="radio" class="toggle" name="tabs-stack" id="tabs-stack-7"  />
   <label for="tabs-stack-7">PHP</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-stack" id="tabs-stack-8"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"></code></pre></div></div><input type="radio" class="toggle" name="tabs-stack" id="tabs-stack-8"  />
   <label for="tabs-stack-8">Python2</label>
   <div class="book-tabs-content markdown-inner"></div><input type="radio" class="toggle" name="tabs-stack" id="tabs-stack-9"  />
   <label for="tabs-stack-9">Python3</label>
   <div class="book-tabs-content markdown-inner"></div><input type="radio" class="toggle" name="tabs-stack" id="tabs-stack-10"  />
   <label for="tabs-stack-10">Ruby</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-stack" id="tabs-stack-11"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"></code></pre></div></div><input type="radio" class="toggle" name="tabs-stack" id="tabs-stack-11"  />
   <label for="tabs-stack-11">Rust</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust">
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-stack" id="tabs-stack-12"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"></code></pre></div></div><input type="radio" class="toggle" name="tabs-stack" id="tabs-stack-12"  />
   <label for="tabs-stack-12">Scala</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala">
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-stack" id="tabs-stack-13"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scala" data-lang="scala"></code></pre></div></div><input type="radio" class="toggle" name="tabs-stack" id="tabs-stack-13"  />
   <label for="tabs-stack-13">Swift</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">
-</code></pre></div></div></div>
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"></code></pre></div></div></div>
 
 <hr>
 <h3 id="队列">
@@ -1084,56 +1074,46 @@ https://github.com/alex-shpak/hugo-book
 
 <div class="book-tabs"><input type="radio" class="toggle" name="tabs-queue" id="tabs-queue-0" checked="checked" />
   <label for="tabs-queue-0">C</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c">
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-queue" id="tabs-queue-1"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"></code></pre></div></div><input type="radio" class="toggle" name="tabs-queue" id="tabs-queue-1"  />
   <label for="tabs-queue-1">C&#43;&#43;</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++">
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-queue" id="tabs-queue-2"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"></code></pre></div></div><input type="radio" class="toggle" name="tabs-queue" id="tabs-queue-2"  />
   <label for="tabs-queue-2">C#</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c#" data-lang="c#">
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-queue" id="tabs-queue-3"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c#" data-lang="c#"></code></pre></div></div><input type="radio" class="toggle" name="tabs-queue" id="tabs-queue-3"  />
   <label for="tabs-queue-3">Go</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#a6e22e">queue</span> <span style="color:#f92672">:=</span> make([]<span style="color:#66d9ef">int</span>, <span style="color:#ae81ff">0</span>)
-
-<span style="color:#75715e">// enqueue 入队
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">queue</span> = append(<span style="color:#a6e22e">queue</span>, <span style="color:#ae81ff">5</span>)
-
-<span style="color:#75715e">// dequeue 出队
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">v</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">queue</span>[<span style="color:#ae81ff">0</span>]
-<span style="color:#a6e22e">queue</span> = <span style="color:#a6e22e">queue</span>[<span style="color:#ae81ff">1</span>:]
-
-<span style="color:#75715e">// 判断长度为 0
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">if</span> len(<span style="color:#a6e22e">queue</span>) <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span> {
-
-}
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-queue" id="tabs-queue-4"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#a6e22e">queue</span> <span style="color:#f92672">:=</span> make([]<span style="color:#66d9ef">int</span>, <span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// enqueue 入队
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">queue</span> = append(<span style="color:#a6e22e">queue</span>, <span style="color:#ae81ff">5</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// dequeue 出队
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">v</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">queue</span>[<span style="color:#ae81ff">0</span>]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">queue</span> = <span style="color:#a6e22e">queue</span>[<span style="color:#ae81ff">1</span>:]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 判断长度为 0
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">if</span> len(<span style="color:#a6e22e">queue</span>) <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div></div><input type="radio" class="toggle" name="tabs-queue" id="tabs-queue-4"  />
   <label for="tabs-queue-4">Java</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-queue" id="tabs-queue-5"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"></code></pre></div></div><input type="radio" class="toggle" name="tabs-queue" id="tabs-queue-5"  />
   <label for="tabs-queue-5">JavaScript</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"></code></pre></div></div><input type="radio" class="toggle" name="tabs-queue" id="tabs-queue-6"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"></code></pre></div></div><input type="radio" class="toggle" name="tabs-queue" id="tabs-queue-6"  />
   <label for="tabs-queue-6">Kotlin</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin">
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-queue" id="tabs-queue-7"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"></code></pre></div></div><input type="radio" class="toggle" name="tabs-queue" id="tabs-queue-7"  />
   <label for="tabs-queue-7">PHP</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-queue" id="tabs-queue-8"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"></code></pre></div></div><input type="radio" class="toggle" name="tabs-queue" id="tabs-queue-8"  />
   <label for="tabs-queue-8">Python2</label>
   <div class="book-tabs-content markdown-inner"></div><input type="radio" class="toggle" name="tabs-queue" id="tabs-queue-9"  />
   <label for="tabs-queue-9">Python3</label>
   <div class="book-tabs-content markdown-inner"></div><input type="radio" class="toggle" name="tabs-queue" id="tabs-queue-10"  />
   <label for="tabs-queue-10">Ruby</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-queue" id="tabs-queue-11"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"></code></pre></div></div><input type="radio" class="toggle" name="tabs-queue" id="tabs-queue-11"  />
   <label for="tabs-queue-11">Rust</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust">
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-queue" id="tabs-queue-12"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"></code></pre></div></div><input type="radio" class="toggle" name="tabs-queue" id="tabs-queue-12"  />
   <label for="tabs-queue-12">Scala</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala">
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-queue" id="tabs-queue-13"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scala" data-lang="scala"></code></pre></div></div><input type="radio" class="toggle" name="tabs-queue" id="tabs-queue-13"  />
   <label for="tabs-queue-13">Swift</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">
-</code></pre></div></div></div>
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"></code></pre></div></div></div>
 
 <hr>
 <h3 id="链表-linked-list">
@@ -1150,55 +1130,43 @@ https://github.com/alex-shpak/hugo-book
 
 <div class="book-tabs"><input type="radio" class="toggle" name="tabs-link" id="tabs-link-0" checked="checked" />
   <label for="tabs-link-0">C</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c">
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-link" id="tabs-link-1"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"></code></pre></div></div><input type="radio" class="toggle" name="tabs-link" id="tabs-link-1"  />
   <label for="tabs-link-1">C&#43;&#43;</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++">
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-link" id="tabs-link-2"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"></code></pre></div></div><input type="radio" class="toggle" name="tabs-link" id="tabs-link-2"  />
   <label for="tabs-link-2">C#</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c#" data-lang="c#">
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-link" id="tabs-link-3"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c#" data-lang="c#"></code></pre></div></div><input type="radio" class="toggle" name="tabs-link" id="tabs-link-3"  />
   <label for="tabs-link-3">Go</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go">
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-link" id="tabs-link-4"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"></code></pre></div></div><input type="radio" class="toggle" name="tabs-link" id="tabs-link-4"  />
   <label for="tabs-link-4">Java</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-link" id="tabs-link-5"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"></code></pre></div></div><input type="radio" class="toggle" name="tabs-link" id="tabs-link-5"  />
   <label for="tabs-link-5">JavaScript</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"></code></pre></div></div><input type="radio" class="toggle" name="tabs-link" id="tabs-link-6"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"></code></pre></div></div><input type="radio" class="toggle" name="tabs-link" id="tabs-link-6"  />
   <label for="tabs-link-6">Kotlin</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin">
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-link" id="tabs-link-7"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"></code></pre></div></div><input type="radio" class="toggle" name="tabs-link" id="tabs-link-7"  />
   <label for="tabs-link-7">PHP</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-link" id="tabs-link-8"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"></code></pre></div></div><input type="radio" class="toggle" name="tabs-link" id="tabs-link-8"  />
   <label for="tabs-link-8">Python2</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Definition for singly-linked list.</span>
-<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ListNode</span>(object):
-    <span style="color:#66d9ef">def</span> __init__(self, val):
-        self<span style="color:#f92672">.</span>val <span style="color:#f92672">=</span> val
-        self<span style="color:#f92672">.</span>next <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>
-
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-link" id="tabs-link-9"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Definition for singly-linked list.</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ListNode</span>(object):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> __init__(self, val):
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>val <span style="color:#f92672">=</span> val
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>next <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>
+</span></span></code></pre></div></div><input type="radio" class="toggle" name="tabs-link" id="tabs-link-9"  />
   <label for="tabs-link-9">Python3</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Definition for singly-linked list.</span>
-<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ListNode</span>:
-    <span style="color:#66d9ef">def</span> __init__(self, val):
-        self<span style="color:#f92672">.</span>val <span style="color:#f92672">=</span> val
-        self<span style="color:#f92672">.</span>next <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-link" id="tabs-link-10"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Definition for singly-linked list.</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ListNode</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> __init__(self, val):
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>val <span style="color:#f92672">=</span> val
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>next <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>
+</span></span></code></pre></div></div><input type="radio" class="toggle" name="tabs-link" id="tabs-link-10"  />
   <label for="tabs-link-10">Ruby</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-link" id="tabs-link-11"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"></code></pre></div></div><input type="radio" class="toggle" name="tabs-link" id="tabs-link-11"  />
   <label for="tabs-link-11">Rust</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust">
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-link" id="tabs-link-12"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"></code></pre></div></div><input type="radio" class="toggle" name="tabs-link" id="tabs-link-12"  />
   <label for="tabs-link-12">Scala</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala">
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-link" id="tabs-link-13"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scala" data-lang="scala"></code></pre></div></div><input type="radio" class="toggle" name="tabs-link" id="tabs-link-13"  />
   <label for="tabs-link-13">Swift</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">
-</code></pre></div></div></div>
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"></code></pre></div></div></div>
 
 <hr>
 <h4 id="双向链表-节点">
@@ -1211,56 +1179,45 @@ https://github.com/alex-shpak/hugo-book
 
 <div class="book-tabs"><input type="radio" class="toggle" name="tabs-link" id="tabs-link-0" checked="checked" />
   <label for="tabs-link-0">C</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c">
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-link" id="tabs-link-1"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"></code></pre></div></div><input type="radio" class="toggle" name="tabs-link" id="tabs-link-1"  />
   <label for="tabs-link-1">C&#43;&#43;</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++">
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-link" id="tabs-link-2"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"></code></pre></div></div><input type="radio" class="toggle" name="tabs-link" id="tabs-link-2"  />
   <label for="tabs-link-2">C#</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c#" data-lang="c#">
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-link" id="tabs-link-3"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c#" data-lang="c#"></code></pre></div></div><input type="radio" class="toggle" name="tabs-link" id="tabs-link-3"  />
   <label for="tabs-link-3">Go</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go">
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-link" id="tabs-link-4"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"></code></pre></div></div><input type="radio" class="toggle" name="tabs-link" id="tabs-link-4"  />
   <label for="tabs-link-4">Java</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-link" id="tabs-link-5"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"></code></pre></div></div><input type="radio" class="toggle" name="tabs-link" id="tabs-link-5"  />
   <label for="tabs-link-5">JavaScript</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"></code></pre></div></div><input type="radio" class="toggle" name="tabs-link" id="tabs-link-6"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"></code></pre></div></div><input type="radio" class="toggle" name="tabs-link" id="tabs-link-6"  />
   <label for="tabs-link-6">Kotlin</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin">
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-link" id="tabs-link-7"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"></code></pre></div></div><input type="radio" class="toggle" name="tabs-link" id="tabs-link-7"  />
   <label for="tabs-link-7">PHP</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-link" id="tabs-link-8"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"></code></pre></div></div><input type="radio" class="toggle" name="tabs-link" id="tabs-link-8"  />
   <label for="tabs-link-8">Python2</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Definition for doubly-linked list.</span>
-<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ListNode</span>(object):
-    <span style="color:#66d9ef">def</span> __init__(self, val):
-        self<span style="color:#f92672">.</span>val <span style="color:#f92672">=</span> val
-        self<span style="color:#f92672">.</span>pre <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>
-        self<span style="color:#f92672">.</span>next <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-link" id="tabs-link-9"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Definition for doubly-linked list.</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ListNode</span>(object):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> __init__(self, val):
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>val <span style="color:#f92672">=</span> val
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>pre <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>next <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>
+</span></span></code></pre></div></div><input type="radio" class="toggle" name="tabs-link" id="tabs-link-9"  />
   <label for="tabs-link-9">Python3</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Definition for doubly-linked list.</span>
-<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ListNode</span>:
-    <span style="color:#66d9ef">def</span> __init__(self, val):
-        self<span style="color:#f92672">.</span>val <span style="color:#f92672">=</span> val
-        self<span style="color:#f92672">.</span>pre <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>
-        self<span style="color:#f92672">.</span>next <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-link" id="tabs-link-10"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Definition for doubly-linked list.</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ListNode</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> __init__(self, val):
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>val <span style="color:#f92672">=</span> val
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>pre <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>next <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>
+</span></span></code></pre></div></div><input type="radio" class="toggle" name="tabs-link" id="tabs-link-10"  />
   <label for="tabs-link-10">Ruby</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-link" id="tabs-link-11"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"></code></pre></div></div><input type="radio" class="toggle" name="tabs-link" id="tabs-link-11"  />
   <label for="tabs-link-11">Rust</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust">
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-link" id="tabs-link-12"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"></code></pre></div></div><input type="radio" class="toggle" name="tabs-link" id="tabs-link-12"  />
   <label for="tabs-link-12">Scala</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala">
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-link" id="tabs-link-13"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scala" data-lang="scala"></code></pre></div></div><input type="radio" class="toggle" name="tabs-link" id="tabs-link-13"  />
   <label for="tabs-link-13">Swift</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">
-</code></pre></div></div></div>
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"></code></pre></div></div></div>
 
 <hr>
 <h3 id="树">
@@ -1273,58 +1230,47 @@ https://github.com/alex-shpak/hugo-book
 
 <div class="book-tabs"><input type="radio" class="toggle" name="tabs-tree" id="tabs-tree-0" checked="checked" />
   <label for="tabs-tree-0">C</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c">
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-tree" id="tabs-tree-1"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"></code></pre></div></div><input type="radio" class="toggle" name="tabs-tree" id="tabs-tree-1"  />
   <label for="tabs-tree-1">C&#43;&#43;</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++">
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-tree" id="tabs-tree-2"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"></code></pre></div></div><input type="radio" class="toggle" name="tabs-tree" id="tabs-tree-2"  />
   <label for="tabs-tree-2">C#</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c#" data-lang="c#">
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-tree" id="tabs-tree-3"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c#" data-lang="c#"></code></pre></div></div><input type="radio" class="toggle" name="tabs-tree" id="tabs-tree-3"  />
   <label for="tabs-tree-3">Go</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go">
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-tree" id="tabs-tree-4"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"></code></pre></div></div><input type="radio" class="toggle" name="tabs-tree" id="tabs-tree-4"  />
   <label for="tabs-tree-4">Java</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-tree" id="tabs-tree-5"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"></code></pre></div></div><input type="radio" class="toggle" name="tabs-tree" id="tabs-tree-5"  />
   <label for="tabs-tree-5">JavaScript</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"></code></pre></div></div><input type="radio" class="toggle" name="tabs-tree" id="tabs-tree-6"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"></code></pre></div></div><input type="radio" class="toggle" name="tabs-tree" id="tabs-tree-6"  />
   <label for="tabs-tree-6">Kotlin</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin">
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-tree" id="tabs-tree-7"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"></code></pre></div></div><input type="radio" class="toggle" name="tabs-tree" id="tabs-tree-7"  />
   <label for="tabs-tree-7">PHP</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-tree" id="tabs-tree-8"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"></code></pre></div></div><input type="radio" class="toggle" name="tabs-tree" id="tabs-tree-8"  />
   <label for="tabs-tree-8">Python2</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Definition for a binary tree node</span>
-<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">TreeNode</span>(object) {
-    <span style="color:#66d9ef">def</span> __init__(self, val):
-        self<span style="color:#f92672">.</span>val <span style="color:#f92672">=</span> val
-        self<span style="color:#f92672">.</span>left <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>
-        self<span style="color:#f92672">.</span>right <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>
-}
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-tree" id="tabs-tree-9"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Definition for a binary tree node</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">TreeNode</span>(object) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> __init__(self, val):
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>val <span style="color:#f92672">=</span> val
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>left <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>right <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div></div><input type="radio" class="toggle" name="tabs-tree" id="tabs-tree-9"  />
   <label for="tabs-tree-9">Python3</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Definition for a binary tree node</span>
-<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">TreeNode</span> {
-    <span style="color:#66d9ef">def</span> __init__(self, val):
-        self<span style="color:#f92672">.</span>val <span style="color:#f92672">=</span> val
-        self<span style="color:#f92672">.</span>left <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>
-        self<span style="color:#f92672">.</span>right <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>
-}
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-tree" id="tabs-tree-10"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Definition for a binary tree node</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">TreeNode</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> __init__(self, val):
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>val <span style="color:#f92672">=</span> val
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>left <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>right <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div></div><input type="radio" class="toggle" name="tabs-tree" id="tabs-tree-10"  />
   <label for="tabs-tree-10">Ruby</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-tree" id="tabs-tree-11"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"></code></pre></div></div><input type="radio" class="toggle" name="tabs-tree" id="tabs-tree-11"  />
   <label for="tabs-tree-11">Rust</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust">
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-tree" id="tabs-tree-12"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"></code></pre></div></div><input type="radio" class="toggle" name="tabs-tree" id="tabs-tree-12"  />
   <label for="tabs-tree-12">Scala</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala">
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-tree" id="tabs-tree-13"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scala" data-lang="scala"></code></pre></div></div><input type="radio" class="toggle" name="tabs-tree" id="tabs-tree-13"  />
   <label for="tabs-tree-13">Swift</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">
-</code></pre></div></div></div>
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"></code></pre></div></div></div>
 
 <hr>
 <h2 id="数据结构列表httpswwwwikiwandcomzh-cne695b0e68daee7bb93e69e84e58897e8a1a8">

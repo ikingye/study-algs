@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta name="generator" content="Hugo 0.87.0" />
+  <meta name="generator" content="Hugo 0.98.0" />
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="LRU Cache #  LRU 全称是 Least Recently Used，即最近最久未使用的意思。
@@ -29,7 +29,7 @@ Redis 的 LRU 实现 #  如果按照 HashMap 和双向链表实现，需要额�
 <link rel="manifest" href="/study-algs/manifest.json">
 <link rel="icon" href="/study-algs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/study-algs/book.min.e3d401e975fe9e04a41f82b0c90be4c8773f2541f197dba3ff2ae80293cb78c2.css" integrity="sha256-49QB6XX&#43;ngSkH4KwyQvkyHc/JUHxl9uj/yroApPLeMI=">
-<script defer src="/study-algs/en.search.min.e50c3ba976a07a73e26918571dfb54d81b32c02520b388448e3743363f66cdbb.js" integrity="sha256-5Qw7qXagenPiaRhXHftU2BsywCUgs4hEjjdDNj9mzbs="></script>
+<script defer src="/study-algs/en.search.min.8ace1568d160bec50f0c04a2345b298d3d5611801eea3dd399a4cab6b488ad34.js" integrity="sha256-is4VaNFgvsUPDASiNFspjT1WEYAe6j3TmaTKtrSIrTQ="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -935,7 +935,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-  <script>(function(){var a=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+  <script>(function(){var e=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
 
 
  
@@ -1001,10 +1001,10 @@ https://github.com/alex-shpak/hugo-book
 </h2>
 <p>如果按照 HashMap 和双向链表实现，需要额外的存储存放 next 和 prev 指针，牺牲比较大的存储空间，显然是不划算的。所以 Redis 采用了一个近似的做法，就是随机取出若干个 key，然后按照访问时间排序后，淘汰掉最不经常使用的，具体分析如下：</p>
 <p>为了支持 LRU，Redis 2.8.19 中使用了一个全局的 LRU 时钟，<code>server.lruclock</code>，定义如下，</p>
-<pre><code>#define REDIS_LRU_BITS 24
+<pre tabindex="0"><code>#define REDIS_LRU_BITS 24
 unsigned lruclock:REDIS_LRU_BITS; /* Clock for LRU eviction */
 </code></pre><p>默认的 LRU 时钟的分辨率是 1 秒，可以通过改变  <code>REDIS_LRU_CLOCK_RESOLUTION</code>  宏的值来改变，Redis 会在  <code>serverCron()</code>  中调用  <code>updateLRUClock</code>  定期的更新 LRU 时钟，更新的频率和 hz 参数有关，默认为  <code>100ms</code>  一次，如下，</p>
-<pre><code>#define REDIS_LRU_CLOCK_MAX ((1&lt;&lt;REDIS_LRU_BITS)-1) /* Max value of obj-&gt;lru */
+<pre tabindex="0"><code>#define REDIS_LRU_CLOCK_MAX ((1&lt;&lt;REDIS_LRU_BITS)-1) /* Max value of obj-&gt;lru */
 #define REDIS_LRU_CLOCK_RESOLUTION 1 /* LRU clock resolution in seconds */
 
 void updateLRUClock(void) {
@@ -1012,7 +1012,7 @@ void updateLRUClock(void) {
                                                 REDIS_LRU_CLOCK_MAX;
 }
 </code></pre><p><code>server.unixtime</code>  是系统当前的 unix 时间戳，当 lruclock 的值超出 REDIS_LRU_CLOCK_MAX 时，会从头开始计算，所以在计算一个 key 的最长没有访问时间时，可能 key 本身保存的 lru 访问时间会比当前的 lrulock 还要大，这个时候需要计算额外时间，如下，</p>
-<pre><code>/* Given an object returns the min number of seconds the object was never
+<pre tabindex="0"><code>/* Given an object returns the min number of seconds the object was never
  * requested, using an approximated LRU algorithm. */
 unsigned long estimateObjectIdleTime(robj *o) {
     if (server.lruclock &gt;= o-&gt;lru) {
@@ -1028,7 +1028,7 @@ unsigned long estimateObjectIdleTime(robj *o) {
 <li><code>allkeys-lru</code>  所有的 key 均参与近似的 lru 淘汰策略</li>
 </ul>
 <p>当进行 LRU 淘汰时，Redis 按如下方式进行的，</p>
-<pre><code>......
+<pre tabindex="0"><code>......
             /* volatile-lru and allkeys-lru policy */
             else if (server.maxmemory_policy == REDIS_MAXMEMORY_ALLKEYS_LRU ||
                 server.maxmemory_policy == REDIS_MAXMEMORY_VOLATILE_LRU)
@@ -1055,7 +1055,6 @@ unsigned long estimateObjectIdleTime(robj *o) {
                 }
             }
             ......
-
 </code></pre><p>Redis 会基于  <code>server.maxmemory_samples</code>  配置选取固定数目的 key，然后比较它们的 lru 访问时间，然后淘汰最近最久没有访问的 key，maxmemory_samples 的值越大，Redis 的近似 LRU 算法就越接近于严格 LRU 算法，但是相应消耗也变高，对性能有一定影响，样本值默认为 5。</p>
 <p>总结</p>
 <p>看来，虽然一个简单的概念，在工业界的产品中，为了追求空间的利用率，也会采用权衡的实现方案。</p>

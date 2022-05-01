@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta name="generator" content="Hugo 0.87.0" />
+  <meta name="generator" content="Hugo 0.98.0" />
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="反转链表 #  题目 #  中文 给你单链表的头节点 head ，请你反转链表，并返回反转后的链表。
@@ -35,7 +35,7 @@ Input: head = [1,2] Output: [2,1] Example 3:" />
 <link rel="manifest" href="/study-algs/manifest.json">
 <link rel="icon" href="/study-algs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/study-algs/book.min.e3d401e975fe9e04a41f82b0c90be4c8773f2541f197dba3ff2ae80293cb78c2.css" integrity="sha256-49QB6XX&#43;ngSkH4KwyQvkyHc/JUHxl9uj/yroApPLeMI=">
-<script defer src="/study-algs/en.search.min.e50c3ba976a07a73e26918571dfb54d81b32c02520b388448e3743363f66cdbb.js" integrity="sha256-5Qw7qXagenPiaRhXHftU2BsywCUgs4hEjjdDNj9mzbs="></script>
+<script defer src="/study-algs/en.search.min.8ace1568d160bec50f0c04a2345b298d3d5611801eea3dd399a4cab6b488ad34.js" integrity="sha256-is4VaNFgvsUPDASiNFspjT1WEYAe6j3TmaTKtrSIrTQ="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -941,7 +941,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-  <script>(function(){var a=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+  <script>(function(){var e=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
 
 
  
@@ -986,32 +986,32 @@ https://github.com/alex-shpak/hugo-book
   <label for="tabs-leetcode-problem-0">中文</label>
   <div class="book-tabs-content markdown-inner"><p>给你单链表的头节点 head ，请你反转链表，并返回反转后的链表。</p>
 <p>示例 1：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">输入：head <span style="color:#f92672">=</span> <span style="color:#f92672">[</span>1,2,3,4,5<span style="color:#f92672">]</span>
-输出：<span style="color:#f92672">[</span>5,4,3,2,1<span style="color:#f92672">]</span>
-</code></pre></div><p>示例 2：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">输入：head <span style="color:#f92672">=</span> <span style="color:#f92672">[</span>1,2<span style="color:#f92672">]</span>
-输出：<span style="color:#f92672">[</span>2,1<span style="color:#f92672">]</span>
-</code></pre></div><p>示例 3：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">输入：head <span style="color:#f92672">=</span> <span style="color:#f92672">[]</span>
-输出：<span style="color:#f92672">[]</span>
-</code></pre></div><p>提示：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">链表中节点的数目范围是 <span style="color:#f92672">[</span>0, 5000<span style="color:#f92672">]</span>
--5000 &lt;<span style="color:#f92672">=</span> Node.val &lt;<span style="color:#f92672">=</span> <span style="color:#ae81ff">5000</span>
-</code></pre></div><p>进阶：链表可以选用迭代或递归方式完成反转。你能否用两种方法解决这道题？</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>输入：head <span style="color:#f92672">=</span> <span style="color:#f92672">[</span>1,2,3,4,5<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>输出：<span style="color:#f92672">[</span>5,4,3,2,1<span style="color:#f92672">]</span>
+</span></span></code></pre></div><p>示例 2：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>输入：head <span style="color:#f92672">=</span> <span style="color:#f92672">[</span>1,2<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>输出：<span style="color:#f92672">[</span>2,1<span style="color:#f92672">]</span>
+</span></span></code></pre></div><p>示例 3：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>输入：head <span style="color:#f92672">=</span> <span style="color:#f92672">[]</span>
+</span></span><span style="display:flex;"><span>输出：<span style="color:#f92672">[]</span>
+</span></span></code></pre></div><p>提示：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>链表中节点的数目范围是 <span style="color:#f92672">[</span>0, 5000<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>-5000 &lt;<span style="color:#f92672">=</span> Node.val &lt;<span style="color:#f92672">=</span> <span style="color:#ae81ff">5000</span>
+</span></span></code></pre></div><p>进阶：链表可以选用迭代或递归方式完成反转。你能否用两种方法解决这道题？</p>
 </div><input type="radio" class="toggle" name="tabs-leetcode-problem" id="tabs-leetcode-problem-1"  />
   <label for="tabs-leetcode-problem-1">English</label>
   <div class="book-tabs-content markdown-inner"><p>Given the head of a singly linked list, reverse the list, and return the reversed list.</p>
 <p>Example 1:</p>
-<pre><code>Input: head = [1,2,3,4,5]
+<pre tabindex="0"><code>Input: head = [1,2,3,4,5]
 Output: [5,4,3,2,1]
 </code></pre><p>Example 2:</p>
-<pre><code>Input: head = [1,2]
+<pre tabindex="0"><code>Input: head = [1,2]
 Output: [2,1]
 </code></pre><p>Example 3:</p>
-<pre><code>Input: head = []
+<pre tabindex="0"><code>Input: head = []
 Output: []
 </code></pre><p>Constraints:</p>
-<pre><code>The number of nodes in the list is the range [0, 5000].
+<pre tabindex="0"><code>The number of nodes in the list is the range [0, 5000].
 -5000 &lt;= Node.val &lt;= 5000
 </code></pre><p>Follow up: A linked list can be reversed either iteratively or recursively. Could you implement both?</p>
 </div></div>
@@ -1044,66 +1044,53 @@ Output: []
 
 <div class="book-tabs"><input type="radio" class="toggle" name="tabs-leetcode-solution" id="tabs-leetcode-solution-0" checked="checked" />
   <label for="tabs-leetcode-solution-0">C</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c">
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-leetcode-solution" id="tabs-leetcode-solution-1"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"></code></pre></div></div><input type="radio" class="toggle" name="tabs-leetcode-solution" id="tabs-leetcode-solution-1"  />
   <label for="tabs-leetcode-solution-1">C&#43;&#43;</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++">
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-leetcode-solution" id="tabs-leetcode-solution-2"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"></code></pre></div></div><input type="radio" class="toggle" name="tabs-leetcode-solution" id="tabs-leetcode-solution-2"  />
   <label for="tabs-leetcode-solution-2">C#</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c#" data-lang="c#">
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-leetcode-solution" id="tabs-leetcode-solution-3"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c#" data-lang="c#"></code></pre></div></div><input type="radio" class="toggle" name="tabs-leetcode-solution" id="tabs-leetcode-solution-3"  />
   <label for="tabs-leetcode-solution-3">Go</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#75715e">/**
-</span><span style="color:#75715e"> * Definition for singly-linked list.
-</span><span style="color:#75715e"> * type ListNode struct {
-</span><span style="color:#75715e"> *     Val int
-</span><span style="color:#75715e"> *     Next *ListNode
-</span><span style="color:#75715e"> * }
-</span><span style="color:#75715e"> */</span>
-<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">reverseList</span>(<span style="color:#a6e22e">head</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">ListNode</span>) <span style="color:#f92672">*</span><span style="color:#a6e22e">ListNode</span> {
-    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">pre</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">ListNode</span> = <span style="color:#66d9ef">nil</span>
-    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">next</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">ListNode</span> = <span style="color:#66d9ef">nil</span>
-    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">cur</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">ListNode</span> = <span style="color:#a6e22e">head</span>
-    <span style="color:#66d9ef">for</span> <span style="color:#a6e22e">cur</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
-        <span style="color:#a6e22e">next</span> = <span style="color:#a6e22e">cur</span>.<span style="color:#a6e22e">Next</span>
-        <span style="color:#a6e22e">cur</span>.<span style="color:#a6e22e">Next</span> = <span style="color:#a6e22e">pre</span>
-        <span style="color:#a6e22e">pre</span> = <span style="color:#a6e22e">cur</span>
-        <span style="color:#a6e22e">cur</span> = <span style="color:#a6e22e">next</span>
-    }
-
-    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">pre</span>
-}
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-leetcode-solution" id="tabs-leetcode-solution-4"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#75715e">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> * Definition for singly-linked list.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> * type ListNode struct {
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> *     Val int
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> *     Next *ListNode
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> * }
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> */</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">reverseList</span>(<span style="color:#a6e22e">head</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">ListNode</span>) <span style="color:#f92672">*</span><span style="color:#a6e22e">ListNode</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">pre</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">ListNode</span> = <span style="color:#66d9ef">nil</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">next</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">ListNode</span> = <span style="color:#66d9ef">nil</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">cur</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">ListNode</span> = <span style="color:#a6e22e">head</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> <span style="color:#a6e22e">cur</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">next</span> = <span style="color:#a6e22e">cur</span>.<span style="color:#a6e22e">Next</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">cur</span>.<span style="color:#a6e22e">Next</span> = <span style="color:#a6e22e">pre</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">pre</span> = <span style="color:#a6e22e">cur</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">cur</span> = <span style="color:#a6e22e">next</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">pre</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div></div><input type="radio" class="toggle" name="tabs-leetcode-solution" id="tabs-leetcode-solution-4"  />
   <label for="tabs-leetcode-solution-4">Java</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-leetcode-solution" id="tabs-leetcode-solution-5"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"></code></pre></div></div><input type="radio" class="toggle" name="tabs-leetcode-solution" id="tabs-leetcode-solution-5"  />
   <label for="tabs-leetcode-solution-5">JavaScript</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-leetcode-solution" id="tabs-leetcode-solution-6"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"></code></pre></div></div><input type="radio" class="toggle" name="tabs-leetcode-solution" id="tabs-leetcode-solution-6"  />
   <label for="tabs-leetcode-solution-6">Kotlin</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin">
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-leetcode-solution" id="tabs-leetcode-solution-7"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"></code></pre></div></div><input type="radio" class="toggle" name="tabs-leetcode-solution" id="tabs-leetcode-solution-7"  />
   <label for="tabs-leetcode-solution-7">PHP</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-leetcode-solution" id="tabs-leetcode-solution-8"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"></code></pre></div></div><input type="radio" class="toggle" name="tabs-leetcode-solution" id="tabs-leetcode-solution-8"  />
   <label for="tabs-leetcode-solution-8">Python2</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-leetcode-solution" id="tabs-leetcode-solution-9"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"></code></pre></div></div><input type="radio" class="toggle" name="tabs-leetcode-solution" id="tabs-leetcode-solution-9"  />
   <label for="tabs-leetcode-solution-9">Python3</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-leetcode-solution" id="tabs-leetcode-solution-10"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"></code></pre></div></div><input type="radio" class="toggle" name="tabs-leetcode-solution" id="tabs-leetcode-solution-10"  />
   <label for="tabs-leetcode-solution-10">Ruby</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-leetcode-solution" id="tabs-leetcode-solution-11"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"></code></pre></div></div><input type="radio" class="toggle" name="tabs-leetcode-solution" id="tabs-leetcode-solution-11"  />
   <label for="tabs-leetcode-solution-11">Rust</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust">
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-leetcode-solution" id="tabs-leetcode-solution-12"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"></code></pre></div></div><input type="radio" class="toggle" name="tabs-leetcode-solution" id="tabs-leetcode-solution-12"  />
   <label for="tabs-leetcode-solution-12">Scala</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala">
-</code></pre></div></div><input type="radio" class="toggle" name="tabs-leetcode-solution" id="tabs-leetcode-solution-13"  />
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scala" data-lang="scala"></code></pre></div></div><input type="radio" class="toggle" name="tabs-leetcode-solution" id="tabs-leetcode-solution-13"  />
   <label for="tabs-leetcode-solution-13">Swift</label>
-  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">
-</code></pre></div></div></div>
+  <div class="book-tabs-content markdown-inner"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"></code></pre></div></div></div>
 
 </article>
  
