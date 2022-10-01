@@ -11,7 +11,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kingye.me/study-algs/docs/advanced/leetcode/0/1/</guid>
-      <description>两数之和 #  题目 #  中文 给定一个整数数组 nums 和一个目标值 target，请你在该数组中找出和为目标值的那两个整数，并返回他们的数组下标。
+      <description>两数之和 # 题目 # 中文 给定一个整数数组 nums 和一个目标值 target，请你在该数组中找出和为目标值的那两个整数，并返回他们的数组下标。
 你可以假设每种输入只会对应一个答案。但是，你不能重复利用这个数组中同样的元素。
 示例:
 给定 nums = [2, 7, 11, 15], target = 9 因为 nums[0] + nums[1] = 2 + 7 = 9 所以返回 [0, 1] English Given an array of integers, return indices of the two numbers such that they add up to a specific target.
@@ -24,7 +24,7 @@ You may assume that each input would have exactly one solution, and you may not 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kingye.me/study-algs/docs/advanced/leetcode/0/2/</guid>
-      <description>两数相加 #  题目 #  中文 给出两个 非空 的链表用来表示两个非负的整数。其中，它们各自的位数是按照 逆序 的方式存储的，并且它们的每个节点只能存储 一位 数字。
+      <description>两数相加 # 题目 # 中文 给出两个 非空 的链表用来表示两个非负的整数。其中，它们各自的位数是按照 逆序 的方式存储的，并且它们的每个节点只能存储 一位 数字。
 如果，我们将这两个数相加起来，则会返回一个新的链表来表示它们的和。
 您可以假设除了数字 0 之外，这两个数都不会以 0 开头。
 示例：
@@ -37,7 +37,7 @@ You may assume that each input would have exactly one solution, and you may not 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kingye.me/study-algs/docs/advanced/leetcode/0/3/</guid>
-      <description>无重复字符的最长子串 #  题目 #  中文 给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度。
+      <description>无重复字符的最长子串 # 题目 # 中文 给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度。
 示例 1:
 输入: &amp;#34;abcabcbb&amp;#34; 输出: 3 解释: 因为无重复字符的最长子串是 &amp;#34;abc&amp;#34;，所以其长度为 3。 示例 2:
 输入: &amp;#34;bbbbb&amp;#34; 输出: 1 解释: 因为无重复字符的最长子串是 &amp;#34;b&amp;#34;，所以其长度为 1。 示例 3:
@@ -52,7 +52,7 @@ Input: &amp;#34;abcabcbb&amp;#34; Output: 3 Explanation: The answer is &amp;#34;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kingye.me/study-algs/docs/advanced/leetcode/0/4/</guid>
-      <description>寻找两个有序数组的中位数 #  题目 #  中文 给定两个大小为 m 和 n 的有序数组 nums1 和 nums2。
+      <description>寻找两个有序数组的中位数 # 题目 # 中文 给定两个大小为 m 和 n 的有序数组 nums1 和 nums2。
 请你找出这两个有序数组的中位数，并且要求算法的时间复杂度为 O (log (m + n))。
 你可以假设 nums1 和 nums2 不会同时为空。
 示例 1:
@@ -67,18 +67,18 @@ Find the median of the two sorted arrays.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kingye.me/study-algs/docs/advanced/leetcode/0/7/</guid>
-      <description>整数反转 #  题目 #  中文 给出一个 32 位的有符号整数，你需要将这个整数中每位上的数字进行反转。
+      <description>整数反转 # 题目 # 中文 给出一个 32 位的有符号整数，你需要将这个整数中每位上的数字进行反转。
 示例 1:
 输入: 123 输出: 321 示例 2:
 输入: -123 输出: -321 示例 3:
 输入: 120 输出: 21 注意:
 假设我们的环境只能存储得下 32 位的有符号整数，则其数值范围为
-  \([-2^31, 2^31-1]。\)  请根据这个假设，如果反转后整数溢出那么就返回 0。
+\([-2^31, 2^31-1]。\) 请根据这个假设，如果反转后整数溢出那么就返回 0。
 English Given a 32-bit signed integer, reverse digits of an integer.
 Example 1:
 Input: 123 Output: 321 Example 2:
 Input: -123 Output: -321 Example 3:
-Input: 120 Output: 21 Note: Assume we are dealing with an environment which could only store integers within the 32-bit signed integer range:  ([-2^31, 2^31-1].</description>
+Input: 120 Output: 21 Note: Assume we are dealing with an environment which could only store integers within the 32-bit signed integer range: ([-2^31, 2^31-1].</description>
     </item>
     
     <item>
@@ -87,7 +87,7 @@ Input: 120 Output: 21 Note: Assume we are dealing with an environment which coul
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kingye.me/study-algs/docs/advanced/leetcode/0/9/</guid>
-      <description>回文数 #  题目 #  中文 判断一个整数是否是回文数。回文数是指正序（从左向右）和倒序（从右向左）读都是一样的整数。
+      <description>回文数 # 题目 # 中文 判断一个整数是否是回文数。回文数是指正序（从左向右）和倒序（从右向左）读都是一样的整数。
 示例 1:
 输入: 121 输出: true 示例 2:
 输入: -121 输出: false 解释: 从左向右读, 为 -121 。 从右向左读, 为 121- 。因此它不是一个回文数。 示例 3:
@@ -104,7 +104,7 @@ Input: 121 Output: true Example 2:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kingye.me/study-algs/docs/advanced/common/sort/</guid>
-      <description>排序算法 #  </description>
+      <description> 排序算法 # </description>
     </item>
     
     <item>
@@ -113,7 +113,7 @@ Input: 121 Output: true Example 2:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kingye.me/study-algs/docs/advanced/leetcode/0/10/</guid>
-      <description>正则表达式匹配 #  题目 #  中文 给你一个字符串 s 和一个字符规律 p，请你来实现一个支持 &amp;lsquo;.&amp;rsquo; 和 &amp;lsquo;*&amp;rsquo; 的正则表达式匹配。
+      <description>正则表达式匹配 # 题目 # 中文 给你一个字符串 s 和一个字符规律 p，请你来实现一个支持 &amp;lsquo;.&amp;rsquo; 和 &amp;lsquo;*&amp;rsquo; 的正则表达式匹配。
 &amp;lsquo;.&amp;rsquo; 匹配任意单个字符 &amp;lsquo;*&amp;rsquo; 匹配零个或多个前面的那一个元素 所谓匹配，是要涵盖 整个 字符串 s 的，而不是部分字符串。
 说明:
 s 可能为空，且只包含从 a-z 的小写字母。 p 可能为空，且只包含从 a-z 的小写字母，以及字符 . 和 *。 示例 1:
@@ -127,11 +127,11 @@ s 可能为空，且只包含从 a-z 的小写字母。 p 可能为空，且�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kingye.me/study-algs/docs/appendix/tutorial/</guid>
-      <description>算法教程 #  基础 #  labuladong/fucking-algorithm #  手把手撕 LeetCode 题目，扒各种算法套路的裤子， not only how，but also why. English version supported! https://labuladong.gitbook.io/algo/
-youngyangyang04/leetcode-master #  LeetCode 刷题攻略
-donnemartin/interactive-coding-challenges #  120+ interactive Python coding interview challenges (algorithms and data structures). Includes Anki flashcards.
-(book)kevin-wayne/algs4 #  Algorithms, 4th edition textbook code and libraries
- 进阶 #  </description>
+      <description> 算法教程 # 基础 # labuladong/fucking-algorithm # 手把手撕 LeetCode 题目，扒各种算法套路的裤子， not only how，but also why. English version supported! https://labuladong.gitbook.io/algo/
+youngyangyang04/leetcode-master # LeetCode 刷题攻略
+donnemartin/interactive-coding-challenges # 120+ interactive Python coding interview challenges (algorithms and data structures). Includes Anki flashcards.
+(book)kevin-wayne/algs4 # Algorithms, 4th edition textbook code and libraries
+进阶 # </description>
     </item>
     
     <item>
@@ -140,11 +140,11 @@ donnemartin/interactive-coding-challenges #  120+ interactive Python coding inte
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kingye.me/study-algs/docs/advanced/common/lru/</guid>
-      <description>LRU Cache #  LRU 全称是 Least Recently Used，即最近最久未使用的意思。
+      <description>LRU Cache # LRU 全称是 Least Recently Used，即最近最久未使用的意思。
 LRU 算法的设计原则是：如果一个数据在最近一段时间没有被访问到，那么在将来它被访问的可能性也很小。 也就是说，当限定的空间已存满数据时，应当把最久没有被访问到的数据淘汰。
-LRU-K #  LRU-K 中的 K 代表最近使用的次数，因此 LRU 可以认为是 LRU-1。
+LRU-K # LRU-K 中的 K 代表最近使用的次数，因此 LRU 可以认为是 LRU-1。
 LRU-K 的主要目的是为了解决 LRU 算法 “缓存污染” 的问题， 其核心思想是将 “最近使用过 1 次” 的判断标准扩展为 “最近使用过 K 次”。
-Redis 的 LRU 实现 #  如果按照 HashMap 和双向链表实现，需要额外的存储存放 next 和 prev 指针，牺牲比较大的存储空间，显然是不划算的。所以 Redis 采用了一个近似的做法，就是随机取出若干个 key，然后按照访问时间排序后，淘汰掉最不经常使用的，具体分析如下：
+Redis 的 LRU 实现 # 如果按照 HashMap 和双向链表实现，需要额外的存储存放 next 和 prev 指针，牺牲比较大的存储空间，显然是不划算的。所以 Redis 采用了一个近似的做法，就是随机取出若干个 key，然后按照访问时间排序后，淘汰掉最不经常使用的，具体分析如下：
 为了支持 LRU，Redis 2.8.19 中使用了一个全局的 LRU 时钟，server.lruclock，定义如下，
 #define REDIS_LRU_BITS 24 unsigned lruclock:REDIS_LRU_BITS; /* Clock for LRU eviction */ 默认的 LRU 时钟的分辨率是 1 秒，可以通过改变 REDIS_LRU_CLOCK_RESOLUTION 宏的值来改变，Redis 会在 serverCron() 中调用 updateLRUClock 定期的更新 LRU 时钟，更新的频率和 hz 参数有关，默认为 100ms 一次，如下，</description>
     </item>
@@ -155,7 +155,7 @@ Redis 的 LRU 实现 #  如果按照 HashMap 和双向链表实现，需要额�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kingye.me/study-algs/docs/advanced/common/paxos/</guid>
-      <description>paxos #  </description>
+      <description> paxos # </description>
     </item>
     
     <item>
@@ -164,7 +164,7 @@ Redis 的 LRU 实现 #  如果按照 HashMap 和双向链表实现，需要额�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kingye.me/study-algs/docs/advanced/common/raft/</guid>
-      <description>raft #  </description>
+      <description> raft # </description>
     </item>
     
     <item>
@@ -173,10 +173,9 @@ Redis 的 LRU 实现 #  如果按照 HashMap 和双向链表实现，需要额�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kingye.me/study-algs/docs/advanced/common/tree/</guid>
-      <description>树 #  判断一棵树是否包含另一棵树的结构 #  使用树结构序列化的方法，将两棵树进行相同方式的序列化，然后利用 kmp 判断子串，则可以得到
+      <description>树 # 判断一棵树是否包含另一棵树的结构 # 使用树结构序列化的方法，将两棵树进行相同方式的序列化，然后利用 kmp 判断子串，则可以得到
 结果，时间复杂度为 O（m+n）
-这道题的可行性是：树结构的序列化和反序列化是一一对应的
- </description>
+这道题的可行性是：树结构的序列化和反序列化是一一对应的</description>
     </item>
     
     <item>
@@ -185,7 +184,7 @@ Redis 的 LRU 实现 #  如果按照 HashMap 和双向链表实现，需要额�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kingye.me/study-algs/docs/appendix/interview/</guid>
-      <description>算法面试题 #  基础题 #  进阶题 #  </description>
+      <description> 算法面试题 # 基础题 # 进阶题 # </description>
     </item>
     
     <item>
@@ -194,9 +193,9 @@ Redis 的 LRU 实现 #  如果按照 HashMap 和双向链表实现，需要额�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kingye.me/study-algs/docs/advanced/common/kmp/</guid>
-      <description>KMP #  KMP 是用来找字符串匹配的
+      <description> KMP # KMP 是用来找字符串匹配的
 KMP 的时间复杂度是 O (m + n)
-参考 #   如何更好地理解和掌握 KMP 算法？ KMP 算法详解 Knuth-Morris-Pratt algorithm  KMP：花 48 小时看懂了 KMP，想让你在 48 分钟内看懂    </description>
+参考 # 如何更好地理解和掌握 KMP 算法？ KMP 算法详解 Knuth-Morris-Pratt algorithm KMP：花 48 小时看懂了 KMP，想让你在 48 分钟内看懂 </description>
     </item>
     
     <item>
@@ -205,16 +204,16 @@ KMP 的时间复杂度是 O (m + n)
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kingye.me/study-algs/docs/advanced/common/bloom/</guid>
-      <description>布隆过滤器 #  布隆过滤器（Bloom Filter）是 1970 年由布隆提出的。 它实际上是一个很长的二进制向量和一系列随机映射函数。 布隆过滤器可以用于检索一个元素是否在一个集合中。 它的优点是空间效率和查询时间都比一般的算法要好的多， 缺点是有一定的误识别率和删除困难。
+      <description> 布隆过滤器 # 布隆过滤器（Bloom Filter）是 1970 年由布隆提出的。 它实际上是一个很长的二进制向量和一系列随机映射函数。 布隆过滤器可以用于检索一个元素是否在一个集合中。 它的优点是空间效率和查询时间都比一般的算法要好的多， 缺点是有一定的误识别率和删除困难。
 解决： 网页 URL 去重、垃圾邮件识别、大集合中重复元素的判断和缓存穿透等问题
 本质上布隆过滤器是一种数据结构，比较巧妙的概率型数据结构（probabilistic data structure），特点是高效地插入和查询，可以用来告诉你 某样东西一定不存在或者可能存在。
 相比于传统的 List、Set、Map 等数据结构，它更高效、占用空间更少，但是缺点是其返回的结果是概率性的，而不是确切的。
-HashMap 的问题 #    例如存储容量占比高，考虑到负载因子的存在，通常空间是不能被用满的，而一旦你的值很多例如上亿的时候，那 HashMap 占据的内存大小就变得很可观了。
-  还比如说你的数据集存储在远程服务器上，本地服务接受输入，而数据集非常大不可能一次性读进内存构建 HashMap 的时候，也会存在问题。
-  布隆过滤器的原理 #  当一个元素被加入集合时，通过 K 个散列函数将这个元素映射成一个位数组中的 K 个点，把它们置为 1。检索时，我们只要看看这些点是不是都是 1 就（大约）知道集合中有没有它了：如果这些点有任何一个 0，则被检元素一定不在；如果都是 1，则被检元素很可能在。
- 应用 #  在大数据场景应用比较多，比如 Hbase 中使用它去判断数据是否在磁盘上。
+HashMap 的问题 # 例如存储容量占比高，考虑到负载因子的存在，通常空间是不能被用满的，而一旦你的值很多例如上亿的时候，那 HashMap 占据的内存大小就变得很可观了。
+还比如说你的数据集存储在远程服务器上，本地服务接受输入，而数据集非常大不可能一次性读进内存构建 HashMap 的时候，也会存在问题。
+布隆过滤器的原理 # 当一个元素被加入集合时，通过 K 个散列函数将这个元素映射成一个位数组中的 K 个点，把它们置为 1。检索时，我们只要看看这些点是不是都是 1 就（大约）知道集合中有没有它了：如果这些点有任何一个 0，则被检元素一定不在；如果都是 1，则被检元素很可能在。
+应用 # 在大数据场景应用比较多，比如 Hbase 中使用它去判断数据是否在磁盘上。
 还有在爬虫场景判断 url 是否已经被爬取过。
-在缓存之前在加一层 BloomFilter #  </description>
+在缓存之前在加一层 BloomFilter # </description>
     </item>
     
     <item>
@@ -223,7 +222,7 @@ HashMap 的问题 #    例如存储容量占比高，考虑到负载因子的存
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kingye.me/study-algs/docs/basic/thought/recursive/</guid>
-      <description>递归 #  参考 #   三道题套路解决递归问题  </description>
+      <description> 递归 # 参考 # 三道题套路解决递归问题 </description>
     </item>
     
     <item>
@@ -232,7 +231,7 @@ HashMap 的问题 #    例如存储容量占比高，考虑到负载因子的存
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kingye.me/study-algs/docs/appendix/attention/</guid>
-      <description>关注项目 #  </description>
+      <description> 关注项目 # </description>
     </item>
     
     <item>
@@ -241,7 +240,7 @@ HashMap 的问题 #    例如存储容量占比高，考虑到负载因子的存
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kingye.me/study-algs/docs/advanced/leetcode/0/54/</guid>
-      <description>螺旋矩阵 #  题目 #  中文 给定一个包含 m x n 个元素的矩阵（m 行，n 列），请按照顺时针螺旋顺序，返回矩阵中的所有元素。
+      <description>螺旋矩阵 # 题目 # 中文 给定一个包含 m x n 个元素的矩阵（m 行，n 列），请按照顺时针螺旋顺序，返回矩阵中的所有元素。
 示例 1:
 输入: [ [ 1, 2, 3 ], [ 4, 5, 6 ], [ 7, 8, 9 ] ] 输出: [1,2,3,6,9,8,7,4,5] 示例 2:
 输入: [ [1, 2, 3, 4], [5, 6, 7, 8], [9,10,11,12] ] 输出: [1,2,3,4,8,12,11,10,9,5,6,7] English Given a matrix of m x n elements (m rows, n columns), return all elements of the matrix in spiral order.</description>
@@ -253,7 +252,7 @@ HashMap 的问题 #    例如存储容量占比高，考虑到负载因子的存
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kingye.me/study-algs/docs/advanced/leetcode/0/71/</guid>
-      <description>模板 #  题目 #  中文 以 Unix 风格给出一个文件的绝对路径，你需要简化它。或者换句话说，将其转换为规范路径。
+      <description>模板 # 题目 # 中文 以 Unix 风格给出一个文件的绝对路径，你需要简化它。或者换句话说，将其转换为规范路径。
 在 Unix 风格的文件系统中，一个点（.）表示当前目录本身；此外，两个点 （..） 表示将目录切换到上一级（指向父目录）；两者都可以是复杂相对路径的组成部分。更多信息请参阅：Linux / Unix 中的绝对路径 vs 相对路径
 请注意，返回的规范路径必须始终以斜杠 / 开头，并且两个目录名之间必须只有一个斜杠 /。最后一个目录名（如果存在）不能以 / 结尾。此外，规范路径必须是表示绝对路径的最短字符串。
 示例 1：
@@ -271,7 +270,7 @@ HashMap 的问题 #    例如存储容量占比高，考虑到负载因子的存
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kingye.me/study-algs/docs/advanced/leetcode/1/110/</guid>
-      <description>平衡二叉树 #  题目 #  中文 给定一个二叉树，判断它是否是高度平衡的二叉树。
+      <description>平衡二叉树 # 题目 # 中文 给定一个二叉树，判断它是否是高度平衡的二叉树。
 本题中，一棵高度平衡二叉树定义为：
 一个二叉树每个节点 的左右两个子树的高度差的绝对值不超过 1。
 示例 1:
@@ -288,7 +287,7 @@ a binary tree in which the left and right subtrees of every node differ in heigh
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kingye.me/study-algs/docs/advanced/leetcode/1/146/</guid>
-      <description>LRU 缓存机制 #  题目 #  中文 运用你所掌握的数据结构，设计和实现一个 LRU (最近最少使用) 缓存机制。它应该支持以下操作： 获取数据 get 和 写入数据 put 。
+      <description>LRU 缓存机制 # 题目 # 中文 运用你所掌握的数据结构，设计和实现一个 LRU (最近最少使用) 缓存机制。它应该支持以下操作： 获取数据 get 和 写入数据 put 。
 获取数据 get(key) - 如果密钥 (key) 存在于缓存中，则获取密钥的值（总是正数），否则返回 -1。 写入数据 put(key, value) - 如果密钥已经存在，则变更其数据值；如果密钥不存在，则插入该组「密钥 / 数据值」。当缓存容量达到上限时，它应该在写入新数据之前删除最久未使用的数据值，从而为新的数据值留出空间。
 进阶:
 你是否可以在 O(1) 时间复杂度内完成这两种操作？
@@ -302,7 +301,7 @@ LRUCache cache = new LRUCache( 2 /* 缓存容量 */ ); cache.put(1, 1); cache.pu
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kingye.me/study-algs/docs/advanced/leetcode/2/206/</guid>
-      <description>反转链表 #  题目 #  中文 给你单链表的头节点 head ，请你反转链表，并返回反转后的链表。
+      <description>反转链表 # 题目 # 中文 给你单链表的头节点 head ，请你反转链表，并返回反转后的链表。
 示例 1：
 输入：head = [1,2,3,4,5] 输出：[5,4,3,2,1] 示例 2：
 输入：head = [1,2] 输出：[2,1] 示例 3：
@@ -320,7 +319,7 @@ Input: head = [1,2] Output: [2,1] Example 3:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kingye.me/study-algs/docs/advanced/leetcode/6/671/</guid>
-      <description>二叉树中第二小的节点 #  题目 #  中文 给定一个非空特殊的二叉树，每个节点都是正数，并且每个节点的子节点数量只能为 2 或 0。如果一个节点有两个子节点的话，那么这个节点的值不大于它的子节点的值。
+      <description>二叉树中第二小的节点 # 题目 # 中文 给定一个非空特殊的二叉树，每个节点都是正数，并且每个节点的子节点数量只能为 2 或 0。如果一个节点有两个子节点的话，那么这个节点的值不大于它的子节点的值。
 给出这样的一个二叉树，你需要输出所有节点中的第二小的值。如果第二小的值不存在的话，输出 -1 。
 示例 1:
 输入: 2 / \ 2 5 / \ 5 7 输出: 5 说明: 最小的值是 2 ，第二小的值是 5 。 示例 2:
