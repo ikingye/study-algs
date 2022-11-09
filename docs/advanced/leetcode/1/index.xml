@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>101-200 on 算法学习笔记</title>
+    <link>https://kingye.me/study-algs/docs/advanced/leetcode/1/</link>
+    <description>Recent content in 101-200 on 算法学习笔记</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://kingye.me/study-algs/docs/advanced/leetcode/1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>110. 平衡二叉树</title>
+      <link>https://kingye.me/study-algs/docs/advanced/leetcode/1/110/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/study-algs/docs/advanced/leetcode/1/110/</guid>
+      <description>平衡二叉树 #  题目 #  中文 给定一个二叉树，判断它是否是高度平衡的二叉树。
+本题中，一棵高度平衡二叉树定义为：
+一个二叉树每个节点 的左右两个子树的高度差的绝对值不超过 1。
+示例 1:
+给定二叉树 [3,9,20,null,null,15,7] 3 / \ 9 20 / \ 15 7 返回 true 。
+示例 2:
+给定二叉树 [1,2,2,3,3,null,null,4,4] 1 / \ 2 2 / \ 3 3 / \ 4 4 返回 false 。 English Given a binary tree, determine if it is height-balanced.
+For this problem, a height-balanced binary tree is defined as:
+a binary tree in which the left and right subtrees of every node differ in height by no more than 1.</description>
+    </item>
+    
+    <item>
+      <title>146. LRU 缓存机制</title>
+      <link>https://kingye.me/study-algs/docs/advanced/leetcode/1/146/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/study-algs/docs/advanced/leetcode/1/146/</guid>
+      <description>LRU 缓存机制 #  题目 #  中文 运用你所掌握的数据结构，设计和实现一个 LRU (最近最少使用) 缓存机制。它应该支持以下操作： 获取数据 get 和 写入数据 put 。
+获取数据 get(key) - 如果密钥 (key) 存在于缓存中，则获取密钥的值（总是正数），否则返回 -1。 写入数据 put(key, value) - 如果密钥已经存在，则变更其数据值；如果密钥不存在，则插入该组「密钥 / 数据值」。当缓存容量达到上限时，它应该在写入新数据之前删除最久未使用的数据值，从而为新的数据值留出空间。
+进阶:
+你是否可以在 O(1) 时间复杂度内完成这两种操作？
+示例:
+LRUCache cache = new LRUCache( 2 /* 缓存容量 */ ); cache.put(1, 1); cache.put(2, 2); cache.get(1); // 返回 1 cache.put(3, 3); // 该操作会使得密钥 2 作废 cache.get(2); // 返回 -1 (未找到) cache.put(4, 4); // 该操作会使得密钥 1 作废 cache.</description>
+    </item>
+    
+  </channel>
+</rss>
