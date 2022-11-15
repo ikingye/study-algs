@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>第四部分 附录 on 算法学习笔记</title>
+    <link>https://kingye.me/study-algs/docs/appendix/</link>
+    <description>Recent content in 第四部分 附录 on 算法学习笔记</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://kingye.me/study-algs/docs/appendix/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>4.1 教程</title>
+      <link>https://kingye.me/study-algs/docs/appendix/tutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/study-algs/docs/appendix/tutorial/</guid>
+      <description>算法教程 #  基础 #  labuladong/fucking-algorithm #  手把手撕 LeetCode 题目，扒各种算法套路的裤子， not only how，but also why. English version supported! https://labuladong.gitbook.io/algo/
+youngyangyang04/leetcode-master #  LeetCode 刷题攻略
+donnemartin/interactive-coding-challenges #  120+ interactive Python coding interview challenges (algorithms and data structures). Includes Anki flashcards.
+(book)kevin-wayne/algs4 #  Algorithms, 4th edition textbook code and libraries
+ 进阶 #  </description>
+    </item>
+    
+    <item>
+      <title>4.2 面试题</title>
+      <link>https://kingye.me/study-algs/docs/appendix/interview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/study-algs/docs/appendix/interview/</guid>
+      <description>算法面试题 #  基础题 #  进阶题 #  </description>
+    </item>
+    
+    <item>
+      <title>4.3 关注项目</title>
+      <link>https://kingye.me/study-algs/docs/appendix/attention/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/study-algs/docs/appendix/attention/</guid>
+      <description>关注项目 #  </description>
+    </item>
+    
+  </channel>
+</rss>
