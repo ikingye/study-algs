@@ -2,17 +2,17 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta name="generator" content="Hugo 0.99.1" />
+  <meta name="generator" content="Hugo 0.121.1">
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="LRU 缓存机制 #  题目 #  中文 运用你所掌握的数据结构，设计和实现一个 LRU (最近最少使用) 缓存机制。它应该支持以下操作： 获取数据 get 和 写入数据 put 。
+<meta name="description" content="LRU 缓存机制 # 题目 # 中文 运用你所掌握的数据结构，设计和实现一个 LRU (最近最少使用) 缓存机制。它应该支持以下操作： 获取数据 get 和 写入数据 put 。
 获取数据 get(key) - 如果密钥 (key) 存在于缓存中，则获取密钥的值（总是正数），否则返回 -1。 写入数据 put(key, value) - 如果密钥已经存在，则变更其数据值；如果密钥不存在，则插入该组「密钥 / 数据值」。当缓存容量达到上限时，它应该在写入新数据之前删除最久未使用的数据值，从而为新的数据值留出空间。
 进阶:
 你是否可以在 O(1) 时间复杂度内完成这两种操作？
 示例:
 LRUCache cache = new LRUCache( 2 /* 缓存容量 */ ); cache.put(1, 1); cache.put(2, 2); cache.get(1); // 返回 1 cache.put(3, 3); // 该操作会使得密钥 2 作废 cache.get(2); // 返回 -1 (未找到) cache.put(4, 4); // 该操作会使得密钥 1 作废 cache.">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="146. LRU 缓存机制" />
-<meta property="og:description" content="LRU 缓存机制 #  题目 #  中文 运用你所掌握的数据结构，设计和实现一个 LRU (最近最少使用) 缓存机制。它应该支持以下操作： 获取数据 get 和 写入数据 put 。
+<meta property="og:description" content="LRU 缓存机制 # 题目 # 中文 运用你所掌握的数据结构，设计和实现一个 LRU (最近最少使用) 缓存机制。它应该支持以下操作： 获取数据 get 和 写入数据 put 。
 获取数据 get(key) - 如果密钥 (key) 存在于缓存中，则获取密钥的值（总是正数），否则返回 -1。 写入数据 put(key, value) - 如果密钥已经存在，则变更其数据值；如果密钥不存在，则插入该组「密钥 / 数据值」。当缓存容量达到上限时，它应该在写入新数据之前删除最久未使用的数据值，从而为新的数据值留出空间。
 进阶:
 你是否可以在 O(1) 时间复杂度内完成这两种操作？
@@ -27,7 +27,7 @@ LRUCache cache = new LRUCache( 2 /* 缓存容量 */ ); cache.put(1, 1); cache.pu
 <link rel="manifest" href="/study-algs/manifest.json">
 <link rel="icon" href="/study-algs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/study-algs/book.min.e3d401e975fe9e04a41f82b0c90be4c8773f2541f197dba3ff2ae80293cb78c2.css" integrity="sha256-49QB6XX&#43;ngSkH4KwyQvkyHc/JUHxl9uj/yroApPLeMI=">
-<script defer src="/study-algs/en.search.min.8ace1568d160bec50f0c04a2345b298d3d5611801eea3dd399a4cab6b488ad34.js" integrity="sha256-is4VaNFgvsUPDASiNFspjT1WEYAe6j3TmaTKtrSIrTQ="></script>
+<script defer src="/study-algs/en.search.min.da093fea8d95383fed8514cb55785f3d5d0045b6de3329dd9bdb75e7fb69acb6.js" integrity="sha256-2gk/6o2VOD/thRTLVXhfPV0ARbbeMyndm9t15/tprLY="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book

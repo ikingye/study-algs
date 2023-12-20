@@ -2,30 +2,30 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta name="generator" content="Hugo 0.99.1" />
+  <meta name="generator" content="Hugo 0.121.1">
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="布隆过滤器 #  布隆过滤器（Bloom Filter）是 1970 年由布隆提出的。 它实际上是一个很长的二进制向量和一系列随机映射函数。 布隆过滤器可以用于检索一个元素是否在一个集合中。 它的优点是空间效率和查询时间都比一般的算法要好的多， 缺点是有一定的误识别率和删除困难。
+<meta name="description" content=" 布隆过滤器 # 布隆过滤器（Bloom Filter）是 1970 年由布隆提出的。 它实际上是一个很长的二进制向量和一系列随机映射函数。 布隆过滤器可以用于检索一个元素是否在一个集合中。 它的优点是空间效率和查询时间都比一般的算法要好的多， 缺点是有一定的误识别率和删除困难。
 解决： 网页 URL 去重、垃圾邮件识别、大集合中重复元素的判断和缓存穿透等问题
 本质上布隆过滤器是一种数据结构，比较巧妙的概率型数据结构（probabilistic data structure），特点是高效地插入和查询，可以用来告诉你 某样东西一定不存在或者可能存在。
 相比于传统的 List、Set、Map 等数据结构，它更高效、占用空间更少，但是缺点是其返回的结果是概率性的，而不是确切的。
-HashMap 的问题 #    例如存储容量占比高，考虑到负载因子的存在，通常空间是不能被用满的，而一旦你的值很多例如上亿的时候，那 HashMap 占据的内存大小就变得很可观了。
-  还比如说你的数据集存储在远程服务器上，本地服务接受输入，而数据集非常大不可能一次性读进内存构建 HashMap 的时候，也会存在问题。
-  布隆过滤器的原理 #  当一个元素被加入集合时，通过 K 个散列函数将这个元素映射成一个位数组中的 K 个点，把它们置为 1。检索时，我们只要看看这些点是不是都是 1 就（大约）知道集合中有没有它了：如果这些点有任何一个 0，则被检元素一定不在；如果都是 1，则被检元素很可能在。
- 应用 #  在大数据场景应用比较多，比如 Hbase 中使用它去判断数据是否在磁盘上。
+HashMap 的问题 # 例如存储容量占比高，考虑到负载因子的存在，通常空间是不能被用满的，而一旦你的值很多例如上亿的时候，那 HashMap 占据的内存大小就变得很可观了。
+还比如说你的数据集存储在远程服务器上，本地服务接受输入，而数据集非常大不可能一次性读进内存构建 HashMap 的时候，也会存在问题。
+布隆过滤器的原理 # 当一个元素被加入集合时，通过 K 个散列函数将这个元素映射成一个位数组中的 K 个点，把它们置为 1。检索时，我们只要看看这些点是不是都是 1 就（大约）知道集合中有没有它了：如果这些点有任何一个 0，则被检元素一定不在；如果都是 1，则被检元素很可能在。
+应用 # 在大数据场景应用比较多，比如 Hbase 中使用它去判断数据是否在磁盘上。
 还有在爬虫场景判断 url 是否已经被爬取过。
-在缓存之前在加一层 BloomFilter #  ">
+在缓存之前在加一层 BloomFilter # ">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="布隆过滤器" />
-<meta property="og:description" content="布隆过滤器 #  布隆过滤器（Bloom Filter）是 1970 年由布隆提出的。 它实际上是一个很长的二进制向量和一系列随机映射函数。 布隆过滤器可以用于检索一个元素是否在一个集合中。 它的优点是空间效率和查询时间都比一般的算法要好的多， 缺点是有一定的误识别率和删除困难。
+<meta property="og:description" content=" 布隆过滤器 # 布隆过滤器（Bloom Filter）是 1970 年由布隆提出的。 它实际上是一个很长的二进制向量和一系列随机映射函数。 布隆过滤器可以用于检索一个元素是否在一个集合中。 它的优点是空间效率和查询时间都比一般的算法要好的多， 缺点是有一定的误识别率和删除困难。
 解决： 网页 URL 去重、垃圾邮件识别、大集合中重复元素的判断和缓存穿透等问题
 本质上布隆过滤器是一种数据结构，比较巧妙的概率型数据结构（probabilistic data structure），特点是高效地插入和查询，可以用来告诉你 某样东西一定不存在或者可能存在。
 相比于传统的 List、Set、Map 等数据结构，它更高效、占用空间更少，但是缺点是其返回的结果是概率性的，而不是确切的。
-HashMap 的问题 #    例如存储容量占比高，考虑到负载因子的存在，通常空间是不能被用满的，而一旦你的值很多例如上亿的时候，那 HashMap 占据的内存大小就变得很可观了。
-  还比如说你的数据集存储在远程服务器上，本地服务接受输入，而数据集非常大不可能一次性读进内存构建 HashMap 的时候，也会存在问题。
-  布隆过滤器的原理 #  当一个元素被加入集合时，通过 K 个散列函数将这个元素映射成一个位数组中的 K 个点，把它们置为 1。检索时，我们只要看看这些点是不是都是 1 就（大约）知道集合中有没有它了：如果这些点有任何一个 0，则被检元素一定不在；如果都是 1，则被检元素很可能在。
- 应用 #  在大数据场景应用比较多，比如 Hbase 中使用它去判断数据是否在磁盘上。
+HashMap 的问题 # 例如存储容量占比高，考虑到负载因子的存在，通常空间是不能被用满的，而一旦你的值很多例如上亿的时候，那 HashMap 占据的内存大小就变得很可观了。
+还比如说你的数据集存储在远程服务器上，本地服务接受输入，而数据集非常大不可能一次性读进内存构建 HashMap 的时候，也会存在问题。
+布隆过滤器的原理 # 当一个元素被加入集合时，通过 K 个散列函数将这个元素映射成一个位数组中的 K 个点，把它们置为 1。检索时，我们只要看看这些点是不是都是 1 就（大约）知道集合中有没有它了：如果这些点有任何一个 0，则被检元素一定不在；如果都是 1，则被检元素很可能在。
+应用 # 在大数据场景应用比较多，比如 Hbase 中使用它去判断数据是否在磁盘上。
 还有在爬虫场景判断 url 是否已经被爬取过。
-在缓存之前在加一层 BloomFilter #  " />
+在缓存之前在加一层 BloomFilter # " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://kingye.me/study-algs/docs/advanced/common/bloom/" /><meta property="article:section" content="docs" />
 
@@ -35,7 +35,7 @@ HashMap 的问题 #    例如存储容量占比高，考虑到负载因子的存
 <link rel="manifest" href="/study-algs/manifest.json">
 <link rel="icon" href="/study-algs/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/study-algs/book.min.e3d401e975fe9e04a41f82b0c90be4c8773f2541f197dba3ff2ae80293cb78c2.css" integrity="sha256-49QB6XX&#43;ngSkH4KwyQvkyHc/JUHxl9uj/yroApPLeMI=">
-<script defer src="/study-algs/en.search.min.8ace1568d160bec50f0c04a2345b298d3d5611801eea3dd399a4cab6b488ad34.js" integrity="sha256-is4VaNFgvsUPDASiNFspjT1WEYAe6j3TmaTKtrSIrTQ="></script>
+<script defer src="/study-algs/en.search.min.da093fea8d95383fed8514cb55785f3d5d0045b6de3329dd9bdb75e7fb69acb6.js" integrity="sha256-2gk/6o2VOD/thRTLVXhfPV0ARbbeMyndm9t15/tprLY="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
