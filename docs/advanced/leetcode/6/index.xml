@@ -1,18 +1,37 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>601-700 on 算法学习笔记</title>
-    <link>https://kingye.me/study-algs/docs/advanced/leetcode/6/</link>
-    <description>Recent content in 601-700 on 算法学习笔记</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <atom:link href="https://kingye.me/study-algs/docs/advanced/leetcode/6/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>671. 二叉树中第二小的节点</title>
-      <link>https://kingye.me/study-algs/docs/advanced/leetcode/6/671/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kingye.me/study-algs/docs/advanced/leetcode/6/671/</guid>
-      <description>&lt;h1 id=&#34;二叉树中第二小的节点&#34;&gt;&#xA;  二叉树中第二小的节点&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e4%ba%8c%e5%8f%89%e6%a0%91%e4%b8%ad%e7%ac%ac%e4%ba%8c%e5%b0%8f%e7%9a%84%e8%8a%82%e7%82%b9&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;h2 id=&#34;题目httpsleetcode-cncomproblemssecond-minimum-node-in-a-binary-tree&#34;&gt;&#xA;  &lt;a href=&#34;https://leetcode-cn.com/problems/second-minimum-node-in-a-binary-tree/&#34;&gt;题目&lt;/a&gt;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e9%a2%98%e7%9b%aehttpsleetcode-cncomproblemssecond-minimum-node-in-a-binary-tree&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;book-tabs&#34;&gt;&lt;input type=&#34;radio&#34; class=&#34;toggle&#34; name=&#34;tabs-leetcode-problem&#34; id=&#34;tabs-leetcode-problem-0&#34; checked=&#34;checked&#34; /&gt;&#xA;  &lt;label for=&#34;tabs-leetcode-problem-0&#34;&gt;中文&lt;/label&gt;&#xA;  &lt;div class=&#34;book-tabs-content markdown-inner&#34;&gt;&lt;p&gt;给定一个非空特殊的二叉树，每个节点都是正数，并且每个节点的子节点数量只能为  2  或  0。如果一个节点有两个子节点的话，那么这个节点的值不大于它的子节点的值。&lt;/p&gt;&#xA;&lt;p&gt;给出这样的一个二叉树，你需要输出所有节点中的第二小的值。如果第二小的值不存在的话，输出 -1 。&lt;/p&gt;&#xA;&lt;p&gt;示例 1:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;输入:&#xA;    2&#xA;   / \&#xA;  2   5&#xA;     / \&#xA;    5   7&#xA;&#xA;输出: 5&#xA;说明: 最小的值是 2 ，第二小的值是 5  。&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;示例 2:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;输入:&#xA;    2&#xA;   / \&#xA;  2   2&#xA;&#xA;输出: -1&#xA;说明: 最小的值是 2, 但是不存在第二小的值。&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;input type=&#34;radio&#34; class=&#34;toggle&#34; name=&#34;tabs-leetcode-problem&#34; id=&#34;tabs-leetcode-problem-1&#34;  /&gt;&#xA;  &lt;label for=&#34;tabs-leetcode-problem-1&#34;&gt;English&lt;/label&gt;&#xA;  &lt;div class=&#34;book-tabs-content markdown-inner&#34;&gt;&lt;p&gt;Given a non-empty special binary tree consisting of nodes with the non-negative value, where each node in this tree has exactly two or zero sub-node. If the node has two sub-nodes, then this node&amp;rsquo;s value is the smaller value among its two sub-nodes. More formally, the property root.val = min(root.left.val, root.right.val) always holds.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>601-700 on 算法学习笔记</title><link>https://kingye.me/study-algs/docs/advanced/leetcode/6/</link><description>Recent content in 601-700 on 算法学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/study-algs/docs/advanced/leetcode/6/index.xml" rel="self" type="application/rss+xml"/><item><title>671. 二叉树中第二小的节点</title><link>https://kingye.me/study-algs/docs/advanced/leetcode/6/671/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/study-algs/docs/advanced/leetcode/6/671/</guid><description>&lt;h1 id="二叉树中第二小的节点">
+ 二叉树中第二小的节点
+ &lt;a class="anchor" href="#%e4%ba%8c%e5%8f%89%e6%a0%91%e4%b8%ad%e7%ac%ac%e4%ba%8c%e5%b0%8f%e7%9a%84%e8%8a%82%e7%82%b9">#&lt;/a>
+&lt;/h1>
+&lt;h2 id="题目httpsleetcode-cncomproblemssecond-minimum-node-in-a-binary-tree">
+ &lt;a href="https://leetcode-cn.com/problems/second-minimum-node-in-a-binary-tree/">题目&lt;/a>
+ &lt;a class="anchor" href="#%e9%a2%98%e7%9b%aehttpsleetcode-cncomproblemssecond-minimum-node-in-a-binary-tree">#&lt;/a>
+&lt;/h2>
+
+
+
+
+&lt;div class="book-tabs">&lt;input type="radio" class="toggle" name="tabs-leetcode-problem" id="tabs-leetcode-problem-0" checked="checked" />
+ &lt;label for="tabs-leetcode-problem-0">中文&lt;/label>
+ &lt;div class="book-tabs-content markdown-inner">&lt;p>给定一个非空特殊的二叉树，每个节点都是正数，并且每个节点的子节点数量只能为  2  或  0。如果一个节点有两个子节点的话，那么这个节点的值不大于它的子节点的值。&lt;/p>
+&lt;p>给出这样的一个二叉树，你需要输出所有节点中的第二小的值。如果第二小的值不存在的话，输出 -1 。&lt;/p>
+&lt;p>示例 1:&lt;/p>
+&lt;pre tabindex="0">&lt;code>输入:
+ 2
+ / \
+ 2 5
+ / \
+ 5 7
+
+输出: 5
+说明: 最小的值是 2 ，第二小的值是 5 。
+&lt;/code>&lt;/pre>&lt;p>示例 2:&lt;/p>
+&lt;pre tabindex="0">&lt;code>输入:
+ 2
+ / \
+ 2 2
+
+输出: -1
+说明: 最小的值是 2, 但是不存在第二小的值。
+&lt;/code>&lt;/pre>&lt;/div>&lt;input type="radio" class="toggle" name="tabs-leetcode-problem" id="tabs-leetcode-problem-1" />
+ &lt;label for="tabs-leetcode-problem-1">English&lt;/label>
+ &lt;div class="book-tabs-content markdown-inner">&lt;p>Given a non-empty special binary tree consisting of nodes with the non-negative value, where each node in this tree has exactly two or zero sub-node. If the node has two sub-nodes, then this node&amp;rsquo;s value is the smaller value among its two sub-nodes. More formally, the property root.val = min(root.left.val, root.right.val) always holds.&lt;/p></description></item></channel></rss>

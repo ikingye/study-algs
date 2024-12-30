@@ -1,25 +1,75 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>101-200 on 算法学习笔记</title>
-    <link>https://kingye.me/study-algs/docs/advanced/leetcode/1/</link>
-    <description>Recent content in 101-200 on 算法学习笔记</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <atom:link href="https://kingye.me/study-algs/docs/advanced/leetcode/1/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>110. 平衡二叉树</title>
-      <link>https://kingye.me/study-algs/docs/advanced/leetcode/1/110/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kingye.me/study-algs/docs/advanced/leetcode/1/110/</guid>
-      <description>&lt;h1 id=&#34;平衡二叉树&#34;&gt;&#xA;  平衡二叉树&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e5%b9%b3%e8%a1%a1%e4%ba%8c%e5%8f%89%e6%a0%91&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;h2 id=&#34;题目httpsleetcode-cncomproblemsbalanced-binary-tree&#34;&gt;&#xA;  &lt;a href=&#34;https://leetcode-cn.com/problems/balanced-binary-tree/&#34;&gt;题目&lt;/a&gt;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e9%a2%98%e7%9b%aehttpsleetcode-cncomproblemsbalanced-binary-tree&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;book-tabs&#34;&gt;&lt;input type=&#34;radio&#34; class=&#34;toggle&#34; name=&#34;tabs-leetcode-problem&#34; id=&#34;tabs-leetcode-problem-0&#34; checked=&#34;checked&#34; /&gt;&#xA;  &lt;label for=&#34;tabs-leetcode-problem-0&#34;&gt;中文&lt;/label&gt;&#xA;  &lt;div class=&#34;book-tabs-content markdown-inner&#34;&gt;&lt;p&gt;给定一个二叉树，判断它是否是高度平衡的二叉树。&lt;/p&gt;&#xA;&lt;p&gt;本题中，一棵高度平衡二叉树定义为：&lt;/p&gt;&#xA;&lt;p&gt;一个二叉树每个节点   的左右两个子树的高度差的绝对值不超过 1。&lt;/p&gt;&#xA;&lt;p&gt;示例 1:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;给定二叉树 [3,9,20,null,null,15,7]&#xA;&#xA;    3&#xA;   / \&#xA;  9  20&#xA;    /  \&#xA;   15   7&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;返回 true 。&lt;/p&gt;&#xA;&lt;p&gt;示例 2:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;给定二叉树 [1,2,2,3,3,null,null,4,4]&#xA;&#xA;       1&#xA;      / \&#xA;     2   2&#xA;    / \&#xA;   3   3&#xA;  / \&#xA; 4   4&#xA;返回 false 。&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;input type=&#34;radio&#34; class=&#34;toggle&#34; name=&#34;tabs-leetcode-problem&#34; id=&#34;tabs-leetcode-problem-1&#34;  /&gt;&#xA;  &lt;label for=&#34;tabs-leetcode-problem-1&#34;&gt;English&lt;/label&gt;&#xA;  &lt;div class=&#34;book-tabs-content markdown-inner&#34;&gt;&lt;p&gt;Given a binary tree, determine if it is height-balanced.&lt;/p&gt;&#xA;&lt;p&gt;For this problem, a height-balanced binary tree is defined as:&lt;/p&gt;&#xA;&lt;p&gt;a binary tree in which the left and right subtrees of every node differ in height by no more than 1.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>146. LRU 缓存机制</title>
-      <link>https://kingye.me/study-algs/docs/advanced/leetcode/1/146/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kingye.me/study-algs/docs/advanced/leetcode/1/146/</guid>
-      <description>&lt;h1 id=&#34;lru-缓存机制&#34;&gt;&#xA;  LRU 缓存机制&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#lru-%e7%bc%93%e5%ad%98%e6%9c%ba%e5%88%b6&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;h2 id=&#34;题目httpsleetcode-cncomproblemslru-cache&#34;&gt;&#xA;  &lt;a href=&#34;https://leetcode-cn.com/problems/lru-cache&#34;&gt;题目&lt;/a&gt;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e9%a2%98%e7%9b%aehttpsleetcode-cncomproblemslru-cache&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;book-tabs&#34;&gt;&lt;input type=&#34;radio&#34; class=&#34;toggle&#34; name=&#34;tabs-leetcode-problem&#34; id=&#34;tabs-leetcode-problem-0&#34; checked=&#34;checked&#34; /&gt;&#xA;  &lt;label for=&#34;tabs-leetcode-problem-0&#34;&gt;中文&lt;/label&gt;&#xA;  &lt;div class=&#34;book-tabs-content markdown-inner&#34;&gt;&lt;p&gt;运用你所掌握的数据结构，设计和实现一个 &lt;a href=&#34;https://baike.baidu.com/item/LRU&#34;&gt;LRU (最近最少使用)&lt;/a&gt; 缓存机制。它应该支持以下操作： 获取数据 get 和 写入数据 put 。&lt;/p&gt;&#xA;&lt;p&gt;获取数据 get(key) - 如果密钥 (key) 存在于缓存中，则获取密钥的值（总是正数），否则返回 -1。&#xA;写入数据 put(key, value) - 如果密钥已经存在，则变更其数据值；如果密钥不存在，则插入该组「密钥 / 数据值」。当缓存容量达到上限时，它应该在写入新数据之前删除最久未使用的数据值，从而为新的数据值留出空间。&lt;/p&gt;&#xA;&lt;p&gt;进阶:&lt;/p&gt;&#xA;&lt;p&gt;你是否可以在  &lt;code&gt;O(1)&lt;/code&gt; 时间复杂度内完成这两种操作？&lt;/p&gt;&#xA;&lt;p&gt;示例:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;LRUCache cache = new LRUCache( 2 /* 缓存容量 */ );&#xA;&#xA;cache.put(1, 1);&#xA;cache.put(2, 2);&#xA;cache.get(1);       // 返回  1&#xA;cache.put(3, 3);    // 该操作会使得密钥 2 作废&#xA;cache.get(2);       // 返回 -1 (未找到)&#xA;cache.put(4, 4);    // 该操作会使得密钥 1 作废&#xA;cache.get(1);       // 返回 -1 (未找到)&#xA;cache.get(3);       // 返回  3&#xA;cache.get(4);       // 返回  4&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;input type=&#34;radio&#34; class=&#34;toggle&#34; name=&#34;tabs-leetcode-problem&#34; id=&#34;tabs-leetcode-problem-1&#34;  /&gt;&#xA;  &lt;label for=&#34;tabs-leetcode-problem-1&#34;&gt;English&lt;/label&gt;&#xA;  &lt;div class=&#34;book-tabs-content markdown-inner&#34;&gt;&lt;p&gt;Design and implement a data structure for &lt;a href=&#34;https://en.wikipedia.org/wiki/Cache_replacement_policies#LRU&#34;&gt;Least Recently Used (LRU)&lt;/a&gt; cache. It should support the following operations: get and put.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>101-200 on 算法学习笔记</title><link>https://kingye.me/study-algs/docs/advanced/leetcode/1/</link><description>Recent content in 101-200 on 算法学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/study-algs/docs/advanced/leetcode/1/index.xml" rel="self" type="application/rss+xml"/><item><title>110. 平衡二叉树</title><link>https://kingye.me/study-algs/docs/advanced/leetcode/1/110/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/study-algs/docs/advanced/leetcode/1/110/</guid><description>&lt;h1 id="平衡二叉树">
+ 平衡二叉树
+ &lt;a class="anchor" href="#%e5%b9%b3%e8%a1%a1%e4%ba%8c%e5%8f%89%e6%a0%91">#&lt;/a>
+&lt;/h1>
+&lt;h2 id="题目httpsleetcode-cncomproblemsbalanced-binary-tree">
+ &lt;a href="https://leetcode-cn.com/problems/balanced-binary-tree/">题目&lt;/a>
+ &lt;a class="anchor" href="#%e9%a2%98%e7%9b%aehttpsleetcode-cncomproblemsbalanced-binary-tree">#&lt;/a>
+&lt;/h2>
+
+
+
+
+&lt;div class="book-tabs">&lt;input type="radio" class="toggle" name="tabs-leetcode-problem" id="tabs-leetcode-problem-0" checked="checked" />
+ &lt;label for="tabs-leetcode-problem-0">中文&lt;/label>
+ &lt;div class="book-tabs-content markdown-inner">&lt;p>给定一个二叉树，判断它是否是高度平衡的二叉树。&lt;/p>
+&lt;p>本题中，一棵高度平衡二叉树定义为：&lt;/p>
+&lt;p>一个二叉树每个节点   的左右两个子树的高度差的绝对值不超过 1。&lt;/p>
+&lt;p>示例 1:&lt;/p>
+&lt;pre tabindex="0">&lt;code>给定二叉树 [3,9,20,null,null,15,7]
+
+ 3
+ / \
+ 9 20
+ / \
+ 15 7
+&lt;/code>&lt;/pre>&lt;p>返回 true 。&lt;/p>
+&lt;p>示例 2:&lt;/p>
+&lt;pre tabindex="0">&lt;code>给定二叉树 [1,2,2,3,3,null,null,4,4]
+
+ 1
+ / \
+ 2 2
+ / \
+ 3 3
+ / \
+ 4 4
+返回 false 。
+&lt;/code>&lt;/pre>&lt;/div>&lt;input type="radio" class="toggle" name="tabs-leetcode-problem" id="tabs-leetcode-problem-1" />
+ &lt;label for="tabs-leetcode-problem-1">English&lt;/label>
+ &lt;div class="book-tabs-content markdown-inner">&lt;p>Given a binary tree, determine if it is height-balanced.&lt;/p>
+&lt;p>For this problem, a height-balanced binary tree is defined as:&lt;/p>
+&lt;p>a binary tree in which the left and right subtrees of every node differ in height by no more than 1.&lt;/p></description></item><item><title>146. LRU 缓存机制</title><link>https://kingye.me/study-algs/docs/advanced/leetcode/1/146/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/study-algs/docs/advanced/leetcode/1/146/</guid><description>&lt;h1 id="lru-缓存机制">
+ LRU 缓存机制
+ &lt;a class="anchor" href="#lru-%e7%bc%93%e5%ad%98%e6%9c%ba%e5%88%b6">#&lt;/a>
+&lt;/h1>
+&lt;h2 id="题目httpsleetcode-cncomproblemslru-cache">
+ &lt;a href="https://leetcode-cn.com/problems/lru-cache">题目&lt;/a>
+ &lt;a class="anchor" href="#%e9%a2%98%e7%9b%aehttpsleetcode-cncomproblemslru-cache">#&lt;/a>
+&lt;/h2>
+
+
+
+
+&lt;div class="book-tabs">&lt;input type="radio" class="toggle" name="tabs-leetcode-problem" id="tabs-leetcode-problem-0" checked="checked" />
+ &lt;label for="tabs-leetcode-problem-0">中文&lt;/label>
+ &lt;div class="book-tabs-content markdown-inner">&lt;p>运用你所掌握的数据结构，设计和实现一个 &lt;a href="https://baike.baidu.com/item/LRU">LRU (最近最少使用)&lt;/a> 缓存机制。它应该支持以下操作： 获取数据 get 和 写入数据 put 。&lt;/p>
+&lt;p>获取数据 get(key) - 如果密钥 (key) 存在于缓存中，则获取密钥的值（总是正数），否则返回 -1。
+写入数据 put(key, value) - 如果密钥已经存在，则变更其数据值；如果密钥不存在，则插入该组「密钥 / 数据值」。当缓存容量达到上限时，它应该在写入新数据之前删除最久未使用的数据值，从而为新的数据值留出空间。&lt;/p>
+&lt;p>进阶:&lt;/p>
+&lt;p>你是否可以在  &lt;code>O(1)&lt;/code> 时间复杂度内完成这两种操作？&lt;/p>
+&lt;p>示例:&lt;/p>
+&lt;pre tabindex="0">&lt;code>LRUCache cache = new LRUCache( 2 /* 缓存容量 */ );
+
+cache.put(1, 1);
+cache.put(2, 2);
+cache.get(1); // 返回 1
+cache.put(3, 3); // 该操作会使得密钥 2 作废
+cache.get(2); // 返回 -1 (未找到)
+cache.put(4, 4); // 该操作会使得密钥 1 作废
+cache.get(1); // 返回 -1 (未找到)
+cache.get(3); // 返回 3
+cache.get(4); // 返回 4
+&lt;/code>&lt;/pre>&lt;/div>&lt;input type="radio" class="toggle" name="tabs-leetcode-problem" id="tabs-leetcode-problem-1" />
+ &lt;label for="tabs-leetcode-problem-1">English&lt;/label>
+ &lt;div class="book-tabs-content markdown-inner">&lt;p>Design and implement a data structure for &lt;a href="https://en.wikipedia.org/wiki/Cache_replacement_policies#LRU">Least Recently Used (LRU)&lt;/a> cache. It should support the following operations: get and put.&lt;/p></description></item></channel></rss>
