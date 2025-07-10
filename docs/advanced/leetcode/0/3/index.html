@@ -10,37 +10,370 @@
 
 
 
+中文
 
-  中文
-  给定一个字符串，请你找出其中不含有重复字符的   最长子串   的长度。
+给定一个字符串，请你找出其中不含有重复字符的   最长子串   的长度。
+
 示例  1:
+
+```
 输入: "abcabcbb"
 输出: 3
 解释: 因为无重复字符的最长子串是 "abc"，所以其长度为 3。
+```
+
 示例 2:
+
+```
 输入: "bbbbb"
 输出: 1
 解释: 因为无重复字符的最长子串是 "b"，所以其长度为 1。
+```
+
 示例 3:
+
+```
 输入: "pwwkew"
 输出: 3
 解释: 因为无重复字符的最长子串是 "wke"，所以其长度为 3。
      请注意，你的答案必须是 子串 的长度，"pwke" 是一个子序列，不是子串。
+```
 
-  English
-  Given a string, find the length of the longest substring without repeating characters.
+
+
+
+
+English
+
+Given a string, find the length of the longest substring without repeating characters.
+
 Example 1:
+
+```
 Input: "abcabcbb"
 Output: 3
 Explanation: The answer is "abc", with the length of 3.
-Example 2:'><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#343a40"><meta name=color-scheme content="light dark"><meta property="og:url" content="https://kingye.me/study-algs/docs/advanced/leetcode/0/3/"><meta property="og:site_name" content="算法学习笔记"><meta property="og:title" content="3. 无重复字符的最长子串"><meta property="og:description" content='无重复字符的最长子串 # 题目 # 中文 给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度。
-示例 1:
-输入: "abcabcbb" 输出: 3 解释: 因为无重复字符的最长子串是 "abc"，所以其长度为 3。 示例 2:
-输入: "bbbbb" 输出: 1 解释: 因为无重复字符的最长子串是 "b"，所以其长度为 1。 示例 3:
-输入: "pwwkew" 输出: 3 解释: 因为无重复字符的最长子串是 "wke"，所以其长度为 3。 请注意，你的答案必须是 子串 的长度，"pwke" 是一个子序列，不是子串。 English Given a string, find the length of the longest substring without repeating characters.
-Example 1:
-Input: "abcabcbb" Output: 3 Explanation: The answer is "abc", with the length of 3. Example 2:'><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="article:section" content="docs"><meta property="article:modified_time" content="2021-11-01T15:01:42+08:00"><title>3. 无重复字符的最长子串 | 算法学习笔记</title>
-<link rel=manifest href=/study-algs/manifest.json><link rel=icon href=/study-algs/favicon.png><link rel=canonical href=https://kingye.me/study-algs/docs/advanced/leetcode/0/3/><link rel=stylesheet href=/study-algs/book.min.45ab58199f84c9a33853fdef2e41664c57a49ca55c9badf2dd2dd071f39975a3.css integrity="sha256-RatYGZ+EyaM4U/3vLkFmTFeknKVcm63y3S3QcfOZdaM=" crossorigin=anonymous><script defer src=/study-algs/fuse.min.js></script><script defer src=/study-algs/en.search.min.9040f2c37b44362d0583ce7871c502bd0c1d18ebefdb6886910f6991196ba47d.js integrity="sha256-kEDyw3tENi0Fg854ccUCvQwdGOvv22iGkQ9pkRlrpH0=" crossorigin=anonymous></script></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
+```
+
+Example 2:
+
+```
+Input: "bbbbb"
+Output: 1
+Explanation: The answer is "b", with the length of 1.
+```
+
+Example 3:
+
+```
+Input: "pwwkew"
+Output: 3
+Explanation: The answer is "wke", with the length of 3.
+             Note that the answer must be a substring, "pwke" is a subsequence and not a substring.
+```
+
+
+
+
+
+
+
+
+
+  分析
+  #
+
+
+
+
+
+基础
+
+
+举个例子
+
+`yabcdedfayghciajkc`
+
+- 当出现第二个 `a` 时，`bcdedfa` 就是无重复最长字串
+- 当出现第二个 `y` 时，最长字串不是 `abcdedfay`，因为包括了两个 `a`
+- 所以，`start` 是第一个 `y` 和 `start` （此时是第一个 `a`）中取大的
+- 即 `bcdedfay`
+
+
+
+
+
+进阶
+
+
+
+
+
+
+高阶
+
+
+
+
+
+
+
+
+
+  题解
+  #
+
+
+
+
+---
+
+
+
+C
+
+
+```c
+
+```
+
+
+
+
+---
+
+
+
+C++
+
+
+```c++
+
+```
+
+
+
+
+---
+
+
+
+C#
+
+
+```c#
+
+```
+
+
+
+
+---
+
+
+
+Go
+
+
+```go
+func lengthOfLongestSubstring(s string) int {
+    charLastPos := make(map[string]int)
+    ans, start := 0, 0
+    for i := range s {
+        si := string(s[i])
+        if lastPos, ok := charLastPos[si]; ok {
+            start = max(start, lastPos)
+        }
+        // 如果都没有重复字母，这里必须要 +1
+        ans = max(ans, i - start + 1)
+        // 为了对应上面 +1，这里也 +1
+        charLastPos[si] = i + 1
+    }
+
+    return ans
+}
+
+func max(a, b int) int {
+    if a > b {
+        return a
+    }
+    return b
+}
+```
+
+
+
+
+---
+
+
+
+Java
+
+
+```java
+
+```
+
+
+
+
+---
+
+
+
+JavaScript
+
+
+```javascript
+```
+
+
+
+
+---
+
+
+
+Kotlin
+
+
+```kotlin
+
+```
+
+
+
+
+---
+
+
+
+PHP
+
+
+```php
+
+```
+
+
+
+
+---
+
+
+
+Python2
+
+
+```python
+
+```
+
+
+
+
+---
+
+
+
+Python3
+
+
+```python
+class Solution:
+    def lengthOfLongestSubstring(self, s: str) -> int:
+        char_last_pos = {}
+        start, ans = 0, 0
+        for i in range(len(s)):
+            if s[i] in char_last_pos:
+                start = max(start, char_last_pos[s[i]])
+            # 如果都没有重复字母，这里必须要 +1
+            ans = max(ans, i - start + 1)
+            # 为了对应上面 +1，这里也 +1
+            char_last_pos[s[i]] = i + 1
+
+        return ans
+```
+
+
+
+
+---
+
+
+
+Ruby
+
+
+```ruby
+
+```
+
+
+
+
+---
+
+
+
+Rust
+
+
+```rust
+
+```
+
+
+
+
+---
+
+
+
+Scala
+
+
+```scala
+
+```
+
+
+
+
+---
+
+
+
+Swift
+
+
+```swift
+
+```
+
+
+
+
+---
+
+
+
+TypeScript
+
+
+```typescript
+
+```
+
+
+
+
+---
+
+
+'><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#343a40"><meta name=color-scheme content="light dark"><meta property="og:url" content="https://kingye.me/study-algs/docs/advanced/leetcode/0/3/"><meta property="og:site_name" content="算法学习笔记"><meta property="og:title" content="3. 无重复字符的最长子串"><meta property="og:description" content='无重复字符的最长子串 # 题目 # 中文 给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度。 示例 1: ``` 输入: "abcabcbb" 输出: 3 解释: 因为无重复字符的最长子串是 "abc"，所以其长度为 3。 ``` 示例 2: ``` 输入: "bbbbb" 输出: 1 解释: 因为无重复字符的最长子串是 "b"，所以其长度为 1。 ``` 示例 3: ``` 输入: "pwwkew" 输出: 3 解释: 因为无重复字符的最长子串是 "wke"，所以其长度为 3。 请注意，你的答案必须是 子串 的长度，"pwke" 是一个子序列，不是子串。 ``` English Given a string, find the length of the longest substring without repeating characters. Example 1: ``` Input: "abcabcbb" Output: 3 Explanation: The answer is "abc", with the length of 3. ``` Example 2: ``` Input: "bbbbb" Output: 1 Explanation: The answer is "b", with the length of 1. ``` Example 3: ``` Input: "pwwkew" Output: 3 Explanation: The answer is "wke", with the length of 3. Note that the answer must be a substring, "pwke" is a subsequence and not a substring. ``` 分析 # 基础 举个例子 `yabcdedfayghciajkc` - 当出现第二个 `a` 时，`bcdedfa` 就是无重复最长字串 - 当出现第二个 `y` 时，最长字串不是 `abcdedfay`，因为包括了两个 `a` - 所以，`start` 是第一个 `y` 和 `start` （此时是第一个 `a`）中取大的 - 即 `bcdedfay` 进阶 高阶 题解 # --- C ```c ``` --- C++ ```c++ ``` --- C# ```c# ``` --- Go ```go func lengthOfLongestSubstring(s string) int { charLastPos := make(map[string]int) ans, start := 0, 0 for i := range s { si := string(s[i]) if lastPos, ok := charLastPos[si]; ok { start = max(start, lastPos) } // 如果都没有重复字母，这里必须要 +1 ans = max(ans, i - start + 1) // 为了对应上面 +1，这里也 +1 charLastPos[si] = i + 1 } return ans } func max(a, b int) int { if a > b { return a } return b } ``` --- Java ```java ``` --- JavaScript ```javascript ``` --- Kotlin ```kotlin ``` --- PHP ```php ``` --- Python2 ```python ``` --- Python3 ```python class Solution: def lengthOfLongestSubstring(self, s: str) -> int: char_last_pos = {} start, ans = 0, 0 for i in range(len(s)): if s[i] in char_last_pos: start = max(start, char_last_pos[s[i]]) # 如果都没有重复字母，这里必须要 +1 ans = max(ans, i - start + 1) # 为了对应上面 +1，这里也 +1 char_last_pos[s[i]] = i + 1 return ans ``` --- Ruby ```ruby ``` --- Rust ```rust ``` --- Scala ```scala ``` --- Swift ```swift ``` --- TypeScript ```typescript ``` ---'><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="article:section" content="docs"><meta property="article:modified_time" content="2021-11-01T15:01:42+08:00"><title>3. 无重复字符的最长子串 | 算法学习笔记</title>
+<link rel=icon href=/study-algs/favicon.png><link rel=manifest href=/study-algs/manifest.json><link rel=canonical href=https://kingye.me/study-algs/docs/advanced/leetcode/0/3/><link rel=stylesheet href=/study-algs/book.min.c275a923ccfd83734be2807746b986854d819eefd18681945bad8b0b55aaf818.css integrity="sha256-wnWpI8z9g3NL4oB3RrmGhU2Bnu/RhoGUW62LC1Wq+Bg=" crossorigin=anonymous><script defer src=/study-algs/fuse.min.js></script><script defer src=/study-algs/en.search.min.52ebb2c8801cc969c71962fe337766f28158a9af1325caf56d4f0659a9795ab7.js integrity="sha256-UuuyyIAcyWnHGWL+M3dm8oFYqa8TJcr1bU8GWal5Wrc=" crossorigin=anonymous></script></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
 <input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=/study-algs/><span>算法学习笔记</span></a></h2><div class="book-search hidden"><input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><script>document.querySelector(".book-search").classList.remove("hidden")</script><ul><li><a href=https://kingye.me target=_blank rel="noopener noreferrer">博客</a></li><li><a href=https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417021727.png target=_blank rel="noopener noreferrer">公众号</a></li><li><a href=https://github.com/ikingye target=_blank rel="noopener noreferrer">Github</a></li><li><a href=https://weibo.com/kingyip15215 target=_blank rel="noopener noreferrer">微博</a></li><li><a href=https://www.zhihu.com/people/wutongyip target=_blank rel="noopener noreferrer">知乎</a></li></ul><hr><ul><li><span>第一部分 基础入门</span><ul><li><a href=/study-algs/docs/basic/datastruct/>1.1 数据结构</a><ul></ul></li><li><input type=checkbox id=section-b85d33ad589a6e77e3a3351aa069d504 class=toggle>
 <label for=section-b85d33ad589a6e77e3a3351aa069d504 class="flex justify-between"><a href=/study-algs/docs/basic/thought/>1.2 算法思想</a></label><ul><li><a href=/study-algs/docs/basic/thought/recursive/>递归</a></li></ul></li></ul></li><li><span>第二部分 进阶实战</span><ul><li><input type=checkbox id=section-37e286161fad0e7c848384274769f392 class=toggle>
 <label for=section-37e286161fad0e7c848384274769f392 class="flex justify-between"><a href=/study-algs/docs/advanced/common/>2.1 常见算法</a></label><ul><li><a href=/study-algs/docs/advanced/common/sort/>1.3.1 排序算法</a></li><li><input type=checkbox id=section-0af7a13a7f064a78ae00e3a1ff616de4 class=toggle>
@@ -68,88 +401,136 @@ Input: "abcabcbb" Output: 3 Explanation: The answer is "abc", with the length of
 <label for=section-73708c8f7ece7bf7eee7599df6a2c31d class="flex justify-between"><a href=/study-algs/docs/advanced/nowcoder/>2.3 牛客网</a></label><ul></ul></li></ul></li><li><span>第三部分 设计与实现</span><ul></ul></li><li><span>第四部分 附录</span><ul><li><input type=checkbox id=section-c87e4c6e9da866417fe0da60946cf3ab class=toggle>
 <label for=section-c87e4c6e9da866417fe0da60946cf3ab class="flex justify-between"><a href=/study-algs/docs/appendix/tutorial/>4.1 教程</a></label></li><li><input type=checkbox id=section-71989eed3c19d07bbb6a27628984704d class=toggle>
 <label for=section-71989eed3c19d07bbb6a27628984704d class="flex justify-between"><a href=/study-algs/docs/appendix/interview/>4.2 面试题</a></label></li><li><input type=checkbox id=section-2fbf1e9eb9e8a58488f1e60fce900188 class=toggle>
-<label for=section-2fbf1e9eb9e8a58488f1e60fce900188 class="flex justify-between"><a href=/study-algs/docs/appendix/attention/>4.3 关注项目</a></label></li></ul></li></ul><hr><ul><li><a href=https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417022040.png target=_blank rel="noopener noreferrer">微信</a></li><li><a href="https://qm.qq.com/cgi-bin/qm/qr?k=EUhzg0UwUksxpQnwEmPngRLezlC6qrnn&jump_from=webapi" target=_blank rel="noopener noreferrer"><img src=//pub.idqqimg.com/wpa/images/group.png></a></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/study-algs/svg/menu.svg class=book-icon alt=Menu>
-</label><strong>3. 无重复字符的最长子串</strong>
-<label for=toc-control></label></div></header><article id=article class=markdown><h1 id=无重复字符的最长子串>无重复字符的最长子串
+<label for=section-2fbf1e9eb9e8a58488f1e60fce900188 class="flex justify-between"><a href=/study-algs/docs/appendix/attention/>4.3 关注项目</a></label></li></ul></li></ul><hr><ul><li><a href=https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417022040.png target=_blank rel="noopener noreferrer">微信</a></li><li><a href="https://qm.qq.com/cgi-bin/qm/qr?k=EUhzg0UwUksxpQnwEmPngRLezlC6qrnn&jump_from=webapi" target=_blank rel="noopener noreferrer"><img src=//pub.idqqimg.com/wpa/images/group.png></a></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/study-algs/svg/menu.svg class=book-icon alt=Menu></label><h3>3. 无重复字符的最长子串</h3><label for=toc-control></label></div></header><article id=article class=markdown><h1 id=无重复字符的最长子串>无重复字符的最长子串
 <a class=anchor href=#%e6%97%a0%e9%87%8d%e5%a4%8d%e5%ad%97%e7%ac%a6%e7%9a%84%e6%9c%80%e9%95%bf%e5%ad%90%e4%b8%b2>#</a></h1><h2 id=题目httpsleetcode-cncomproblemslongest-substring-without-repeating-characters><a href=https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/>题目</a>
 <a class=anchor href=#%e9%a2%98%e7%9b%aehttpsleetcode-cncomproblemslongest-substring-without-repeating-characters>#</a></h2><div class=book-tabs><input type=radio class=toggle name=tabs-leetcode-problem id=tabs-leetcode-problem-0 checked>
-<label for=tabs-leetcode-problem-0>中文</label><div class="book-tabs-content markdown-inner"><p>给定一个字符串，请你找出其中不含有重复字符的   最长子串   的长度。</p><p>示例  1:</p><pre tabindex=0><code>输入: &#34;abcabcbb&#34;
+<label for=tabs-leetcode-problem-0>中文</label><div class="book-tabs-content markdown-inner">给定一个字符串，请你找出其中不含有重复字符的   最长子串   的长度。
+示例  1:
+```
+输入: "abcabcbb"
 输出: 3
-解释: 因为无重复字符的最长子串是 &#34;abc&#34;，所以其长度为 3。
-</code></pre><p>示例 2:</p><pre tabindex=0><code>输入: &#34;bbbbb&#34;
+解释: 因为无重复字符的最长子串是 "abc"，所以其长度为 3。
+```
+示例 2:
+```
+输入: "bbbbb"
 输出: 1
-解释: 因为无重复字符的最长子串是 &#34;b&#34;，所以其长度为 1。
-</code></pre><p>示例 3:</p><pre tabindex=0><code>输入: &#34;pwwkew&#34;
+解释: 因为无重复字符的最长子串是 "b"，所以其长度为 1。
+```
+示例 3:
+```
+输入: "pwwkew"
 输出: 3
-解释: 因为无重复字符的最长子串是 &#34;wke&#34;，所以其长度为 3。
-     请注意，你的答案必须是 子串 的长度，&#34;pwke&#34; 是一个子序列，不是子串。
-</code></pre></div><input type=radio class=toggle name=tabs-leetcode-problem id=tabs-leetcode-problem-1>
-<label for=tabs-leetcode-problem-1>English</label><div class="book-tabs-content markdown-inner"><p>Given a string, find the length of the longest substring without repeating characters.</p><p>Example 1:</p><pre tabindex=0><code>Input: &#34;abcabcbb&#34;
+解释: 因为无重复字符的最长子串是 "wke"，所以其长度为 3。
+  请注意，你的答案必须是 子串 的长度，"pwke" 是一个子序列，不是子串。
+```</div><input type=radio class=toggle name=tabs-leetcode-problem id=tabs-leetcode-problem-1>
+<label for=tabs-leetcode-problem-1>English</label><div class="book-tabs-content markdown-inner">Given a string, find the length of the longest substring without repeating characters.
+Example 1:
+```
+Input: "abcabcbb"
 Output: 3
-Explanation: The answer is &#34;abc&#34;, with the length of 3.
-</code></pre><p>Example 2:</p><pre tabindex=0><code>Input: &#34;bbbbb&#34;
+Explanation: The answer is "abc", with the length of 3.
+```
+Example 2:
+```
+Input: "bbbbb"
 Output: 1
-Explanation: The answer is &#34;b&#34;, with the length of 1.
-</code></pre><p>Example 3:</p><pre tabindex=0><code>Input: &#34;pwwkew&#34;
+Explanation: The answer is "b", with the length of 1.
+```
+Example 3:
+```
+Input: "pwwkew"
 Output: 3
-Explanation: The answer is &#34;wke&#34;, with the length of 3.
-             Note that the answer must be a substring, &#34;pwke&#34; is a subsequence and not a substring.
-</code></pre></div></div><hr><h2 id=分析>分析
+Explanation: The answer is "wke", with the length of 3.
+Note that the answer must be a substring, "pwke" is a subsequence and not a substring.
+```</div></div><hr><h2 id=分析>分析
 <a class=anchor href=#%e5%88%86%e6%9e%90>#</a></h2><div class=book-tabs><input type=radio class=toggle name=tabs-leetcode-analysis id=tabs-leetcode-analysis-0 checked>
-<label for=tabs-leetcode-analysis-0>基础</label><div class="book-tabs-content markdown-inner"><p>举个例子</p><p><code>yabcdedfayghciajkc</code></p><ul><li>当出现第二个 <code>a</code> 时，<code>bcdedfa</code> 就是无重复最长字串</li><li>当出现第二个 <code>y</code> 时，最长字串不是 <code>abcdedfay</code>，因为包括了两个 <code>a</code></li><li>所以，<code>start</code> 是第一个 <code>y</code> 和 <code>start</code> （此时是第一个 <code>a</code>）中取大的</li><li>即 <code>bcdedfay</code></li></ul></div><input type=radio class=toggle name=tabs-leetcode-analysis id=tabs-leetcode-analysis-1>
+<label for=tabs-leetcode-analysis-0>基础</label><div class="book-tabs-content markdown-inner">举个例子
+`yabcdedfayghciajkc`
+- 当出现第二个 `a` 时，`bcdedfa` 就是无重复最长字串
+- 当出现第二个 `y` 时，最长字串不是 `abcdedfay`，因为包括了两个 `a`
+- 所以，`start` 是第一个 `y` 和 `start` （此时是第一个 `a`）中取大的
+- 即 `bcdedfay`</div><input type=radio class=toggle name=tabs-leetcode-analysis id=tabs-leetcode-analysis-1>
 <label for=tabs-leetcode-analysis-1>进阶</label><div class="book-tabs-content markdown-inner"></div><input type=radio class=toggle name=tabs-leetcode-analysis id=tabs-leetcode-analysis-2>
 <label for=tabs-leetcode-analysis-2>高阶</label><div class="book-tabs-content markdown-inner"></div></div><hr><h2 id=题解>题解
-<a class=anchor href=#%e9%a2%98%e8%a7%a3>#</a></h2><div class=book-tabs><input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-0 checked>
-<label for=tabs-leetcode-solution-0>C</label><div class="book-tabs-content markdown-inner"><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c data-lang=c></code></pre></div></div><input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-1>
-<label for=tabs-leetcode-solution-1>C++</label><div class="book-tabs-content markdown-inner"><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c++ data-lang=c++></code></pre></div></div><input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-2>
-<label for=tabs-leetcode-solution-2>C#</label><div class="book-tabs-content markdown-inner"><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c# data-lang=c#></code></pre></div></div><input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-3>
-<label for=tabs-leetcode-solution-3>Go</label><div class="book-tabs-content markdown-inner"><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=display:flex><span><span style=color:#66d9ef>func</span> <span style=color:#a6e22e>lengthOfLongestSubstring</span>(<span style=color:#a6e22e>s</span> <span style=color:#66d9ef>string</span>) <span style=color:#66d9ef>int</span> {
-</span></span><span style=display:flex><span>    <span style=color:#a6e22e>charLastPos</span> <span style=color:#f92672>:=</span> make(<span style=color:#66d9ef>map</span>[<span style=color:#66d9ef>string</span>]<span style=color:#66d9ef>int</span>)
-</span></span><span style=display:flex><span>    <span style=color:#a6e22e>ans</span>, <span style=color:#a6e22e>start</span> <span style=color:#f92672>:=</span> <span style=color:#ae81ff>0</span>, <span style=color:#ae81ff>0</span>
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>for</span> <span style=color:#a6e22e>i</span> <span style=color:#f92672>:=</span> <span style=color:#66d9ef>range</span> <span style=color:#a6e22e>s</span> {
-</span></span><span style=display:flex><span>        <span style=color:#a6e22e>si</span> <span style=color:#f92672>:=</span> string(<span style=color:#a6e22e>s</span>[<span style=color:#a6e22e>i</span>])
-</span></span><span style=display:flex><span>        <span style=color:#66d9ef>if</span> <span style=color:#a6e22e>lastPos</span>, <span style=color:#a6e22e>ok</span> <span style=color:#f92672>:=</span> <span style=color:#a6e22e>charLastPos</span>[<span style=color:#a6e22e>si</span>]; <span style=color:#a6e22e>ok</span> {
-</span></span><span style=display:flex><span>            <span style=color:#a6e22e>start</span> = max(<span style=color:#a6e22e>start</span>, <span style=color:#a6e22e>lastPos</span>)
-</span></span><span style=display:flex><span>        }
-</span></span><span style=display:flex><span>        <span style=color:#75715e>// 如果都没有重复字母，这里必须要 +1
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>        <span style=color:#a6e22e>ans</span> = max(<span style=color:#a6e22e>ans</span>, <span style=color:#a6e22e>i</span> <span style=color:#f92672>-</span> <span style=color:#a6e22e>start</span> <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>)
-</span></span><span style=display:flex><span>        <span style=color:#75715e>// 为了对应上面 +1，这里也 +1
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>        <span style=color:#a6e22e>charLastPos</span>[<span style=color:#a6e22e>si</span>] = <span style=color:#a6e22e>i</span> <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>
-</span></span><span style=display:flex><span>    }
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> <span style=color:#a6e22e>ans</span>
-</span></span><span style=display:flex><span>}
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>func</span> max(<span style=color:#a6e22e>a</span>, <span style=color:#a6e22e>b</span> <span style=color:#66d9ef>int</span>) <span style=color:#66d9ef>int</span> {
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> <span style=color:#a6e22e>a</span> &gt; <span style=color:#a6e22e>b</span> {
-</span></span><span style=display:flex><span>        <span style=color:#66d9ef>return</span> <span style=color:#a6e22e>a</span>
-</span></span><span style=display:flex><span>    }
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> <span style=color:#a6e22e>b</span>
-</span></span><span style=display:flex><span>}
-</span></span></code></pre></div></div><input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-4>
-<label for=tabs-leetcode-solution-4>Java</label><div class="book-tabs-content markdown-inner"><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java></code></pre></div></div><input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-5>
-<label for=tabs-leetcode-solution-5>JavaScript</label><div class="book-tabs-content markdown-inner"><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript></code></pre></div></div><input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-6>
-<label for=tabs-leetcode-solution-6>Kotlin</label><div class="book-tabs-content markdown-inner"><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-kotlin data-lang=kotlin></code></pre></div></div><input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-7>
-<label for=tabs-leetcode-solution-7>PHP</label><div class="book-tabs-content markdown-inner"><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-php data-lang=php></code></pre></div></div><input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-8>
-<label for=tabs-leetcode-solution-8>Python2</label><div class="book-tabs-content markdown-inner"><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python></code></pre></div></div><input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-9>
-<label for=tabs-leetcode-solution-9>Python3</label><div class="book-tabs-content markdown-inner"><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Solution</span>:
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>lengthOfLongestSubstring</span>(self, s: str) <span style=color:#f92672>-&gt;</span> int:
-</span></span><span style=display:flex><span>        char_last_pos <span style=color:#f92672>=</span> {}
-</span></span><span style=display:flex><span>        start, ans <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>, <span style=color:#ae81ff>0</span>
-</span></span><span style=display:flex><span>        <span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(len(s)):
-</span></span><span style=display:flex><span>            <span style=color:#66d9ef>if</span> s[i] <span style=color:#f92672>in</span> char_last_pos:
-</span></span><span style=display:flex><span>                start <span style=color:#f92672>=</span> max(start, char_last_pos[s[i]])
-</span></span><span style=display:flex><span>            <span style=color:#75715e># 如果都没有重复字母，这里必须要 +1</span>
-</span></span><span style=display:flex><span>            ans <span style=color:#f92672>=</span> max(ans, i <span style=color:#f92672>-</span> start <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>)
-</span></span><span style=display:flex><span>            <span style=color:#75715e># 为了对应上面 +1，这里也 +1</span>
-</span></span><span style=display:flex><span>            char_last_pos[s[i]] <span style=color:#f92672>=</span> i <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>        <span style=color:#66d9ef>return</span> ans
-</span></span></code></pre></div></div><input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-10>
-<label for=tabs-leetcode-solution-10>Ruby</label><div class="book-tabs-content markdown-inner"><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-ruby data-lang=ruby></code></pre></div></div><input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-11>
-<label for=tabs-leetcode-solution-11>Rust</label><div class="book-tabs-content markdown-inner"><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-rust data-lang=rust></code></pre></div></div><input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-12>
-<label for=tabs-leetcode-solution-12>Scala</label><div class="book-tabs-content markdown-inner"><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-scala data-lang=scala></code></pre></div></div><input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-13>
-<label for=tabs-leetcode-solution-13>Swift</label><div class="book-tabs-content markdown-inner"><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-swift data-lang=swift></code></pre></div></div><input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-14>
-<label for=tabs-leetcode-solution-14>TypeScript</label><div class="book-tabs-content markdown-inner"><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-typescript data-lang=typescript></code></pre></div></div></div></article><footer class=book-footer><div class="flex flex-wrap justify-between"><div><a class="flex align-center" href=https://github.com/ikingye/study-algs/commit/e63fa5fe48ca606f158c7321bee3a48c66fab994 title='Last modified by yewang | 2021-11-01' target=_blank rel=noopener><img src=/study-algs/svg/calendar.svg class=book-icon alt>
+<a class=anchor href=#%e9%a2%98%e8%a7%a3>#</a></h2><div class=book-tabs>---
+<input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-0 checked>
+<label for=tabs-leetcode-solution-0>C</label><div class="book-tabs-content markdown-inner">```c
+```</div>---
+<input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-1>
+<label for=tabs-leetcode-solution-1>C++</label><div class="book-tabs-content markdown-inner">```c++
+```</div>---
+<input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-2>
+<label for=tabs-leetcode-solution-2>C#</label><div class="book-tabs-content markdown-inner">```c#
+```</div>---
+<input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-3>
+<label for=tabs-leetcode-solution-3>Go</label><div class="book-tabs-content markdown-inner">```go
+func lengthOfLongestSubstring(s string) int {
+charLastPos := make(map[string]int)
+ans, start := 0, 0
+for i := range s {
+si := string(s[i])
+if lastPos, ok := charLastPos[si]; ok {
+start = max(start, lastPos)
+}
+// 如果都没有重复字母，这里必须要 +1
+ans = max(ans, i - start + 1)
+// 为了对应上面 +1，这里也 +1
+charLastPos[si] = i + 1
+}
+return ans
+}
+func max(a, b int) int {
+if a > b {
+return a
+}
+return b
+}
+```</div>---
+<input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-4>
+<label for=tabs-leetcode-solution-4>Java</label><div class="book-tabs-content markdown-inner">```java
+```</div>---
+<input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-5>
+<label for=tabs-leetcode-solution-5>JavaScript</label><div class="book-tabs-content markdown-inner">```javascript
+```</div>---
+<input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-6>
+<label for=tabs-leetcode-solution-6>Kotlin</label><div class="book-tabs-content markdown-inner">```kotlin
+```</div>---
+<input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-7>
+<label for=tabs-leetcode-solution-7>PHP</label><div class="book-tabs-content markdown-inner">```php
+```</div>---
+<input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-8>
+<label for=tabs-leetcode-solution-8>Python2</label><div class="book-tabs-content markdown-inner">```python
+```</div>---
+<input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-9>
+<label for=tabs-leetcode-solution-9>Python3</label><div class="book-tabs-content markdown-inner">```python
+class Solution:
+def lengthOfLongestSubstring(self, s: str) -> int:
+char_last_pos = {}
+start, ans = 0, 0
+for i in range(len(s)):
+if s[i] in char_last_pos:
+start = max(start, char_last_pos[s[i]])
+# 如果都没有重复字母，这里必须要 +1
+ans = max(ans, i - start + 1)
+# 为了对应上面 +1，这里也 +1
+char_last_pos[s[i]] = i + 1
+return ans
+```</div>---
+<input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-10>
+<label for=tabs-leetcode-solution-10>Ruby</label><div class="book-tabs-content markdown-inner">```ruby
+```</div>---
+<input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-11>
+<label for=tabs-leetcode-solution-11>Rust</label><div class="book-tabs-content markdown-inner">```rust
+```</div>---
+<input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-12>
+<label for=tabs-leetcode-solution-12>Scala</label><div class="book-tabs-content markdown-inner">```scala
+```</div>---
+<input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-13>
+<label for=tabs-leetcode-solution-13>Swift</label><div class="book-tabs-content markdown-inner">```swift
+```</div>---
+<input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-14>
+<label for=tabs-leetcode-solution-14>TypeScript</label><div class="book-tabs-content markdown-inner">```typescript
+```</div>---</div></article><footer class=book-footer><div class="flex flex-wrap justify-between"><div><a class="flex align-center" href=https://github.com/ikingye/study-algs/commit/e63fa5fe48ca606f158c7321bee3a48c66fab994 title='Last modified by yewang | 2021-11-01' target=_blank rel=noopener><img src=/study-algs/svg/calendar.svg class=book-icon alt>
 <span>2021-11-01</span></a></div></div><script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script><div><br><script async src=//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js></script><link rel=stylesheet href=//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css><p><span id=busuanzi_container_page_pv>本文访问量 <span id=busuanzi_value_page_pv><i class="fa fa-spinner fa-spin"></i></span> 次</span></p><p><span id=busuanzi_container_site_pv>本站总访问量 <span id=busuanzi_value_site_pv><i class="fa fa-spinner fa-spin"></i></span> 次</span></p><p><span id=busuanzi_container_site_uv>本站总访客数 <span id=busuanzi_value_site_uv><i class="fa fa-spinner fa-spin"></i></span> 人</span></p></div></footer><div class=book-comments><script src=https://utteranc.es/client.js repo=ikingye/study-algs issue-term=pathname theme=github-light crossorigin=anonymous async></script><div id=footer><p><a href=https://kingye.me>叶王</a> &copy; 2013-2024
 版权所有。如果本文档对你有所帮助，可以<a href=https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200428110046.png target=_blank rel="noopener noreferrer">请作者喝饮料</a>。</p></div></div><label for=menu-control class="hidden book-menu-overlay"></label></div></main></body></html>

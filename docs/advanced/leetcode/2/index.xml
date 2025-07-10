@@ -6,39 +6,344 @@
  &lt;a href="https://leetcode-cn.com/problems/reverse-linked-list/">题目&lt;/a>
  &lt;a class="anchor" href="#%e9%a2%98%e7%9b%aehttpsleetcode-cncomproblemsreverse-linked-list">#&lt;/a>
 &lt;/h2>
+&lt;div class="book-tabs">
+
+
+&lt;input type="radio" class="toggle" name="tabs-leetcode-problem" id="tabs-leetcode-problem-0" checked="checked" />
+&lt;label for="tabs-leetcode-problem-0">中文&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+给你单链表的头节点 head ，请你反转链表，并返回反转后的链表。
+
+示例 1：
+
+```shell
+输入：head = [1,2,3,4,5]
+输出：[5,4,3,2,1]
+```
+
+示例 2：
+
+```shell
+输入：head = [1,2]
+输出：[2,1]
+```
+
+示例 3：
+
+```shell
+输入：head = []
+输出：[]
+```
+
+提示：
+
+```shell
+链表中节点的数目范围是 [0, 5000]
+-5000 &lt;= Node.val &lt;= 5000
+```
+
+进阶：链表可以选用迭代或递归方式完成反转。你能否用两种方法解决这道题？
+
+&lt;/div>
 
 
 
+&lt;input type="radio" class="toggle" name="tabs-leetcode-problem" id="tabs-leetcode-problem-1" />
+&lt;label for="tabs-leetcode-problem-1">English&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
 
-&lt;div class="book-tabs">&lt;input type="radio" class="toggle" name="tabs-leetcode-problem" id="tabs-leetcode-problem-0" checked="checked" />
- &lt;label for="tabs-leetcode-problem-0">中文&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;p>给你单链表的头节点 head ，请你反转链表，并返回反转后的链表。&lt;/p>
-&lt;p>示例 1：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>输入：head &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#f92672">[&lt;/span>1,2,3,4,5&lt;span style="color:#f92672">]&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>输出：&lt;span style="color:#f92672">[&lt;/span>5,4,3,2,1&lt;span style="color:#f92672">]&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>示例 2：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>输入：head &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#f92672">[&lt;/span>1,2&lt;span style="color:#f92672">]&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>输出：&lt;span style="color:#f92672">[&lt;/span>2,1&lt;span style="color:#f92672">]&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>示例 3：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>输入：head &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#f92672">[]&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>输出：&lt;span style="color:#f92672">[]&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>提示：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>链表中节点的数目范围是 &lt;span style="color:#f92672">[&lt;/span>0, 5000&lt;span style="color:#f92672">]&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>-5000 &amp;lt;&lt;span style="color:#f92672">=&lt;/span> Node.val &amp;lt;&lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">5000&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>进阶：链表可以选用迭代或递归方式完成反转。你能否用两种方法解决这道题？&lt;/p>
-&lt;/div>&lt;input type="radio" class="toggle" name="tabs-leetcode-problem" id="tabs-leetcode-problem-1" />
- &lt;label for="tabs-leetcode-problem-1">English&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;p>Given the head of a singly linked list, reverse the list, and return the reversed list.&lt;/p>
-&lt;p>Example 1:&lt;/p>
-&lt;pre tabindex="0">&lt;code>Input: head = [1,2,3,4,5]
+Given the head of a singly linked list, reverse the list, and return the reversed list.
+
+Example 1:
+
+```
+Input: head = [1,2,3,4,5]
 Output: [5,4,3,2,1]
-&lt;/code>&lt;/pre>&lt;p>Example 2:&lt;/p>
-&lt;pre tabindex="0">&lt;code>Input: head = [1,2]
+```
+
+Example 2:
+
+```
+Input: head = [1,2]
 Output: [2,1]
-&lt;/code>&lt;/pre>&lt;p>Example 3:&lt;/p>
-&lt;pre tabindex="0">&lt;code>Input: head = []
+```
+
+Example 3:
+
+```
+Input: head = []
 Output: []
-&lt;/code>&lt;/pre>&lt;p>Constraints:&lt;/p>
-&lt;pre tabindex="0">&lt;code>The number of nodes in the list is the range [0, 5000].
--5000 &amp;lt;= Node.val &amp;lt;= 5000
-&lt;/code>&lt;/pre>&lt;p>Follow up: A linked list can be reversed either iteratively or recursively. Could you implement both?&lt;/p></description></item></channel></rss>
+```
+
+Constraints:
+
+```
+The number of nodes in the list is the range [0, 5000].
+-5000 &lt;= Node.val &lt;= 5000
+```
+
+Follow up: A linked list can be reversed either iteratively or recursively. Could you implement both?
+
+&lt;/div>
+
+
+&lt;/div>
+
+&lt;hr>
+&lt;h2 id="分析">
+ 分析
+ &lt;a class="anchor" href="#%e5%88%86%e6%9e%90">#&lt;/a>
+&lt;/h2>
+&lt;div class="book-tabs">
+
+
+&lt;input type="radio" class="toggle" name="tabs-leetcode-analysis" id="tabs-leetcode-analysis-0" checked="checked" />
+&lt;label for="tabs-leetcode-analysis-0">基础&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+&lt;/div>
+
+
+&lt;input type="radio" class="toggle" name="tabs-leetcode-analysis" id="tabs-leetcode-analysis-1" />
+&lt;label for="tabs-leetcode-analysis-1">进阶&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+&lt;/div>
+
+
+&lt;input type="radio" class="toggle" name="tabs-leetcode-analysis" id="tabs-leetcode-analysis-2" />
+&lt;label for="tabs-leetcode-analysis-2">高阶&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+&lt;/div>
+
+
+&lt;/div>
+
+&lt;hr>
+&lt;h2 id="题解">
+ 题解
+ &lt;a class="anchor" href="#%e9%a2%98%e8%a7%a3">#&lt;/a>
+&lt;/h2>
+&lt;div class="book-tabs">
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-leetcode-solution" id="tabs-leetcode-solution-0" checked="checked" />
+&lt;label for="tabs-leetcode-solution-0">C&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```c
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-leetcode-solution" id="tabs-leetcode-solution-1" />
+&lt;label for="tabs-leetcode-solution-1">C&amp;#43;&amp;#43;&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```c++
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-leetcode-solution" id="tabs-leetcode-solution-2" />
+&lt;label for="tabs-leetcode-solution-2">C#&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```c#
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-leetcode-solution" id="tabs-leetcode-solution-3" />
+&lt;label for="tabs-leetcode-solution-3">Go&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```go
+/**
+ * Definition for singly-linked list.
+ * type ListNode struct {
+ * Val int
+ * Next *ListNode
+ * }
+ */
+func reverseList(head *ListNode) *ListNode {
+ var pre *ListNode = nil
+ var next *ListNode = nil
+ var cur *ListNode = head
+ for cur != nil {
+ next = cur.Next
+ cur.Next = pre
+ pre = cur
+ cur = next
+ }
+
+ return pre
+}
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-leetcode-solution" id="tabs-leetcode-solution-4" />
+&lt;label for="tabs-leetcode-solution-4">Java&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```java
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-leetcode-solution" id="tabs-leetcode-solution-5" />
+&lt;label for="tabs-leetcode-solution-5">JavaScript&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```javascript
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-leetcode-solution" id="tabs-leetcode-solution-6" />
+&lt;label for="tabs-leetcode-solution-6">Kotlin&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```kotlin
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-leetcode-solution" id="tabs-leetcode-solution-7" />
+&lt;label for="tabs-leetcode-solution-7">PHP&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```php
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-leetcode-solution" id="tabs-leetcode-solution-8" />
+&lt;label for="tabs-leetcode-solution-8">Python2&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```python
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-leetcode-solution" id="tabs-leetcode-solution-9" />
+&lt;label for="tabs-leetcode-solution-9">Python3&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```python
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-leetcode-solution" id="tabs-leetcode-solution-10" />
+&lt;label for="tabs-leetcode-solution-10">Ruby&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```ruby
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-leetcode-solution" id="tabs-leetcode-solution-11" />
+&lt;label for="tabs-leetcode-solution-11">Rust&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```rust
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-leetcode-solution" id="tabs-leetcode-solution-12" />
+&lt;label for="tabs-leetcode-solution-12">Scala&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```scala
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-leetcode-solution" id="tabs-leetcode-solution-13" />
+&lt;label for="tabs-leetcode-solution-13">Swift&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```swift
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;/div></description></item></channel></rss>

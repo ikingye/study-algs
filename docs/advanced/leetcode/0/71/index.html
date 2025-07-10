@@ -10,47 +10,376 @@
 
 
 
+中文
 
-  中文
-  以 Unix 风格给出一个文件的绝对路径，你需要简化它。或者换句话说，将其转换为规范路径。
+以 Unix 风格给出一个文件的绝对路径，你需要简化它。或者换句话说，将其转换为规范路径。
+
 在 Unix 风格的文件系统中，一个点（.）表示当前目录本身；此外，两个点 （..）  表示将目录切换到上一级（指向父目录）；两者都可以是复杂相对路径的组成部分。更多信息请参阅：Linux / Unix 中的绝对路径 vs 相对路径
+
 请注意，返回的规范路径必须始终以斜杠 / 开头，并且两个目录名之间必须只有一个斜杠 /。最后一个目录名（如果存在）不能以 / 结尾。此外，规范路径必须是表示绝对路径的最短字符串。
+
 示例 1：
+
+```
 输入："/home/"
 输出："/home"
 解释：注意，最后一个目录名后面没有斜杠。
+```
+
 示例 2：
+
+```
 输入："/../"
 输出："/"
 解释：从根目录向上一级是不可行的，因为根是你可以到达的最高级。
+```
+
 示例 3：
+
+```
 输入："/home//foo/"
 输出："/home/foo"
 解释：在规范路径中，多个连续斜杠需要用一个斜杠替换。
+```
+
 示例 4：
+
+```
 输入："/a/./b/../../c/"
 输出："/c"
+```
+
 示例 5：
+
+```
 输入："/a/../../b/../c//.//"
 输出："/c"
+```
+
 示例 6：
+
+```
 输入："/a//b////c/d//././/.."
 输出："/a/b/c"
+```
 
-  English
-  Given an absolute path for a file (Unix-style), simplify it. Or in other words, convert it to the canonical path.
-In a UNIX-style file system, a period . refers to the current directory. Furthermore, a double period .. moves the directory up a level.'><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#343a40"><meta name=color-scheme content="light dark"><meta property="og:url" content="https://kingye.me/study-algs/docs/advanced/leetcode/0/71/"><meta property="og:site_name" content="算法学习笔记"><meta property="og:title" content="71. 简化路径"><meta property="og:description" content='模板 # 题目 # 中文 以 Unix 风格给出一个文件的绝对路径，你需要简化它。或者换句话说，将其转换为规范路径。
-在 Unix 风格的文件系统中，一个点（.）表示当前目录本身；此外，两个点 （..） 表示将目录切换到上一级（指向父目录）；两者都可以是复杂相对路径的组成部分。更多信息请参阅：Linux / Unix 中的绝对路径 vs 相对路径
-请注意，返回的规范路径必须始终以斜杠 / 开头，并且两个目录名之间必须只有一个斜杠 /。最后一个目录名（如果存在）不能以 / 结尾。此外，规范路径必须是表示绝对路径的最短字符串。
-示例 1：
-输入："/home/" 输出："/home" 解释：注意，最后一个目录名后面没有斜杠。 示例 2：
-输入："/../" 输出："/" 解释：从根目录向上一级是不可行的，因为根是你可以到达的最高级。 示例 3：
-输入："/home//foo/" 输出："/home/foo" 解释：在规范路径中，多个连续斜杠需要用一个斜杠替换。 示例 4：
-输入："/a/./b/../../c/" 输出："/c" 示例 5：
-输入："/a/../../b/../c//.//" 输出："/c" 示例 6：
-输入："/a//b////c/d//././/.." 输出："/a/b/c" English Given an absolute path for a file (Unix-style), simplify it. Or in other words, convert it to the canonical path.
-In a UNIX-style file system, a period . refers to the current directory. Furthermore, a double period .. moves the directory up a level.'><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="article:section" content="docs"><meta property="article:modified_time" content="2021-11-01T15:01:42+08:00"><title>71. 简化路径 | 算法学习笔记</title>
-<link rel=manifest href=/study-algs/manifest.json><link rel=icon href=/study-algs/favicon.png><link rel=canonical href=https://kingye.me/study-algs/docs/advanced/leetcode/0/71/><link rel=stylesheet href=/study-algs/book.min.45ab58199f84c9a33853fdef2e41664c57a49ca55c9badf2dd2dd071f39975a3.css integrity="sha256-RatYGZ+EyaM4U/3vLkFmTFeknKVcm63y3S3QcfOZdaM=" crossorigin=anonymous><script defer src=/study-algs/fuse.min.js></script><script defer src=/study-algs/en.search.min.9040f2c37b44362d0583ce7871c502bd0c1d18ebefdb6886910f6991196ba47d.js integrity="sha256-kEDyw3tENi0Fg854ccUCvQwdGOvv22iGkQ9pkRlrpH0=" crossorigin=anonymous></script></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
+
+
+
+
+
+English
+
+Given an absolute path for a file (Unix-style), simplify it. Or in other words, convert it to the canonical path.
+
+In a UNIX-style file system, a period . refers to the current directory. Furthermore, a double period .. moves the directory up a level.
+
+Note that the returned canonical path must always begin with a slash /, and there must be only a single slash / between two directory names. The last directory name (if it exists) must not end with a trailing /. Also, the canonical path must be the shortest string representing the absolute path.
+
+Example 1:
+
+```
+Input: "/home/"
+Output: "/home"
+Explanation: Note that there is no trailing slash after the last directory name.
+```
+
+Example 2:
+
+```
+Input: "/../"
+Output: "/"
+Explanation: Going one level up from the root directory is a no-op, as the root level is the highest level you can go.
+```
+
+Example 3:
+
+```
+Input: "/home//foo/"
+Output: "/home/foo"
+Explanation: In the canonical path, multiple consecutive slashes are replaced by a single one.
+```
+
+Example 4:
+
+```
+Input: "/a/./b/../../c/"
+Output: "/c"
+```
+
+Example 5:
+
+```
+Input: "/a/../../b/../c//.//"
+Output: "/c"
+```
+
+Example 6:
+
+```
+Input: "/a//b////c/d//././/.."
+Output: "/a/b/c"
+```
+
+
+
+
+
+
+
+
+  分析
+  #
+
+
+
+
+
+基础
+
+
+先按 `/` 进行切割，然后创建一个 `stack`，判断为 `.` 就跳过，为 `..` 就 `pop`（`stack` 非空），其他就 `append`
+
+
+
+
+
+进阶
+
+
+
+
+
+
+高阶
+
+
+
+
+
+
+
+
+
+  题解
+  #
+
+
+
+
+---
+
+
+
+C
+
+
+```c
+
+```
+
+
+
+
+---
+
+
+
+C++
+
+
+```c++
+
+```
+
+
+
+
+---
+
+
+
+C#
+
+
+```c#
+
+```
+
+
+
+
+---
+
+
+
+Go
+
+
+```go
+
+```
+
+
+
+
+---
+
+
+
+Java
+
+
+```java
+
+```
+
+
+
+
+---
+
+
+
+JavaScript
+
+
+```javascript
+```
+
+
+
+
+---
+
+
+
+Kotlin
+
+
+```kotlin
+
+```
+
+
+
+
+---
+
+
+
+PHP
+
+
+```php
+
+```
+
+
+
+
+---
+
+
+
+Python2
+
+
+```python
+
+```
+
+
+
+
+---
+
+
+
+Python3
+
+
+```python
+class Solution:
+    def simplifyPath(self, path: str) -> str:
+        ps = [p for p in path.split(&#39;/&#39;) if p]
+        stack = list()
+        for p in ps:
+            if p == &#39;.&#39;:
+                continue
+            elif p == &#39;..&#39;:
+                if stack:
+                    stack.pop()
+            else:
+                stack.append(p)
+
+        return &#39;/&#39; + &#39;/&#39;.join(stack)
+```
+
+
+
+
+---
+
+
+
+Ruby
+
+
+```ruby
+
+```
+
+
+
+
+---
+
+
+
+Rust
+
+
+```rust
+
+```
+
+
+
+
+---
+
+
+
+Scala
+
+
+```scala
+
+```
+
+
+
+
+---
+
+
+
+Swift
+
+
+```swift
+
+```
+
+
+
+
+---
+
+
+'><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#343a40"><meta name=color-scheme content="light dark"><meta property="og:url" content="https://kingye.me/study-algs/docs/advanced/leetcode/0/71/"><meta property="og:site_name" content="算法学习笔记"><meta property="og:title" content="71. 简化路径"><meta property="og:description" content='模板 # 题目 # 中文 以 Unix 风格给出一个文件的绝对路径，你需要简化它。或者换句话说，将其转换为规范路径。 在 Unix 风格的文件系统中，一个点（.）表示当前目录本身；此外，两个点 （..） 表示将目录切换到上一级（指向父目录）；两者都可以是复杂相对路径的组成部分。更多信息请参阅：Linux / Unix 中的绝对路径 vs 相对路径 请注意，返回的规范路径必须始终以斜杠 / 开头，并且两个目录名之间必须只有一个斜杠 /。最后一个目录名（如果存在）不能以 / 结尾。此外，规范路径必须是表示绝对路径的最短字符串。 示例 1： ``` 输入："/home/" 输出："/home" 解释：注意，最后一个目录名后面没有斜杠。 ``` 示例 2： ``` 输入："/../" 输出："/" 解释：从根目录向上一级是不可行的，因为根是你可以到达的最高级。 ``` 示例 3： ``` 输入："/home//foo/" 输出："/home/foo" 解释：在规范路径中，多个连续斜杠需要用一个斜杠替换。 ``` 示例 4： ``` 输入："/a/./b/../../c/" 输出："/c" ``` 示例 5： ``` 输入："/a/../../b/../c//.//" 输出："/c" ``` 示例 6： ``` 输入："/a//b////c/d//././/.." 输出："/a/b/c" ``` English Given an absolute path for a file (Unix-style), simplify it. Or in other words, convert it to the canonical path. In a UNIX-style file system, a period . refers to the current directory. Furthermore, a double period .. moves the directory up a level. Note that the returned canonical path must always begin with a slash /, and there must be only a single slash / between two directory names. The last directory name (if it exists) must not end with a trailing /. Also, the canonical path must be the shortest string representing the absolute path. Example 1: ``` Input: "/home/" Output: "/home" Explanation: Note that there is no trailing slash after the last directory name. ``` Example 2: ``` Input: "/../" Output: "/" Explanation: Going one level up from the root directory is a no-op, as the root level is the highest level you can go. ``` Example 3: ``` Input: "/home//foo/" Output: "/home/foo" Explanation: In the canonical path, multiple consecutive slashes are replaced by a single one. ``` Example 4: ``` Input: "/a/./b/../../c/" Output: "/c" ``` Example 5: ``` Input: "/a/../../b/../c//.//" Output: "/c" ``` Example 6: ``` Input: "/a//b////c/d//././/.." Output: "/a/b/c" ``` 分析 # 基础 先按 `/` 进行切割，然后创建一个 `stack`，判断为 `.` 就跳过，为 `..` 就 `pop`（`stack` 非空），其他就 `append` 进阶 高阶 题解 # --- C ```c ``` --- C++ ```c++ ``` --- C# ```c# ``` --- Go ```go ``` --- Java ```java ``` --- JavaScript ```javascript ``` --- Kotlin ```kotlin ``` --- PHP ```php ``` --- Python2 ```python ``` --- Python3 ```python class Solution: def simplifyPath(self, path: str) -> str: ps = [p for p in path.split(&#39;/&#39;) if p] stack = list() for p in ps: if p == &#39;.&#39;: continue elif p == &#39;..&#39;: if stack: stack.pop() else: stack.append(p) return &#39;/&#39; + &#39;/&#39;.join(stack) ``` --- Ruby ```ruby ``` --- Rust ```rust ``` --- Scala ```scala ``` --- Swift ```swift ``` ---'><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="article:section" content="docs"><meta property="article:modified_time" content="2021-11-01T15:01:42+08:00"><title>71. 简化路径 | 算法学习笔记</title>
+<link rel=icon href=/study-algs/favicon.png><link rel=manifest href=/study-algs/manifest.json><link rel=canonical href=https://kingye.me/study-algs/docs/advanced/leetcode/0/71/><link rel=stylesheet href=/study-algs/book.min.c275a923ccfd83734be2807746b986854d819eefd18681945bad8b0b55aaf818.css integrity="sha256-wnWpI8z9g3NL4oB3RrmGhU2Bnu/RhoGUW62LC1Wq+Bg=" crossorigin=anonymous><script defer src=/study-algs/fuse.min.js></script><script defer src=/study-algs/en.search.min.52ebb2c8801cc969c71962fe337766f28158a9af1325caf56d4f0659a9795ab7.js integrity="sha256-UuuyyIAcyWnHGWL+M3dm8oFYqa8TJcr1bU8GWal5Wrc=" crossorigin=anonymous></script></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
 <input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=/study-algs/><span>算法学习笔记</span></a></h2><div class="book-search hidden"><input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><script>document.querySelector(".book-search").classList.remove("hidden")</script><ul><li><a href=https://kingye.me target=_blank rel="noopener noreferrer">博客</a></li><li><a href=https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417021727.png target=_blank rel="noopener noreferrer">公众号</a></li><li><a href=https://github.com/ikingye target=_blank rel="noopener noreferrer">Github</a></li><li><a href=https://weibo.com/kingyip15215 target=_blank rel="noopener noreferrer">微博</a></li><li><a href=https://www.zhihu.com/people/wutongyip target=_blank rel="noopener noreferrer">知乎</a></li></ul><hr><ul><li><span>第一部分 基础入门</span><ul><li><a href=/study-algs/docs/basic/datastruct/>1.1 数据结构</a><ul></ul></li><li><input type=checkbox id=section-b85d33ad589a6e77e3a3351aa069d504 class=toggle>
 <label for=section-b85d33ad589a6e77e3a3351aa069d504 class="flex justify-between"><a href=/study-algs/docs/basic/thought/>1.2 算法思想</a></label><ul><li><a href=/study-algs/docs/basic/thought/recursive/>递归</a></li></ul></li></ul></li><li><span>第二部分 进阶实战</span><ul><li><input type=checkbox id=section-37e286161fad0e7c848384274769f392 class=toggle>
 <label for=section-37e286161fad0e7c848384274769f392 class="flex justify-between"><a href=/study-algs/docs/advanced/common/>2.1 常见算法</a></label><ul><li><a href=/study-algs/docs/advanced/common/sort/>1.3.1 排序算法</a></li><li><input type=checkbox id=section-0af7a13a7f064a78ae00e3a1ff616de4 class=toggle>
@@ -78,75 +407,140 @@ In a UNIX-style file system, a period . refers to the current directory. Furthe
 <label for=section-73708c8f7ece7bf7eee7599df6a2c31d class="flex justify-between"><a href=/study-algs/docs/advanced/nowcoder/>2.3 牛客网</a></label><ul></ul></li></ul></li><li><span>第三部分 设计与实现</span><ul></ul></li><li><span>第四部分 附录</span><ul><li><input type=checkbox id=section-c87e4c6e9da866417fe0da60946cf3ab class=toggle>
 <label for=section-c87e4c6e9da866417fe0da60946cf3ab class="flex justify-between"><a href=/study-algs/docs/appendix/tutorial/>4.1 教程</a></label></li><li><input type=checkbox id=section-71989eed3c19d07bbb6a27628984704d class=toggle>
 <label for=section-71989eed3c19d07bbb6a27628984704d class="flex justify-between"><a href=/study-algs/docs/appendix/interview/>4.2 面试题</a></label></li><li><input type=checkbox id=section-2fbf1e9eb9e8a58488f1e60fce900188 class=toggle>
-<label for=section-2fbf1e9eb9e8a58488f1e60fce900188 class="flex justify-between"><a href=/study-algs/docs/appendix/attention/>4.3 关注项目</a></label></li></ul></li></ul><hr><ul><li><a href=https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417022040.png target=_blank rel="noopener noreferrer">微信</a></li><li><a href="https://qm.qq.com/cgi-bin/qm/qr?k=EUhzg0UwUksxpQnwEmPngRLezlC6qrnn&jump_from=webapi" target=_blank rel="noopener noreferrer"><img src=//pub.idqqimg.com/wpa/images/group.png></a></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/study-algs/svg/menu.svg class=book-icon alt=Menu>
-</label><strong>71. 简化路径</strong>
-<label for=toc-control></label></div></header><article id=article class=markdown><h1 id=模板>模板
+<label for=section-2fbf1e9eb9e8a58488f1e60fce900188 class="flex justify-between"><a href=/study-algs/docs/appendix/attention/>4.3 关注项目</a></label></li></ul></li></ul><hr><ul><li><a href=https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417022040.png target=_blank rel="noopener noreferrer">微信</a></li><li><a href="https://qm.qq.com/cgi-bin/qm/qr?k=EUhzg0UwUksxpQnwEmPngRLezlC6qrnn&jump_from=webapi" target=_blank rel="noopener noreferrer"><img src=//pub.idqqimg.com/wpa/images/group.png></a></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/study-algs/svg/menu.svg class=book-icon alt=Menu></label><h3>71. 简化路径</h3><label for=toc-control></label></div></header><article id=article class=markdown><h1 id=模板>模板
 <a class=anchor href=#%e6%a8%a1%e6%9d%bf>#</a></h1><h2 id=题目httpsleetcode-cncomproblemssimplify-path><a href=https://leetcode-cn.com/problems/simplify-path/>题目</a>
 <a class=anchor href=#%e9%a2%98%e7%9b%aehttpsleetcode-cncomproblemssimplify-path>#</a></h2><div class=book-tabs><input type=radio class=toggle name=tabs-leetcode-problem id=tabs-leetcode-problem-0 checked>
-<label for=tabs-leetcode-problem-0>中文</label><div class="book-tabs-content markdown-inner"><p>以 Unix 风格给出一个文件的绝对路径，你需要简化它。或者换句话说，将其转换为规范路径。</p><p>在 Unix 风格的文件系统中，一个点（.）表示当前目录本身；此外，两个点 （..）  表示将目录切换到上一级（指向父目录）；两者都可以是复杂相对路径的组成部分。更多信息请参阅：Linux / Unix 中的绝对路径 vs 相对路径</p><p>请注意，返回的规范路径必须始终以斜杠 / 开头，并且两个目录名之间必须只有一个斜杠 /。最后一个目录名（如果存在）不能以 / 结尾。此外，规范路径必须是表示绝对路径的最短字符串。</p><p>示例 1：</p><pre tabindex=0><code>输入：&#34;/home/&#34;
-输出：&#34;/home&#34;
+<label for=tabs-leetcode-problem-0>中文</label><div class="book-tabs-content markdown-inner">以 Unix 风格给出一个文件的绝对路径，你需要简化它。或者换句话说，将其转换为规范路径。
+在 Unix 风格的文件系统中，一个点（.）表示当前目录本身；此外，两个点 （..）  表示将目录切换到上一级（指向父目录）；两者都可以是复杂相对路径的组成部分。更多信息请参阅：Linux / Unix 中的绝对路径 vs 相对路径
+请注意，返回的规范路径必须始终以斜杠 / 开头，并且两个目录名之间必须只有一个斜杠 /。最后一个目录名（如果存在）不能以 / 结尾。此外，规范路径必须是表示绝对路径的最短字符串。
+示例 1：
+```
+输入："/home/"
+输出："/home"
 解释：注意，最后一个目录名后面没有斜杠。
-</code></pre><p>示例 2：</p><pre tabindex=0><code>输入：&#34;/../&#34;
-输出：&#34;/&#34;
+```
+示例 2：
+```
+输入："/../"
+输出："/"
 解释：从根目录向上一级是不可行的，因为根是你可以到达的最高级。
-</code></pre><p>示例 3：</p><pre tabindex=0><code>输入：&#34;/home//foo/&#34;
-输出：&#34;/home/foo&#34;
+```
+示例 3：
+```
+输入："/home//foo/"
+输出："/home/foo"
 解释：在规范路径中，多个连续斜杠需要用一个斜杠替换。
-</code></pre><p>示例 4：</p><pre tabindex=0><code>输入：&#34;/a/./b/../../c/&#34;
-输出：&#34;/c&#34;
-</code></pre><p>示例 5：</p><pre tabindex=0><code>输入：&#34;/a/../../b/../c//.//&#34;
-输出：&#34;/c&#34;
-</code></pre><p>示例 6：</p><pre tabindex=0><code>输入：&#34;/a//b////c/d//././/..&#34;
-输出：&#34;/a/b/c&#34;
-</code></pre></div><input type=radio class=toggle name=tabs-leetcode-problem id=tabs-leetcode-problem-1>
-<label for=tabs-leetcode-problem-1>English</label><div class="book-tabs-content markdown-inner"><p>Given an absolute path for a file (Unix-style), simplify it. Or in other words, convert it to the canonical path.</p><p>In a UNIX-style file system, a period . refers to the current directory. Furthermore, a double period .. moves the directory up a level.</p><p>Note that the returned canonical path must always begin with a slash /, and there must be only a single slash / between two directory names. The last directory name (if it exists) must not end with a trailing /. Also, the canonical path must be the shortest string representing the absolute path.</p><p>Example 1:</p><pre tabindex=0><code>Input: &#34;/home/&#34;
-Output: &#34;/home&#34;
+```
+示例 4：
+```
+输入："/a/./b/../../c/"
+输出："/c"
+```
+示例 5：
+```
+输入："/a/../../b/../c//.//"
+输出："/c"
+```
+示例 6：
+```
+输入："/a//b////c/d//././/.."
+输出："/a/b/c"
+```</div><input type=radio class=toggle name=tabs-leetcode-problem id=tabs-leetcode-problem-1>
+<label for=tabs-leetcode-problem-1>English</label><div class="book-tabs-content markdown-inner">Given an absolute path for a file (Unix-style), simplify it. Or in other words, convert it to the canonical path.
+In a UNIX-style file system, a period . refers to the current directory. Furthermore, a double period .. moves the directory up a level.
+Note that the returned canonical path must always begin with a slash /, and there must be only a single slash / between two directory names. The last directory name (if it exists) must not end with a trailing /. Also, the canonical path must be the shortest string representing the absolute path.
+Example 1:
+```
+Input: "/home/"
+Output: "/home"
 Explanation: Note that there is no trailing slash after the last directory name.
-</code></pre><p>Example 2:</p><pre tabindex=0><code>Input: &#34;/../&#34;
-Output: &#34;/&#34;
+```
+Example 2:
+```
+Input: "/../"
+Output: "/"
 Explanation: Going one level up from the root directory is a no-op, as the root level is the highest level you can go.
-</code></pre><p>Example 3:</p><pre tabindex=0><code>Input: &#34;/home//foo/&#34;
-Output: &#34;/home/foo&#34;
+```
+Example 3:
+```
+Input: "/home//foo/"
+Output: "/home/foo"
 Explanation: In the canonical path, multiple consecutive slashes are replaced by a single one.
-</code></pre><p>Example 4:</p><pre tabindex=0><code>Input: &#34;/a/./b/../../c/&#34;
-Output: &#34;/c&#34;
-</code></pre><p>Example 5:</p><pre tabindex=0><code>Input: &#34;/a/../../b/../c//.//&#34;
-Output: &#34;/c&#34;
-</code></pre><p>Example 6:</p><pre tabindex=0><code>Input: &#34;/a//b////c/d//././/..&#34;
-Output: &#34;/a/b/c&#34;
-</code></pre></div></div><hr><h2 id=分析>分析
+```
+Example 4:
+```
+Input: "/a/./b/../../c/"
+Output: "/c"
+```
+Example 5:
+```
+Input: "/a/../../b/../c//.//"
+Output: "/c"
+```
+Example 6:
+```
+Input: "/a//b////c/d//././/.."
+Output: "/a/b/c"
+```</div></div><hr><h2 id=分析>分析
 <a class=anchor href=#%e5%88%86%e6%9e%90>#</a></h2><div class=book-tabs><input type=radio class=toggle name=tabs-leetcode-analysis id=tabs-leetcode-analysis-0 checked>
-<label for=tabs-leetcode-analysis-0>基础</label><div class="book-tabs-content markdown-inner">先按 <code>/</code> 进行切割，然后创建一个 <code>stack</code>，判断为 <code>.</code> 就跳过，为 <code>..</code> 就 <code>pop</code>（<code>stack</code> 非空），其他就 <code>append</code></div><input type=radio class=toggle name=tabs-leetcode-analysis id=tabs-leetcode-analysis-1>
+<label for=tabs-leetcode-analysis-0>基础</label><div class="book-tabs-content markdown-inner">先按 `/` 进行切割，然后创建一个 `stack`，判断为 `.` 就跳过，为 `..` 就 `pop`（`stack` 非空），其他就 `append`</div><input type=radio class=toggle name=tabs-leetcode-analysis id=tabs-leetcode-analysis-1>
 <label for=tabs-leetcode-analysis-1>进阶</label><div class="book-tabs-content markdown-inner"></div><input type=radio class=toggle name=tabs-leetcode-analysis id=tabs-leetcode-analysis-2>
 <label for=tabs-leetcode-analysis-2>高阶</label><div class="book-tabs-content markdown-inner"></div></div><hr><h2 id=题解>题解
-<a class=anchor href=#%e9%a2%98%e8%a7%a3>#</a></h2><div class=book-tabs><input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-0 checked>
-<label for=tabs-leetcode-solution-0>C</label><div class="book-tabs-content markdown-inner"><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c data-lang=c></code></pre></div></div><input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-1>
-<label for=tabs-leetcode-solution-1>C++</label><div class="book-tabs-content markdown-inner"><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c++ data-lang=c++></code></pre></div></div><input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-2>
-<label for=tabs-leetcode-solution-2>C#</label><div class="book-tabs-content markdown-inner"><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c# data-lang=c#></code></pre></div></div><input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-3>
-<label for=tabs-leetcode-solution-3>Go</label><div class="book-tabs-content markdown-inner"><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go></code></pre></div></div><input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-4>
-<label for=tabs-leetcode-solution-4>Java</label><div class="book-tabs-content markdown-inner"><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java></code></pre></div></div><input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-5>
-<label for=tabs-leetcode-solution-5>JavaScript</label><div class="book-tabs-content markdown-inner"><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript></code></pre></div></div><input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-6>
-<label for=tabs-leetcode-solution-6>Kotlin</label><div class="book-tabs-content markdown-inner"><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-kotlin data-lang=kotlin></code></pre></div></div><input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-7>
-<label for=tabs-leetcode-solution-7>PHP</label><div class="book-tabs-content markdown-inner"><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-php data-lang=php></code></pre></div></div><input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-8>
-<label for=tabs-leetcode-solution-8>Python2</label><div class="book-tabs-content markdown-inner"><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python></code></pre></div></div><input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-9>
-<label for=tabs-leetcode-solution-9>Python3</label><div class="book-tabs-content markdown-inner"><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Solution</span>:
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>simplifyPath</span>(self, path: str) <span style=color:#f92672>-&gt;</span> str:
-</span></span><span style=display:flex><span>        ps <span style=color:#f92672>=</span> [p <span style=color:#66d9ef>for</span> p <span style=color:#f92672>in</span> path<span style=color:#f92672>.</span>split(<span style=color:#e6db74>&#39;/&#39;</span>) <span style=color:#66d9ef>if</span> p]
-</span></span><span style=display:flex><span>        stack <span style=color:#f92672>=</span> list()
-</span></span><span style=display:flex><span>        <span style=color:#66d9ef>for</span> p <span style=color:#f92672>in</span> ps:
-</span></span><span style=display:flex><span>            <span style=color:#66d9ef>if</span> p <span style=color:#f92672>==</span> <span style=color:#e6db74>&#39;.&#39;</span>:
-</span></span><span style=display:flex><span>                <span style=color:#66d9ef>continue</span>
-</span></span><span style=display:flex><span>            <span style=color:#66d9ef>elif</span> p <span style=color:#f92672>==</span> <span style=color:#e6db74>&#39;..&#39;</span>:
-</span></span><span style=display:flex><span>                <span style=color:#66d9ef>if</span> stack:
-</span></span><span style=display:flex><span>                    stack<span style=color:#f92672>.</span>pop()
-</span></span><span style=display:flex><span>            <span style=color:#66d9ef>else</span>:
-</span></span><span style=display:flex><span>                stack<span style=color:#f92672>.</span>append(p)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>        <span style=color:#66d9ef>return</span> <span style=color:#e6db74>&#39;/&#39;</span> <span style=color:#f92672>+</span> <span style=color:#e6db74>&#39;/&#39;</span><span style=color:#f92672>.</span>join(stack)
-</span></span></code></pre></div></div><input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-10>
-<label for=tabs-leetcode-solution-10>Ruby</label><div class="book-tabs-content markdown-inner"><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-ruby data-lang=ruby></code></pre></div></div><input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-11>
-<label for=tabs-leetcode-solution-11>Rust</label><div class="book-tabs-content markdown-inner"><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-rust data-lang=rust></code></pre></div></div><input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-12>
-<label for=tabs-leetcode-solution-12>Scala</label><div class="book-tabs-content markdown-inner"><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-scala data-lang=scala></code></pre></div></div><input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-13>
-<label for=tabs-leetcode-solution-13>Swift</label><div class="book-tabs-content markdown-inner"><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-swift data-lang=swift></code></pre></div></div></div></article><footer class=book-footer><div class="flex flex-wrap justify-between"><div><a class="flex align-center" href=https://github.com/ikingye/study-algs/commit/e63fa5fe48ca606f158c7321bee3a48c66fab994 title='Last modified by yewang | 2021-11-01' target=_blank rel=noopener><img src=/study-algs/svg/calendar.svg class=book-icon alt>
+<a class=anchor href=#%e9%a2%98%e8%a7%a3>#</a></h2><div class=book-tabs>---
+<input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-0 checked>
+<label for=tabs-leetcode-solution-0>C</label><div class="book-tabs-content markdown-inner">```c
+```</div>---
+<input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-1>
+<label for=tabs-leetcode-solution-1>C++</label><div class="book-tabs-content markdown-inner">```c++
+```</div>---
+<input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-2>
+<label for=tabs-leetcode-solution-2>C#</label><div class="book-tabs-content markdown-inner">```c#
+```</div>---
+<input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-3>
+<label for=tabs-leetcode-solution-3>Go</label><div class="book-tabs-content markdown-inner">```go
+```</div>---
+<input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-4>
+<label for=tabs-leetcode-solution-4>Java</label><div class="book-tabs-content markdown-inner">```java
+```</div>---
+<input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-5>
+<label for=tabs-leetcode-solution-5>JavaScript</label><div class="book-tabs-content markdown-inner">```javascript
+```</div>---
+<input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-6>
+<label for=tabs-leetcode-solution-6>Kotlin</label><div class="book-tabs-content markdown-inner">```kotlin
+```</div>---
+<input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-7>
+<label for=tabs-leetcode-solution-7>PHP</label><div class="book-tabs-content markdown-inner">```php
+```</div>---
+<input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-8>
+<label for=tabs-leetcode-solution-8>Python2</label><div class="book-tabs-content markdown-inner">```python
+```</div>---
+<input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-9>
+<label for=tabs-leetcode-solution-9>Python3</label><div class="book-tabs-content markdown-inner">```python
+class Solution:
+def simplifyPath(self, path: str) -> str:
+ps = [p for p in path.split('/') if p]
+stack = list()
+for p in ps:
+if p == '.':
+continue
+elif p == '..':
+if stack:
+stack.pop()
+else:
+stack.append(p)
+return '/' + '/'.join(stack)
+```</div>---
+<input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-10>
+<label for=tabs-leetcode-solution-10>Ruby</label><div class="book-tabs-content markdown-inner">```ruby
+```</div>---
+<input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-11>
+<label for=tabs-leetcode-solution-11>Rust</label><div class="book-tabs-content markdown-inner">```rust
+```</div>---
+<input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-12>
+<label for=tabs-leetcode-solution-12>Scala</label><div class="book-tabs-content markdown-inner">```scala
+```</div>---
+<input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-13>
+<label for=tabs-leetcode-solution-13>Swift</label><div class="book-tabs-content markdown-inner">```swift
+```</div>---</div></article><footer class=book-footer><div class="flex flex-wrap justify-between"><div><a class="flex align-center" href=https://github.com/ikingye/study-algs/commit/e63fa5fe48ca606f158c7321bee3a48c66fab994 title='Last modified by yewang | 2021-11-01' target=_blank rel=noopener><img src=/study-algs/svg/calendar.svg class=book-icon alt>
 <span>2021-11-01</span></a></div></div><script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script><div><br><script async src=//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js></script><link rel=stylesheet href=//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css><p><span id=busuanzi_container_page_pv>本文访问量 <span id=busuanzi_value_page_pv><i class="fa fa-spinner fa-spin"></i></span> 次</span></p><p><span id=busuanzi_container_site_pv>本站总访问量 <span id=busuanzi_value_site_pv><i class="fa fa-spinner fa-spin"></i></span> 次</span></p><p><span id=busuanzi_container_site_uv>本站总访客数 <span id=busuanzi_value_site_uv><i class="fa fa-spinner fa-spin"></i></span> 人</span></p></div></footer><div class=book-comments><script src=https://utteranc.es/client.js repo=ikingye/study-algs issue-term=pathname theme=github-light crossorigin=anonymous async></script><div id=footer><p><a href=https://kingye.me>叶王</a> &copy; 2013-2024
 版权所有。如果本文档对你有所帮助，可以<a href=https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200428110046.png target=_blank rel="noopener noreferrer">请作者喝饮料</a>。</p></div></div><label for=menu-control class="hidden book-menu-overlay"></label></div></main></body></html>

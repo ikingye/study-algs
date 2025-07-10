@@ -6,16 +6,20 @@
  &lt;a href="https://leetcode-cn.com/problems/second-minimum-node-in-a-binary-tree/">题目&lt;/a>
  &lt;a class="anchor" href="#%e9%a2%98%e7%9b%aehttpsleetcode-cncomproblemssecond-minimum-node-in-a-binary-tree">#&lt;/a>
 &lt;/h2>
+&lt;div class="book-tabs">
 
 
+&lt;input type="radio" class="toggle" name="tabs-leetcode-problem" id="tabs-leetcode-problem-0" checked="checked" />
+&lt;label for="tabs-leetcode-problem-0">中文&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+给定一个非空特殊的二叉树，每个节点都是正数，并且每个节点的子节点数量只能为  2  或  0。如果一个节点有两个子节点的话，那么这个节点的值不大于它的子节点的值。
 
+给出这样的一个二叉树，你需要输出所有节点中的第二小的值。如果第二小的值不存在的话，输出 -1 。
 
-&lt;div class="book-tabs">&lt;input type="radio" class="toggle" name="tabs-leetcode-problem" id="tabs-leetcode-problem-0" checked="checked" />
- &lt;label for="tabs-leetcode-problem-0">中文&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;p>给定一个非空特殊的二叉树，每个节点都是正数，并且每个节点的子节点数量只能为  2  或  0。如果一个节点有两个子节点的话，那么这个节点的值不大于它的子节点的值。&lt;/p>
-&lt;p>给出这样的一个二叉树，你需要输出所有节点中的第二小的值。如果第二小的值不存在的话，输出 -1 。&lt;/p>
-&lt;p>示例 1:&lt;/p>
-&lt;pre tabindex="0">&lt;code>输入:
+示例 1:
+
+```
+输入:
  2
  / \
  2 5
@@ -24,14 +28,327 @@
 
 输出: 5
 说明: 最小的值是 2 ，第二小的值是 5 。
-&lt;/code>&lt;/pre>&lt;p>示例 2:&lt;/p>
-&lt;pre tabindex="0">&lt;code>输入:
+```
+
+示例 2:
+
+```
+输入:
  2
  / \
  2 2
 
 输出: -1
 说明: 最小的值是 2, 但是不存在第二小的值。
-&lt;/code>&lt;/pre>&lt;/div>&lt;input type="radio" class="toggle" name="tabs-leetcode-problem" id="tabs-leetcode-problem-1" />
- &lt;label for="tabs-leetcode-problem-1">English&lt;/label>
- &lt;div class="book-tabs-content markdown-inner">&lt;p>Given a non-empty special binary tree consisting of nodes with the non-negative value, where each node in this tree has exactly two or zero sub-node. If the node has two sub-nodes, then this node&amp;rsquo;s value is the smaller value among its two sub-nodes. More formally, the property root.val = min(root.left.val, root.right.val) always holds.&lt;/p></description></item></channel></rss>
+```
+
+&lt;/div>
+
+
+
+&lt;input type="radio" class="toggle" name="tabs-leetcode-problem" id="tabs-leetcode-problem-1" />
+&lt;label for="tabs-leetcode-problem-1">English&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+Given a non-empty special binary tree consisting of nodes with the non-negative value, where each node in this tree has exactly two or zero sub-node. If the node has two sub-nodes, then this node's value is the smaller value among its two sub-nodes. More formally, the property root.val = min(root.left.val, root.right.val) always holds.
+
+Given such a binary tree, you need to output the second minimum value in the set made of all the nodes' value in the whole tree.
+
+If no such second minimum value exists, output -1 instead.
+
+Example 1:
+
+```
+Input:
+ 2
+ / \
+ 2 5
+ / \
+ 5 7
+
+Output: 5
+Explanation: The smallest value is 2, the second smallest value is 5.
+```
+
+Example 2:
+
+```
+Input:
+ 2
+ / \
+ 2 2
+
+Output: -1
+Explanation: The smallest value is 2, but there isn't any second smallest value.
+```
+
+&lt;/div>
+
+
+&lt;/div>
+
+&lt;hr>
+&lt;h2 id="分析">
+ 分析
+ &lt;a class="anchor" href="#%e5%88%86%e6%9e%90">#&lt;/a>
+&lt;/h2>
+&lt;div class="book-tabs">
+
+
+&lt;input type="radio" class="toggle" name="tabs-leetcode-analysis" id="tabs-leetcode-analysis-0" checked="checked" />
+&lt;label for="tabs-leetcode-analysis-0">基础&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+root 肯定是最小的。
+那就维护一个大于 root 的最小值，遍历整棵树，如果这个值不存在，就返回 -1
+
+&lt;/div>
+
+
+&lt;input type="radio" class="toggle" name="tabs-leetcode-analysis" id="tabs-leetcode-analysis-1" />
+&lt;label for="tabs-leetcode-analysis-1">进阶&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+&lt;/div>
+
+
+&lt;input type="radio" class="toggle" name="tabs-leetcode-analysis" id="tabs-leetcode-analysis-2" />
+&lt;label for="tabs-leetcode-analysis-2">高阶&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+&lt;/div>
+
+
+&lt;/div>
+
+&lt;hr>
+&lt;h2 id="题解">
+ 题解
+ &lt;a class="anchor" href="#%e9%a2%98%e8%a7%a3">#&lt;/a>
+&lt;/h2>
+&lt;div class="book-tabs">
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-leetcode-solution" id="tabs-leetcode-solution-0" checked="checked" />
+&lt;label for="tabs-leetcode-solution-0">C&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```c
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-leetcode-solution" id="tabs-leetcode-solution-1" />
+&lt;label for="tabs-leetcode-solution-1">C&amp;#43;&amp;#43;&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```c++
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-leetcode-solution" id="tabs-leetcode-solution-2" />
+&lt;label for="tabs-leetcode-solution-2">C#&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```c#
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-leetcode-solution" id="tabs-leetcode-solution-3" />
+&lt;label for="tabs-leetcode-solution-3">Go&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```go
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-leetcode-solution" id="tabs-leetcode-solution-4" />
+&lt;label for="tabs-leetcode-solution-4">Java&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```java
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-leetcode-solution" id="tabs-leetcode-solution-5" />
+&lt;label for="tabs-leetcode-solution-5">JavaScript&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```javascript
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-leetcode-solution" id="tabs-leetcode-solution-6" />
+&lt;label for="tabs-leetcode-solution-6">Kotlin&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```kotlin
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-leetcode-solution" id="tabs-leetcode-solution-7" />
+&lt;label for="tabs-leetcode-solution-7">PHP&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```php
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-leetcode-solution" id="tabs-leetcode-solution-8" />
+&lt;label for="tabs-leetcode-solution-8">Python2&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```python
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-leetcode-solution" id="tabs-leetcode-solution-9" />
+&lt;label for="tabs-leetcode-solution-9">Python3&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```python
+# Definition for a binary tree node.
+# class TreeNode:
+# def __init__(self, x):
+# self.val = x
+# self.left = None
+# self.right = None
+
+class Solution:
+ def findSecondMinimumValue(self, root: TreeNode) -> int:
+ if root is None:
+ return -1
+ secondMin = self.getSecodeMin(root, root.val, float('inf'))
+ if secondMin == float('inf'):
+ return -1
+ else:
+ return secondMin
+
+ def getSecodeMin(self, node: TreeNode, rootVal: int, secondMin: int) -> int:
+ if node is None:
+ return secondMin
+
+ if node.val != rootVal and node.val &lt; secondMin:
+ secondMin = node.val
+ print(secondMin)
+
+ return min(self.getSecodeMin(node.left, rootVal, secondMin), self.getSecodeMin(node.right, rootVal, secondMin))
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-leetcode-solution" id="tabs-leetcode-solution-10" />
+&lt;label for="tabs-leetcode-solution-10">Ruby&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```ruby
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-leetcode-solution" id="tabs-leetcode-solution-11" />
+&lt;label for="tabs-leetcode-solution-11">Rust&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```rust
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-leetcode-solution" id="tabs-leetcode-solution-12" />
+&lt;label for="tabs-leetcode-solution-12">Scala&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```scala
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;input type="radio" class="toggle" name="tabs-leetcode-solution" id="tabs-leetcode-solution-13" />
+&lt;label for="tabs-leetcode-solution-13">Swift&lt;/label>
+&lt;div class="book-tabs-content markdown-inner">
+
+```swift
+
+```
+
+&lt;/div>
+
+
+---
+
+
+&lt;/div></description></item></channel></rss>
