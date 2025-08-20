@@ -8,384 +8,33 @@
 
 
 
-
-
 中文
-
-给你一个字符串  s  和一个字符规律  p，请你来实现一个支持 &#39;.&#39;  和  &#39;\*&#39;  的正则表达式匹配。
-
-&#39;.&#39; 匹配任意单个字符
-&#39;\*&#39; 匹配零个或多个前面的那一个元素
+给你一个字符串  s  和一个字符规律  p，请你来实现一个支持 &lsquo;.&rsquo;  和  &lsquo;*&rsquo;  的正则表达式匹配。
+&lsquo;.&rsquo; 匹配任意单个字符
+&lsquo;*&rsquo; 匹配零个或多个前面的那一个元素
 所谓匹配，是要涵盖   整个   字符串  s 的，而不是部分字符串。
-
 说明:
-
 s  可能为空，且只包含从  a-z  的小写字母。
-p  可能为空，且只包含从  a-z  的小写字母，以及字符  .  和  \*。
+p  可能为空，且只包含从  a-z  的小写字母，以及字符  .  和  *。
 示例 1:
-
-```
 输入:
 s = "aa"
 p = "a"
 输出: false
 解释: "a" 无法匹配 "aa" 整个字符串。
-```
-
 示例 2:
-
-```
 输入:
 s = "aa"
 p = "a*"
 输出: true
 解释: 因为 &#39;*&#39; 代表可以匹配零个或多个前面的那一个元素, 在这里前面的元素就是 &#39;a&#39;。因此，字符串 "aa" 可被视为 &#39;a&#39; 重复了一次。
-```
-
-示例  3:
-
-```
-输入:
-s = "ab"
-p = ".*"
-输出: true
-解释: ".*" 表示可匹配零个或多个（&#39;*&#39;）任意字符（&#39;.&#39;）。
-```
-
-示例 4:
-
-```
-输入:
-s = "aab"
-p = "c*a*b"
-输出: true
-解释: 因为 &#39;*&#39; 表示零个或多个，这里 &#39;c&#39; 为 0 个, &#39;a&#39; 被重复一次。因此可以匹配字符串 "aab"。
-```
-
-示例 5:
-
-```
-输入:
-s = "mississippi"
-p = "mis*is*p*."
-输出: false
-```
-
-
-
-
-
-English
-
-Given an input string (s) and a pattern (p), implement regular expression matching with support for &#39;.&#39; and &#39;\*&#39;.
-
-&#39;.&#39; Matches any single character.
-&#39;\*&#39; Matches zero or more of the preceding element.
-The matching should cover the entire input string (not partial).
-
-Note:
-
-s could be empty and contains only lowercase letters a-z.
-p could be empty and contains only lowercase letters a-z, and characters like . or \*.
-Example 1:
-
-```
-Input:
-s = "aa"
-p = "a"
-Output: false
-Explanation: "a" does not match the entire string "aa".
-```
-
-Example 2:
-
-```
-Input:
-s = "aa"
-p = "a*"
-Output: true
-Explanation: &#39;*&#39; means zero or more of the preceding element, &#39;a&#39;. Therefore, by repeating &#39;a&#39; once, it becomes "aa".
-```
-
-Example 3:
-
-```
-Input:
-s = "ab"
-p = ".*"
-Output: true
-Explanation: ".*" means "zero or more (*) of any character (.)".
-```
-
-Example 4:
-
-```
-Input:
-s = "aab"
-p = "c*a*b"
-Output: true
-Explanation: c can be repeated 0 times, a can be repeated 1 time. Therefore, it matches "aab".
-```
-
-Example 5:
-
-```
-Input:
-s = "mississippi"
-p = "mis*is*p*."
-Output: false
-```
-
-
-
-
-
-
-
-
-  分析
-  #
-
-
-
-
-
-基础
-
-
-
-
-
-
-进阶
-
-
-
-
-
-
-高阶
-
-
-
-
-
-
-
-
-
-  题解
-  #
-
-
-
-
----
-
-
-
-C
-
-
-```c
-
-```
-
-
-
-
----
-
-
-
-C++
-
-
-```c++
-
-```
-
-
-
-
----
-
-
-
-C#
-
-
-```c#
-
-```
-
-
-
-
----
-
-
-
-Go
-
-
-```go
-
-```
-
-
-
-
----
-
-
-
-Java
-
-
-```java
-
-```
-
-
-
-
----
-
-
-
-JavaScript
-
-
-```javascript
-```
-
-
-
-
----
-
-
-
-Kotlin
-
-
-```kotlin
-
-```
-
-
-
-
----
-
-
-
-PHP
-
-
-```php
-
-```
-
-
-
-
----
-
-
-
-Python2
-
-
-
-
-
----
-
-
-
-Python3
-
-
-
-
-
----
-
-
-
-Ruby
-
-
-```ruby
-
-```
-
-
-
-
----
-
-
-
-Rust
-
-
-```rust
-
-```
-
-
-
-
----
-
-
-
-Scala
-
-
-```scala
-
-```
-
-
-
-
----
-
-
-
-Swift
-
-
-```swift
-
-```
-
-
-
-
----
-
-
-
-TypeScript
-
-
-```typescript
-
-```
-
-
-
-
----
-
-
-'><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#343a40"><meta name=color-scheme content="light dark"><meta property="og:url" content="https://kingye.me/study-algs/docs/advanced/leetcode/0/10/"><meta property="og:site_name" content="算法学习笔记"><meta property="og:title" content="10. 正则表达式匹配"><meta property="og:description" content='正则表达式匹配 # 题目 # 中文 给你一个字符串 s 和一个字符规律 p，请你来实现一个支持 &#39;.&#39; 和 &#39;\*&#39; 的正则表达式匹配。 &#39;.&#39; 匹配任意单个字符 &#39;\*&#39; 匹配零个或多个前面的那一个元素 所谓匹配，是要涵盖 整个 字符串 s 的，而不是部分字符串。 说明: s 可能为空，且只包含从 a-z 的小写字母。 p 可能为空，且只包含从 a-z 的小写字母，以及字符 . 和 \*。 示例 1: ``` 输入: s = "aa" p = "a" 输出: false 解释: "a" 无法匹配 "aa" 整个字符串。 ``` 示例 2: ``` 输入: s = "aa" p = "a*" 输出: true 解释: 因为 &#39;*&#39; 代表可以匹配零个或多个前面的那一个元素, 在这里前面的元素就是 &#39;a&#39;。因此，字符串 "aa" 可被视为 &#39;a&#39; 重复了一次。 ``` 示例 3: ``` 输入: s = "ab" p = ".*" 输出: true 解释: ".*" 表示可匹配零个或多个（&#39;*&#39;）任意字符（&#39;.&#39;）。 ``` 示例 4: ``` 输入: s = "aab" p = "c*a*b" 输出: true 解释: 因为 &#39;*&#39; 表示零个或多个，这里 &#39;c&#39; 为 0 个, &#39;a&#39; 被重复一次。因此可以匹配字符串 "aab"。 ``` 示例 5: ``` 输入: s = "mississippi" p = "mis*is*p*." 输出: false ``` English Given an input string (s) and a pattern (p), implement regular expression matching with support for &#39;.&#39; and &#39;\*&#39;. &#39;.&#39; Matches any single character. &#39;\*&#39; Matches zero or more of the preceding element. The matching should cover the entire input string (not partial). Note: s could be empty and contains only lowercase letters a-z. p could be empty and contains only lowercase letters a-z, and characters like . or \*. Example 1: ``` Input: s = "aa" p = "a" Output: false Explanation: "a" does not match the entire string "aa". ``` Example 2: ``` Input: s = "aa" p = "a*" Output: true Explanation: &#39;*&#39; means zero or more of the preceding element, &#39;a&#39;. Therefore, by repeating &#39;a&#39; once, it becomes "aa". ``` Example 3: ``` Input: s = "ab" p = ".*" Output: true Explanation: ".*" means "zero or more (*) of any character (.)". ``` Example 4: ``` Input: s = "aab" p = "c*a*b" Output: true Explanation: c can be repeated 0 times, a can be repeated 1 time. Therefore, it matches "aab". ``` Example 5: ``` Input: s = "mississippi" p = "mis*is*p*." Output: false ``` 分析 # 基础 进阶 高阶 题解 # --- C ```c ``` --- C++ ```c++ ``` --- C# ```c# ``` --- Go ```go ``` --- Java ```java ``` --- JavaScript ```javascript ``` --- Kotlin ```kotlin ``` --- PHP ```php ``` --- Python2 --- Python3 --- Ruby ```ruby ``` --- Rust ```rust ``` --- Scala ```scala ``` --- Swift ```swift ``` --- TypeScript ```typescript ``` ---'><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="article:section" content="docs"><meta property="article:modified_time" content="2021-11-01T15:01:42+08:00"><title>10. 正则表达式匹配 | 算法学习笔记</title>
-<link rel=icon href=/study-algs/favicon.png><link rel=manifest href=/study-algs/manifest.json><link rel=canonical href=https://kingye.me/study-algs/docs/advanced/leetcode/0/10/><link rel=stylesheet href=/study-algs/book.min.c275a923ccfd83734be2807746b986854d819eefd18681945bad8b0b55aaf818.css integrity="sha256-wnWpI8z9g3NL4oB3RrmGhU2Bnu/RhoGUW62LC1Wq+Bg=" crossorigin=anonymous><script defer src=/study-algs/fuse.min.js></script><script defer src=/study-algs/en.search.min.52ebb2c8801cc969c71962fe337766f28158a9af1325caf56d4f0659a9795ab7.js integrity="sha256-UuuyyIAcyWnHGWL+M3dm8oFYqa8TJcr1bU8GWal5Wrc=" crossorigin=anonymous></script></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
+示例  3:'><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#343a40"><meta name=color-scheme content="light dark"><meta property="og:url" content="https://kingye.me/study-algs/docs/advanced/leetcode/0/10/"><meta property="og:site_name" content="算法学习笔记"><meta property="og:title" content="10. 正则表达式匹配"><meta property="og:description" content='正则表达式匹配 # 题目 # 中文 给你一个字符串 s 和一个字符规律 p，请你来实现一个支持 ‘.’ 和 ‘*’ 的正则表达式匹配。
+‘.’ 匹配任意单个字符 ‘*’ 匹配零个或多个前面的那一个元素 所谓匹配，是要涵盖 整个 字符串 s 的，而不是部分字符串。
+说明:
+s 可能为空，且只包含从 a-z 的小写字母。 p 可能为空，且只包含从 a-z 的小写字母，以及字符 . 和 *。 示例 1:
+输入: s = "aa" p = "a" 输出: false 解释: "a" 无法匹配 "aa" 整个字符串。 示例 2:
+输入: s = "aa" p = "a*" 输出: true 解释: 因为 &#39;*&#39; 代表可以匹配零个或多个前面的那一个元素, 在这里前面的元素就是 &#39;a&#39;。因此，字符串 "aa" 可被视为 &#39;a&#39; 重复了一次。 示例 3:'><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="article:section" content="docs"><meta property="article:modified_time" content="2021-11-01T15:01:42+08:00"><title>10. 正则表达式匹配 | 算法学习笔记</title>
+<link rel=icon href=/study-algs/favicon.png><link rel=manifest href=/study-algs/manifest.json><link rel=canonical href=https://kingye.me/study-algs/docs/advanced/leetcode/0/10/><link rel=stylesheet href=/study-algs/book.min.c275a923ccfd83734be2807746b986854d819eefd18681945bad8b0b55aaf818.css integrity="sha256-wnWpI8z9g3NL4oB3RrmGhU2Bnu/RhoGUW62LC1Wq+Bg=" crossorigin=anonymous><script defer src=/study-algs/fuse.min.js></script><script defer src=/study-algs/en.search.min.9aaee2772e6a6de49169c9e8776443831801d08030a32f69e2d274131b6e76b4.js integrity="sha256-mq7idy5qbeSRacnod2RDgxgB0IAwoy9p4tJ0ExtudrQ=" crossorigin=anonymous></script></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
 <input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=/study-algs/><span>算法学习笔记</span></a></h2><div class="book-search hidden"><input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><script>document.querySelector(".book-search").classList.remove("hidden")</script><ul><li><a href=https://kingye.me target=_blank rel="noopener noreferrer">博客</a></li><li><a href=https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417021727.png target=_blank rel="noopener noreferrer">公众号</a></li><li><a href=https://github.com/ikingye target=_blank rel="noopener noreferrer">Github</a></li><li><a href=https://weibo.com/kingyip15215 target=_blank rel="noopener noreferrer">微博</a></li><li><a href=https://www.zhihu.com/people/wutongyip target=_blank rel="noopener noreferrer">知乎</a></li></ul><hr><ul><li><span>第一部分 基础入门</span><ul><li><a href=/study-algs/docs/basic/datastruct/>1.1 数据结构</a><ul></ul></li><li><input type=checkbox id=section-b85d33ad589a6e77e3a3351aa069d504 class=toggle>
 <label for=section-b85d33ad589a6e77e3a3351aa069d504 class="flex justify-between"><a href=/study-algs/docs/basic/thought/>1.2 算法思想</a></label><ul><li><a href=/study-algs/docs/basic/thought/recursive/>递归</a></li></ul></li></ul></li><li><span>第二部分 进阶实战</span><ul><li><input type=checkbox id=section-37e286161fad0e7c848384274769f392 class=toggle>
 <label for=section-37e286161fad0e7c848384274769f392 class="flex justify-between"><a href=/study-algs/docs/advanced/common/>2.1 常见算法</a></label><ul><li><a href=/study-algs/docs/advanced/common/sort/>1.3.1 排序算法</a></li><li><input type=checkbox id=section-0af7a13a7f064a78ae00e3a1ff616de4 class=toggle>
@@ -416,145 +65,83 @@ TypeScript
 <label for=section-2fbf1e9eb9e8a58488f1e60fce900188 class="flex justify-between"><a href=/study-algs/docs/appendix/attention/>4.3 关注项目</a></label></li></ul></li></ul><hr><ul><li><a href=https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417022040.png target=_blank rel="noopener noreferrer">微信</a></li><li><a href="https://qm.qq.com/cgi-bin/qm/qr?k=EUhzg0UwUksxpQnwEmPngRLezlC6qrnn&jump_from=webapi" target=_blank rel="noopener noreferrer"><img src=//pub.idqqimg.com/wpa/images/group.png></a></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/study-algs/svg/menu.svg class=book-icon alt=Menu></label><h3>10. 正则表达式匹配</h3><label for=toc-control></label></div></header><article id=article class=markdown><h1 id=正则表达式匹配>正则表达式匹配
 <a class=anchor href=#%e6%ad%a3%e5%88%99%e8%a1%a8%e8%be%be%e5%bc%8f%e5%8c%b9%e9%85%8d>#</a></h1><h2 id=题目httpsleetcode-cncomproblemstwo-sum><a href=https://leetcode-cn.com/problems/two-sum>题目</a>
 <a class=anchor href=#%e9%a2%98%e7%9b%aehttpsleetcode-cncomproblemstwo-sum>#</a></h2><div class=book-tabs><input type=radio class=toggle name=tabs-leetcode-problem id=tabs-leetcode-problem-0 checked>
-<label for=tabs-leetcode-problem-0>中文</label><div class="book-tabs-content markdown-inner">给你一个字符串  s  和一个字符规律  p，请你来实现一个支持 '.'  和  '\*'  的正则表达式匹配。
-'.' 匹配任意单个字符
-'\*' 匹配零个或多个前面的那一个元素
-所谓匹配，是要涵盖   整个   字符串  s 的，而不是部分字符串。
-说明:
-s  可能为空，且只包含从  a-z  的小写字母。
-p  可能为空，且只包含从  a-z  的小写字母，以及字符  .  和  \*。
-示例 1:
-```
-输入:
-s = "aa"
-p = "a"
+<label for=tabs-leetcode-problem-0>中文</label><div class="book-tabs-content markdown-inner"><p>给你一个字符串  s  和一个字符规律  p，请你来实现一个支持 &lsquo;.&rsquo;  和  &lsquo;*&rsquo;  的正则表达式匹配。</p><p>&lsquo;.&rsquo; 匹配任意单个字符
+&lsquo;*&rsquo; 匹配零个或多个前面的那一个元素
+所谓匹配，是要涵盖   整个   字符串  s 的，而不是部分字符串。</p><p>说明:</p><p>s  可能为空，且只包含从  a-z  的小写字母。
+p  可能为空，且只包含从  a-z  的小写字母，以及字符  .  和  *。
+示例 1:</p><pre tabindex=0><code>输入:
+s = &#34;aa&#34;
+p = &#34;a&#34;
 输出: false
-解释: "a" 无法匹配 "aa" 整个字符串。
-```
-示例 2:
-```
-输入:
-s = "aa"
-p = "a*"
+解释: &#34;a&#34; 无法匹配 &#34;aa&#34; 整个字符串。
+</code></pre><p>示例 2:</p><pre tabindex=0><code>输入:
+s = &#34;aa&#34;
+p = &#34;a*&#34;
 输出: true
-解释: 因为 '*' 代表可以匹配零个或多个前面的那一个元素, 在这里前面的元素就是 'a'。因此，字符串 "aa" 可被视为 'a' 重复了一次。
-```
-示例  3:
-```
-输入:
-s = "ab"
-p = ".*"
+解释: 因为 &#39;*&#39; 代表可以匹配零个或多个前面的那一个元素, 在这里前面的元素就是 &#39;a&#39;。因此，字符串 &#34;aa&#34; 可被视为 &#39;a&#39; 重复了一次。
+</code></pre><p>示例  3:</p><pre tabindex=0><code>输入:
+s = &#34;ab&#34;
+p = &#34;.*&#34;
 输出: true
-解释: ".*" 表示可匹配零个或多个（'*'）任意字符（'.'）。
-```
-示例 4:
-```
-输入:
-s = "aab"
-p = "c*a*b"
+解释: &#34;.*&#34; 表示可匹配零个或多个（&#39;*&#39;）任意字符（&#39;.&#39;）。
+</code></pre><p>示例 4:</p><pre tabindex=0><code>输入:
+s = &#34;aab&#34;
+p = &#34;c*a*b&#34;
 输出: true
-解释: 因为 '*' 表示零个或多个，这里 'c' 为 0 个, 'a' 被重复一次。因此可以匹配字符串 "aab"。
-```
-示例 5:
-```
-输入:
-s = "mississippi"
-p = "mis*is*p*."
+解释: 因为 &#39;*&#39; 表示零个或多个，这里 &#39;c&#39; 为 0 个, &#39;a&#39; 被重复一次。因此可以匹配字符串 &#34;aab&#34;。
+</code></pre><p>示例 5:</p><pre tabindex=0><code>输入:
+s = &#34;mississippi&#34;
+p = &#34;mis*is*p*.&#34;
 输出: false
-```</div><input type=radio class=toggle name=tabs-leetcode-problem id=tabs-leetcode-problem-1>
-<label for=tabs-leetcode-problem-1>English</label><div class="book-tabs-content markdown-inner">Given an input string (s) and a pattern (p), implement regular expression matching with support for '.' and '\*'.
-'.' Matches any single character.
-'\*' Matches zero or more of the preceding element.
-The matching should cover the entire input string (not partial).
-Note:
-s could be empty and contains only lowercase letters a-z.
-p could be empty and contains only lowercase letters a-z, and characters like . or \*.
-Example 1:
-```
-Input:
-s = "aa"
-p = "a"
+</code></pre></div><input type=radio class=toggle name=tabs-leetcode-problem id=tabs-leetcode-problem-1>
+<label for=tabs-leetcode-problem-1>English</label><div class="book-tabs-content markdown-inner"><p>Given an input string (s) and a pattern (p), implement regular expression matching with support for &lsquo;.&rsquo; and &lsquo;*&rsquo;.</p><p>&lsquo;.&rsquo; Matches any single character.
+&lsquo;*&rsquo; Matches zero or more of the preceding element.
+The matching should cover the entire input string (not partial).</p><p>Note:</p><p>s could be empty and contains only lowercase letters a-z.
+p could be empty and contains only lowercase letters a-z, and characters like . or *.
+Example 1:</p><pre tabindex=0><code>Input:
+s = &#34;aa&#34;
+p = &#34;a&#34;
 Output: false
-Explanation: "a" does not match the entire string "aa".
-```
-Example 2:
-```
-Input:
-s = "aa"
-p = "a*"
+Explanation: &#34;a&#34; does not match the entire string &#34;aa&#34;.
+</code></pre><p>Example 2:</p><pre tabindex=0><code>Input:
+s = &#34;aa&#34;
+p = &#34;a*&#34;
 Output: true
-Explanation: '*' means zero or more of the preceding element, 'a'. Therefore, by repeating 'a' once, it becomes "aa".
-```
-Example 3:
-```
-Input:
-s = "ab"
-p = ".*"
+Explanation: &#39;*&#39; means zero or more of the preceding element, &#39;a&#39;. Therefore, by repeating &#39;a&#39; once, it becomes &#34;aa&#34;.
+</code></pre><p>Example 3:</p><pre tabindex=0><code>Input:
+s = &#34;ab&#34;
+p = &#34;.*&#34;
 Output: true
-Explanation: ".*" means "zero or more (*) of any character (.)".
-```
-Example 4:
-```
-Input:
-s = "aab"
-p = "c*a*b"
+Explanation: &#34;.*&#34; means &#34;zero or more (*) of any character (.)&#34;.
+</code></pre><p>Example 4:</p><pre tabindex=0><code>Input:
+s = &#34;aab&#34;
+p = &#34;c*a*b&#34;
 Output: true
-Explanation: c can be repeated 0 times, a can be repeated 1 time. Therefore, it matches "aab".
-```
-Example 5:
-```
-Input:
-s = "mississippi"
-p = "mis*is*p*."
+Explanation: c can be repeated 0 times, a can be repeated 1 time. Therefore, it matches &#34;aab&#34;.
+</code></pre><p>Example 5:</p><pre tabindex=0><code>Input:
+s = &#34;mississippi&#34;
+p = &#34;mis*is*p*.&#34;
 Output: false
-```</div></div><hr><h2 id=分析>分析
+</code></pre></div></div><hr><h2 id=分析>分析
 <a class=anchor href=#%e5%88%86%e6%9e%90>#</a></h2><div class=book-tabs><input type=radio class=toggle name=tabs-leetcode-analysis id=tabs-leetcode-analysis-0 checked>
 <label for=tabs-leetcode-analysis-0>基础</label><div class="book-tabs-content markdown-inner"></div><input type=radio class=toggle name=tabs-leetcode-analysis id=tabs-leetcode-analysis-1>
 <label for=tabs-leetcode-analysis-1>进阶</label><div class="book-tabs-content markdown-inner"></div><input type=radio class=toggle name=tabs-leetcode-analysis id=tabs-leetcode-analysis-2>
 <label for=tabs-leetcode-analysis-2>高阶</label><div class="book-tabs-content markdown-inner"></div></div><hr><h2 id=题解>题解
-<a class=anchor href=#%e9%a2%98%e8%a7%a3>#</a></h2><div class=book-tabs>---
-<input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-0 checked>
-<label for=tabs-leetcode-solution-0>C</label><div class="book-tabs-content markdown-inner">```c
-```</div>---
-<input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-1>
-<label for=tabs-leetcode-solution-1>C++</label><div class="book-tabs-content markdown-inner">```c++
-```</div>---
-<input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-2>
-<label for=tabs-leetcode-solution-2>C#</label><div class="book-tabs-content markdown-inner">```c#
-```</div>---
-<input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-3>
-<label for=tabs-leetcode-solution-3>Go</label><div class="book-tabs-content markdown-inner">```go
-```</div>---
-<input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-4>
-<label for=tabs-leetcode-solution-4>Java</label><div class="book-tabs-content markdown-inner">```java
-```</div>---
-<input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-5>
-<label for=tabs-leetcode-solution-5>JavaScript</label><div class="book-tabs-content markdown-inner">```javascript
-```</div>---
-<input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-6>
-<label for=tabs-leetcode-solution-6>Kotlin</label><div class="book-tabs-content markdown-inner">```kotlin
-```</div>---
-<input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-7>
-<label for=tabs-leetcode-solution-7>PHP</label><div class="book-tabs-content markdown-inner">```php
-```</div>---
-<input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-8>
-<label for=tabs-leetcode-solution-8>Python2</label><div class="book-tabs-content markdown-inner"></div>---
-<input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-9>
-<label for=tabs-leetcode-solution-9>Python3</label><div class="book-tabs-content markdown-inner"></div>---
-<input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-10>
-<label for=tabs-leetcode-solution-10>Ruby</label><div class="book-tabs-content markdown-inner">```ruby
-```</div>---
-<input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-11>
-<label for=tabs-leetcode-solution-11>Rust</label><div class="book-tabs-content markdown-inner">```rust
-```</div>---
-<input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-12>
-<label for=tabs-leetcode-solution-12>Scala</label><div class="book-tabs-content markdown-inner">```scala
-```</div>---
-<input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-13>
-<label for=tabs-leetcode-solution-13>Swift</label><div class="book-tabs-content markdown-inner">```swift
-```</div>---
-<input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-14>
-<label for=tabs-leetcode-solution-14>TypeScript</label><div class="book-tabs-content markdown-inner">```typescript
-```</div>---</div></article><footer class=book-footer><div class="flex flex-wrap justify-between"><div><a class="flex align-center" href=https://github.com/ikingye/study-algs/commit/e63fa5fe48ca606f158c7321bee3a48c66fab994 title='Last modified by yewang | 2021-11-01' target=_blank rel=noopener><img src=/study-algs/svg/calendar.svg class=book-icon alt>
+<a class=anchor href=#%e9%a2%98%e8%a7%a3>#</a></h2><div class=book-tabs><hr><input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-0 checked>
+<label for=tabs-leetcode-solution-0>C</label><div class="book-tabs-content markdown-inner"><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c data-lang=c></code></pre></div></div><hr><input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-1>
+<label for=tabs-leetcode-solution-1>C++</label><div class="book-tabs-content markdown-inner"><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c++ data-lang=c++></code></pre></div></div><hr><input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-2>
+<label for=tabs-leetcode-solution-2>C#</label><div class="book-tabs-content markdown-inner"><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c# data-lang=c#></code></pre></div></div><hr><input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-3>
+<label for=tabs-leetcode-solution-3>Go</label><div class="book-tabs-content markdown-inner"><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go></code></pre></div></div><hr><input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-4>
+<label for=tabs-leetcode-solution-4>Java</label><div class="book-tabs-content markdown-inner"><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java></code></pre></div></div><hr><input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-5>
+<label for=tabs-leetcode-solution-5>JavaScript</label><div class="book-tabs-content markdown-inner"><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript></code></pre></div></div><hr><input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-6>
+<label for=tabs-leetcode-solution-6>Kotlin</label><div class="book-tabs-content markdown-inner"><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-kotlin data-lang=kotlin></code></pre></div></div><hr><input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-7>
+<label for=tabs-leetcode-solution-7>PHP</label><div class="book-tabs-content markdown-inner"><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-php data-lang=php></code></pre></div></div><hr><input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-8>
+<label for=tabs-leetcode-solution-8>Python2</label><div class="book-tabs-content markdown-inner"></div><hr><input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-9>
+<label for=tabs-leetcode-solution-9>Python3</label><div class="book-tabs-content markdown-inner"></div><hr><input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-10>
+<label for=tabs-leetcode-solution-10>Ruby</label><div class="book-tabs-content markdown-inner"><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-ruby data-lang=ruby></code></pre></div></div><hr><input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-11>
+<label for=tabs-leetcode-solution-11>Rust</label><div class="book-tabs-content markdown-inner"><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-rust data-lang=rust></code></pre></div></div><hr><input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-12>
+<label for=tabs-leetcode-solution-12>Scala</label><div class="book-tabs-content markdown-inner"><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-scala data-lang=scala></code></pre></div></div><hr><input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-13>
+<label for=tabs-leetcode-solution-13>Swift</label><div class="book-tabs-content markdown-inner"><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-swift data-lang=swift></code></pre></div></div><hr><input type=radio class=toggle name=tabs-leetcode-solution id=tabs-leetcode-solution-14>
+<label for=tabs-leetcode-solution-14>TypeScript</label><div class="book-tabs-content markdown-inner"><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-typescript data-lang=typescript></code></pre></div></div><hr></div></article><footer class=book-footer><div class="flex flex-wrap justify-between"><div><a class="flex align-center" href=https://github.com/ikingye/study-algs/commit/e63fa5fe48ca606f158c7321bee3a48c66fab994 title='Last modified by yewang | 2021-11-01' target=_blank rel=noopener><img src=/study-algs/svg/calendar.svg class=book-icon alt>
 <span>2021-11-01</span></a></div></div><script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script><div><br><script async src=//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js></script><link rel=stylesheet href=//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css><p><span id=busuanzi_container_page_pv>本文访问量 <span id=busuanzi_value_page_pv><i class="fa fa-spinner fa-spin"></i></span> 次</span></p><p><span id=busuanzi_container_site_pv>本站总访问量 <span id=busuanzi_value_site_pv><i class="fa fa-spinner fa-spin"></i></span> 次</span></p><p><span id=busuanzi_container_site_uv>本站总访客数 <span id=busuanzi_value_site_uv><i class="fa fa-spinner fa-spin"></i></span> 人</span></p></div></footer><div class=book-comments><script src=https://utteranc.es/client.js repo=ikingye/study-algs issue-term=pathname theme=github-light crossorigin=anonymous async></script><div id=footer><p><a href=https://kingye.me>叶王</a> &copy; 2013-2024
 版权所有。如果本文档对你有所帮助，可以<a href=https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200428110046.png target=_blank rel="noopener noreferrer">请作者喝饮料</a>。</p></div></div><label for=menu-control class="hidden book-menu-overlay"></label></div></main></body></html>
