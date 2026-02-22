@@ -1,19 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>101-200 on 算法学习笔记</title><link>https://kingye.me/study-algs/docs/advanced/leetcode/1/</link><description>Recent content in 101-200 on 算法学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/study-algs/docs/advanced/leetcode/1/index.xml" rel="self" type="application/rss+xml"/><item><title>110. 平衡二叉树</title><link>https://kingye.me/study-algs/docs/advanced/leetcode/1/110/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/study-algs/docs/advanced/leetcode/1/110/</guid><description>&lt;h1 id="平衡二叉树"&gt;
- 平衡二叉树
- 
- &lt;a class="anchor" href="#%e5%b9%b3%e8%a1%a1%e4%ba%8c%e5%8f%89%e6%a0%91"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
-&lt;h2 id="题目"&gt;
- &lt;a href="https://leetcode-cn.com/problems/balanced-binary-tree/"&gt;题目&lt;/a&gt;
- 
- &lt;a class="anchor" href="#%e9%a2%98%e7%9b%ae"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>101-200 on 算法学习笔记</title><link>https://kingye.me/study-algs/docs/advanced/leetcode/1/</link><description>Recent content in 101-200 on 算法学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/study-algs/docs/advanced/leetcode/1/index.xml" rel="self" type="application/rss+xml"/><item><title>110. 平衡二叉树</title><link>https://kingye.me/study-algs/docs/advanced/leetcode/1/110/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/study-algs/docs/advanced/leetcode/1/110/</guid><description>&lt;h1 id="平衡二叉树"&gt;平衡二叉树&lt;a class="anchor" href="#%e5%b9%b3%e8%a1%a1%e4%ba%8c%e5%8f%89%e6%a0%91"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;h2 id="题目"&gt;&lt;a href="https://leetcode-cn.com/problems/balanced-binary-tree/"&gt;题目&lt;/a&gt;&lt;a class="anchor" href="#%e9%a2%98%e7%9b%ae"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="book-tabs"&gt;
-&lt;input type="radio" class="toggle" name="tabs-leetcode-problem" id="tabs-leetcode-problem-0" checked="checked" /&gt;
-&lt;label for="tabs-leetcode-problem-0"&gt;中文&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;&lt;p&gt;给定一个二叉树，判断它是否是高度平衡的二叉树。&lt;/p&gt;
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-0" checked="checked" /&gt;&lt;label for="tabs-0-0"&gt;中文&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
+&lt;p&gt;给定一个二叉树，判断它是否是高度平衡的二叉树。&lt;/p&gt;
 &lt;p&gt;本题中，一棵高度平衡二叉树定义为：&lt;/p&gt;
 &lt;p&gt;一个二叉树每个节点   的左右两个子树的高度差的绝对值不超过 1。&lt;/p&gt;
 &lt;p&gt;示例 1:&lt;/p&gt;
@@ -23,8 +12,7 @@
 &lt;p&gt;/ &lt;br&gt;
 9 20
 / &lt;br&gt;
-15 7
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;返回 true 。&lt;/p&gt;&lt;/p&gt;
+15 7&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;返回 true 。&lt;/p&gt;&lt;/p&gt;
 &lt;p&gt;示例 2:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;给定二叉树 [1,2,2,3,3,null,null,4,4]
 &lt;pre&gt;&lt;code&gt; 1
@@ -35,28 +23,15 @@
 &lt;p&gt;3 3
 / &lt;br&gt;
 4 4
-返回 false 。
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
-&lt;input type="radio" class="toggle" name="tabs-leetcode-problem" id="tabs-leetcode-problem-1" /&gt;
-&lt;label for="tabs-leetcode-problem-1"&gt;English&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;&lt;p&gt;Given a binary tree, determine if it is height-balanced.&lt;/p&gt;
+返回 false 。&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-1" /&gt;&lt;label for="tabs-0-1"&gt;English&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;&lt;/p&gt;
+&lt;p&gt;Given a binary tree, determine if it is height-balanced.&lt;/p&gt;
 &lt;p&gt;For this problem, a height-balanced binary tree is defined as:&lt;/p&gt;
-&lt;p&gt;a binary tree in which the left and right subtrees of every node differ in height by no more than 1.&lt;/p&gt;</description></item><item><title>146. LRU 缓存机制</title><link>https://kingye.me/study-algs/docs/advanced/leetcode/1/146/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/study-algs/docs/advanced/leetcode/1/146/</guid><description>&lt;h1 id="lru-缓存机制"&gt;
- LRU 缓存机制
- 
- &lt;a class="anchor" href="#lru-%e7%bc%93%e5%ad%98%e6%9c%ba%e5%88%b6"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;
-&lt;h2 id="题目"&gt;
- &lt;a href="https://leetcode-cn.com/problems/lru-cache"&gt;题目&lt;/a&gt;
- 
- &lt;a class="anchor" href="#%e9%a2%98%e7%9b%ae"&gt;#&lt;/a&gt;
- 
-&lt;/h2&gt;
+&lt;p&gt;a binary tree in which the left and right subtrees of every node differ in height by no more than 1.&lt;/p&gt;</description></item><item><title>146. LRU 缓存机制</title><link>https://kingye.me/study-algs/docs/advanced/leetcode/1/146/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/study-algs/docs/advanced/leetcode/1/146/</guid><description>&lt;h1 id="lru-缓存机制"&gt;LRU 缓存机制&lt;a class="anchor" href="#lru-%e7%bc%93%e5%ad%98%e6%9c%ba%e5%88%b6"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;h2 id="题目"&gt;&lt;a href="https://leetcode-cn.com/problems/lru-cache"&gt;题目&lt;/a&gt;&lt;a class="anchor" href="#%e9%a2%98%e7%9b%ae"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="book-tabs"&gt;
-&lt;input type="radio" class="toggle" name="tabs-leetcode-problem" id="tabs-leetcode-problem-0" checked="checked" /&gt;
-&lt;label for="tabs-leetcode-problem-0"&gt;中文&lt;/label&gt;
-&lt;div class="book-tabs-content markdown-inner"&gt;&lt;p&gt;运用你所掌握的数据结构，设计和实现一个 &lt;a href="https://baike.baidu.com/item/LRU"&gt;LRU (最近最少使用)&lt;/a&gt; 缓存机制。它应该支持以下操作： 获取数据 get 和 写入数据 put 。&lt;/p&gt;
+&lt;input type="radio" class="toggle" name="tabs-0" id="tabs-0-0" checked="checked" /&gt;&lt;label for="tabs-0-0"&gt;中文&lt;/label&gt;&lt;div class="book-tabs-content markdown-inner"&gt;
+&lt;p&gt;运用你所掌握的数据结构，设计和实现一个 &lt;a href="https://baike.baidu.com/item/LRU"&gt;LRU (最近最少使用)&lt;/a&gt; 缓存机制。它应该支持以下操作： 获取数据 get 和 写入数据 put 。&lt;/p&gt;
 &lt;p&gt;获取数据 get(key) - 如果密钥 (key) 存在于缓存中，则获取密钥的值（总是正数），否则返回 -1。
 写入数据 put(key, value) - 如果密钥已经存在，则变更其数据值；如果密钥不存在，则插入该组「密钥 / 数据值」。当缓存容量达到上限时，它应该在写入新数据之前删除最久未使用的数据值，从而为新的数据值留出空间。&lt;/p&gt;
 &lt;p&gt;进阶:&lt;/p&gt;
@@ -71,5 +46,4 @@ cache.get(2); // 返回 -1 (未找到)
 cache.put(4, 4); // 该操作会使得密钥 1 作废
 cache.get(1); // 返回 -1 (未找到)
 cache.get(3); // 返回 3
-cache.get(4); // 返回 4
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;</description></item></channel></rss>
+cache.get(4); // 返回 4&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;</description></item></channel></rss>

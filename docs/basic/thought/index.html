@@ -1,128 +1,74 @@
-<!doctype html><html lang=en dir=ltr><head><meta name=generator content="Hugo 0.151.0"><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="
-  算法思想
-  
-  #
-  
-
-
-  基本算法
-  
-  #
-  
-
-
-  递归
-  
-  #
-  
-
-
-
-  迭代
-  
-  #
-  
-
-
-
-  贪心 / 贪婪
-  
-  #
-  
-
-
-
-  动态规划
-  
-  #
-  
-
-
-
-  分治
-  
-  #
-  
-
-分治算法是递归的典型应用
-
-
-  回溯法 backtracking
-  
-  #
-  
-
-回溯算法实际上一个类似枚举的搜索尝试过程，主要是在搜索尝试过程中寻找问题的解，当发现已不满足求解条件时，就 “回溯” 返回，尝试别的路径。
-回溯法简单来说就是按照深度优先的顺序，穷举所有可能性的算法，
-但是回溯算法比暴力穷举法更高明的地方就是回溯算法可以随时判断当前状态是否符合问题的条件。
-一旦不符合条件，那么就退回到上一个状态，省去了继续往下探索的时间。
-
-
-  分支限界法
-  
-  #
-  
-
-分支限界法是广度优先的一个经典例子
-
-
-  其他
-  
-  #
-  
-
-
-  背包
-  
-  #
-  
-"><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#343a40"><meta name=color-scheme content="light dark"><meta property="og:url" content="https://kingye.me/study-algs/docs/basic/thought/"><meta property="og:site_name" content="算法学习笔记"><meta property="og:title" content="1.2 算法思想"><meta property="og:description" content="算法思想 # 基本算法 # 递归 # 迭代 # 贪心 / 贪婪 # 动态规划 # 分治 # 分治算法是递归的典型应用
-回溯法 backtracking # 回溯算法实际上一个类似枚举的搜索尝试过程，主要是在搜索尝试过程中寻找问题的解，当发现已不满足求解条件时，就 “回溯” 返回，尝试别的路径。
+<!doctype html><html lang=en dir=ltr><head><meta name=generator content="Hugo 0.151.0"><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="算法思想# 基本算法# 递归# 迭代# 贪心 / 贪婪# 动态规划# 分治# 分治算法是递归的典型应用
+回溯法 backtracking# 回溯算法实际上一个类似枚举的搜索尝试过程，主要是在搜索尝试过程中寻找问题的解，当发现已不满足求解条件时，就 “回溯” 返回，尝试别的路径。
 回溯法简单来说就是按照深度优先的顺序，穷举所有可能性的算法， 但是回溯算法比暴力穷举法更高明的地方就是回溯算法可以随时判断当前状态是否符合问题的条件。 一旦不符合条件，那么就退回到上一个状态，省去了继续往下探索的时间。
-分支限界法 # 分支限界法是广度优先的一个经典例子
-其他 # 背包 #"><meta property="og:locale" content="en"><meta property="og:type" content="website"><title>1.2 算法思想 | 算法学习笔记</title><link rel=icon href=/study-algs/favicon.png><link rel=manifest href=/study-algs/manifest.json><link rel=canonical href=https://kingye.me/study-algs/docs/basic/thought/><link rel=stylesheet href=/study-algs/book.min.4113bbcb6333b68fd5b25cfb3b9f2a325a597ef49f8d1dd59a7239731166d309.css integrity="sha256-QRO7y2Mzto/Vslz7O58qMlpZfvSfjR3VmnI5cxFm0wk=" crossorigin=anonymous><script defer src=/study-algs/fuse.min.js></script><script defer src=/study-algs/en.search.min.9c60fbfa87c528233fd93769eda7e42d5dffd5b7d8d25a8d774ee5db37bbd3b0.js integrity="sha256-nGD7+ofFKCM/2Tdp7afkLV3/1bfY0lqNd07l2ze707A=" crossorigin=anonymous></script><link rel=alternate type=application/rss+xml href=https://kingye.me/study-algs/docs/basic/thought/index.xml title=算法学习笔记></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
-<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=/study-algs/><span>算法学习笔记</span></a></h2><div class="book-search hidden"><input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><script>document.querySelector(".book-search").classList.remove("hidden")</script><ul><li><a href=https://kingye.me target=_blank rel="noopener noreferrer">博客</a></li><li><a href=https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417021727.png target=_blank rel="noopener noreferrer">公众号</a></li><li><a href=https://github.com/ikingye target=_blank rel="noopener noreferrer">Github</a></li><li><a href=https://weibo.com/kingyip15215 target=_blank rel="noopener noreferrer">微博</a></li><li><a href=https://www.zhihu.com/people/wutongyip target=_blank rel="noopener noreferrer">知乎</a></li></ul><hr><ul><li><span>第一部分 基础入门</span><ul><li><a href=/study-algs/docs/basic/datastruct/>1.1 数据结构</a><ul></ul></li><li><input type=checkbox id=section-263b9b8925df82f0f65f0e20376c813b class=toggle checked>
-<label for=section-263b9b8925df82f0f65f0e20376c813b class=flex><a href=/study-algs/docs/basic/thought/ class="flex-auto active">1.2 算法思想</a></label><ul><li><a href=/study-algs/docs/basic/thought/recursive/>递归</a></li></ul></li></ul></li><li><span>第二部分 进阶实战</span><ul><li><input type=checkbox id=section-5ece5f5d76f2624cda37d544e6e3c945 class=toggle>
-<label for=section-5ece5f5d76f2624cda37d544e6e3c945 class=flex><a href=/study-algs/docs/advanced/common/ class=flex-auto>2.1 常见算法</a></label><ul><li><a href=/study-algs/docs/advanced/common/sort/>1.3.1 排序算法</a></li><li><input type=checkbox id=section-7063d123028e34c69a7e9783b77364b2 class=toggle>
-<label for=section-7063d123028e34c69a7e9783b77364b2 class=flex><a href=/study-algs/docs/advanced/common/lru/ class=flex-auto>LRU Cache</a></label></li><li><input type=checkbox id=section-72d8d66fcf2e99754c5551bb2b1570cd class=toggle>
-<label for=section-72d8d66fcf2e99754c5551bb2b1570cd class=flex><a href=/study-algs/docs/advanced/common/paxos/ class=flex-auto>paxos</a></label></li><li><input type=checkbox id=section-6986b5bde17181ad0eab308c7ded1e53 class=toggle>
-<label for=section-6986b5bde17181ad0eab308c7ded1e53 class=flex><a href=/study-algs/docs/advanced/common/raft/ class=flex-auto>raft</a></label></li><li><input type=checkbox id=section-defaade277fbcf91bac715f5eb13eb81 class=toggle>
-<label for=section-defaade277fbcf91bac715f5eb13eb81 class=flex><a href=/study-algs/docs/advanced/common/tree/ class=flex-auto>树</a></label></li><li><a href=/study-algs/docs/advanced/common/kmp/>KMP</a></li><li><a href=/study-algs/docs/advanced/common/bloom/>布隆过滤器</a></li></ul></li><li><input type=checkbox id=section-66e8b8412da7d695f4af9d09cd6d0eb9 class=toggle>
-<label for=section-66e8b8412da7d695f4af9d09cd6d0eb9 class=flex><a href=/study-algs/docs/advanced/leetcode/ class=flex-auto>2.2 LeetCode</a></label><ul><li><input type=checkbox id=section-d3b81e1c83cf5fdebdc1dc5f7064b7dc class=toggle>
-<label for=section-d3b81e1c83cf5fdebdc1dc5f7064b7dc class=flex><a href=/study-algs/docs/advanced/leetcode/0/ class=flex-auto>1-100</a></label><ul><li><a href=/study-algs/docs/advanced/leetcode/0/1/>1. 两数之和</a></li><li><a href=/study-algs/docs/advanced/leetcode/0/2/>2. 两数相加</a></li><li><a href=/study-algs/docs/advanced/leetcode/0/3/>3. 无重复字符的最长子串</a></li><li><a href=/study-algs/docs/advanced/leetcode/0/4/>4. 寻找两个有序数组的中位数</a></li><li><a href=/study-algs/docs/advanced/leetcode/0/7/>7. 整数反转</a></li><li><a href=/study-algs/docs/advanced/leetcode/0/9/>9. 回文数</a></li><li><a href=/study-algs/docs/advanced/leetcode/0/10/>10. 正则表达式匹配</a></li><li><a href=/study-algs/docs/advanced/leetcode/0/54/>54. 螺旋矩阵</a></li><li><a href=/study-algs/docs/advanced/leetcode/0/71/>71. 简化路径</a></li></ul></li><li><input type=checkbox id=section-27782b18678e0425a9dfad93635ae520 class=toggle>
-<label for=section-27782b18678e0425a9dfad93635ae520 class=flex><a href=/study-algs/docs/advanced/leetcode/1/ class=flex-auto>101-200</a></label><ul><li><a href=/study-algs/docs/advanced/leetcode/1/110/>110. 平衡二叉树</a></li><li><a href=/study-algs/docs/advanced/leetcode/1/146/>146. LRU 缓存机制</a></li></ul></li><li><input type=checkbox id=section-80a80dc850414133f0f36d9a4936dffd class=toggle>
-<label for=section-80a80dc850414133f0f36d9a4936dffd class=flex><a href=/study-algs/docs/advanced/leetcode/2/ class=flex-auto>201-300</a></label><ul><li><a href=/study-algs/docs/advanced/leetcode/2/206/>206. 反转链表</a></li></ul></li><li><input type=checkbox id=section-2358c2125e240e7c7e7b46d8e26a6949 class=toggle>
-<label for=section-2358c2125e240e7c7e7b46d8e26a6949 class=flex><a href=/study-algs/docs/advanced/leetcode/3/ class=flex-auto>301-400</a></label><ul></ul></li><li><input type=checkbox id=section-06102adafe125dd4f5f59edd133f3996 class=toggle>
-<label for=section-06102adafe125dd4f5f59edd133f3996 class=flex><a href=/study-algs/docs/advanced/leetcode/4/ class=flex-auto>401-500</a></label><ul></ul></li><li><input type=checkbox id=section-abdeb5ad9b730cdd44a7aadfbbdf330e class=toggle>
-<label for=section-abdeb5ad9b730cdd44a7aadfbbdf330e class=flex><a href=/study-algs/docs/advanced/leetcode/5/ class=flex-auto>501-600</a></label><ul></ul></li><li><input type=checkbox id=section-c3078ca9b97c9d05d14d50515dceb938 class=toggle>
-<label for=section-c3078ca9b97c9d05d14d50515dceb938 class=flex><a href=/study-algs/docs/advanced/leetcode/6/ class=flex-auto>601-700</a></label><ul><li><input type=checkbox id=section-efa26a2ac82b064e395a882e58b0583f class=toggle>
-<label for=section-efa26a2ac82b064e395a882e58b0583f class=flex><a href=/study-algs/docs/advanced/leetcode/6/671/ class=flex-auto>671. 二叉树中第二小的节点</a></label></li></ul></li><li><input type=checkbox id=section-cc67baacb4d4e04a0669b262a6f2608f class=toggle>
-<label for=section-cc67baacb4d4e04a0669b262a6f2608f class=flex><a href=/study-algs/docs/advanced/leetcode/7/ class=flex-auto>701-800</a></label><ul></ul></li><li><input type=checkbox id=section-4d6ce0ffaf12f6295ac7486aac3853ec class=toggle>
-<label for=section-4d6ce0ffaf12f6295ac7486aac3853ec class=flex><a href=/study-algs/docs/advanced/leetcode/8/ class=flex-auto>801-900</a></label><ul></ul></li><li><input type=checkbox id=section-86093803c161640278fc2ac1d3ffee28 class=toggle>
-<label for=section-86093803c161640278fc2ac1d3ffee28 class=flex><a href=/study-algs/docs/advanced/leetcode/9/ class=flex-auto>901-1000</a></label><ul></ul></li><li><input type=checkbox id=section-aecf0c25425cbcad5b84107fd0f09c23 class=toggle>
-<label for=section-aecf0c25425cbcad5b84107fd0f09c23 class=flex><a href=/study-algs/docs/advanced/leetcode/10/ class=flex-auto>1001-1100</a></label><ul></ul></li><li><input type=checkbox id=section-235c2c662587b2b1597161ee9097503c class=toggle>
-<label for=section-235c2c662587b2b1597161ee9097503c class=flex><a href=/study-algs/docs/advanced/leetcode/11/ class=flex-auto>1101-1200</a></label><ul></ul></li><li><input type=checkbox id=section-2dea072447cc19103eb8a04e0c472440 class=toggle>
-<label for=section-2dea072447cc19103eb8a04e0c472440 class=flex><a href=/study-algs/docs/advanced/leetcode/12/ class=flex-auto>1201-1300</a></label><ul></ul></li><li><input type=checkbox id=section-dfd34f9b41206aa064769c92da5959d2 class=toggle>
-<label for=section-dfd34f9b41206aa064769c92da5959d2 class=flex><a href=/study-algs/docs/advanced/leetcode/13/ class=flex-auto>1301-1400</a></label><ul></ul></li><li><input type=checkbox id=section-b6ab2cfd42a84cbf01b92d5806f3c61c class=toggle>
-<label for=section-b6ab2cfd42a84cbf01b92d5806f3c61c class=flex><a href=/study-algs/docs/advanced/leetcode/14/ class=flex-auto>1401-1500</a></label><ul></ul></li></ul></li><li><input type=checkbox id=section-0d3204194de4a3a362bd3c4674e20c72 class=toggle>
-<label for=section-0d3204194de4a3a362bd3c4674e20c72 class=flex><a href=/study-algs/docs/advanced/nowcoder/ class=flex-auto>2.3 牛客网</a></label><ul></ul></li></ul></li><li><span>第三部分 设计与实现</span><ul></ul></li><li><span>第四部分 附录</span><ul><li><input type=checkbox id=section-bbc4546e42e69929436fe413d624444e class=toggle>
-<label for=section-bbc4546e42e69929436fe413d624444e class=flex><a href=/study-algs/docs/appendix/tutorial/ class=flex-auto>4.1 教程</a></label></li><li><input type=checkbox id=section-2cc621a8ab2a01fb7591c8cc689de3b3 class=toggle>
-<label for=section-2cc621a8ab2a01fb7591c8cc689de3b3 class=flex><a href=/study-algs/docs/appendix/interview/ class=flex-auto>4.2 面试题</a></label></li><li><input type=checkbox id=section-3a590afe51b117c1458c25c0fb991f9f class=toggle>
-<label for=section-3a590afe51b117c1458c25c0fb991f9f class=flex><a href=/study-algs/docs/appendix/attention/ class=flex-auto>4.3 关注项目</a></label></li></ul></li></ul><hr><ul><li><a href=https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417022040.png target=_blank rel="noopener noreferrer">微信</a></li><li><a href="https://qm.qq.com/cgi-bin/qm/qr?k=EUhzg0UwUksxpQnwEmPngRLezlC6qrnn&jump_from=webapi" target=_blank rel="noopener noreferrer"><img src=//pub.idqqimg.com/wpa/images/group.png></a></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/study-algs/svg/menu.svg class=book-icon alt=Menu></label><h3>1.2 算法思想</h3><label for=toc-control><img src=/study-algs/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents><ul><li><a href=#基本算法>基本算法</a><ul><li><a href=#递归>递归</a></li><li><a href=#迭代>迭代</a></li><li><a href=#贪心--贪婪>贪心 / 贪婪</a></li><li><a href=#动态规划>动态规划</a></li><li><a href=#分治>分治</a></li><li><a href=#回溯法-backtracking>回溯法 backtracking</a></li><li><a href=#分支限界法>分支限界法</a></li></ul></li><li><a href=#其他>其他</a><ul><li><a href=#背包>背包</a></li></ul></li></ul></nav></aside></header><article id=article class=markdown><h1 id=算法思想>算法思想
-<a class=anchor href=#%e7%ae%97%e6%b3%95%e6%80%9d%e6%83%b3>#</a></h1><h2 id=基本算法>基本算法
-<a class=anchor href=#%e5%9f%ba%e6%9c%ac%e7%ae%97%e6%b3%95>#</a></h2><h3 id=递归>递归
-<a class=anchor href=#%e9%80%92%e5%bd%92>#</a></h3><hr><h3 id=迭代>迭代
-<a class=anchor href=#%e8%bf%ad%e4%bb%a3>#</a></h3><hr><h3 id=贪心--贪婪>贪心 / 贪婪
-<a class=anchor href=#%e8%b4%aa%e5%bf%83--%e8%b4%aa%e5%a9%aa>#</a></h3><hr><h3 id=动态规划>动态规划
-<a class=anchor href=#%e5%8a%a8%e6%80%81%e8%a7%84%e5%88%92>#</a></h3><hr><h3 id=分治>分治
-<a class=anchor href=#%e5%88%86%e6%b2%bb>#</a></h3><p>分治算法是递归的典型应用</p><hr><h3 id=回溯法-backtracking>回溯法 backtracking
-<a class=anchor href=#%e5%9b%9e%e6%ba%af%e6%b3%95-backtracking>#</a></h3><p>回溯算法实际上一个类似枚举的搜索尝试过程，主要是在搜索尝试过程中寻找问题的解，当发现已不满足求解条件时，就 “回溯” 返回，尝试别的路径。</p><p>回溯法简单来说就是按照<strong>深度优先</strong>的顺序，穷举所有可能性的算法，
+分支限界法# 分支限界法是广度优先的一个经典例子
+其他# 背包#"><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#343a40"><meta name=color-scheme content="light dark"><meta property="og:url" content="https://kingye.me/study-algs/docs/basic/thought/"><meta property="og:site_name" content="算法学习笔记"><meta property="og:title" content="1.2 算法思想"><meta property="og:description" content="算法思想# 基本算法# 递归# 迭代# 贪心 / 贪婪# 动态规划# 分治# 分治算法是递归的典型应用
+回溯法 backtracking# 回溯算法实际上一个类似枚举的搜索尝试过程，主要是在搜索尝试过程中寻找问题的解，当发现已不满足求解条件时，就 “回溯” 返回，尝试别的路径。
+回溯法简单来说就是按照深度优先的顺序，穷举所有可能性的算法， 但是回溯算法比暴力穷举法更高明的地方就是回溯算法可以随时判断当前状态是否符合问题的条件。 一旦不符合条件，那么就退回到上一个状态，省去了继续往下探索的时间。
+分支限界法# 分支限界法是广度优先的一个经典例子
+其他# 背包#"><meta property="og:locale" content="en"><meta property="og:type" content="website"><meta itemprop=name content="1.2 算法思想"><meta itemprop=description content="算法思想# 基本算法# 递归# 迭代# 贪心 / 贪婪# 动态规划# 分治# 分治算法是递归的典型应用
+回溯法 backtracking# 回溯算法实际上一个类似枚举的搜索尝试过程，主要是在搜索尝试过程中寻找问题的解，当发现已不满足求解条件时，就 “回溯” 返回，尝试别的路径。
+回溯法简单来说就是按照深度优先的顺序，穷举所有可能性的算法， 但是回溯算法比暴力穷举法更高明的地方就是回溯算法可以随时判断当前状态是否符合问题的条件。 一旦不符合条件，那么就退回到上一个状态，省去了继续往下探索的时间。
+分支限界法# 分支限界法是广度优先的一个经典例子
+其他# 背包#"><meta itemprop=dateModified content="2020-07-16T20:46:08+08:00"><meta itemprop=wordCount content="22"><title>1.2 算法思想 | 算法学习笔记</title><link rel=icon href=/study-algs/favicon.png><link rel=manifest href=/study-algs/manifest.json><link rel=canonical href=https://kingye.me/study-algs/docs/basic/thought/><link rel=stylesheet href=/study-algs/book.min.c3b69a70cf38d3ba0ae6f9e4459007b9d084940656d8e82e633879099cb6eac0.css integrity="sha256-w7aacM8407oK5vnkRZAHudCElAZW2OguYzh5CZy26sA=" crossorigin=anonymous><script defer src=/study-algs/fuse.min.js></script><script defer src=/study-algs/en.search.min.8caca1153f5bb110aa887e84b638691e8cbae0711031e63ec423642d1bffad29.js integrity="sha256-jKyhFT9bsRCqiH6EtjhpHoy64HEQMeY+xCNkLRv/rSk=" crossorigin=anonymous></script><link rel=alternate type=application/rss+xml href=https://kingye.me/study-algs/docs/basic/thought/index.xml title=算法学习笔记></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=/study-algs/><span>算法学习笔记</span></a></h2><div class="book-search hidden"><input id=book-search-input type=text placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><script>document.querySelector(".book-search").classList.remove("hidden")</script><ul><li><a href=https://kingye.me target=_blank rel="noopener noreferrer">博客</a></li><li><a href=https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417021727.png target=_blank rel="noopener noreferrer">公众号</a></li><li><a href=https://github.com/ikingye target=_blank rel="noopener noreferrer">Github</a></li><li><a href=https://weibo.com/kingyip15215 target=_blank rel="noopener noreferrer">微博</a></li><li><a href=https://www.zhihu.com/people/wutongyip target=_blank rel="noopener noreferrer">知乎</a></li></ul><hr><ul><li><a>第一部分 基础入门</a><ul><li><a href=/study-algs/docs/basic/datastruct/>1.1 数据结构</a><ul></ul></li><li><input type=checkbox id=section-263b9b8925df82f0f65f0e20376c813b class=toggle checked>
+<label for=section-263b9b8925df82f0f65f0e20376c813b class=flex><a href=/study-algs/docs/basic/thought/ class=active>1.2 算法思想</a>
+<img src=/study-algs/icons/chevron-right.svg class=book-icon alt=Expand></label><ul><li><a href=/study-algs/docs/basic/thought/recursive/>递归</a></li></ul></li></ul></li><li><a>第二部分 进阶实战</a><ul><li><input type=checkbox id=section-5ece5f5d76f2624cda37d544e6e3c945 class=toggle>
+<label for=section-5ece5f5d76f2624cda37d544e6e3c945 class=flex><a href=/study-algs/docs/advanced/common/>2.1 常见算法</a>
+<img src=/study-algs/icons/chevron-right.svg class=book-icon alt=Expand></label><ul><li><a href=/study-algs/docs/advanced/common/sort/>1.3.1 排序算法</a></li><li><input type=checkbox id=section-7063d123028e34c69a7e9783b77364b2 class=toggle>
+<label for=section-7063d123028e34c69a7e9783b77364b2 class=flex><a href=/study-algs/docs/advanced/common/lru/>LRU Cache</a>
+<img src=/study-algs/icons/chevron-right.svg class=book-icon alt=Expand></label></li><li><input type=checkbox id=section-72d8d66fcf2e99754c5551bb2b1570cd class=toggle>
+<label for=section-72d8d66fcf2e99754c5551bb2b1570cd class=flex><a href=/study-algs/docs/advanced/common/paxos/>paxos</a>
+<img src=/study-algs/icons/chevron-right.svg class=book-icon alt=Expand></label></li><li><input type=checkbox id=section-6986b5bde17181ad0eab308c7ded1e53 class=toggle>
+<label for=section-6986b5bde17181ad0eab308c7ded1e53 class=flex><a href=/study-algs/docs/advanced/common/raft/>raft</a>
+<img src=/study-algs/icons/chevron-right.svg class=book-icon alt=Expand></label></li><li><input type=checkbox id=section-defaade277fbcf91bac715f5eb13eb81 class=toggle>
+<label for=section-defaade277fbcf91bac715f5eb13eb81 class=flex><a href=/study-algs/docs/advanced/common/tree/>树</a>
+<img src=/study-algs/icons/chevron-right.svg class=book-icon alt=Expand></label></li><li><a href=/study-algs/docs/advanced/common/kmp/>KMP</a></li><li><a href=/study-algs/docs/advanced/common/bloom/>布隆过滤器</a></li></ul></li><li><input type=checkbox id=section-66e8b8412da7d695f4af9d09cd6d0eb9 class=toggle>
+<label for=section-66e8b8412da7d695f4af9d09cd6d0eb9 class=flex><a href=/study-algs/docs/advanced/leetcode/>2.2 LeetCode</a>
+<img src=/study-algs/icons/chevron-right.svg class=book-icon alt=Expand></label><ul><li><input type=checkbox id=section-d3b81e1c83cf5fdebdc1dc5f7064b7dc class=toggle>
+<label for=section-d3b81e1c83cf5fdebdc1dc5f7064b7dc class=flex><a href=/study-algs/docs/advanced/leetcode/0/>1-100</a>
+<img src=/study-algs/icons/chevron-right.svg class=book-icon alt=Expand></label><ul><li><a href=/study-algs/docs/advanced/leetcode/0/1/>1. 两数之和</a></li><li><a href=/study-algs/docs/advanced/leetcode/0/2/>2. 两数相加</a></li><li><a href=/study-algs/docs/advanced/leetcode/0/3/>3. 无重复字符的最长子串</a></li><li><a href=/study-algs/docs/advanced/leetcode/0/4/>4. 寻找两个有序数组的中位数</a></li><li><a href=/study-algs/docs/advanced/leetcode/0/7/>7. 整数反转</a></li><li><a href=/study-algs/docs/advanced/leetcode/0/9/>9. 回文数</a></li><li><a href=/study-algs/docs/advanced/leetcode/0/10/>10. 正则表达式匹配</a></li><li><a href=/study-algs/docs/advanced/leetcode/0/54/>54. 螺旋矩阵</a></li><li><a href=/study-algs/docs/advanced/leetcode/0/71/>71. 简化路径</a></li></ul></li><li><input type=checkbox id=section-27782b18678e0425a9dfad93635ae520 class=toggle>
+<label for=section-27782b18678e0425a9dfad93635ae520 class=flex><a href=/study-algs/docs/advanced/leetcode/1/>101-200</a>
+<img src=/study-algs/icons/chevron-right.svg class=book-icon alt=Expand></label><ul><li><a href=/study-algs/docs/advanced/leetcode/1/110/>110. 平衡二叉树</a></li><li><a href=/study-algs/docs/advanced/leetcode/1/146/>146. LRU 缓存机制</a></li></ul></li><li><input type=checkbox id=section-80a80dc850414133f0f36d9a4936dffd class=toggle>
+<label for=section-80a80dc850414133f0f36d9a4936dffd class=flex><a href=/study-algs/docs/advanced/leetcode/2/>201-300</a>
+<img src=/study-algs/icons/chevron-right.svg class=book-icon alt=Expand></label><ul><li><a href=/study-algs/docs/advanced/leetcode/2/206/>206. 反转链表</a></li></ul></li><li><input type=checkbox id=section-2358c2125e240e7c7e7b46d8e26a6949 class=toggle>
+<label for=section-2358c2125e240e7c7e7b46d8e26a6949 class=flex><a href=/study-algs/docs/advanced/leetcode/3/>301-400</a>
+<img src=/study-algs/icons/chevron-right.svg class=book-icon alt=Expand></label><ul></ul></li><li><input type=checkbox id=section-06102adafe125dd4f5f59edd133f3996 class=toggle>
+<label for=section-06102adafe125dd4f5f59edd133f3996 class=flex><a href=/study-algs/docs/advanced/leetcode/4/>401-500</a>
+<img src=/study-algs/icons/chevron-right.svg class=book-icon alt=Expand></label><ul></ul></li><li><input type=checkbox id=section-abdeb5ad9b730cdd44a7aadfbbdf330e class=toggle>
+<label for=section-abdeb5ad9b730cdd44a7aadfbbdf330e class=flex><a href=/study-algs/docs/advanced/leetcode/5/>501-600</a>
+<img src=/study-algs/icons/chevron-right.svg class=book-icon alt=Expand></label><ul></ul></li><li><input type=checkbox id=section-c3078ca9b97c9d05d14d50515dceb938 class=toggle>
+<label for=section-c3078ca9b97c9d05d14d50515dceb938 class=flex><a href=/study-algs/docs/advanced/leetcode/6/>601-700</a>
+<img src=/study-algs/icons/chevron-right.svg class=book-icon alt=Expand></label><ul><li><input type=checkbox id=section-efa26a2ac82b064e395a882e58b0583f class=toggle>
+<label for=section-efa26a2ac82b064e395a882e58b0583f class=flex><a href=/study-algs/docs/advanced/leetcode/6/671/>671. 二叉树中第二小的节点</a>
+<img src=/study-algs/icons/chevron-right.svg class=book-icon alt=Expand></label></li></ul></li><li><input type=checkbox id=section-cc67baacb4d4e04a0669b262a6f2608f class=toggle>
+<label for=section-cc67baacb4d4e04a0669b262a6f2608f class=flex><a href=/study-algs/docs/advanced/leetcode/7/>701-800</a>
+<img src=/study-algs/icons/chevron-right.svg class=book-icon alt=Expand></label><ul></ul></li><li><input type=checkbox id=section-4d6ce0ffaf12f6295ac7486aac3853ec class=toggle>
+<label for=section-4d6ce0ffaf12f6295ac7486aac3853ec class=flex><a href=/study-algs/docs/advanced/leetcode/8/>801-900</a>
+<img src=/study-algs/icons/chevron-right.svg class=book-icon alt=Expand></label><ul></ul></li><li><input type=checkbox id=section-86093803c161640278fc2ac1d3ffee28 class=toggle>
+<label for=section-86093803c161640278fc2ac1d3ffee28 class=flex><a href=/study-algs/docs/advanced/leetcode/9/>901-1000</a>
+<img src=/study-algs/icons/chevron-right.svg class=book-icon alt=Expand></label><ul></ul></li><li><input type=checkbox id=section-aecf0c25425cbcad5b84107fd0f09c23 class=toggle>
+<label for=section-aecf0c25425cbcad5b84107fd0f09c23 class=flex><a href=/study-algs/docs/advanced/leetcode/10/>1001-1100</a>
+<img src=/study-algs/icons/chevron-right.svg class=book-icon alt=Expand></label><ul></ul></li><li><input type=checkbox id=section-235c2c662587b2b1597161ee9097503c class=toggle>
+<label for=section-235c2c662587b2b1597161ee9097503c class=flex><a href=/study-algs/docs/advanced/leetcode/11/>1101-1200</a>
+<img src=/study-algs/icons/chevron-right.svg class=book-icon alt=Expand></label><ul></ul></li><li><input type=checkbox id=section-2dea072447cc19103eb8a04e0c472440 class=toggle>
+<label for=section-2dea072447cc19103eb8a04e0c472440 class=flex><a href=/study-algs/docs/advanced/leetcode/12/>1201-1300</a>
+<img src=/study-algs/icons/chevron-right.svg class=book-icon alt=Expand></label><ul></ul></li><li><input type=checkbox id=section-dfd34f9b41206aa064769c92da5959d2 class=toggle>
+<label for=section-dfd34f9b41206aa064769c92da5959d2 class=flex><a href=/study-algs/docs/advanced/leetcode/13/>1301-1400</a>
+<img src=/study-algs/icons/chevron-right.svg class=book-icon alt=Expand></label><ul></ul></li><li><input type=checkbox id=section-b6ab2cfd42a84cbf01b92d5806f3c61c class=toggle>
+<label for=section-b6ab2cfd42a84cbf01b92d5806f3c61c class=flex><a href=/study-algs/docs/advanced/leetcode/14/>1401-1500</a>
+<img src=/study-algs/icons/chevron-right.svg class=book-icon alt=Expand></label><ul></ul></li></ul></li><li><input type=checkbox id=section-0d3204194de4a3a362bd3c4674e20c72 class=toggle>
+<label for=section-0d3204194de4a3a362bd3c4674e20c72 class=flex><a href=/study-algs/docs/advanced/nowcoder/>2.3 牛客网</a>
+<img src=/study-algs/icons/chevron-right.svg class=book-icon alt=Expand></label><ul></ul></li></ul></li><li><a>第三部分 设计与实现</a><ul></ul></li><li><a>第四部分 附录</a><ul><li><input type=checkbox id=section-bbc4546e42e69929436fe413d624444e class=toggle>
+<label for=section-bbc4546e42e69929436fe413d624444e class=flex><a href=/study-algs/docs/appendix/tutorial/>4.1 教程</a>
+<img src=/study-algs/icons/chevron-right.svg class=book-icon alt=Expand></label></li><li><input type=checkbox id=section-2cc621a8ab2a01fb7591c8cc689de3b3 class=toggle>
+<label for=section-2cc621a8ab2a01fb7591c8cc689de3b3 class=flex><a href=/study-algs/docs/appendix/interview/>4.2 面试题</a>
+<img src=/study-algs/icons/chevron-right.svg class=book-icon alt=Expand></label></li><li><input type=checkbox id=section-3a590afe51b117c1458c25c0fb991f9f class=toggle>
+<label for=section-3a590afe51b117c1458c25c0fb991f9f class=flex><a href=/study-algs/docs/appendix/attention/>4.3 关注项目</a>
+<img src=/study-algs/icons/chevron-right.svg class=book-icon alt=Expand></label></li></ul></li></ul><hr><ul><li><a href=https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417022040.png target=_blank rel="noopener noreferrer">微信</a></li><li><a href="https://qm.qq.com/cgi-bin/qm/qr?k=EUhzg0UwUksxpQnwEmPngRLezlC6qrnn&jump_from=webapi" target=_blank rel="noopener noreferrer"><img src=//pub.idqqimg.com/wpa/images/group.png></a></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/study-algs/icons/menu.svg class=book-icon alt=Menu></label><h3>1.2 算法思想</h3><label for=toc-control><img src=/study-algs/icons/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents><ul><li><a href=#基本算法>基本算法</a><ul><li><a href=#递归>递归</a></li><li><a href=#迭代>迭代</a></li><li><a href=#贪心--贪婪>贪心 / 贪婪</a></li><li><a href=#动态规划>动态规划</a></li><li><a href=#分治>分治</a></li><li><a href=#回溯法-backtracking>回溯法 backtracking</a></li><li><a href=#分支限界法>分支限界法</a></li></ul></li><li><a href=#其他>其他</a><ul><li><a href=#背包>背包</a></li></ul></li></ul></nav></aside></header><article id=article class=markdown><h1 id=算法思想>算法思想<a class=anchor href=#%e7%ae%97%e6%b3%95%e6%80%9d%e6%83%b3>#</a></h1><h2 id=基本算法>基本算法<a class=anchor href=#%e5%9f%ba%e6%9c%ac%e7%ae%97%e6%b3%95>#</a></h2><h3 id=递归>递归<a class=anchor href=#%e9%80%92%e5%bd%92>#</a></h3><hr><h3 id=迭代>迭代<a class=anchor href=#%e8%bf%ad%e4%bb%a3>#</a></h3><hr><h3 id=贪心--贪婪>贪心 / 贪婪<a class=anchor href=#%e8%b4%aa%e5%bf%83--%e8%b4%aa%e5%a9%aa>#</a></h3><hr><h3 id=动态规划>动态规划<a class=anchor href=#%e5%8a%a8%e6%80%81%e8%a7%84%e5%88%92>#</a></h3><hr><h3 id=分治>分治<a class=anchor href=#%e5%88%86%e6%b2%bb>#</a></h3><p>分治算法是递归的典型应用</p><hr><h3 id=回溯法-backtracking>回溯法 backtracking<a class=anchor href=#%e5%9b%9e%e6%ba%af%e6%b3%95-backtracking>#</a></h3><p>回溯算法实际上一个类似枚举的搜索尝试过程，主要是在搜索尝试过程中寻找问题的解，当发现已不满足求解条件时，就 “回溯” 返回，尝试别的路径。</p><p>回溯法简单来说就是按照<strong>深度优先</strong>的顺序，穷举所有可能性的算法，
 但是回溯算法比暴力穷举法更高明的地方就是回溯算法可以随时判断当前状态是否符合问题的条件。
-一旦不符合条件，那么就退回到上一个状态，省去了继续往下探索的时间。</p><hr><h3 id=分支限界法>分支限界法
-<a class=anchor href=#%e5%88%86%e6%94%af%e9%99%90%e7%95%8c%e6%b3%95>#</a></h3><p>分支限界法是<strong>广度优先</strong>的一个经典例子</p><hr><h2 id=其他>其他
-<a class=anchor href=#%e5%85%b6%e4%bb%96>#</a></h2><h3 id=背包>背包
-<a class=anchor href=#%e8%83%8c%e5%8c%85>#</a></h3></article><footer class=book-footer><div class="flex flex-wrap justify-between"></div><div class="flex flex-wrap justify-between"><span><a href=/study-algs/docs/basic/datastruct/ class="flex align-center"><img src=/study-algs/svg/backward.svg class=book-icon alt=Previous title="1.1 数据结构">
+一旦不符合条件，那么就退回到上一个状态，省去了继续往下探索的时间。</p><hr><h3 id=分支限界法>分支限界法<a class=anchor href=#%e5%88%86%e6%94%af%e9%99%90%e7%95%8c%e6%b3%95>#</a></h3><p>分支限界法是<strong>广度优先</strong>的一个经典例子</p><hr><h2 id=其他>其他<a class=anchor href=#%e5%85%b6%e4%bb%96>#</a></h2><h3 id=背包>背包<a class=anchor href=#%e8%83%8c%e5%8c%85>#</a></h3></article><footer class=book-footer><div class="flex flex-wrap justify-between"><div></div><div></div></div><div class="flex flex-wrap justify-between"><span><a href=/study-algs/docs/basic/datastruct/ class="flex align-center"><img src=/study-algs/icons/backward.svg class=book-icon alt=Backward>
 <span>1.1 数据结构</span>
 </a></span><span><a href=/study-algs/docs/basic/thought/recursive/ class="flex align-center"><span>递归</span>
-<img src=/study-algs/svg/forward.svg class=book-icon alt=Next title=递归></a></span></div><script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script><div><br><script async src=//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js></script><link rel=stylesheet href=//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css><p><span id=busuanzi_container_page_pv>本文访问量 <span id=busuanzi_value_page_pv><i class="fa fa-spinner fa-spin"></i></span> 次</span></p><p><span id=busuanzi_container_site_pv>本站总访问量 <span id=busuanzi_value_site_pv><i class="fa fa-spinner fa-spin"></i></span> 次</span></p><p><span id=busuanzi_container_site_uv>本站总访客数 <span id=busuanzi_value_site_uv><i class="fa fa-spinner fa-spin"></i></span> 人</span></p></div></footer><div class=book-comments><script src=https://utteranc.es/client.js repo=ikingye/study-algs issue-term=pathname theme=github-light crossorigin=anonymous async></script><div id=footer><p><a href=https://kingye.me>叶王</a> &copy; 2013-2026
+<img src=/study-algs/icons/forward.svg class=book-icon alt=Forward></a></span></div><div><br><script async src=//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js></script><link rel=stylesheet href=//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css><p><span id=busuanzi_container_page_pv>本文访问量 <span id=busuanzi_value_page_pv><i class="fa fa-spinner fa-spin"></i></span> 次</span></p><p><span id=busuanzi_container_site_pv>本站总访问量 <span id=busuanzi_value_site_pv><i class="fa fa-spinner fa-spin"></i></span> 次</span></p><p><span id=busuanzi_container_site_uv>本站总访客数 <span id=busuanzi_value_site_uv><i class="fa fa-spinner fa-spin"></i></span> 人</span></p></div></footer><div class=book-comments><script src=https://utteranc.es/client.js repo=ikingye/study-algs issue-term=pathname theme=github-light crossorigin=anonymous async></script><div id=footer><p><a href=https://kingye.me>叶王</a> &copy; 2013-2026
 版权所有。如果本文档对你有所帮助，可以<a href=https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200428110046.png target=_blank rel="noopener noreferrer">请作者喝饮料</a>。</p></div></div><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav id=TableOfContents><ul><li><a href=#基本算法>基本算法</a><ul><li><a href=#递归>递归</a></li><li><a href=#迭代>迭代</a></li><li><a href=#贪心--贪婪>贪心 / 贪婪</a></li><li><a href=#动态规划>动态规划</a></li><li><a href=#分治>分治</a></li><li><a href=#回溯法-backtracking>回溯法 backtracking</a></li><li><a href=#分支限界法>分支限界法</a></li></ul></li><li><a href=#其他>其他</a><ul><li><a href=#背包>背包</a></li></ul></li></ul></nav></div></aside></main></body></html>

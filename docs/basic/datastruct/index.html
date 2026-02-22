@@ -1,1177 +1,66 @@
-<!doctype html><html lang=en dir=ltr><head><meta name=generator content="Hugo 0.151.0"><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="
-  数据结构
-  
-  #
-  
-
-
-  常用的数据结构
-  
-  #
-  
-
-
-数组（Array）
-堆栈（Stack）
-队列（Queue）
-链表（Linked List）
-树（Tree）
-图（Graph）
-堆积（Heap）
-散列表（Hash table）
-
-
-
-  数据结构定义（源码）
-  
-  #
-  
-
-
-  栈
-  
-  #
-  
-
-
-
-
----
-
-
-
-C
-
-
-```c
-
-```
-
-
-
-
----
-
-
-
-C++
-
-
-```c++
-
-```
-
-
-
-
----
-
-
-
-C#
-
-
-```c#
-
-```
-
-
-
-
----
-
-
-
-Go
-
-
-```go
-stack := make([]int, 0)
-
-// push 入栈
-stack = append(stack, 3)
-
-// pop 出栈
-v := stack[len(stack) - 1]
-stack = stack[: len(stack) - 1]
-
-// 判断栈为空
-if len(stack) == 0 {
-
-}
-```
-
-
-
-
----
-
-
-
-Java
-
-
-```java
-
-```
-
-
-
-
----
-
-
-
-JavaScript
-
-
-```javascript
-```
-
-
-
-
----
-
-
-
-Kotlin
-
-
-```kotlin
-
-```
-
-
-
-
----
-
-
-
-PHP
-
-
-```php
-
-```
-
-
-
-
----
-
-
-
-Python2
-
-
-
-
-
----
-
-
-
-Python3
-
-
-
-
-
----
-
-
-
-Ruby
-
-
-```ruby
-
-```
-
-
-
-
----
-
-
-
-Rust
-
-
-```rust
-
-```
-
-
-
-
----
-
-
-
-Scala
-
-
-```scala
-
-```
-
-
-
-
----
-
-
-
-Swift
-
-
-```swift
-
-```
-
-
-
-
----
-
-
-
-
-
-
-  队列
-  
-  #
-  
-
-
-
-
----
-
-
-
-C
-
-
-```c
-
-```
-
-
-
-
----
-
-
-
-C++
-
-
-```c++
-
-```
-
-
-
-
----
-
-
-
-C#
-
-
-```c#
-
-```
-
-
-
-
----
-
-
-
-Go
-
-
-```go
-queue := make([]int, 0)
-
-// enqueue 入队
-queue = append(queue, 5)
-
-// dequeue 出队
-v := queue[0]
-queue = queue[1:]
-
-// 判断长度为 0
-if len(queue) == 0 {
-
-}
-```
-
-
-
-
----
-
-
-
-Java
-
-
-```java
-
-```
-
-
-
-
----
-
-
-
-JavaScript
-
-
-```javascript
-```
-
-
-
-
----
-
-
-
-Kotlin
-
-
-```kotlin
-
-```
-
-
-
-
----
-
-
-
-PHP
-
-
-```php
-
-```
-
-
-
-
----
-
-
-
-Python2
-
-
-
-
-
----
-
-
-
-Python3
-
-
-
-
-
----
-
-
-
-Ruby
-
-
-```ruby
-
-```
-
-
-
-
----
-
-
-
-Rust
-
-
-```rust
-
-```
-
-
-
-
----
-
-
-
-Scala
-
-
-```scala
-
-```
-
-
-
-
----
-
-
-
-Swift
-
-
-```swift
-
-```
-
-
-
-
----
-
-
-
-
-
-
-  链表 (Linked List)
-  
-  #
-  
-
-
-  单向链表 节点
-  
-  #
-  
-
-
-
-
----
-
-
-
-C
-
-
-```c
-
-```
-
-
-
-
----
-
-
-
-C++
-
-
-```c++
-
-```
-
-
-
-
----
-
-
-
-C#
-
-
-```c#
-
-```
-
-
-
-
----
-
-
-
-Go
-
-
-```go
-
-```
-
-
-
-
----
-
-
-
-Java
-
-
-```java
-
-```
-
-
-
-
----
-
-
-
-JavaScript
-
-
-```javascript
-```
-
-
-
-
----
-
-
-
-Kotlin
-
-
-```kotlin
-
-```
-
-
-
-
----
-
-
-
-PHP
-
-
-```php
-
-```
-
-
-
-
----
-
-
-
-Python2
-
-
-```python
-# Definition for singly-linked list.
-class ListNode(object):
-    def __init__(self, val):
-        self.val = val
-        self.next = None
-
-```
-
-
-
-
----
-
-
-
-Python3
-
-
-```python
-# Definition for singly-linked list.
-class ListNode:
-    def __init__(self, val):
-        self.val = val
-        self.next = None
-```
-
-
-
-
----
-
-
-
-Ruby
-
-
-```ruby
-
-```
-
-
-
-
----
-
-
-
-Rust
-
-
-```rust
-
-```
-
-
-
-
----
-
-
-
-Scala
-
-
-```scala
-
-```
-
-
-
-
----
-
-
-
-Swift
-
-
-```swift
-
-```
-
-
-
-
----
-
-
-
-
-
-
-  双向链表 节点
-  
-  #
-  
-
-
-
-
----
-
-
-
-C
-
-
-```c
-
-```
-
-
-
-
----
-
-
-
-C++
-
-
-```c++
-
-```
-
-
-
-
----
-
-
-
-C#
-
-
-```c#
-
-```
-
-
-
-
----
-
-
-
-Go
-
-
-```go
-
-```
-
-
-
-
----
-
-
-
-Java
-
-
-```java
-
-```
-
-
-
-
----
-
-
-
-JavaScript
-
-
-```javascript
-```
-
-
-
-
----
-
-
-
-Kotlin
-
-
-```kotlin
-
-```
-
-
-
-
----
-
-
-
-PHP
-
-
-```php
-
-```
-
-
-
-
----
-
-
-
-Python2
-
-
-```python
-# Definition for doubly-linked list.
-class ListNode(object):
-    def __init__(self, val):
-        self.val = val
-        self.pre = None
-        self.next = None
-```
-
-
-
-
----
-
-
-
-Python3
-
-
-```python
-# Definition for doubly-linked list.
-class ListNode:
-    def __init__(self, val):
-        self.val = val
-        self.pre = None
-        self.next = None
-```
-
-
-
-
----
-
-
-
-Ruby
-
-
-```ruby
-
-```
-
-
-
-
----
-
-
-
-Rust
-
-
-```rust
-
-```
-
-
-
-
----
-
-
-
-Scala
-
-
-```scala
-
-```
-
-
-
-
----
-
-
-
-Swift
-
-
-```swift
-
-```
-
-
-
-
----
-
-
-
-
-
-
-  树
-  
-  #
-  
-
-
-
-
----
-
-
-
-C
-
-
-```c
-
-```
-
-
-
-
----
-
-
-
-C++
-
-
-```c++
-
-```
-
-
-
-
----
-
-
-
-C#
-
-
-```c#
-
-```
-
-
-
-
----
-
-
-
-Go
-
-
-```go
-
-```
-
-
-
-
----
-
-
-
-Java
-
-
-```java
-
-```
-
-
-
-
----
-
-
-
-JavaScript
-
-
-```javascript
-```
-
-
-
-
----
-
-
-
-Kotlin
-
-
-```kotlin
-
-```
-
-
-
-
----
-
-
-
-PHP
-
-
-```php
-
-```
-
-
-
-
----
-
-
-
-Python2
-
-
-```python
-# Definition for a binary tree node
-class TreeNode(object) {
-    def __init__(self, val):
-        self.val = val
-        self.left = None
-        self.right = None
-}
-```
-
-
-
-
----
-
-
-
-Python3
-
-
-```python
-# Definition for a binary tree node
-class TreeNode {
-    def __init__(self, val):
-        self.val = val
-        self.left = None
-        self.right = None
-}
-```
-
-
-
-
----
-
-
-
-Ruby
-
-
-```ruby
-
-```
-
-
-
-
----
-
-
-
-Rust
-
-
-```rust
-
-```
-
-
-
-
----
-
-
-
-Scala
-
-
-```scala
-
-```
-
-
-
-
----
-
-
-
-Swift
-
-
-```swift
-
-```
-
-
-
-
----
-
-
-
-
-
-
-  数据结构列表
-  
-  #
-  
-
-"><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#343a40"><meta name=color-scheme content="light dark"><meta property="og:url" content="https://kingye.me/study-algs/docs/basic/datastruct/"><meta property="og:site_name" content="算法学习笔记"><meta property="og:title" content="1.1 数据结构"><meta property="og:description" content="数据结构 # 常用的数据结构 # 数组（Array） 堆栈（Stack） 队列（Queue） 链表（Linked List） 树（Tree） 图（Graph） 堆积（Heap） 散列表（Hash table） 数据结构定义（源码） # 栈 # --- C ```c ``` --- C++ ```c++ ``` --- C# ```c# ``` --- Go ```go stack := make([]int, 0) // push 入栈 stack = append(stack, 3) // pop 出栈 v := stack[len(stack) - 1] stack = stack[: len(stack) - 1] // 判断栈为空 if len(stack) == 0 { } ``` --- Java ```java ``` --- JavaScript ```javascript ``` --- Kotlin ```kotlin ``` --- PHP ```php ``` --- Python2 --- Python3 --- Ruby ```ruby ``` --- Rust ```rust ``` --- Scala ```scala ``` --- Swift ```swift ``` --- 队列 # --- C ```c ``` --- C++ ```c++ ``` --- C# ```c# ``` --- Go ```go queue := make([]int, 0) // enqueue 入队 queue = append(queue, 5) // dequeue 出队 v := queue[0] queue = queue[1:] // 判断长度为 0 if len(queue) == 0 { } ``` --- Java ```java ``` --- JavaScript ```javascript ``` --- Kotlin ```kotlin ``` --- PHP ```php ``` --- Python2 --- Python3 --- Ruby ```ruby ``` --- Rust ```rust ``` --- Scala ```scala ``` --- Swift ```swift ``` --- 链表 (Linked List) # 单向链表 节点 # --- C ```c ``` --- C++ ```c++ ``` --- C# ```c# ``` --- Go ```go ``` --- Java ```java ``` --- JavaScript ```javascript ``` --- Kotlin ```kotlin ``` --- PHP ```php ``` --- Python2 ```python # Definition for singly-linked list. class ListNode(object): def __init__(self, val): self.val = val self.next = None ``` --- Python3 ```python # Definition for singly-linked list. class ListNode: def __init__(self, val): self.val = val self.next = None ``` --- Ruby ```ruby ``` --- Rust ```rust ``` --- Scala ```scala ``` --- Swift ```swift ``` --- 双向链表 节点 # --- C ```c ``` --- C++ ```c++ ``` --- C# ```c# ``` --- Go ```go ``` --- Java ```java ``` --- JavaScript ```javascript ``` --- Kotlin ```kotlin ``` --- PHP ```php ``` --- Python2 ```python # Definition for doubly-linked list. class ListNode(object): def __init__(self, val): self.val = val self.pre = None self.next = None ``` --- Python3 ```python # Definition for doubly-linked list. class ListNode: def __init__(self, val): self.val = val self.pre = None self.next = None ``` --- Ruby ```ruby ``` --- Rust ```rust ``` --- Scala ```scala ``` --- Swift ```swift ``` --- 树 # --- C ```c ``` --- C++ ```c++ ``` --- C# ```c# ``` --- Go ```go ``` --- Java ```java ``` --- JavaScript ```javascript ``` --- Kotlin ```kotlin ``` --- PHP ```php ``` --- Python2 ```python # Definition for a binary tree node class TreeNode(object) { def __init__(self, val): self.val = val self.left = None self.right = None } ``` --- Python3 ```python # Definition for a binary tree node class TreeNode { def __init__(self, val): self.val = val self.left = None self.right = None } ``` --- Ruby ```ruby ``` --- Rust ```rust ``` --- Scala ```scala ``` --- Swift ```swift ``` --- 数据结构列表 #"><meta property="og:locale" content="en"><meta property="og:type" content="website"><title>1.1 数据结构 | 算法学习笔记</title><link rel=icon href=/study-algs/favicon.png><link rel=manifest href=/study-algs/manifest.json><link rel=canonical href=https://kingye.me/study-algs/docs/basic/datastruct/><link rel=stylesheet href=/study-algs/book.min.4113bbcb6333b68fd5b25cfb3b9f2a325a597ef49f8d1dd59a7239731166d309.css integrity="sha256-QRO7y2Mzto/Vslz7O58qMlpZfvSfjR3VmnI5cxFm0wk=" crossorigin=anonymous><script defer src=/study-algs/fuse.min.js></script><script defer src=/study-algs/en.search.min.9c60fbfa87c528233fd93769eda7e42d5dffd5b7d8d25a8d774ee5db37bbd3b0.js integrity="sha256-nGD7+ofFKCM/2Tdp7afkLV3/1bfY0lqNd07l2ze707A=" crossorigin=anonymous></script><link rel=alternate type=application/rss+xml href=https://kingye.me/study-algs/docs/basic/datastruct/index.xml title=算法学习笔记></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
-<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=/study-algs/><span>算法学习笔记</span></a></h2><div class="book-search hidden"><input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><script>document.querySelector(".book-search").classList.remove("hidden")</script><ul><li><a href=https://kingye.me target=_blank rel="noopener noreferrer">博客</a></li><li><a href=https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417021727.png target=_blank rel="noopener noreferrer">公众号</a></li><li><a href=https://github.com/ikingye target=_blank rel="noopener noreferrer">Github</a></li><li><a href=https://weibo.com/kingyip15215 target=_blank rel="noopener noreferrer">微博</a></li><li><a href=https://www.zhihu.com/people/wutongyip target=_blank rel="noopener noreferrer">知乎</a></li></ul><hr><ul><li><span>第一部分 基础入门</span><ul><li><a href=/study-algs/docs/basic/datastruct/ class=active>1.1 数据结构</a><ul></ul></li><li><input type=checkbox id=section-263b9b8925df82f0f65f0e20376c813b class=toggle>
-<label for=section-263b9b8925df82f0f65f0e20376c813b class=flex><a href=/study-algs/docs/basic/thought/ class=flex-auto>1.2 算法思想</a></label><ul><li><a href=/study-algs/docs/basic/thought/recursive/>递归</a></li></ul></li></ul></li><li><span>第二部分 进阶实战</span><ul><li><input type=checkbox id=section-5ece5f5d76f2624cda37d544e6e3c945 class=toggle>
-<label for=section-5ece5f5d76f2624cda37d544e6e3c945 class=flex><a href=/study-algs/docs/advanced/common/ class=flex-auto>2.1 常见算法</a></label><ul><li><a href=/study-algs/docs/advanced/common/sort/>1.3.1 排序算法</a></li><li><input type=checkbox id=section-7063d123028e34c69a7e9783b77364b2 class=toggle>
-<label for=section-7063d123028e34c69a7e9783b77364b2 class=flex><a href=/study-algs/docs/advanced/common/lru/ class=flex-auto>LRU Cache</a></label></li><li><input type=checkbox id=section-72d8d66fcf2e99754c5551bb2b1570cd class=toggle>
-<label for=section-72d8d66fcf2e99754c5551bb2b1570cd class=flex><a href=/study-algs/docs/advanced/common/paxos/ class=flex-auto>paxos</a></label></li><li><input type=checkbox id=section-6986b5bde17181ad0eab308c7ded1e53 class=toggle>
-<label for=section-6986b5bde17181ad0eab308c7ded1e53 class=flex><a href=/study-algs/docs/advanced/common/raft/ class=flex-auto>raft</a></label></li><li><input type=checkbox id=section-defaade277fbcf91bac715f5eb13eb81 class=toggle>
-<label for=section-defaade277fbcf91bac715f5eb13eb81 class=flex><a href=/study-algs/docs/advanced/common/tree/ class=flex-auto>树</a></label></li><li><a href=/study-algs/docs/advanced/common/kmp/>KMP</a></li><li><a href=/study-algs/docs/advanced/common/bloom/>布隆过滤器</a></li></ul></li><li><input type=checkbox id=section-66e8b8412da7d695f4af9d09cd6d0eb9 class=toggle>
-<label for=section-66e8b8412da7d695f4af9d09cd6d0eb9 class=flex><a href=/study-algs/docs/advanced/leetcode/ class=flex-auto>2.2 LeetCode</a></label><ul><li><input type=checkbox id=section-d3b81e1c83cf5fdebdc1dc5f7064b7dc class=toggle>
-<label for=section-d3b81e1c83cf5fdebdc1dc5f7064b7dc class=flex><a href=/study-algs/docs/advanced/leetcode/0/ class=flex-auto>1-100</a></label><ul><li><a href=/study-algs/docs/advanced/leetcode/0/1/>1. 两数之和</a></li><li><a href=/study-algs/docs/advanced/leetcode/0/2/>2. 两数相加</a></li><li><a href=/study-algs/docs/advanced/leetcode/0/3/>3. 无重复字符的最长子串</a></li><li><a href=/study-algs/docs/advanced/leetcode/0/4/>4. 寻找两个有序数组的中位数</a></li><li><a href=/study-algs/docs/advanced/leetcode/0/7/>7. 整数反转</a></li><li><a href=/study-algs/docs/advanced/leetcode/0/9/>9. 回文数</a></li><li><a href=/study-algs/docs/advanced/leetcode/0/10/>10. 正则表达式匹配</a></li><li><a href=/study-algs/docs/advanced/leetcode/0/54/>54. 螺旋矩阵</a></li><li><a href=/study-algs/docs/advanced/leetcode/0/71/>71. 简化路径</a></li></ul></li><li><input type=checkbox id=section-27782b18678e0425a9dfad93635ae520 class=toggle>
-<label for=section-27782b18678e0425a9dfad93635ae520 class=flex><a href=/study-algs/docs/advanced/leetcode/1/ class=flex-auto>101-200</a></label><ul><li><a href=/study-algs/docs/advanced/leetcode/1/110/>110. 平衡二叉树</a></li><li><a href=/study-algs/docs/advanced/leetcode/1/146/>146. LRU 缓存机制</a></li></ul></li><li><input type=checkbox id=section-80a80dc850414133f0f36d9a4936dffd class=toggle>
-<label for=section-80a80dc850414133f0f36d9a4936dffd class=flex><a href=/study-algs/docs/advanced/leetcode/2/ class=flex-auto>201-300</a></label><ul><li><a href=/study-algs/docs/advanced/leetcode/2/206/>206. 反转链表</a></li></ul></li><li><input type=checkbox id=section-2358c2125e240e7c7e7b46d8e26a6949 class=toggle>
-<label for=section-2358c2125e240e7c7e7b46d8e26a6949 class=flex><a href=/study-algs/docs/advanced/leetcode/3/ class=flex-auto>301-400</a></label><ul></ul></li><li><input type=checkbox id=section-06102adafe125dd4f5f59edd133f3996 class=toggle>
-<label for=section-06102adafe125dd4f5f59edd133f3996 class=flex><a href=/study-algs/docs/advanced/leetcode/4/ class=flex-auto>401-500</a></label><ul></ul></li><li><input type=checkbox id=section-abdeb5ad9b730cdd44a7aadfbbdf330e class=toggle>
-<label for=section-abdeb5ad9b730cdd44a7aadfbbdf330e class=flex><a href=/study-algs/docs/advanced/leetcode/5/ class=flex-auto>501-600</a></label><ul></ul></li><li><input type=checkbox id=section-c3078ca9b97c9d05d14d50515dceb938 class=toggle>
-<label for=section-c3078ca9b97c9d05d14d50515dceb938 class=flex><a href=/study-algs/docs/advanced/leetcode/6/ class=flex-auto>601-700</a></label><ul><li><input type=checkbox id=section-efa26a2ac82b064e395a882e58b0583f class=toggle>
-<label for=section-efa26a2ac82b064e395a882e58b0583f class=flex><a href=/study-algs/docs/advanced/leetcode/6/671/ class=flex-auto>671. 二叉树中第二小的节点</a></label></li></ul></li><li><input type=checkbox id=section-cc67baacb4d4e04a0669b262a6f2608f class=toggle>
-<label for=section-cc67baacb4d4e04a0669b262a6f2608f class=flex><a href=/study-algs/docs/advanced/leetcode/7/ class=flex-auto>701-800</a></label><ul></ul></li><li><input type=checkbox id=section-4d6ce0ffaf12f6295ac7486aac3853ec class=toggle>
-<label for=section-4d6ce0ffaf12f6295ac7486aac3853ec class=flex><a href=/study-algs/docs/advanced/leetcode/8/ class=flex-auto>801-900</a></label><ul></ul></li><li><input type=checkbox id=section-86093803c161640278fc2ac1d3ffee28 class=toggle>
-<label for=section-86093803c161640278fc2ac1d3ffee28 class=flex><a href=/study-algs/docs/advanced/leetcode/9/ class=flex-auto>901-1000</a></label><ul></ul></li><li><input type=checkbox id=section-aecf0c25425cbcad5b84107fd0f09c23 class=toggle>
-<label for=section-aecf0c25425cbcad5b84107fd0f09c23 class=flex><a href=/study-algs/docs/advanced/leetcode/10/ class=flex-auto>1001-1100</a></label><ul></ul></li><li><input type=checkbox id=section-235c2c662587b2b1597161ee9097503c class=toggle>
-<label for=section-235c2c662587b2b1597161ee9097503c class=flex><a href=/study-algs/docs/advanced/leetcode/11/ class=flex-auto>1101-1200</a></label><ul></ul></li><li><input type=checkbox id=section-2dea072447cc19103eb8a04e0c472440 class=toggle>
-<label for=section-2dea072447cc19103eb8a04e0c472440 class=flex><a href=/study-algs/docs/advanced/leetcode/12/ class=flex-auto>1201-1300</a></label><ul></ul></li><li><input type=checkbox id=section-dfd34f9b41206aa064769c92da5959d2 class=toggle>
-<label for=section-dfd34f9b41206aa064769c92da5959d2 class=flex><a href=/study-algs/docs/advanced/leetcode/13/ class=flex-auto>1301-1400</a></label><ul></ul></li><li><input type=checkbox id=section-b6ab2cfd42a84cbf01b92d5806f3c61c class=toggle>
-<label for=section-b6ab2cfd42a84cbf01b92d5806f3c61c class=flex><a href=/study-algs/docs/advanced/leetcode/14/ class=flex-auto>1401-1500</a></label><ul></ul></li></ul></li><li><input type=checkbox id=section-0d3204194de4a3a362bd3c4674e20c72 class=toggle>
-<label for=section-0d3204194de4a3a362bd3c4674e20c72 class=flex><a href=/study-algs/docs/advanced/nowcoder/ class=flex-auto>2.3 牛客网</a></label><ul></ul></li></ul></li><li><span>第三部分 设计与实现</span><ul></ul></li><li><span>第四部分 附录</span><ul><li><input type=checkbox id=section-bbc4546e42e69929436fe413d624444e class=toggle>
-<label for=section-bbc4546e42e69929436fe413d624444e class=flex><a href=/study-algs/docs/appendix/tutorial/ class=flex-auto>4.1 教程</a></label></li><li><input type=checkbox id=section-2cc621a8ab2a01fb7591c8cc689de3b3 class=toggle>
-<label for=section-2cc621a8ab2a01fb7591c8cc689de3b3 class=flex><a href=/study-algs/docs/appendix/interview/ class=flex-auto>4.2 面试题</a></label></li><li><input type=checkbox id=section-3a590afe51b117c1458c25c0fb991f9f class=toggle>
-<label for=section-3a590afe51b117c1458c25c0fb991f9f class=flex><a href=/study-algs/docs/appendix/attention/ class=flex-auto>4.3 关注项目</a></label></li></ul></li></ul><hr><ul><li><a href=https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417022040.png target=_blank rel="noopener noreferrer">微信</a></li><li><a href="https://qm.qq.com/cgi-bin/qm/qr?k=EUhzg0UwUksxpQnwEmPngRLezlC6qrnn&jump_from=webapi" target=_blank rel="noopener noreferrer"><img src=//pub.idqqimg.com/wpa/images/group.png></a></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/study-algs/svg/menu.svg class=book-icon alt=Menu></label><h3>1.1 数据结构</h3><label for=toc-control><img src=/study-algs/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents><ul><li><a href=#常用的数据结构>常用的数据结构</a></li><li><a href=#数据结构定义源码>数据结构定义（源码）</a><ul><li><a href=#栈>栈</a></li><li><a href=#队列>队列</a></li><li><a href=#链表-linked-list>链表 (Linked List)</a><ul><li><a href=#单向链表-节点>单向链表 节点</a></li><li><a href=#双向链表-节点>双向链表 节点</a></li></ul></li><li><a href=#树>树</a></li></ul></li><li><a href=#数据结构列表>数据结构列表</a><ul><li><a href=#类型>类型</a></li><li><a href=#抽象类型>抽象类型</a></li><li><a href=#数组>数组</a></li><li><a href=#链>链</a></li><li><a href=#树-1>树</a></li><li><a href=#图>图</a></li></ul></li></ul></nav></aside></header><article id=article class=markdown><h1 id=数据结构>数据结构
-<a class=anchor href=#%e6%95%b0%e6%8d%ae%e7%bb%93%e6%9e%84>#</a></h1><h2 id=常用的数据结构>常用的数据结构
-<a class=anchor href=#%e5%b8%b8%e7%94%a8%e7%9a%84%e6%95%b0%e6%8d%ae%e7%bb%93%e6%9e%84>#</a></h2><ul><li><a href=https://www.wikiwand.com/zh-cn/%E9%99%A3%E5%88%97 title=数组>数组</a>（Array）</li><li><a href=https://www.wikiwand.com/zh-cn/%E5%A0%86%E7%96%8A>堆栈</a>（Stack）</li><li><a href=https://www.wikiwand.com/zh-cn/%E9%98%9F%E5%88%97>队列</a>（Queue）</li><li><a href=https://www.wikiwand.com/zh-cn/%E9%93%BE%E8%A1%A8 title=链表>链表</a>（Linked List）</li><li><a href=https://www.wikiwand.com/zh-cn/%E6%A0%91_%28%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%29>树</a>（Tree）</li><li><a href=https://www.wikiwand.com/zh-cn/%E5%9B%BE_%28%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%29 title="图 (数据结构)">图</a>（Graph）</li><li><a href=https://www.wikiwand.com/zh-cn/%E5%A0%86_%28%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%29 title="堆 (数据结构)">堆积</a>（Heap）</li><li><a href=https://www.wikiwand.com/zh-cn/%E6%95%A3%E5%88%97%E8%A1%A8 title=散列表>散列表</a>（Hash table）</li></ul><hr><h2 id=数据结构定义源码>数据结构定义（源码）
-<a class=anchor href=#%e6%95%b0%e6%8d%ae%e7%bb%93%e6%9e%84%e5%ae%9a%e4%b9%89%e6%ba%90%e7%a0%81>#</a></h2><h3 id=栈>栈
-<a class=anchor href=#%e6%a0%88>#</a></h3><div class=book-tabs>---
-<input type=radio class=toggle name=tabs-stack id=tabs-stack-0 checked>
-<label for=tabs-stack-0>C</label><div class="book-tabs-content markdown-inner">```c
+<!doctype html><html lang=en dir=ltr><head><meta name=generator content="Hugo 0.151.0"><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="数据结构# 常用的数据结构# 数组（Array） 堆栈（Stack） 队列（Queue） 链表（Linked List） 树（Tree） 图（Graph） 堆积（Heap） 散列表（Hash table） 数据结构定义（源码）# 栈# --- C ```c ``` --- C++ ```c++ ``` --- C# ```c# ``` --- Go ```go stack := make([]int, 0) // push 入栈 stack = append(stack, 3) // pop 出栈 v := stack[len(stack) - 1] stack = stack[: len(stack) - 1] // 判断栈为空 if len(stack) == 0 { } ``` --- Java ```java ``` --- JavaScript ```javascript ``` --- Kotlin ```kotlin ``` --- PHP ```php ``` --- Python2 --- Python3 --- Ruby ```ruby ``` --- Rust ```rust ``` --- Scala ```scala ``` --- Swift ```swift ``` --- 队列# --- C ```c ``` --- C++ ```c++ ``` --- C# ```c# ``` --- Go ```go queue := make([]int, 0) // enqueue 入队 queue = append(queue, 5) // dequeue 出队 v := queue[0] queue = queue[1:] // 判断长度为 0 if len(queue) == 0 { } ``` --- Java ```java ``` --- JavaScript ```javascript ``` --- Kotlin ```kotlin ``` --- PHP ```php ``` --- Python2 --- Python3 --- Ruby ```ruby ``` --- Rust ```rust ``` --- Scala ```scala ``` --- Swift ```swift ``` --- 链表 (Linked List)# 单向链表 节点# --- C ```c ``` --- C++ ```c++ ``` --- C# ```c# ``` --- Go ```go ``` --- Java ```java ``` --- JavaScript ```javascript ``` --- Kotlin ```kotlin ``` --- PHP ```php ``` --- Python2 ```python # Definition for singly-linked list. class ListNode(object): def __init__(self, val): self.val = val self.next = None ``` --- Python3 ```python # Definition for singly-linked list. class ListNode: def __init__(self, val): self.val = val self.next = None ``` --- Ruby ```ruby ``` --- Rust ```rust ``` --- Scala ```scala ``` --- Swift ```swift ``` --- 双向链表 节点# --- C ```c ``` --- C++ ```c++ ``` --- C# ```c# ``` --- Go ```go ``` --- Java ```java ``` --- JavaScript ```javascript ``` --- Kotlin ```kotlin ``` --- PHP ```php ``` --- Python2 ```python # Definition for doubly-linked list. class ListNode(object): def __init__(self, val): self.val = val self.pre = None self.next = None ``` --- Python3 ```python # Definition for doubly-linked list. class ListNode: def __init__(self, val): self.val = val self.pre = None self.next = None ``` --- Ruby ```ruby ``` --- Rust ```rust ``` --- Scala ```scala ``` --- Swift ```swift ``` --- 树# --- C ```c ``` --- C++ ```c++ ``` --- C# ```c# ``` --- Go ```go ``` --- Java ```java ``` --- JavaScript ```javascript ``` --- Kotlin ```kotlin ``` --- PHP ```php ``` --- Python2 ```python # Definition for a binary tree node class TreeNode(object) { def __init__(self, val): self.val = val self.left = None self.right = None } ``` --- Python3 ```python # Definition for a binary tree node class TreeNode { def __init__(self, val): self.val = val self.left = None self.right = None } ``` --- Ruby ```ruby ``` --- Rust ```rust ``` --- Scala ```scala ``` --- Swift ```swift ``` --- 数据结构列表# "><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#343a40"><meta name=color-scheme content="light dark"><meta property="og:url" content="https://kingye.me/study-algs/docs/basic/datastruct/"><meta property="og:site_name" content="算法学习笔记"><meta property="og:title" content="1.1 数据结构"><meta property="og:description" content="数据结构# 常用的数据结构# 数组（Array） 堆栈（Stack） 队列（Queue） 链表（Linked List） 树（Tree） 图（Graph） 堆积（Heap） 散列表（Hash table） 数据结构定义（源码）# 栈# --- C ```c ``` --- C++ ```c++ ``` --- C# ```c# ``` --- Go ```go stack := make([]int, 0) // push 入栈 stack = append(stack, 3) // pop 出栈 v := stack[len(stack) - 1] stack = stack[: len(stack) - 1] // 判断栈为空 if len(stack) == 0 { } ``` --- Java ```java ``` --- JavaScript ```javascript ``` --- Kotlin ```kotlin ``` --- PHP ```php ``` --- Python2 --- Python3 --- Ruby ```ruby ``` --- Rust ```rust ``` --- Scala ```scala ``` --- Swift ```swift ``` --- 队列# --- C ```c ``` --- C++ ```c++ ``` --- C# ```c# ``` --- Go ```go queue := make([]int, 0) // enqueue 入队 queue = append(queue, 5) // dequeue 出队 v := queue[0] queue = queue[1:] // 判断长度为 0 if len(queue) == 0 { } ``` --- Java ```java ``` --- JavaScript ```javascript ``` --- Kotlin ```kotlin ``` --- PHP ```php ``` --- Python2 --- Python3 --- Ruby ```ruby ``` --- Rust ```rust ``` --- Scala ```scala ``` --- Swift ```swift ``` --- 链表 (Linked List)# 单向链表 节点# --- C ```c ``` --- C++ ```c++ ``` --- C# ```c# ``` --- Go ```go ``` --- Java ```java ``` --- JavaScript ```javascript ``` --- Kotlin ```kotlin ``` --- PHP ```php ``` --- Python2 ```python # Definition for singly-linked list. class ListNode(object): def __init__(self, val): self.val = val self.next = None ``` --- Python3 ```python # Definition for singly-linked list. class ListNode: def __init__(self, val): self.val = val self.next = None ``` --- Ruby ```ruby ``` --- Rust ```rust ``` --- Scala ```scala ``` --- Swift ```swift ``` --- 双向链表 节点# --- C ```c ``` --- C++ ```c++ ``` --- C# ```c# ``` --- Go ```go ``` --- Java ```java ``` --- JavaScript ```javascript ``` --- Kotlin ```kotlin ``` --- PHP ```php ``` --- Python2 ```python # Definition for doubly-linked list. class ListNode(object): def __init__(self, val): self.val = val self.pre = None self.next = None ``` --- Python3 ```python # Definition for doubly-linked list. class ListNode: def __init__(self, val): self.val = val self.pre = None self.next = None ``` --- Ruby ```ruby ``` --- Rust ```rust ``` --- Scala ```scala ``` --- Swift ```swift ``` --- 树# --- C ```c ``` --- C++ ```c++ ``` --- C# ```c# ``` --- Go ```go ``` --- Java ```java ``` --- JavaScript ```javascript ``` --- Kotlin ```kotlin ``` --- PHP ```php ``` --- Python2 ```python # Definition for a binary tree node class TreeNode(object) { def __init__(self, val): self.val = val self.left = None self.right = None } ``` --- Python3 ```python # Definition for a binary tree node class TreeNode { def __init__(self, val): self.val = val self.left = None self.right = None } ``` --- Ruby ```ruby ``` --- Rust ```rust ``` --- Scala ```scala ``` --- Swift ```swift ``` --- 数据结构列表#"><meta property="og:locale" content="en"><meta property="og:type" content="website"><meta itemprop=name content="1.1 数据结构"><meta itemprop=description content="数据结构# 常用的数据结构# 数组（Array） 堆栈（Stack） 队列（Queue） 链表（Linked List） 树（Tree） 图（Graph） 堆积（Heap） 散列表（Hash table） 数据结构定义（源码）# 栈# --- C ```c ``` --- C++ ```c++ ``` --- C# ```c# ``` --- Go ```go stack := make([]int, 0) // push 入栈 stack = append(stack, 3) // pop 出栈 v := stack[len(stack) - 1] stack = stack[: len(stack) - 1] // 判断栈为空 if len(stack) == 0 { } ``` --- Java ```java ``` --- JavaScript ```javascript ``` --- Kotlin ```kotlin ``` --- PHP ```php ``` --- Python2 --- Python3 --- Ruby ```ruby ``` --- Rust ```rust ``` --- Scala ```scala ``` --- Swift ```swift ``` --- 队列# --- C ```c ``` --- C++ ```c++ ``` --- C# ```c# ``` --- Go ```go queue := make([]int, 0) // enqueue 入队 queue = append(queue, 5) // dequeue 出队 v := queue[0] queue = queue[1:] // 判断长度为 0 if len(queue) == 0 { } ``` --- Java ```java ``` --- JavaScript ```javascript ``` --- Kotlin ```kotlin ``` --- PHP ```php ``` --- Python2 --- Python3 --- Ruby ```ruby ``` --- Rust ```rust ``` --- Scala ```scala ``` --- Swift ```swift ``` --- 链表 (Linked List)# 单向链表 节点# --- C ```c ``` --- C++ ```c++ ``` --- C# ```c# ``` --- Go ```go ``` --- Java ```java ``` --- JavaScript ```javascript ``` --- Kotlin ```kotlin ``` --- PHP ```php ``` --- Python2 ```python # Definition for singly-linked list. class ListNode(object): def __init__(self, val): self.val = val self.next = None ``` --- Python3 ```python # Definition for singly-linked list. class ListNode: def __init__(self, val): self.val = val self.next = None ``` --- Ruby ```ruby ``` --- Rust ```rust ``` --- Scala ```scala ``` --- Swift ```swift ``` --- 双向链表 节点# --- C ```c ``` --- C++ ```c++ ``` --- C# ```c# ``` --- Go ```go ``` --- Java ```java ``` --- JavaScript ```javascript ``` --- Kotlin ```kotlin ``` --- PHP ```php ``` --- Python2 ```python # Definition for doubly-linked list. class ListNode(object): def __init__(self, val): self.val = val self.pre = None self.next = None ``` --- Python3 ```python # Definition for doubly-linked list. class ListNode: def __init__(self, val): self.val = val self.pre = None self.next = None ``` --- Ruby ```ruby ``` --- Rust ```rust ``` --- Scala ```scala ``` --- Swift ```swift ``` --- 树# --- C ```c ``` --- C++ ```c++ ``` --- C# ```c# ``` --- Go ```go ``` --- Java ```java ``` --- JavaScript ```javascript ``` --- Kotlin ```kotlin ``` --- PHP ```php ``` --- Python2 ```python # Definition for a binary tree node class TreeNode(object) { def __init__(self, val): self.val = val self.left = None self.right = None } ``` --- Python3 ```python # Definition for a binary tree node class TreeNode { def __init__(self, val): self.val = val self.left = None self.right = None } ``` --- Ruby ```ruby ``` --- Rust ```rust ``` --- Scala ```scala ``` --- Swift ```swift ``` --- 数据结构列表#"><meta itemprop=dateModified content="2020-07-16T20:46:08+08:00"><meta itemprop=wordCount content="559"><title>1.1 数据结构 | 算法学习笔记</title><link rel=icon href=/study-algs/favicon.png><link rel=manifest href=/study-algs/manifest.json><link rel=canonical href=https://kingye.me/study-algs/docs/basic/datastruct/><link rel=stylesheet href=/study-algs/book.min.c3b69a70cf38d3ba0ae6f9e4459007b9d084940656d8e82e633879099cb6eac0.css integrity="sha256-w7aacM8407oK5vnkRZAHudCElAZW2OguYzh5CZy26sA=" crossorigin=anonymous><script defer src=/study-algs/fuse.min.js></script><script defer src=/study-algs/en.search.min.8caca1153f5bb110aa887e84b638691e8cbae0711031e63ec423642d1bffad29.js integrity="sha256-jKyhFT9bsRCqiH6EtjhpHoy64HEQMeY+xCNkLRv/rSk=" crossorigin=anonymous></script><link rel=alternate type=application/rss+xml href=https://kingye.me/study-algs/docs/basic/datastruct/index.xml title=算法学习笔记></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=/study-algs/><span>算法学习笔记</span></a></h2><div class="book-search hidden"><input id=book-search-input type=text placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><script>document.querySelector(".book-search").classList.remove("hidden")</script><ul><li><a href=https://kingye.me target=_blank rel="noopener noreferrer">博客</a></li><li><a href=https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417021727.png target=_blank rel="noopener noreferrer">公众号</a></li><li><a href=https://github.com/ikingye target=_blank rel="noopener noreferrer">Github</a></li><li><a href=https://weibo.com/kingyip15215 target=_blank rel="noopener noreferrer">微博</a></li><li><a href=https://www.zhihu.com/people/wutongyip target=_blank rel="noopener noreferrer">知乎</a></li></ul><hr><ul><li><a>第一部分 基础入门</a><ul><li><a href=/study-algs/docs/basic/datastruct/ class=active>1.1 数据结构</a><ul></ul></li><li><input type=checkbox id=section-263b9b8925df82f0f65f0e20376c813b class=toggle>
+<label for=section-263b9b8925df82f0f65f0e20376c813b class=flex><a href=/study-algs/docs/basic/thought/>1.2 算法思想</a>
+<img src=/study-algs/icons/chevron-right.svg class=book-icon alt=Expand></label><ul><li><a href=/study-algs/docs/basic/thought/recursive/>递归</a></li></ul></li></ul></li><li><a>第二部分 进阶实战</a><ul><li><input type=checkbox id=section-5ece5f5d76f2624cda37d544e6e3c945 class=toggle>
+<label for=section-5ece5f5d76f2624cda37d544e6e3c945 class=flex><a href=/study-algs/docs/advanced/common/>2.1 常见算法</a>
+<img src=/study-algs/icons/chevron-right.svg class=book-icon alt=Expand></label><ul><li><a href=/study-algs/docs/advanced/common/sort/>1.3.1 排序算法</a></li><li><input type=checkbox id=section-7063d123028e34c69a7e9783b77364b2 class=toggle>
+<label for=section-7063d123028e34c69a7e9783b77364b2 class=flex><a href=/study-algs/docs/advanced/common/lru/>LRU Cache</a>
+<img src=/study-algs/icons/chevron-right.svg class=book-icon alt=Expand></label></li><li><input type=checkbox id=section-72d8d66fcf2e99754c5551bb2b1570cd class=toggle>
+<label for=section-72d8d66fcf2e99754c5551bb2b1570cd class=flex><a href=/study-algs/docs/advanced/common/paxos/>paxos</a>
+<img src=/study-algs/icons/chevron-right.svg class=book-icon alt=Expand></label></li><li><input type=checkbox id=section-6986b5bde17181ad0eab308c7ded1e53 class=toggle>
+<label for=section-6986b5bde17181ad0eab308c7ded1e53 class=flex><a href=/study-algs/docs/advanced/common/raft/>raft</a>
+<img src=/study-algs/icons/chevron-right.svg class=book-icon alt=Expand></label></li><li><input type=checkbox id=section-defaade277fbcf91bac715f5eb13eb81 class=toggle>
+<label for=section-defaade277fbcf91bac715f5eb13eb81 class=flex><a href=/study-algs/docs/advanced/common/tree/>树</a>
+<img src=/study-algs/icons/chevron-right.svg class=book-icon alt=Expand></label></li><li><a href=/study-algs/docs/advanced/common/kmp/>KMP</a></li><li><a href=/study-algs/docs/advanced/common/bloom/>布隆过滤器</a></li></ul></li><li><input type=checkbox id=section-66e8b8412da7d695f4af9d09cd6d0eb9 class=toggle>
+<label for=section-66e8b8412da7d695f4af9d09cd6d0eb9 class=flex><a href=/study-algs/docs/advanced/leetcode/>2.2 LeetCode</a>
+<img src=/study-algs/icons/chevron-right.svg class=book-icon alt=Expand></label><ul><li><input type=checkbox id=section-d3b81e1c83cf5fdebdc1dc5f7064b7dc class=toggle>
+<label for=section-d3b81e1c83cf5fdebdc1dc5f7064b7dc class=flex><a href=/study-algs/docs/advanced/leetcode/0/>1-100</a>
+<img src=/study-algs/icons/chevron-right.svg class=book-icon alt=Expand></label><ul><li><a href=/study-algs/docs/advanced/leetcode/0/1/>1. 两数之和</a></li><li><a href=/study-algs/docs/advanced/leetcode/0/2/>2. 两数相加</a></li><li><a href=/study-algs/docs/advanced/leetcode/0/3/>3. 无重复字符的最长子串</a></li><li><a href=/study-algs/docs/advanced/leetcode/0/4/>4. 寻找两个有序数组的中位数</a></li><li><a href=/study-algs/docs/advanced/leetcode/0/7/>7. 整数反转</a></li><li><a href=/study-algs/docs/advanced/leetcode/0/9/>9. 回文数</a></li><li><a href=/study-algs/docs/advanced/leetcode/0/10/>10. 正则表达式匹配</a></li><li><a href=/study-algs/docs/advanced/leetcode/0/54/>54. 螺旋矩阵</a></li><li><a href=/study-algs/docs/advanced/leetcode/0/71/>71. 简化路径</a></li></ul></li><li><input type=checkbox id=section-27782b18678e0425a9dfad93635ae520 class=toggle>
+<label for=section-27782b18678e0425a9dfad93635ae520 class=flex><a href=/study-algs/docs/advanced/leetcode/1/>101-200</a>
+<img src=/study-algs/icons/chevron-right.svg class=book-icon alt=Expand></label><ul><li><a href=/study-algs/docs/advanced/leetcode/1/110/>110. 平衡二叉树</a></li><li><a href=/study-algs/docs/advanced/leetcode/1/146/>146. LRU 缓存机制</a></li></ul></li><li><input type=checkbox id=section-80a80dc850414133f0f36d9a4936dffd class=toggle>
+<label for=section-80a80dc850414133f0f36d9a4936dffd class=flex><a href=/study-algs/docs/advanced/leetcode/2/>201-300</a>
+<img src=/study-algs/icons/chevron-right.svg class=book-icon alt=Expand></label><ul><li><a href=/study-algs/docs/advanced/leetcode/2/206/>206. 反转链表</a></li></ul></li><li><input type=checkbox id=section-2358c2125e240e7c7e7b46d8e26a6949 class=toggle>
+<label for=section-2358c2125e240e7c7e7b46d8e26a6949 class=flex><a href=/study-algs/docs/advanced/leetcode/3/>301-400</a>
+<img src=/study-algs/icons/chevron-right.svg class=book-icon alt=Expand></label><ul></ul></li><li><input type=checkbox id=section-06102adafe125dd4f5f59edd133f3996 class=toggle>
+<label for=section-06102adafe125dd4f5f59edd133f3996 class=flex><a href=/study-algs/docs/advanced/leetcode/4/>401-500</a>
+<img src=/study-algs/icons/chevron-right.svg class=book-icon alt=Expand></label><ul></ul></li><li><input type=checkbox id=section-abdeb5ad9b730cdd44a7aadfbbdf330e class=toggle>
+<label for=section-abdeb5ad9b730cdd44a7aadfbbdf330e class=flex><a href=/study-algs/docs/advanced/leetcode/5/>501-600</a>
+<img src=/study-algs/icons/chevron-right.svg class=book-icon alt=Expand></label><ul></ul></li><li><input type=checkbox id=section-c3078ca9b97c9d05d14d50515dceb938 class=toggle>
+<label for=section-c3078ca9b97c9d05d14d50515dceb938 class=flex><a href=/study-algs/docs/advanced/leetcode/6/>601-700</a>
+<img src=/study-algs/icons/chevron-right.svg class=book-icon alt=Expand></label><ul><li><input type=checkbox id=section-efa26a2ac82b064e395a882e58b0583f class=toggle>
+<label for=section-efa26a2ac82b064e395a882e58b0583f class=flex><a href=/study-algs/docs/advanced/leetcode/6/671/>671. 二叉树中第二小的节点</a>
+<img src=/study-algs/icons/chevron-right.svg class=book-icon alt=Expand></label></li></ul></li><li><input type=checkbox id=section-cc67baacb4d4e04a0669b262a6f2608f class=toggle>
+<label for=section-cc67baacb4d4e04a0669b262a6f2608f class=flex><a href=/study-algs/docs/advanced/leetcode/7/>701-800</a>
+<img src=/study-algs/icons/chevron-right.svg class=book-icon alt=Expand></label><ul></ul></li><li><input type=checkbox id=section-4d6ce0ffaf12f6295ac7486aac3853ec class=toggle>
+<label for=section-4d6ce0ffaf12f6295ac7486aac3853ec class=flex><a href=/study-algs/docs/advanced/leetcode/8/>801-900</a>
+<img src=/study-algs/icons/chevron-right.svg class=book-icon alt=Expand></label><ul></ul></li><li><input type=checkbox id=section-86093803c161640278fc2ac1d3ffee28 class=toggle>
+<label for=section-86093803c161640278fc2ac1d3ffee28 class=flex><a href=/study-algs/docs/advanced/leetcode/9/>901-1000</a>
+<img src=/study-algs/icons/chevron-right.svg class=book-icon alt=Expand></label><ul></ul></li><li><input type=checkbox id=section-aecf0c25425cbcad5b84107fd0f09c23 class=toggle>
+<label for=section-aecf0c25425cbcad5b84107fd0f09c23 class=flex><a href=/study-algs/docs/advanced/leetcode/10/>1001-1100</a>
+<img src=/study-algs/icons/chevron-right.svg class=book-icon alt=Expand></label><ul></ul></li><li><input type=checkbox id=section-235c2c662587b2b1597161ee9097503c class=toggle>
+<label for=section-235c2c662587b2b1597161ee9097503c class=flex><a href=/study-algs/docs/advanced/leetcode/11/>1101-1200</a>
+<img src=/study-algs/icons/chevron-right.svg class=book-icon alt=Expand></label><ul></ul></li><li><input type=checkbox id=section-2dea072447cc19103eb8a04e0c472440 class=toggle>
+<label for=section-2dea072447cc19103eb8a04e0c472440 class=flex><a href=/study-algs/docs/advanced/leetcode/12/>1201-1300</a>
+<img src=/study-algs/icons/chevron-right.svg class=book-icon alt=Expand></label><ul></ul></li><li><input type=checkbox id=section-dfd34f9b41206aa064769c92da5959d2 class=toggle>
+<label for=section-dfd34f9b41206aa064769c92da5959d2 class=flex><a href=/study-algs/docs/advanced/leetcode/13/>1301-1400</a>
+<img src=/study-algs/icons/chevron-right.svg class=book-icon alt=Expand></label><ul></ul></li><li><input type=checkbox id=section-b6ab2cfd42a84cbf01b92d5806f3c61c class=toggle>
+<label for=section-b6ab2cfd42a84cbf01b92d5806f3c61c class=flex><a href=/study-algs/docs/advanced/leetcode/14/>1401-1500</a>
+<img src=/study-algs/icons/chevron-right.svg class=book-icon alt=Expand></label><ul></ul></li></ul></li><li><input type=checkbox id=section-0d3204194de4a3a362bd3c4674e20c72 class=toggle>
+<label for=section-0d3204194de4a3a362bd3c4674e20c72 class=flex><a href=/study-algs/docs/advanced/nowcoder/>2.3 牛客网</a>
+<img src=/study-algs/icons/chevron-right.svg class=book-icon alt=Expand></label><ul></ul></li></ul></li><li><a>第三部分 设计与实现</a><ul></ul></li><li><a>第四部分 附录</a><ul><li><input type=checkbox id=section-bbc4546e42e69929436fe413d624444e class=toggle>
+<label for=section-bbc4546e42e69929436fe413d624444e class=flex><a href=/study-algs/docs/appendix/tutorial/>4.1 教程</a>
+<img src=/study-algs/icons/chevron-right.svg class=book-icon alt=Expand></label></li><li><input type=checkbox id=section-2cc621a8ab2a01fb7591c8cc689de3b3 class=toggle>
+<label for=section-2cc621a8ab2a01fb7591c8cc689de3b3 class=flex><a href=/study-algs/docs/appendix/interview/>4.2 面试题</a>
+<img src=/study-algs/icons/chevron-right.svg class=book-icon alt=Expand></label></li><li><input type=checkbox id=section-3a590afe51b117c1458c25c0fb991f9f class=toggle>
+<label for=section-3a590afe51b117c1458c25c0fb991f9f class=flex><a href=/study-algs/docs/appendix/attention/>4.3 关注项目</a>
+<img src=/study-algs/icons/chevron-right.svg class=book-icon alt=Expand></label></li></ul></li></ul><hr><ul><li><a href=https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200417022040.png target=_blank rel="noopener noreferrer">微信</a></li><li><a href="https://qm.qq.com/cgi-bin/qm/qr?k=EUhzg0UwUksxpQnwEmPngRLezlC6qrnn&jump_from=webapi" target=_blank rel="noopener noreferrer"><img src=//pub.idqqimg.com/wpa/images/group.png></a></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/study-algs/icons/menu.svg class=book-icon alt=Menu></label><h3>1.1 数据结构</h3><label for=toc-control><img src=/study-algs/icons/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents><ul><li><a href=#常用的数据结构>常用的数据结构</a></li><li><a href=#数据结构定义源码>数据结构定义（源码）</a><ul><li><a href=#栈>栈</a></li><li><a href=#队列>队列</a></li><li><a href=#链表-linked-list>链表 (Linked List)</a><ul><li><a href=#单向链表-节点>单向链表 节点</a></li><li><a href=#双向链表-节点>双向链表 节点</a></li></ul></li><li><a href=#树>树</a></li></ul></li><li><a href=#数据结构列表>数据结构列表</a><ul><li><a href=#类型>类型</a></li><li><a href=#抽象类型>抽象类型</a></li><li><a href=#数组>数组</a></li><li><a href=#链>链</a></li><li><a href=#树-1>树</a></li><li><a href=#图>图</a></li></ul></li></ul></nav></aside></header><article id=article class=markdown><h1 id=数据结构>数据结构<a class=anchor href=#%e6%95%b0%e6%8d%ae%e7%bb%93%e6%9e%84>#</a></h1><h2 id=常用的数据结构>常用的数据结构<a class=anchor href=#%e5%b8%b8%e7%94%a8%e7%9a%84%e6%95%b0%e6%8d%ae%e7%bb%93%e6%9e%84>#</a></h2><ul><li><a href=https://www.wikiwand.com/zh-cn/%E9%99%A3%E5%88%97 title=数组>数组</a>（Array）</li><li><a href=https://www.wikiwand.com/zh-cn/%E5%A0%86%E7%96%8A>堆栈</a>（Stack）</li><li><a href=https://www.wikiwand.com/zh-cn/%E9%98%9F%E5%88%97>队列</a>（Queue）</li><li><a href=https://www.wikiwand.com/zh-cn/%E9%93%BE%E8%A1%A8 title=链表>链表</a>（Linked List）</li><li><a href=https://www.wikiwand.com/zh-cn/%E6%A0%91_%28%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%29>树</a>（Tree）</li><li><a href=https://www.wikiwand.com/zh-cn/%E5%9B%BE_%28%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%29 title="图 (数据结构)">图</a>（Graph）</li><li><a href=https://www.wikiwand.com/zh-cn/%E5%A0%86_%28%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%29 title="堆 (数据结构)">堆积</a>（Heap）</li><li><a href=https://www.wikiwand.com/zh-cn/%E6%95%A3%E5%88%97%E8%A1%A8 title=散列表>散列表</a>（Hash table）</li></ul><hr><h2 id=数据结构定义源码>数据结构定义（源码）<a class=anchor href=#%e6%95%b0%e6%8d%ae%e7%bb%93%e6%9e%84%e5%ae%9a%e4%b9%89%e6%ba%90%e7%a0%81>#</a></h2><h3 id=栈>栈<a class=anchor href=#%e6%a0%88>#</a></h3><div class=book-tabs>---
+<input type=radio class=toggle name=tabs-0 id=tabs-0-0 checked><label for=tabs-0-0>C</label><div class="book-tabs-content markdown-inner">```c
 ```</div>---
-<input type=radio class=toggle name=tabs-stack id=tabs-stack-1>
-<label for=tabs-stack-1>C++</label><div class="book-tabs-content markdown-inner">```c++
+<input type=radio class=toggle name=tabs-0 id=tabs-0-1><label for=tabs-0-1>C++</label><div class="book-tabs-content markdown-inner">```c++
 ```</div>---
-<input type=radio class=toggle name=tabs-stack id=tabs-stack-2>
-<label for=tabs-stack-2>C#</label><div class="book-tabs-content markdown-inner">```c#
+<input type=radio class=toggle name=tabs-0 id=tabs-0-2><label for=tabs-0-2>C#</label><div class="book-tabs-content markdown-inner">```c#
 ```</div>---
-<input type=radio class=toggle name=tabs-stack id=tabs-stack-3>
-<label for=tabs-stack-3>Go</label><div class="book-tabs-content markdown-inner">```go
+<input type=radio class=toggle name=tabs-0 id=tabs-0-3><label for=tabs-0-3>Go</label><div class="book-tabs-content markdown-inner">```go
 stack := make([]int, 0)
 // push 入栈
 stack = append(stack, 3)
@@ -1182,46 +71,31 @@ stack = stack[: len(stack) - 1]
 if len(stack) == 0 {
 }
 ```</div>---
-<input type=radio class=toggle name=tabs-stack id=tabs-stack-4>
-<label for=tabs-stack-4>Java</label><div class="book-tabs-content markdown-inner">```java
+<input type=radio class=toggle name=tabs-0 id=tabs-0-4><label for=tabs-0-4>Java</label><div class="book-tabs-content markdown-inner">```java
 ```</div>---
-<input type=radio class=toggle name=tabs-stack id=tabs-stack-5>
-<label for=tabs-stack-5>JavaScript</label><div class="book-tabs-content markdown-inner">```javascript
+<input type=radio class=toggle name=tabs-0 id=tabs-0-5><label for=tabs-0-5>JavaScript</label><div class="book-tabs-content markdown-inner">```javascript
 ```</div>---
-<input type=radio class=toggle name=tabs-stack id=tabs-stack-6>
-<label for=tabs-stack-6>Kotlin</label><div class="book-tabs-content markdown-inner">```kotlin
+<input type=radio class=toggle name=tabs-0 id=tabs-0-6><label for=tabs-0-6>Kotlin</label><div class="book-tabs-content markdown-inner">```kotlin
 ```</div>---
-<input type=radio class=toggle name=tabs-stack id=tabs-stack-7>
-<label for=tabs-stack-7>PHP</label><div class="book-tabs-content markdown-inner">```php
+<input type=radio class=toggle name=tabs-0 id=tabs-0-7><label for=tabs-0-7>PHP</label><div class="book-tabs-content markdown-inner">```php
 ```</div>---
-<input type=radio class=toggle name=tabs-stack id=tabs-stack-8>
-<label for=tabs-stack-8>Python2</label><div class="book-tabs-content markdown-inner"></div>---
-<input type=radio class=toggle name=tabs-stack id=tabs-stack-9>
-<label for=tabs-stack-9>Python3</label><div class="book-tabs-content markdown-inner"></div>---
-<input type=radio class=toggle name=tabs-stack id=tabs-stack-10>
-<label for=tabs-stack-10>Ruby</label><div class="book-tabs-content markdown-inner">```ruby
+<input type=radio class=toggle name=tabs-0 id=tabs-0-8><label for=tabs-0-8>Python2</label><div class="book-tabs-content markdown-inner"></div>---
+<input type=radio class=toggle name=tabs-0 id=tabs-0-9><label for=tabs-0-9>Python3</label><div class="book-tabs-content markdown-inner"></div>---
+<input type=radio class=toggle name=tabs-0 id=tabs-0-10><label for=tabs-0-10>Ruby</label><div class="book-tabs-content markdown-inner">```ruby
 ```</div>---
-<input type=radio class=toggle name=tabs-stack id=tabs-stack-11>
-<label for=tabs-stack-11>Rust</label><div class="book-tabs-content markdown-inner">```rust
+<input type=radio class=toggle name=tabs-0 id=tabs-0-11><label for=tabs-0-11>Rust</label><div class="book-tabs-content markdown-inner">```rust
 ```</div>---
-<input type=radio class=toggle name=tabs-stack id=tabs-stack-12>
-<label for=tabs-stack-12>Scala</label><div class="book-tabs-content markdown-inner">```scala
+<input type=radio class=toggle name=tabs-0 id=tabs-0-12><label for=tabs-0-12>Scala</label><div class="book-tabs-content markdown-inner">```scala
 ```</div>---
-<input type=radio class=toggle name=tabs-stack id=tabs-stack-13>
-<label for=tabs-stack-13>Swift</label><div class="book-tabs-content markdown-inner">```swift
-```</div>---</div><hr><h3 id=队列>队列
-<a class=anchor href=#%e9%98%9f%e5%88%97>#</a></h3><div class=book-tabs>---
-<input type=radio class=toggle name=tabs-queue id=tabs-queue-0 checked>
-<label for=tabs-queue-0>C</label><div class="book-tabs-content markdown-inner">```c
+<input type=radio class=toggle name=tabs-0 id=tabs-0-13><label for=tabs-0-13>Swift</label><div class="book-tabs-content markdown-inner">```swift
+```</div>---</div><hr><h3 id=队列>队列<a class=anchor href=#%e9%98%9f%e5%88%97>#</a></h3><div class=book-tabs>---
+<input type=radio class=toggle name=tabs-1 id=tabs-1-0 checked><label for=tabs-1-0>C</label><div class="book-tabs-content markdown-inner">```c
 ```</div>---
-<input type=radio class=toggle name=tabs-queue id=tabs-queue-1>
-<label for=tabs-queue-1>C++</label><div class="book-tabs-content markdown-inner">```c++
+<input type=radio class=toggle name=tabs-1 id=tabs-1-1><label for=tabs-1-1>C++</label><div class="book-tabs-content markdown-inner">```c++
 ```</div>---
-<input type=radio class=toggle name=tabs-queue id=tabs-queue-2>
-<label for=tabs-queue-2>C#</label><div class="book-tabs-content markdown-inner">```c#
+<input type=radio class=toggle name=tabs-1 id=tabs-1-2><label for=tabs-1-2>C#</label><div class="book-tabs-content markdown-inner">```c#
 ```</div>---
-<input type=radio class=toggle name=tabs-queue id=tabs-queue-3>
-<label for=tabs-queue-3>Go</label><div class="book-tabs-content markdown-inner">```go
+<input type=radio class=toggle name=tabs-1 id=tabs-1-3><label for=tabs-1-3>Go</label><div class="book-tabs-content markdown-inner">```go
 queue := make([]int, 0)
 // enqueue 入队
 queue = append(queue, 5)
@@ -1232,115 +106,79 @@ queue = queue[1:]
 if len(queue) == 0 {
 }
 ```</div>---
-<input type=radio class=toggle name=tabs-queue id=tabs-queue-4>
-<label for=tabs-queue-4>Java</label><div class="book-tabs-content markdown-inner">```java
+<input type=radio class=toggle name=tabs-1 id=tabs-1-4><label for=tabs-1-4>Java</label><div class="book-tabs-content markdown-inner">```java
 ```</div>---
-<input type=radio class=toggle name=tabs-queue id=tabs-queue-5>
-<label for=tabs-queue-5>JavaScript</label><div class="book-tabs-content markdown-inner">```javascript
+<input type=radio class=toggle name=tabs-1 id=tabs-1-5><label for=tabs-1-5>JavaScript</label><div class="book-tabs-content markdown-inner">```javascript
 ```</div>---
-<input type=radio class=toggle name=tabs-queue id=tabs-queue-6>
-<label for=tabs-queue-6>Kotlin</label><div class="book-tabs-content markdown-inner">```kotlin
+<input type=radio class=toggle name=tabs-1 id=tabs-1-6><label for=tabs-1-6>Kotlin</label><div class="book-tabs-content markdown-inner">```kotlin
 ```</div>---
-<input type=radio class=toggle name=tabs-queue id=tabs-queue-7>
-<label for=tabs-queue-7>PHP</label><div class="book-tabs-content markdown-inner">```php
+<input type=radio class=toggle name=tabs-1 id=tabs-1-7><label for=tabs-1-7>PHP</label><div class="book-tabs-content markdown-inner">```php
 ```</div>---
-<input type=radio class=toggle name=tabs-queue id=tabs-queue-8>
-<label for=tabs-queue-8>Python2</label><div class="book-tabs-content markdown-inner"></div>---
-<input type=radio class=toggle name=tabs-queue id=tabs-queue-9>
-<label for=tabs-queue-9>Python3</label><div class="book-tabs-content markdown-inner"></div>---
-<input type=radio class=toggle name=tabs-queue id=tabs-queue-10>
-<label for=tabs-queue-10>Ruby</label><div class="book-tabs-content markdown-inner">```ruby
+<input type=radio class=toggle name=tabs-1 id=tabs-1-8><label for=tabs-1-8>Python2</label><div class="book-tabs-content markdown-inner"></div>---
+<input type=radio class=toggle name=tabs-1 id=tabs-1-9><label for=tabs-1-9>Python3</label><div class="book-tabs-content markdown-inner"></div>---
+<input type=radio class=toggle name=tabs-1 id=tabs-1-10><label for=tabs-1-10>Ruby</label><div class="book-tabs-content markdown-inner">```ruby
 ```</div>---
-<input type=radio class=toggle name=tabs-queue id=tabs-queue-11>
-<label for=tabs-queue-11>Rust</label><div class="book-tabs-content markdown-inner">```rust
+<input type=radio class=toggle name=tabs-1 id=tabs-1-11><label for=tabs-1-11>Rust</label><div class="book-tabs-content markdown-inner">```rust
 ```</div>---
-<input type=radio class=toggle name=tabs-queue id=tabs-queue-12>
-<label for=tabs-queue-12>Scala</label><div class="book-tabs-content markdown-inner">```scala
+<input type=radio class=toggle name=tabs-1 id=tabs-1-12><label for=tabs-1-12>Scala</label><div class="book-tabs-content markdown-inner">```scala
 ```</div>---
-<input type=radio class=toggle name=tabs-queue id=tabs-queue-13>
-<label for=tabs-queue-13>Swift</label><div class="book-tabs-content markdown-inner">```swift
-```</div>---</div><hr><h3 id=链表-linked-list>链表 (Linked List)
-<a class=anchor href=#%e9%93%be%e8%a1%a8-linked-list>#</a></h3><h4 id=单向链表-节点>单向链表 节点
-<a class=anchor href=#%e5%8d%95%e5%90%91%e9%93%be%e8%a1%a8-%e8%8a%82%e7%82%b9>#</a></h4><div class=book-tabs>---
-<input type=radio class=toggle name=tabs-link id=tabs-link-0 checked>
-<label for=tabs-link-0>C</label><div class="book-tabs-content markdown-inner">```c
+<input type=radio class=toggle name=tabs-1 id=tabs-1-13><label for=tabs-1-13>Swift</label><div class="book-tabs-content markdown-inner">```swift
+```</div>---</div><hr><h3 id=链表-linked-list>链表 (Linked List)<a class=anchor href=#%e9%93%be%e8%a1%a8-linked-list>#</a></h3><h4 id=单向链表-节点>单向链表 节点<a class=anchor href=#%e5%8d%95%e5%90%91%e9%93%be%e8%a1%a8-%e8%8a%82%e7%82%b9>#</a></h4><div class=book-tabs>---
+<input type=radio class=toggle name=tabs-2 id=tabs-2-0 checked><label for=tabs-2-0>C</label><div class="book-tabs-content markdown-inner">```c
 ```</div>---
-<input type=radio class=toggle name=tabs-link id=tabs-link-1>
-<label for=tabs-link-1>C++</label><div class="book-tabs-content markdown-inner">```c++
+<input type=radio class=toggle name=tabs-2 id=tabs-2-1><label for=tabs-2-1>C++</label><div class="book-tabs-content markdown-inner">```c++
 ```</div>---
-<input type=radio class=toggle name=tabs-link id=tabs-link-2>
-<label for=tabs-link-2>C#</label><div class="book-tabs-content markdown-inner">```c#
+<input type=radio class=toggle name=tabs-2 id=tabs-2-2><label for=tabs-2-2>C#</label><div class="book-tabs-content markdown-inner">```c#
 ```</div>---
-<input type=radio class=toggle name=tabs-link id=tabs-link-3>
-<label for=tabs-link-3>Go</label><div class="book-tabs-content markdown-inner">```go
+<input type=radio class=toggle name=tabs-2 id=tabs-2-3><label for=tabs-2-3>Go</label><div class="book-tabs-content markdown-inner">```go
 ```</div>---
-<input type=radio class=toggle name=tabs-link id=tabs-link-4>
-<label for=tabs-link-4>Java</label><div class="book-tabs-content markdown-inner">```java
+<input type=radio class=toggle name=tabs-2 id=tabs-2-4><label for=tabs-2-4>Java</label><div class="book-tabs-content markdown-inner">```java
 ```</div>---
-<input type=radio class=toggle name=tabs-link id=tabs-link-5>
-<label for=tabs-link-5>JavaScript</label><div class="book-tabs-content markdown-inner">```javascript
+<input type=radio class=toggle name=tabs-2 id=tabs-2-5><label for=tabs-2-5>JavaScript</label><div class="book-tabs-content markdown-inner">```javascript
 ```</div>---
-<input type=radio class=toggle name=tabs-link id=tabs-link-6>
-<label for=tabs-link-6>Kotlin</label><div class="book-tabs-content markdown-inner">```kotlin
+<input type=radio class=toggle name=tabs-2 id=tabs-2-6><label for=tabs-2-6>Kotlin</label><div class="book-tabs-content markdown-inner">```kotlin
 ```</div>---
-<input type=radio class=toggle name=tabs-link id=tabs-link-7>
-<label for=tabs-link-7>PHP</label><div class="book-tabs-content markdown-inner">```php
+<input type=radio class=toggle name=tabs-2 id=tabs-2-7><label for=tabs-2-7>PHP</label><div class="book-tabs-content markdown-inner">```php
 ```</div>---
-<input type=radio class=toggle name=tabs-link id=tabs-link-8>
-<label for=tabs-link-8>Python2</label><div class="book-tabs-content markdown-inner">```python
+<input type=radio class=toggle name=tabs-2 id=tabs-2-8><label for=tabs-2-8>Python2</label><div class="book-tabs-content markdown-inner">```python
 # Definition for singly-linked list.
 class ListNode(object):
 def __init__(self, val):
 self.val = val
 self.next = None
 ```</div>---
-<input type=radio class=toggle name=tabs-link id=tabs-link-9>
-<label for=tabs-link-9>Python3</label><div class="book-tabs-content markdown-inner">```python
+<input type=radio class=toggle name=tabs-2 id=tabs-2-9><label for=tabs-2-9>Python3</label><div class="book-tabs-content markdown-inner">```python
 # Definition for singly-linked list.
 class ListNode:
 def __init__(self, val):
 self.val = val
 self.next = None
 ```</div>---
-<input type=radio class=toggle name=tabs-link id=tabs-link-10>
-<label for=tabs-link-10>Ruby</label><div class="book-tabs-content markdown-inner">```ruby
+<input type=radio class=toggle name=tabs-2 id=tabs-2-10><label for=tabs-2-10>Ruby</label><div class="book-tabs-content markdown-inner">```ruby
 ```</div>---
-<input type=radio class=toggle name=tabs-link id=tabs-link-11>
-<label for=tabs-link-11>Rust</label><div class="book-tabs-content markdown-inner">```rust
+<input type=radio class=toggle name=tabs-2 id=tabs-2-11><label for=tabs-2-11>Rust</label><div class="book-tabs-content markdown-inner">```rust
 ```</div>---
-<input type=radio class=toggle name=tabs-link id=tabs-link-12>
-<label for=tabs-link-12>Scala</label><div class="book-tabs-content markdown-inner">```scala
+<input type=radio class=toggle name=tabs-2 id=tabs-2-12><label for=tabs-2-12>Scala</label><div class="book-tabs-content markdown-inner">```scala
 ```</div>---
-<input type=radio class=toggle name=tabs-link id=tabs-link-13>
-<label for=tabs-link-13>Swift</label><div class="book-tabs-content markdown-inner">```swift
-```</div>---</div><hr><h4 id=双向链表-节点>双向链表 节点
-<a class=anchor href=#%e5%8f%8c%e5%90%91%e9%93%be%e8%a1%a8-%e8%8a%82%e7%82%b9>#</a></h4><div class=book-tabs>---
-<input type=radio class=toggle name=tabs-link id=tabs-link-0 checked>
-<label for=tabs-link-0>C</label><div class="book-tabs-content markdown-inner">```c
+<input type=radio class=toggle name=tabs-2 id=tabs-2-13><label for=tabs-2-13>Swift</label><div class="book-tabs-content markdown-inner">```swift
+```</div>---</div><hr><h4 id=双向链表-节点>双向链表 节点<a class=anchor href=#%e5%8f%8c%e5%90%91%e9%93%be%e8%a1%a8-%e8%8a%82%e7%82%b9>#</a></h4><div class=book-tabs>---
+<input type=radio class=toggle name=tabs-3 id=tabs-3-0 checked><label for=tabs-3-0>C</label><div class="book-tabs-content markdown-inner">```c
 ```</div>---
-<input type=radio class=toggle name=tabs-link id=tabs-link-1>
-<label for=tabs-link-1>C++</label><div class="book-tabs-content markdown-inner">```c++
+<input type=radio class=toggle name=tabs-3 id=tabs-3-1><label for=tabs-3-1>C++</label><div class="book-tabs-content markdown-inner">```c++
 ```</div>---
-<input type=radio class=toggle name=tabs-link id=tabs-link-2>
-<label for=tabs-link-2>C#</label><div class="book-tabs-content markdown-inner">```c#
+<input type=radio class=toggle name=tabs-3 id=tabs-3-2><label for=tabs-3-2>C#</label><div class="book-tabs-content markdown-inner">```c#
 ```</div>---
-<input type=radio class=toggle name=tabs-link id=tabs-link-3>
-<label for=tabs-link-3>Go</label><div class="book-tabs-content markdown-inner">```go
+<input type=radio class=toggle name=tabs-3 id=tabs-3-3><label for=tabs-3-3>Go</label><div class="book-tabs-content markdown-inner">```go
 ```</div>---
-<input type=radio class=toggle name=tabs-link id=tabs-link-4>
-<label for=tabs-link-4>Java</label><div class="book-tabs-content markdown-inner">```java
+<input type=radio class=toggle name=tabs-3 id=tabs-3-4><label for=tabs-3-4>Java</label><div class="book-tabs-content markdown-inner">```java
 ```</div>---
-<input type=radio class=toggle name=tabs-link id=tabs-link-5>
-<label for=tabs-link-5>JavaScript</label><div class="book-tabs-content markdown-inner">```javascript
+<input type=radio class=toggle name=tabs-3 id=tabs-3-5><label for=tabs-3-5>JavaScript</label><div class="book-tabs-content markdown-inner">```javascript
 ```</div>---
-<input type=radio class=toggle name=tabs-link id=tabs-link-6>
-<label for=tabs-link-6>Kotlin</label><div class="book-tabs-content markdown-inner">```kotlin
+<input type=radio class=toggle name=tabs-3 id=tabs-3-6><label for=tabs-3-6>Kotlin</label><div class="book-tabs-content markdown-inner">```kotlin
 ```</div>---
-<input type=radio class=toggle name=tabs-link id=tabs-link-7>
-<label for=tabs-link-7>PHP</label><div class="book-tabs-content markdown-inner">```php
+<input type=radio class=toggle name=tabs-3 id=tabs-3-7><label for=tabs-3-7>PHP</label><div class="book-tabs-content markdown-inner">```php
 ```</div>---
-<input type=radio class=toggle name=tabs-link id=tabs-link-8>
-<label for=tabs-link-8>Python2</label><div class="book-tabs-content markdown-inner">```python
+<input type=radio class=toggle name=tabs-3 id=tabs-3-8><label for=tabs-3-8>Python2</label><div class="book-tabs-content markdown-inner">```python
 # Definition for doubly-linked list.
 class ListNode(object):
 def __init__(self, val):
@@ -1348,8 +186,7 @@ self.val = val
 self.pre = None
 self.next = None
 ```</div>---
-<input type=radio class=toggle name=tabs-link id=tabs-link-9>
-<label for=tabs-link-9>Python3</label><div class="book-tabs-content markdown-inner">```python
+<input type=radio class=toggle name=tabs-3 id=tabs-3-9><label for=tabs-3-9>Python3</label><div class="book-tabs-content markdown-inner">```python
 # Definition for doubly-linked list.
 class ListNode:
 def __init__(self, val):
@@ -1357,45 +194,31 @@ self.val = val
 self.pre = None
 self.next = None
 ```</div>---
-<input type=radio class=toggle name=tabs-link id=tabs-link-10>
-<label for=tabs-link-10>Ruby</label><div class="book-tabs-content markdown-inner">```ruby
+<input type=radio class=toggle name=tabs-3 id=tabs-3-10><label for=tabs-3-10>Ruby</label><div class="book-tabs-content markdown-inner">```ruby
 ```</div>---
-<input type=radio class=toggle name=tabs-link id=tabs-link-11>
-<label for=tabs-link-11>Rust</label><div class="book-tabs-content markdown-inner">```rust
+<input type=radio class=toggle name=tabs-3 id=tabs-3-11><label for=tabs-3-11>Rust</label><div class="book-tabs-content markdown-inner">```rust
 ```</div>---
-<input type=radio class=toggle name=tabs-link id=tabs-link-12>
-<label for=tabs-link-12>Scala</label><div class="book-tabs-content markdown-inner">```scala
+<input type=radio class=toggle name=tabs-3 id=tabs-3-12><label for=tabs-3-12>Scala</label><div class="book-tabs-content markdown-inner">```scala
 ```</div>---
-<input type=radio class=toggle name=tabs-link id=tabs-link-13>
-<label for=tabs-link-13>Swift</label><div class="book-tabs-content markdown-inner">```swift
-```</div>---</div><hr><h3 id=树>树
-<a class=anchor href=#%e6%a0%91>#</a></h3><div class=book-tabs>---
-<input type=radio class=toggle name=tabs-tree id=tabs-tree-0 checked>
-<label for=tabs-tree-0>C</label><div class="book-tabs-content markdown-inner">```c
+<input type=radio class=toggle name=tabs-3 id=tabs-3-13><label for=tabs-3-13>Swift</label><div class="book-tabs-content markdown-inner">```swift
+```</div>---</div><hr><h3 id=树>树<a class=anchor href=#%e6%a0%91>#</a></h3><div class=book-tabs>---
+<input type=radio class=toggle name=tabs-4 id=tabs-4-0 checked><label for=tabs-4-0>C</label><div class="book-tabs-content markdown-inner">```c
 ```</div>---
-<input type=radio class=toggle name=tabs-tree id=tabs-tree-1>
-<label for=tabs-tree-1>C++</label><div class="book-tabs-content markdown-inner">```c++
+<input type=radio class=toggle name=tabs-4 id=tabs-4-1><label for=tabs-4-1>C++</label><div class="book-tabs-content markdown-inner">```c++
 ```</div>---
-<input type=radio class=toggle name=tabs-tree id=tabs-tree-2>
-<label for=tabs-tree-2>C#</label><div class="book-tabs-content markdown-inner">```c#
+<input type=radio class=toggle name=tabs-4 id=tabs-4-2><label for=tabs-4-2>C#</label><div class="book-tabs-content markdown-inner">```c#
 ```</div>---
-<input type=radio class=toggle name=tabs-tree id=tabs-tree-3>
-<label for=tabs-tree-3>Go</label><div class="book-tabs-content markdown-inner">```go
+<input type=radio class=toggle name=tabs-4 id=tabs-4-3><label for=tabs-4-3>Go</label><div class="book-tabs-content markdown-inner">```go
 ```</div>---
-<input type=radio class=toggle name=tabs-tree id=tabs-tree-4>
-<label for=tabs-tree-4>Java</label><div class="book-tabs-content markdown-inner">```java
+<input type=radio class=toggle name=tabs-4 id=tabs-4-4><label for=tabs-4-4>Java</label><div class="book-tabs-content markdown-inner">```java
 ```</div>---
-<input type=radio class=toggle name=tabs-tree id=tabs-tree-5>
-<label for=tabs-tree-5>JavaScript</label><div class="book-tabs-content markdown-inner">```javascript
+<input type=radio class=toggle name=tabs-4 id=tabs-4-5><label for=tabs-4-5>JavaScript</label><div class="book-tabs-content markdown-inner">```javascript
 ```</div>---
-<input type=radio class=toggle name=tabs-tree id=tabs-tree-6>
-<label for=tabs-tree-6>Kotlin</label><div class="book-tabs-content markdown-inner">```kotlin
+<input type=radio class=toggle name=tabs-4 id=tabs-4-6><label for=tabs-4-6>Kotlin</label><div class="book-tabs-content markdown-inner">```kotlin
 ```</div>---
-<input type=radio class=toggle name=tabs-tree id=tabs-tree-7>
-<label for=tabs-tree-7>PHP</label><div class="book-tabs-content markdown-inner">```php
+<input type=radio class=toggle name=tabs-4 id=tabs-4-7><label for=tabs-4-7>PHP</label><div class="book-tabs-content markdown-inner">```php
 ```</div>---
-<input type=radio class=toggle name=tabs-tree id=tabs-tree-8>
-<label for=tabs-tree-8>Python2</label><div class="book-tabs-content markdown-inner">```python
+<input type=radio class=toggle name=tabs-4 id=tabs-4-8><label for=tabs-4-8>Python2</label><div class="book-tabs-content markdown-inner">```python
 # Definition for a binary tree node
 class TreeNode(object) {
 def __init__(self, val):
@@ -1404,8 +227,7 @@ self.left = None
 self.right = None
 }
 ```</div>---
-<input type=radio class=toggle name=tabs-tree id=tabs-tree-9>
-<label for=tabs-tree-9>Python3</label><div class="book-tabs-content markdown-inner">```python
+<input type=radio class=toggle name=tabs-4 id=tabs-4-9><label for=tabs-4-9>Python3</label><div class="book-tabs-content markdown-inner">```python
 # Definition for a binary tree node
 class TreeNode {
 def __init__(self, val):
@@ -1414,24 +236,13 @@ self.left = None
 self.right = None
 }
 ```</div>---
-<input type=radio class=toggle name=tabs-tree id=tabs-tree-10>
-<label for=tabs-tree-10>Ruby</label><div class="book-tabs-content markdown-inner">```ruby
+<input type=radio class=toggle name=tabs-4 id=tabs-4-10><label for=tabs-4-10>Ruby</label><div class="book-tabs-content markdown-inner">```ruby
 ```</div>---
-<input type=radio class=toggle name=tabs-tree id=tabs-tree-11>
-<label for=tabs-tree-11>Rust</label><div class="book-tabs-content markdown-inner">```rust
+<input type=radio class=toggle name=tabs-4 id=tabs-4-11><label for=tabs-4-11>Rust</label><div class="book-tabs-content markdown-inner">```rust
 ```</div>---
-<input type=radio class=toggle name=tabs-tree id=tabs-tree-12>
-<label for=tabs-tree-12>Scala</label><div class="book-tabs-content markdown-inner">```scala
+<input type=radio class=toggle name=tabs-4 id=tabs-4-12><label for=tabs-4-12>Scala</label><div class="book-tabs-content markdown-inner">```scala
 ```</div>---
-<input type=radio class=toggle name=tabs-tree id=tabs-tree-13>
-<label for=tabs-tree-13>Swift</label><div class="book-tabs-content markdown-inner">```swift
-```</div>---</div><hr><h2 id=数据结构列表><a href=https://www.wikiwand.com/zh-cn/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%88%97%E8%A1%A8>数据结构列表</a>
-<a class=anchor href=#%e6%95%b0%e6%8d%ae%e7%bb%93%e6%9e%84%e5%88%97%e8%a1%a8>#</a></h2><p><a href=https://www.wikiwand.com/zh-cn/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84><img src=https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200410104830.png alt></a></p><h3 id=类型>类型
-<a class=anchor href=#%e7%b1%bb%e5%9e%8b>#</a></h3><ul><li><a href=https://www.wikiwand.com/zh-cn/%E9%9B%86%E5%90%88_%28%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%29>集合</a></li><li><a href=https://www.wikiwand.com/zh-cn/%E5%AE%B9%E5%99%A8_%28%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%29>容器</a></li></ul><h3 id=抽象类型><a href=https://www.wikiwand.com/zh-cn/%E6%8A%BD%E8%B1%A1%E6%95%B8%E6%93%9A%E9%A1%9E%E5%9E%8B>抽象类型</a>
-<a class=anchor href=#%e6%8a%bd%e8%b1%a1%e7%b1%bb%e5%9e%8b>#</a></h3><ul><li><a href=https://www.wikiwand.com/zh-cn/%E5%85%B3%E8%81%94%E6%95%B0%E7%BB%84>关联数组</a><ul><li><a href=https://www.wikiwand.com/zh-cn/%E5%A4%9A%E9%87%8D%E9%97%9C%E9%80%A3%E6%95%B8%E7%B5%84>多重关连数组</a>（英语：<a href=https://www.wikiwand.com/en/Multimap title=en:Multimap>Multimap</a>）</li></ul></li><li><a href=https://www.wikiwand.com/zh-cn/%E4%B8%B2%E5%88%97_%28%E6%8A%BD%E8%B1%A1%E8%B3%87%E6%96%99%E5%9E%8B%E5%88%A5%29>列表</a></li><li><a href=https://www.wikiwand.com/zh-cn/%E5%A0%86%E6%A0%88>堆栈</a></li><li><a href=https://www.wikiwand.com/zh-cn/%E9%98%9F%E5%88%97>队列</a><ul><li><a href=https://www.wikiwand.com/zh-cn/%E5%8F%8C%E7%AB%AF%E9%98%9F%E5%88%97 title=双端队列>双端队列</a></li></ul></li><li><a href=https://www.wikiwand.com/zh-cn/%E4%BC%98%E5%85%88%E9%98%9F%E5%88%97 title=优先队列>优先队列</a><ul><li>双端优先队列（英语：<a href=https://www.wikiwand.com/en/Double-ended_priority_queue title="en:Double-ended priority queue">Double-ended priority queue</a>）</li></ul></li><li><a href=https://www.wikiwand.com/zh-cn/%E9%9B%86%E5%90%88_%28%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%29 title="集合 (计算机科学)">集合</a><ul><li><a href=https://www.wikiwand.com/zh-cn/%E9%9B%86%E5%90%88_%28%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%29#%E5%A4%9A%E9%87%8D%E9%9B%86>多重集</a></li><li><a href=https://www.wikiwand.com/zh-cn/%E5%B9%B6%E6%9F%A5%E9%9B%86 title=并查集>并查集</a></li></ul></li></ul><h3 id=数组><a href=https://www.wikiwand.com/zh-cn/%E6%95%B0%E7%BB%84 title=数组>数组</a>
-<a class=anchor href=#%e6%95%b0%e7%bb%84>#</a></h3><ul><li><a href=https://www.wikiwand.com/zh-cn/%E5%AD%97%E4%B8%B2 title=字符串>字符串</a></li><li>位数组（英语：<a href=https://www.wikiwand.com/en/Bit_array title="en:Bit array">Bit array</a>）</li><li><a href=https://www.wikiwand.com/zh-cn/%E7%92%B0%E5%BD%A2%E7%B7%A9%E8%A1%9D%E5%8D%80 title=环形缓冲器>环形缓冲器</a></li><li>动态数组（英语：<a href=https://www.wikiwand.com/en/Dynamic_array title="en:Dynamic array">Dynamic array</a>）</li><li><a href=https://www.wikiwand.com/zh-cn/%E5%93%88%E5%B8%8C%E8%A1%A8>哈希表</a></li><li>哈希数组树（英语：<a href=https://www.wikiwand.com/en/Hashed_array_tree title="en:Hashed array tree">Hashed array tree</a>）</li><li><a href=https://www.wikiwand.com/zh-cn/%E7%A8%80%E7%96%8F%E7%9F%A9%E9%98%B5 title=稀疏矩阵>稀疏矩阵</a></li></ul><h3 id=链>链
-<a class=anchor href=#%e9%93%be>#</a></h3><p><a href=https://www.wikiwand.com/en/Linked_data_structure title="en:Linked data structure">Linked data structure</a></p><ul><li>关联表（英语：<a href=https://www.wikiwand.com/en/Association_list title="en:Association list">Association list</a>）</li><li><a href=https://www.wikiwand.com/zh-cn/%E9%93%BE%E8%A1%A8 title=链表>链表</a></li><li><a href=https://www.wikiwand.com/zh-cn/%E8%B7%B3%E8%B7%83%E5%88%97%E8%A1%A8 title=跳跃列表>跳跃列表</a></li><li>松散链表（英语：<a href=https://www.wikiwand.com/en/Unrolled_linked_list title="en:Unrolled linked list">Unrolled linked list</a>）</li><li><a href=https://www.wikiwand.com/zh-cn/%E5%BC%82%E6%88%96%E9%93%BE%E8%A1%A8>异或链表</a></li></ul><h3 id=树-1><a href=https://www.wikiwand.com/zh-cn/%E6%A0%91_%28%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%29 title="树 (数据结构)">树</a>
-<a class=anchor href=#%e6%a0%91-1>#</a></h3><ul><li><a href=https://www.wikiwand.com/zh-cn/%E7%BA%BF%E6%AE%B5%E6%A0%91 title=线段树>线段树</a></li><li><a href=https://www.wikiwand.com/zh-cn/%E8%87%AA%E5%B9%B3%E8%A1%A1%E4%BA%8C%E5%8F%89%E6%9F%A5%E6%89%BE%E6%A0%91 title=自平衡二叉查找树>自平衡二叉查找树</a></li><li><a href=https://www.wikiwand.com/zh-cn/B%E6%A0%91 title=B树>B 树</a></li><li><a href=https://www.wikiwand.com/zh-cn/%E4%BA%8C%E5%85%83%E6%90%9C%E5%B0%8B%E6%A8%B9>二叉树</a><ul><li><a href=https://www.wikiwand.com/zh-cn/AA%E6%A0%91 title=AA树>AA 树</a></li><li><a href=https://www.wikiwand.com/zh-cn/AVL%E6%A0%91 title=AVL树>AVL 树</a></li><li><a href=https://www.wikiwand.com/zh-cn/%E7%BA%A2%E9%BB%91%E6%A0%91 title=红黑树>红黑树</a></li><li><a href=https://www.wikiwand.com/zh-cn/%E5%B9%B3%E8%A1%A1%E6%A0%91 title=平衡树>平衡树</a></li><li><a href=https://www.wikiwand.com/zh-cn/%E4%BC%B8%E5%B1%95%E6%A0%91>伸展树</a></li><li><a href=https://www.wikiwand.com/zh-cn/%E4%BA%8C%E5%8F%89%E6%9F%A5%E6%89%BE%E6%A0%91>二叉查找树</a></li></ul></li><li><a href=https://www.wikiwand.com/zh-cn/%E5%A0%86%E7%A9%8D title=堆积>堆</a><ul><li><a href=https://www.wikiwand.com/zh-cn/%E4%BA%8C%E5%8F%89%E5%A0%86 title=二叉堆>二叉堆</a></li><li><a href=https://www.wikiwand.com/zh-cn/%E5%B7%A6%E5%81%8F%E6%A0%91>左偏树</a></li><li><a href=https://www.wikiwand.com/zh-cn/%E4%BA%8C%E9%A1%B9%E5%A0%86 title=二项堆>二项堆</a></li><li><a href=https://www.wikiwand.com/zh-cn/%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E5%A0%86 title=斐波那契堆>斐波那契堆</a></li></ul></li><li><a href=https://www.wikiwand.com/zh-cn/R%E6%A0%91 title=R树>R 树</a><ul><li><a href=https://www.wikiwand.com/zh-cn/R*%E6%A0%91 title=R*树>R * 树</a></li><li><a href=https://www.wikiwand.com/zh-cn/R%2B%E6%A0%91 title=R+树>R + 树</a></li><li>Hilbert R 树（英语：<a href=https://www.wikiwand.com/en/Hilbert_R-tree title="en:Hilbert R-tree">Hilbert R-tree</a>）</li></ul></li><li><a href=https://www.wikiwand.com/zh-cn/Trie title=Trie>前缀树</a><ul><li><a href=https://www.wikiwand.com/zh-cn/%E5%93%88%E5%B8%8C%E6%A0%91 title=哈希树>哈希树</a></li></ul></li></ul><h3 id=图><a href=https://www.wikiwand.com/zh-cn/%E5%9B%BE_%28%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%29 title="图 (数据结构)">图</a>
-<a class=anchor href=#%e5%9b%be>#</a></h3><ul><li><a href=https://www.wikiwand.com/zh-cn/%E6%9C%89%E5%90%91%E5%9B%BE title=有向图>有向图</a></li><li><a href=https://www.wikiwand.com/zh-cn/%E6%9C%89%E5%90%91%E6%97%A0%E7%8E%AF%E5%9B%BE title=有向无环图>有向无环图</a></li><li><a href=https://www.wikiwand.com/zh-cn/%E4%BA%8C%E5%85%83%E5%86%B3%E7%AD%96%E5%9B%BE title=二元决策图>二元决策图</a></li><li><a href=https://www.wikiwand.com/zh-cn/%E7%84%A1%E5%90%91%E5%9C%96 title=无向图>无向图</a></li><li>确定性非循环有限自动机</li></ul></article><footer class=book-footer><div class="flex flex-wrap justify-between"></div><div class="flex flex-wrap justify-between"><span></span><span><a href=/study-algs/docs/basic/thought/ class="flex align-center"><span>1.2 算法思想</span>
-<img src=/study-algs/svg/forward.svg class=book-icon alt=Next title="1.2 算法思想"></a></span></div><script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script><div><br><script async src=//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js></script><link rel=stylesheet href=//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css><p><span id=busuanzi_container_page_pv>本文访问量 <span id=busuanzi_value_page_pv><i class="fa fa-spinner fa-spin"></i></span> 次</span></p><p><span id=busuanzi_container_site_pv>本站总访问量 <span id=busuanzi_value_site_pv><i class="fa fa-spinner fa-spin"></i></span> 次</span></p><p><span id=busuanzi_container_site_uv>本站总访客数 <span id=busuanzi_value_site_uv><i class="fa fa-spinner fa-spin"></i></span> 人</span></p></div></footer><div class=book-comments><script src=https://utteranc.es/client.js repo=ikingye/study-algs issue-term=pathname theme=github-light crossorigin=anonymous async></script><div id=footer><p><a href=https://kingye.me>叶王</a> &copy; 2013-2026
+<input type=radio class=toggle name=tabs-4 id=tabs-4-13><label for=tabs-4-13>Swift</label><div class="book-tabs-content markdown-inner">```swift
+```</div>---</div><hr><h2 id=数据结构列表><a href=https://www.wikiwand.com/zh-cn/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%88%97%E8%A1%A8>数据结构列表</a><a class=anchor href=#%e6%95%b0%e6%8d%ae%e7%bb%93%e6%9e%84%e5%88%97%e8%a1%a8>#</a></h2><p><a href=https://www.wikiwand.com/zh-cn/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84><img src=https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200410104830.png alt></a></p><h3 id=类型>类型<a class=anchor href=#%e7%b1%bb%e5%9e%8b>#</a></h3><ul><li><a href=https://www.wikiwand.com/zh-cn/%E9%9B%86%E5%90%88_%28%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%29>集合</a></li><li><a href=https://www.wikiwand.com/zh-cn/%E5%AE%B9%E5%99%A8_%28%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%29>容器</a></li></ul><h3 id=抽象类型><a href=https://www.wikiwand.com/zh-cn/%E6%8A%BD%E8%B1%A1%E6%95%B8%E6%93%9A%E9%A1%9E%E5%9E%8B>抽象类型</a><a class=anchor href=#%e6%8a%bd%e8%b1%a1%e7%b1%bb%e5%9e%8b>#</a></h3><ul><li><a href=https://www.wikiwand.com/zh-cn/%E5%85%B3%E8%81%94%E6%95%B0%E7%BB%84>关联数组</a><ul><li><a href=https://www.wikiwand.com/zh-cn/%E5%A4%9A%E9%87%8D%E9%97%9C%E9%80%A3%E6%95%B8%E7%B5%84>多重关连数组</a>（英语：<a href=https://www.wikiwand.com/en/Multimap title=en:Multimap>Multimap</a>）</li></ul></li><li><a href=https://www.wikiwand.com/zh-cn/%E4%B8%B2%E5%88%97_%28%E6%8A%BD%E8%B1%A1%E8%B3%87%E6%96%99%E5%9E%8B%E5%88%A5%29>列表</a></li><li><a href=https://www.wikiwand.com/zh-cn/%E5%A0%86%E6%A0%88>堆栈</a></li><li><a href=https://www.wikiwand.com/zh-cn/%E9%98%9F%E5%88%97>队列</a><ul><li><a href=https://www.wikiwand.com/zh-cn/%E5%8F%8C%E7%AB%AF%E9%98%9F%E5%88%97 title=双端队列>双端队列</a></li></ul></li><li><a href=https://www.wikiwand.com/zh-cn/%E4%BC%98%E5%85%88%E9%98%9F%E5%88%97 title=优先队列>优先队列</a><ul><li>双端优先队列（英语：<a href=https://www.wikiwand.com/en/Double-ended_priority_queue title="en:Double-ended priority queue">Double-ended priority queue</a>）</li></ul></li><li><a href=https://www.wikiwand.com/zh-cn/%E9%9B%86%E5%90%88_%28%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%29 title="集合 (计算机科学)">集合</a><ul><li><a href=https://www.wikiwand.com/zh-cn/%E9%9B%86%E5%90%88_%28%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%29#%E5%A4%9A%E9%87%8D%E9%9B%86>多重集</a></li><li><a href=https://www.wikiwand.com/zh-cn/%E5%B9%B6%E6%9F%A5%E9%9B%86 title=并查集>并查集</a></li></ul></li></ul><h3 id=数组><a href=https://www.wikiwand.com/zh-cn/%E6%95%B0%E7%BB%84 title=数组>数组</a><a class=anchor href=#%e6%95%b0%e7%bb%84>#</a></h3><ul><li><a href=https://www.wikiwand.com/zh-cn/%E5%AD%97%E4%B8%B2 title=字符串>字符串</a></li><li>位数组（英语：<a href=https://www.wikiwand.com/en/Bit_array title="en:Bit array">Bit array</a>）</li><li><a href=https://www.wikiwand.com/zh-cn/%E7%92%B0%E5%BD%A2%E7%B7%A9%E8%A1%9D%E5%8D%80 title=环形缓冲器>环形缓冲器</a></li><li>动态数组（英语：<a href=https://www.wikiwand.com/en/Dynamic_array title="en:Dynamic array">Dynamic array</a>）</li><li><a href=https://www.wikiwand.com/zh-cn/%E5%93%88%E5%B8%8C%E8%A1%A8>哈希表</a></li><li>哈希数组树（英语：<a href=https://www.wikiwand.com/en/Hashed_array_tree title="en:Hashed array tree">Hashed array tree</a>）</li><li><a href=https://www.wikiwand.com/zh-cn/%E7%A8%80%E7%96%8F%E7%9F%A9%E9%98%B5 title=稀疏矩阵>稀疏矩阵</a></li></ul><h3 id=链>链<a class=anchor href=#%e9%93%be>#</a></h3><p><a href=https://www.wikiwand.com/en/Linked_data_structure title="en:Linked data structure">Linked data structure</a></p><ul><li>关联表（英语：<a href=https://www.wikiwand.com/en/Association_list title="en:Association list">Association list</a>）</li><li><a href=https://www.wikiwand.com/zh-cn/%E9%93%BE%E8%A1%A8 title=链表>链表</a></li><li><a href=https://www.wikiwand.com/zh-cn/%E8%B7%B3%E8%B7%83%E5%88%97%E8%A1%A8 title=跳跃列表>跳跃列表</a></li><li>松散链表（英语：<a href=https://www.wikiwand.com/en/Unrolled_linked_list title="en:Unrolled linked list">Unrolled linked list</a>）</li><li><a href=https://www.wikiwand.com/zh-cn/%E5%BC%82%E6%88%96%E9%93%BE%E8%A1%A8>异或链表</a></li></ul><h3 id=树-1><a href=https://www.wikiwand.com/zh-cn/%E6%A0%91_%28%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%29 title="树 (数据结构)">树</a><a class=anchor href=#%e6%a0%91-1>#</a></h3><ul><li><a href=https://www.wikiwand.com/zh-cn/%E7%BA%BF%E6%AE%B5%E6%A0%91 title=线段树>线段树</a></li><li><a href=https://www.wikiwand.com/zh-cn/%E8%87%AA%E5%B9%B3%E8%A1%A1%E4%BA%8C%E5%8F%89%E6%9F%A5%E6%89%BE%E6%A0%91 title=自平衡二叉查找树>自平衡二叉查找树</a></li><li><a href=https://www.wikiwand.com/zh-cn/B%E6%A0%91 title=B树>B 树</a></li><li><a href=https://www.wikiwand.com/zh-cn/%E4%BA%8C%E5%85%83%E6%90%9C%E5%B0%8B%E6%A8%B9>二叉树</a><ul><li><a href=https://www.wikiwand.com/zh-cn/AA%E6%A0%91 title=AA树>AA 树</a></li><li><a href=https://www.wikiwand.com/zh-cn/AVL%E6%A0%91 title=AVL树>AVL 树</a></li><li><a href=https://www.wikiwand.com/zh-cn/%E7%BA%A2%E9%BB%91%E6%A0%91 title=红黑树>红黑树</a></li><li><a href=https://www.wikiwand.com/zh-cn/%E5%B9%B3%E8%A1%A1%E6%A0%91 title=平衡树>平衡树</a></li><li><a href=https://www.wikiwand.com/zh-cn/%E4%BC%B8%E5%B1%95%E6%A0%91>伸展树</a></li><li><a href=https://www.wikiwand.com/zh-cn/%E4%BA%8C%E5%8F%89%E6%9F%A5%E6%89%BE%E6%A0%91>二叉查找树</a></li></ul></li><li><a href=https://www.wikiwand.com/zh-cn/%E5%A0%86%E7%A9%8D title=堆积>堆</a><ul><li><a href=https://www.wikiwand.com/zh-cn/%E4%BA%8C%E5%8F%89%E5%A0%86 title=二叉堆>二叉堆</a></li><li><a href=https://www.wikiwand.com/zh-cn/%E5%B7%A6%E5%81%8F%E6%A0%91>左偏树</a></li><li><a href=https://www.wikiwand.com/zh-cn/%E4%BA%8C%E9%A1%B9%E5%A0%86 title=二项堆>二项堆</a></li><li><a href=https://www.wikiwand.com/zh-cn/%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E5%A0%86 title=斐波那契堆>斐波那契堆</a></li></ul></li><li><a href=https://www.wikiwand.com/zh-cn/R%E6%A0%91 title=R树>R 树</a><ul><li><a href=https://www.wikiwand.com/zh-cn/R*%E6%A0%91 title=R*树>R * 树</a></li><li><a href=https://www.wikiwand.com/zh-cn/R%2B%E6%A0%91 title=R+树>R + 树</a></li><li>Hilbert R 树（英语：<a href=https://www.wikiwand.com/en/Hilbert_R-tree title="en:Hilbert R-tree">Hilbert R-tree</a>）</li></ul></li><li><a href=https://www.wikiwand.com/zh-cn/Trie title=Trie>前缀树</a><ul><li><a href=https://www.wikiwand.com/zh-cn/%E5%93%88%E5%B8%8C%E6%A0%91 title=哈希树>哈希树</a></li></ul></li></ul><h3 id=图><a href=https://www.wikiwand.com/zh-cn/%E5%9B%BE_%28%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%29 title="图 (数据结构)">图</a><a class=anchor href=#%e5%9b%be>#</a></h3><ul><li><a href=https://www.wikiwand.com/zh-cn/%E6%9C%89%E5%90%91%E5%9B%BE title=有向图>有向图</a></li><li><a href=https://www.wikiwand.com/zh-cn/%E6%9C%89%E5%90%91%E6%97%A0%E7%8E%AF%E5%9B%BE title=有向无环图>有向无环图</a></li><li><a href=https://www.wikiwand.com/zh-cn/%E4%BA%8C%E5%85%83%E5%86%B3%E7%AD%96%E5%9B%BE title=二元决策图>二元决策图</a></li><li><a href=https://www.wikiwand.com/zh-cn/%E7%84%A1%E5%90%91%E5%9C%96 title=无向图>无向图</a></li><li>确定性非循环有限自动机</li></ul></article><footer class=book-footer><div class="flex flex-wrap justify-between"><div></div><div></div></div><div class="flex flex-wrap justify-between"><span></span><span><a href=/study-algs/docs/basic/thought/ class="flex align-center"><span>1.2 算法思想</span>
+<img src=/study-algs/icons/forward.svg class=book-icon alt=Forward></a></span></div><div><br><script async src=//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js></script><link rel=stylesheet href=//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css><p><span id=busuanzi_container_page_pv>本文访问量 <span id=busuanzi_value_page_pv><i class="fa fa-spinner fa-spin"></i></span> 次</span></p><p><span id=busuanzi_container_site_pv>本站总访问量 <span id=busuanzi_value_site_pv><i class="fa fa-spinner fa-spin"></i></span> 次</span></p><p><span id=busuanzi_container_site_uv>本站总访客数 <span id=busuanzi_value_site_uv><i class="fa fa-spinner fa-spin"></i></span> 人</span></p></div></footer><div class=book-comments><script src=https://utteranc.es/client.js repo=ikingye/study-algs issue-term=pathname theme=github-light crossorigin=anonymous async></script><div id=footer><p><a href=https://kingye.me>叶王</a> &copy; 2013-2026
 版权所有。如果本文档对你有所帮助，可以<a href=https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200428110046.png target=_blank rel="noopener noreferrer">请作者喝饮料</a>。</p></div></div><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav id=TableOfContents><ul><li><a href=#常用的数据结构>常用的数据结构</a></li><li><a href=#数据结构定义源码>数据结构定义（源码）</a><ul><li><a href=#栈>栈</a></li><li><a href=#队列>队列</a></li><li><a href=#链表-linked-list>链表 (Linked List)</a><ul><li><a href=#单向链表-节点>单向链表 节点</a></li><li><a href=#双向链表-节点>双向链表 节点</a></li></ul></li><li><a href=#树>树</a></li></ul></li><li><a href=#数据结构列表>数据结构列表</a><ul><li><a href=#类型>类型</a></li><li><a href=#抽象类型>抽象类型</a></li><li><a href=#数组>数组</a></li><li><a href=#链>链</a></li><li><a href=#树-1>树</a></li><li><a href=#图>图</a></li></ul></li></ul></nav></div></aside></main></body></html>
